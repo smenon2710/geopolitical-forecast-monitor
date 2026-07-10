@@ -1,5 +1,6 @@
 import { fetchWithTimeout } from "../fetchWithTimeout";
 import { envelope, isForceMock, type SourceEnvelope } from "./types";
+import { fetchWithFallback } from "./fetchWithFallback";
 
 /**
  * BLS Public Data API v1 — fully keyless, free, no registration.
@@ -26,29 +27,30 @@ const BLS_V1_BASE = "https://api.bls.gov/publicAPI/v1/timeseries/data/";
 export async function fetchBlsCpiBreakdown(): Promise<SourceEnvelope<BlsCpiBreakdown[]>> {
   if (isForceMock()) return envelope(mockBreakdown(), true);
 
-  try {
-    const res = await fetchWithTimeout(BLS_V1_BASE, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ seriesid: SERIES.map((s) => s.seriesId) }),
-    });
-    if (!res.ok) throw new Error(`BLS fetch failed: ${res.status}`);
-    const json = await res.json();
+  return fetchWithFallback(
+    "bls",
+    async () => {
+      const res = await fetchWithTimeout(BLS_V1_BASE, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ seriesid: SERIES.map((s) => s.seriesId) }),
+      });
+      if (!res.ok) throw new Error(`BLS fetch failed: ${res.status}`);
+      const json = await res.json();
 
-    const breakdown: BlsCpiBreakdown[] = (json.Results?.series ?? []).map(
-      (s: { seriesID: string; data: { value: string }[] }) => {
-        const category = SERIES.find((x) => x.seriesId === s.seriesID)?.category ?? "housing";
-        const latest = Number(s.data[0]?.value ?? 0);
-        const prev = Number(s.data[1]?.value ?? latest);
-        const mom_pct_change = prev === 0 ? 0 : ((latest - prev) / prev) * 100;
-        return { category, areaCode: "US", mom_pct_change };
-      }
-    );
-    return envelope(breakdown, false);
-  } catch (err) {
-    console.warn(`[bls] falling back to mock data: ${(err as Error).message}`);
-    return envelope(mockBreakdown(), true);
-  }
+      const breakdown: BlsCpiBreakdown[] = (json.Results?.series ?? []).map(
+        (s: { seriesID: string; data: { value: string }[] }) => {
+          const category = SERIES.find((x) => x.seriesId === s.seriesID)?.category ?? "housing";
+          const latest = Number(s.data[0]?.value ?? 0);
+          const prev = Number(s.data[1]?.value ?? latest);
+          const mom_pct_change = prev === 0 ? 0 : ((latest - prev) / prev) * 100;
+          return { category, areaCode: "US", mom_pct_change };
+        }
+      );
+      return breakdown;
+    },
+    mockBreakdown
+  );
 }
 
 function mockBreakdown(): BlsCpiBreakdown[] {

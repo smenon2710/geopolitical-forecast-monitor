@@ -1,5 +1,6 @@
 import { fetchWithTimeout } from "../fetchWithTimeout";
-import { envelope, isForceMock, type SourceEnvelope } from "./types";
+import type { SourceEnvelope } from "./types";
+import { fetchWithFallback } from "./fetchWithFallback";
 
 /** arXiv API — fully keyless, free. https://arxiv.org/help/api */
 export interface ArxivPaper {
@@ -13,21 +14,20 @@ export interface ArxivPaper {
 const ARXIV_BASE = "http://export.arxiv.org/api/query";
 
 export async function fetchRecentPapers(searchQuery: string): Promise<SourceEnvelope<ArxivPaper[]>> {
-  if (isForceMock()) return envelope(mockPapers(), true);
-
-  try {
-    const url = `${ARXIV_BASE}?search_query=${encodeURIComponent(searchQuery)}&sortBy=submittedDate&sortOrder=descending&max_results=10`;
-    const res = await fetchWithTimeout(url);
-    if (!res.ok) throw new Error(`arXiv fetch failed: ${res.status}`);
-    const xml = await res.text();
-    // TODO: arXiv returns Atom XML, not JSON — parse entries into ArxivPaper[]
-    // (e.g. with a small XML parser) once this feed is actually consumed.
-    void xml;
-    return envelope([], false);
-  } catch (err) {
-    console.warn(`[arxiv] falling back to mock data: ${(err as Error).message}`);
-    return envelope(mockPapers(), true);
-  }
+  return fetchWithFallback(
+    "arxiv",
+    async () => {
+      const url = `${ARXIV_BASE}?search_query=${encodeURIComponent(searchQuery)}&sortBy=submittedDate&sortOrder=descending&max_results=10`;
+      const res = await fetchWithTimeout(url);
+      if (!res.ok) throw new Error(`arXiv fetch failed: ${res.status}`);
+      const xml = await res.text();
+      // TODO: arXiv returns Atom XML, not JSON — parse entries into ArxivPaper[]
+      // (e.g. with a small XML parser) once this feed is actually consumed.
+      void xml;
+      return [] as ArxivPaper[];
+    },
+    mockPapers
+  );
 }
 
 function mockPapers(): ArxivPaper[] {

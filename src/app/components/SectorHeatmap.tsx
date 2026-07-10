@@ -2,7 +2,7 @@
 
 import type { SectorMove } from "@/types";
 
-/** Diverging blue (down) <-> gray (flat) <-> red (up), per the locked palette's diverging pair. */
+/** Diverging green (down) <-> neutral (flat) <-> red (up). */
 function divergingColor(pct: number, maxAbs: number): string {
   const t = maxAbs === 0 ? 0 : Math.min(1, Math.abs(pct) / maxAbs);
   if (Math.abs(pct) < 0.05) return "var(--div-mid)";
@@ -17,11 +17,14 @@ export function SectorHeatmap({ sectors }: { sectors: SectorMove[] }) {
 
   return (
     <div
-      className="rounded-lg p-4"
+      className="rounded-2xl p-4"
       style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
     >
-      <div className="text-xs font-medium mb-3" style={{ color: "var(--text-secondary)" }}>
-        Sector moves today
+      <div
+        className="text-xs font-semibold uppercase tracking-wide mb-3"
+        style={{ color: "var(--text-secondary)", fontFamily: "var(--font-display)" }}
+      >
+        What&apos;s moving today
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
         {sectors.map((s) => (
@@ -39,7 +42,7 @@ export function SectorHeatmap({ sectors }: { sectors: SectorMove[] }) {
             </span>
             <span
               className="text-sm font-semibold"
-              style={{ color: "var(--text-primary)", fontVariantNumeric: "tabular-nums" }}
+              style={{ color: "var(--text-primary)", fontFamily: "var(--font-mono)" }}
             >
               {s.pctChange >= 0 ? "+" : ""}
               {s.pctChange.toFixed(2)}%

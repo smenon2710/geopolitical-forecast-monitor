@@ -18,13 +18,12 @@ export function synthesizeLensNarrative(lens: Lens, severity: Severity, metrics:
   const severityWord = SEVERITY_LABEL[severity].toLowerCase();
 
   const oneLiner = metrics.length
-    ? `${label} is ${severityWord} today: ${metrics[0].label} ${metrics[0].value} (${metrics[0].sourceName}).`
-    : `${label} is ${severityWord} today — no notable data points.`;
+    ? `${label}: ${severityWord} today. ${metrics[0].label} — ${metrics[0].value}.`
+    : `${label}: ${severityWord} today. Nothing notable to report.`;
 
   const narrative = metrics.length
-    ? `${label} reads ${severityWord}. ` +
-      metrics.map((m) => `${m.label} is ${m.value}, per ${m.sourceName}.`).join(" ")
-    : `${label} reads ${severityWord}. No metrics crossed a scoring threshold today.`;
+    ? `${label} is ${severityWord} today. ` + metrics.map((m) => `${m.label}: ${m.value}.`).join(" ")
+    : `${label} is ${severityWord} today. Nothing crossed the threshold worth flagging.`;
 
   return { lens, severity, oneLiner, narrative, metrics };
 }
@@ -47,15 +46,19 @@ export async function synthesizeWithLlm(
   const severityWord = SEVERITY_LABEL[severity];
   const metricLines = metrics.map((m) => `- ${m.label}: ${m.value} (source: ${m.sourceName})`).join("\n");
   const prompt =
-    `You are writing one short paragraph (2-3 sentences) for a daily geopolitical impact monitor's "${label}" section, ` +
-    `currently reading "${severityWord}". Here is the ONLY data you may reference:\n${metricLines}\n\n` +
+    `You are writing 2-3 short sentences for a daily briefing called the Geopolitical Forecast Monitor, in the ` +
+    `"${label}" section, currently reading "${severityWord}". The reader is a curious adult with no economics ` +
+    `or policy background — not a trader, not an analyst. They want to know, in plain words, what this means ` +
+    `for their own life: their bills, their savings, their job, their safety, their day. Here is the ONLY data ` +
+    `you may reference:\n${metricLines}\n\n` +
     `Hard rules — breaking any of these makes the output unusable:\n` +
     `1. Every number in your output must be one of the numbers listed above, unchanged. Do not compute, round, convert, or restate a number in different units.\n` +
     `2. Do not add any date, year, historical comparison, or trend claim ("since 2023", "the smallest in five years", "record high", "for the first time") unless that exact comparison appears in the data above. You do not know history beyond what's listed — do not imply that you do.\n` +
     `3. Do not name a specific cause, country, company, or event that isn't in the data above.\n` +
     `4. Do not add qualifiers implying certainty about direction or causality beyond the bare numbers ("driven by", "due to", "signals a trend").\n` +
-    `5. If you are unsure whether a sentence is fully supported by the data above, cut it.\n\n` +
-    `Write in plain, non-partisan language — restating and lightly connecting these data points is fine; adding anything beyond them is not.`;
+    `5. Do not use technical jargon, acronyms, or financial/policy terminology (e.g. no "CPI", "basis points", "Goldstein score", "quarter-over-quarter") — say what the underlying label already says in plain words instead.\n` +
+    `6. If you are unsure whether a sentence is fully supported by the data above, cut it.\n\n` +
+    `Write like you're texting a friend who asked "should I worry about anything today?" — warm, direct, no hedging filler, no speculation beyond what these numbers show.`;
 
   try {
     const res = await fetchWithTimeout(OPENROUTER_BASE, {

@@ -1,12 +1,20 @@
 export interface SourceEnvelope<T> {
   data: T;
-  /** true when a real API call was not made (missing key, or MOCK_SOURCES=true) */
+  /** true when this isn't a fresh live call (missing key, MOCK_SOURCES=true, cache fallback, or synthetic mock) */
   isMock: boolean;
+  /** true specifically when the data is real but stale — a cached last-known-good payload, not synthetic */
+  isStale?: boolean;
+  /** when the cached payload was originally fetched, if isStale */
+  staleSince?: string;
   fetchedAt: string;
 }
 
-export function envelope<T>(data: T, isMock: boolean): SourceEnvelope<T> {
-  return { data, isMock, fetchedAt: new Date().toISOString() };
+export function envelope<T>(
+  data: T,
+  isMock: boolean,
+  opts?: { isStale?: boolean; staleSince?: string }
+): SourceEnvelope<T> {
+  return { data, isMock, isStale: opts?.isStale, staleSince: opts?.staleSince, fetchedAt: new Date().toISOString() };
 }
 
 /**

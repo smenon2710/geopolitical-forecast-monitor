@@ -1,5 +1,6 @@
 import { fetchWithTimeout } from "../fetchWithTimeout";
 import { envelope, isForceMock, type SourceEnvelope } from "./types";
+import { fetchWithFallback } from "./fetchWithFallback";
 
 /**
  * NOAA Climate Data Online (CDO) — free token required,
@@ -33,48 +34,49 @@ export async function fetchClimateAlerts(): Promise<SourceEnvelope<ClimateAlert[
   const token = process.env.NOAA_API_TOKEN;
   if (isForceMock() || !token) return envelope(mockAlerts(), true);
 
-  try {
-    const end = new Date();
-    end.setUTCDate(end.getUTCDate() - LAG_DAYS);
-    const start = new Date(end);
-    start.setUTCDate(start.getUTCDate() - WINDOW_DAYS);
-    const fmt = (d: Date) => d.toISOString().slice(0, 10);
+  return fetchWithFallback(
+    "noaa",
+    async () => {
+      const end = new Date();
+      end.setUTCDate(end.getUTCDate() - LAG_DAYS);
+      const start = new Date(end);
+      start.setUTCDate(start.getUTCDate() - WINDOW_DAYS);
+      const fmt = (d: Date) => d.toISOString().slice(0, 10);
 
-    const url =
-      `${NOAA_BASE}?datasetid=GHCND&datatypeid=TMAX&locationid=FIPS:US` +
-      `&startdate=${fmt(start)}&enddate=${fmt(end)}&units=metric&limit=1000`;
-    const res = await fetchWithTimeout(url, { headers: { token } });
-    if (!res.ok) throw new Error(`NOAA fetch failed: ${res.status}`);
-    const json = await res.json();
-    const readings: { value: number }[] = json.results ?? [];
-    if (readings.length === 0) return envelope([], false);
+      const url =
+        `${NOAA_BASE}?datasetid=GHCND&datatypeid=TMAX&locationid=FIPS:US` +
+        `&startdate=${fmt(start)}&enddate=${fmt(end)}&units=metric&limit=1000`;
+      const res = await fetchWithTimeout(url, { headers: { token } });
+      if (!res.ok) throw new Error(`NOAA fetch failed: ${res.status}`);
+      const json = await res.json();
+      const readings: { value: number }[] = json.results ?? [];
+      if (readings.length === 0) return [];
 
-    const hotCount = readings.filter((r) => r.value >= HEAT_THRESHOLD_C).length;
-    const hotFraction = hotCount / readings.length;
+      const hotCount = readings.filter((r) => r.value >= HEAT_THRESHOLD_C).length;
+      const hotFraction = hotCount / readings.length;
 
-    const alerts: ClimateAlert[] = [];
-    if (hotFraction >= WIDESPREAD_FRACTION) {
-      alerts.push({
-        id: `noaa-heat-${fmt(end)}`,
-        event: `Excessive heat (${hotCount}/${readings.length} sampled US stations ≥ ${HEAT_THRESHOLD_C}°C)`,
-        area: "United States (sampled stations)",
-        severity: "widespread",
-        date: fmt(end),
-      });
-    } else if (hotFraction >= ISOLATED_FRACTION) {
-      alerts.push({
-        id: `noaa-heat-${fmt(end)}`,
-        event: `Localized heat (${hotCount}/${readings.length} sampled US stations ≥ ${HEAT_THRESHOLD_C}°C)`,
-        area: "United States (sampled stations)",
-        severity: "isolated",
-        date: fmt(end),
-      });
-    }
-    return envelope(alerts, false);
-  } catch (err) {
-    console.warn(`[noaa] falling back to mock data: ${(err as Error).message}`);
-    return envelope(mockAlerts(), true);
-  }
+      const alerts: ClimateAlert[] = [];
+      if (hotFraction >= WIDESPREAD_FRACTION) {
+        alerts.push({
+          id: `noaa-heat-${fmt(end)}`,
+          event: `Excessive heat (${hotCount}/${readings.length} sampled US stations ≥ ${HEAT_THRESHOLD_C}°C)`,
+          area: "United States (sampled stations)",
+          severity: "widespread",
+          date: fmt(end),
+        });
+      } else if (hotFraction >= ISOLATED_FRACTION) {
+        alerts.push({
+          id: `noaa-heat-${fmt(end)}`,
+          event: `Localized heat (${hotCount}/${readings.length} sampled US stations ≥ ${HEAT_THRESHOLD_C}°C)`,
+          area: "United States (sampled stations)",
+          severity: "isolated",
+          date: fmt(end),
+        });
+      }
+      return alerts;
+    },
+    mockAlerts
+  );
 }
 
 function mockAlerts(): ClimateAlert[] {

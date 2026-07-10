@@ -1,0 +1,83 @@
+{
+  "data": [
+    {
+      "period": "2026-04-13",
+      "series": "gasoline",
+      "value": 4.123,
+      "unit": "$/gal"
+    },
+    {
+      "period": "2026-04-20",
+      "series": "gasoline",
+      "value": 4.044,
+      "unit": "$/gal"
+    },
+    {
+      "period": "2026-04-27",
+      "series": "gasoline",
+      "value": 4.123,
+      "unit": "$/gal"
+    },
+    {
+      "period": "2026-05-04",
+      "series": "gasoline",
+      "value": 4.452,
+      "unit": "$/gal"
+    },
+    {
+      "period": "2026-05-11",
+      "series": "gasoline",
+      "value": 4.5,
+      "unit": "$/gal"
+    },
+    {
+      "period": "2026-05-18",
+      "series": "gasoline",
+      "value": 4.49,
+      "unit": "$/gal"
+    },
+    {
+      "period": "2026-05-25",
+      "series": "gasoline",
+      "value": 4.475,
+      "unit": "$/gal"
+    },
+    {
+      "period": "2026-06-01",
+      "series": "gasoline",
+      "value": 4.305,
+      "unit": "$/gal"
+    },
+    {
+      "period": "2026-06-08",
+      "series": "gasoline",
+      "value": 4.146,
+      "unit": "$/gal"
+    },
+    {
+      "period": "2026-06-15",
+      "series": "gasoline",
+      "value": 4.052,
+      "unit": "$/gal"
+    },
+    {
+      "period": "2026-06-22",
+      "series": "gasoline",
+      "value": 3.914,
+      "unit": "$/gal"
+    },
+    {
+      "period": "2026-06-29",
+      "series": "gasoline",
+      "value": 3.831,
+      "unit": "$/gal"
+    },
+    {
+      "period": "2026-07-06",
+      "series": "gasoline",
+      "value": 3.777,
+      "unit": "$/gal"
+    }
+  ],
+  "cachedAt": "2026-07-10T20:29:41.544Z"
+}

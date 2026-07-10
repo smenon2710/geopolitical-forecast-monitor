@@ -35,14 +35,17 @@ export function TrendSparkline({ series }: { series: TrendSeries }) {
 
   return (
     <div
-      className="rounded-lg p-4 flex flex-col gap-1"
+      className="rounded-2xl p-4 flex flex-col gap-1"
       style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
     >
       <div className="flex items-baseline justify-between">
-        <span className="text-xs font-medium" style={{ color: "var(--text-secondary)" }}>
+        <span
+          className="text-xs font-semibold uppercase tracking-wide"
+          style={{ color: "var(--text-secondary)", fontFamily: "var(--font-display)" }}
+        >
           {series.label}
         </span>
-        <span className="text-xs" style={{ color: changePct >= 0 ? "var(--text-secondary)" : "var(--text-secondary)" }}>
+        <span className="text-xs" style={{ color: "var(--text-secondary)", fontFamily: "var(--font-mono)" }}>
           {changePct >= 0 ? "+" : ""}
           {changePct.toFixed(1)}%
         </span>
@@ -50,7 +53,7 @@ export function TrendSparkline({ series }: { series: TrendSeries }) {
       <div className="flex items-baseline gap-1">
         <span
           className="text-xl font-semibold"
-          style={{ color: "var(--text-primary)", fontVariantNumeric: "tabular-nums" }}
+          style={{ color: "var(--text-primary)", fontFamily: "var(--font-mono)" }}
         >
           {last?.value.toLocaleString(undefined, { maximumFractionDigits: 2 })}
         </span>

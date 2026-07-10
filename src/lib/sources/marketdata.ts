@@ -1,5 +1,6 @@
 import { fetchWithTimeout } from "../fetchWithTimeout";
 import { envelope, isForceMock, type SourceEnvelope } from "./types";
+import { fetchWithFallback } from "./fetchWithFallback";
 
 /**
  * Alpha Vantage — free API key, register at
@@ -20,29 +21,27 @@ export async function fetchDailyQuote(symbol: string): Promise<SourceEnvelope<Ma
   const apiKey = process.env.ALPHAVANTAGE_API_KEY;
   if (isForceMock() || !apiKey) return envelope(mockQuote(symbol), true);
 
-  try {
-    const url = `${ALPHA_VANTAGE_BASE}?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${apiKey}`;
-    const res = await fetchWithTimeout(url);
-    if (!res.ok) throw new Error(`Alpha Vantage fetch failed for ${symbol}: ${res.status}`);
-    const json = await res.json();
-    // Rate limiting comes back as HTTP 200 with a "Note"/"Information" field
-    // instead of a quote — treat that as a failure too.
-    if (json.Note || json.Information || json["Error Message"]) {
-      throw new Error(json.Note || json.Information || json["Error Message"]);
-    }
-    const quote = json["Global Quote"] ?? {};
-    return envelope(
-      {
+  return fetchWithFallback(
+    `marketdata-${symbol}`,
+    async () => {
+      const url = `${ALPHA_VANTAGE_BASE}?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${apiKey}`;
+      const res = await fetchWithTimeout(url);
+      if (!res.ok) throw new Error(`Alpha Vantage fetch failed for ${symbol}: ${res.status}`);
+      const json = await res.json();
+      // Rate limiting comes back as HTTP 200 with a "Note"/"Information" field
+      // instead of a quote — treat that as a failure too.
+      if (json.Note || json.Information || json["Error Message"]) {
+        throw new Error(json.Note || json.Information || json["Error Message"]);
+      }
+      const quote = json["Global Quote"] ?? {};
+      return {
         symbol,
         pctChangeDaily: parseFloat((quote["10. change percent"] ?? "0%").replace("%", "")),
         close: parseFloat(quote["05. price"] ?? "0"),
-      },
-      false
-    );
-  } catch (err) {
-    console.warn(`[marketdata] falling back to mock data for ${symbol}: ${(err as Error).message}`);
-    return envelope(mockQuote(symbol), true);
-  }
+      };
+    },
+    () => mockQuote(symbol)
+  );
 }
 
 function mockQuote(symbol: string): MarketQuote {

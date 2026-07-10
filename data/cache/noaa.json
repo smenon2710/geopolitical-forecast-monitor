@@ -1,0 +1,12 @@
+{
+  "data": [
+    {
+      "id": "noaa-heat-2026-07-05",
+      "event": "Localized heat (25/1000 sampled US stations ≥ 38°C)",
+      "area": "United States (sampled stations)",
+      "severity": "isolated",
+      "date": "2026-07-05"
+    }
+  ],
+  "cachedAt": "2026-07-10T20:29:58.003Z"
+}

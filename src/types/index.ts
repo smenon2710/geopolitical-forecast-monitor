@@ -14,11 +14,19 @@ export const LENSES: Lens[] = [
 ];
 
 export const LENS_LABELS: Record<Lens, string> = {
-  costOfLiving: "Cost of Living",
-  investments: "Investments & Markets",
-  standardOfLiving: "Standard of Living",
-  security: "Security",
-  dailyRoutine: "Daily Routine",
+  costOfLiving: "Prices You Pay",
+  investments: "Your Savings",
+  standardOfLiving: "Jobs & Paychecks",
+  security: "Safety & Tension",
+  dailyRoutine: "Everyday Life",
+};
+
+export const LENS_SUBLABELS: Record<Lens, string> = {
+  costOfLiving: "Gas, groceries, rent",
+  investments: "Stocks and markets",
+  standardOfLiving: "Work and wages",
+  security: "Conflict and disasters",
+  dailyRoutine: "Travel and routine",
 };
 
 /** 0 = negligible, 1 = minor, 2 = moderate, 3 = major */
@@ -84,10 +92,13 @@ export interface TrendSeries {
   points: TrendPoint[];
 }
 
+/** "live" = every source fetched fresh; "stale" = some sources fell back to a cached last-known-good reading; "demo" = at least one source has never had a real reading and is showing synthetic demo data */
+export type DataQuality = "live" | "stale" | "demo";
+
 export interface DailyDigest {
   date: string;
   generatedAt: string;
-  isMockData: boolean;
+  dataQuality: DataQuality;
   lenses: LensReading[];
   trends: TrendSeries[];
   events: GeoEvent[];

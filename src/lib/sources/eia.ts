@@ -1,5 +1,6 @@
 import { fetchWithTimeout } from "../fetchWithTimeout";
 import { envelope, isForceMock, type SourceEnvelope } from "./types";
+import { fetchWithFallback } from "./fetchWithFallback";
 
 /**
  * EIA API v2 — free API key, register at https://www.eia.gov/opendata/register.php,
@@ -18,32 +19,33 @@ export async function fetchEiaGasolinePrice(): Promise<SourceEnvelope<EiaPricePo
   const apiKey = process.env.EIA_API_KEY;
   if (isForceMock() || !apiKey) return envelope(mockPrices(), true);
 
-  try {
-    // facets pin this to the US national average (NUS) regular gasoline
-    // (EPMR) series — without them the endpoint returns every PADD region
-    // and grade mixed into one list.
-    const url =
-      `${EIA_BASE}/petroleum/pri/gnd/data/?api_key=${apiKey}&frequency=weekly&data[0]=value` +
-      `&facets[duoarea][]=NUS&facets[product][]=EPMR` +
-      `&sort[0][column]=period&sort[0][direction]=desc&length=13`;
-    const res = await fetchWithTimeout(url);
-    if (!res.ok) throw new Error(`EIA fetch failed: ${res.status}`);
-    const json = await res.json();
-    // API returns newest-first; reverse to ascending so .at(-1) is latest,
-    // matching mockPrices()'s ordering. Values arrive as strings.
-    const points: EiaPricePoint[] = (json.response?.data ?? [])
-      .map((d: { period: string; value: string | number }) => ({
-        period: d.period,
-        series: "gasoline" as const,
-        value: Number(d.value),
-        unit: "$/gal",
-      }))
-      .reverse();
-    return envelope(points, false);
-  } catch (err) {
-    console.warn(`[eia] falling back to mock data: ${(err as Error).message}`);
-    return envelope(mockPrices(), true);
-  }
+  return fetchWithFallback(
+    "eia",
+    async () => {
+      // facets pin this to the US national average (NUS) regular gasoline
+      // (EPMR) series — without them the endpoint returns every PADD region
+      // and grade mixed into one list.
+      const url =
+        `${EIA_BASE}/petroleum/pri/gnd/data/?api_key=${apiKey}&frequency=weekly&data[0]=value` +
+        `&facets[duoarea][]=NUS&facets[product][]=EPMR` +
+        `&sort[0][column]=period&sort[0][direction]=desc&length=13`;
+      const res = await fetchWithTimeout(url);
+      if (!res.ok) throw new Error(`EIA fetch failed: ${res.status}`);
+      const json = await res.json();
+      // API returns newest-first; reverse to ascending so .at(-1) is latest,
+      // matching mockPrices()'s ordering. Values arrive as strings.
+      const points: EiaPricePoint[] = (json.response?.data ?? [])
+        .map((d: { period: string; value: string | number }) => ({
+          period: d.period,
+          series: "gasoline" as const,
+          value: Number(d.value),
+          unit: "$/gal",
+        }))
+        .reverse();
+      return points;
+    },
+    mockPrices
+  );
 }
 
 function mockPrices(): EiaPricePoint[] {

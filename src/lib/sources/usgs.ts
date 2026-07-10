@@ -1,5 +1,6 @@
 import { fetchWithTimeout } from "../fetchWithTimeout";
-import { envelope, isForceMock, type SourceEnvelope } from "./types";
+import type { SourceEnvelope } from "./types";
+import { fetchWithFallback } from "./fetchWithFallback";
 
 /**
  * USGS Earthquake GeoJSON feed — fully keyless, free.
@@ -17,27 +18,26 @@ export interface QuakeEvent {
 const USGS_FEED = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson";
 
 export async function fetchSignificantQuakes(): Promise<SourceEnvelope<QuakeEvent[]>> {
-  if (isForceMock()) return envelope(mockQuakes(), true);
-
-  try {
-    const res = await fetchWithTimeout(USGS_FEED);
-    if (!res.ok) throw new Error(`USGS fetch failed: ${res.status}`);
-    const json = await res.json();
-    const quakes: QuakeEvent[] = (json.features ?? []).map(
-      (f: { id: string; properties: { place: string; mag: number; time: number }; geometry: { coordinates: [number, number, number] } }) => ({
-        id: f.id,
-        place: f.properties.place,
-        magnitude: f.properties.mag,
-        lon: f.geometry.coordinates[0],
-        lat: f.geometry.coordinates[1],
-        time: new Date(f.properties.time).toISOString(),
-      })
-    );
-    return envelope(quakes, false);
-  } catch (err) {
-    console.warn(`[usgs] falling back to mock data: ${(err as Error).message}`);
-    return envelope(mockQuakes(), true);
-  }
+  return fetchWithFallback(
+    "usgs",
+    async () => {
+      const res = await fetchWithTimeout(USGS_FEED);
+      if (!res.ok) throw new Error(`USGS fetch failed: ${res.status}`);
+      const json = await res.json();
+      const quakes: QuakeEvent[] = (json.features ?? []).map(
+        (f: { id: string; properties: { place: string; mag: number; time: number }; geometry: { coordinates: [number, number, number] } }) => ({
+          id: f.id,
+          place: f.properties.place,
+          magnitude: f.properties.mag,
+          lon: f.geometry.coordinates[0],
+          lat: f.geometry.coordinates[1],
+          time: new Date(f.properties.time).toISOString(),
+        })
+      );
+      return quakes;
+    },
+    mockQuakes
+  );
 }
 
 function mockQuakes(): QuakeEvent[] {

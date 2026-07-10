@@ -1,36 +1,36 @@
 {
   "date": "2026-07-10",
-  "generatedAt": "2026-07-10T19:56:44.969Z",
-  "isMockData": true,
+  "generatedAt": "2026-07-10T20:29:59.419Z",
+  "dataQuality": "demo",
   "lenses": [
     {
       "lens": "costOfLiving",
       "severity": 2,
-      "oneLiner": "Cost of Living is elevated today: CPI, month-over-month 0.47% (FRED (CPIAUCSL)).",
-      "narrative": "The overall CPI rose 0.47% month-over-month, with Energy CPI seeing a significant increase of 3.88%. Housing CPI also contributed to this rise, up 0.32% month-over-month, while Food CPI saw a smaller increase of 0.16%. Gasoline prices decreased 1.4% week-over-week to $3.78/gal.",
+      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising — 0.47%.",
+      "narrative": "Prices are still rising, up 0.47% overall.  Gas is $3.78/gal, a small drop from last week, but energy costs are up 3.88%.  Housing and food costs are also up slightly.",
       "metrics": [
         {
-          "label": "CPI, month-over-month",
+          "label": "How fast prices are rising",
           "value": "0.47%",
           "sourceName": "FRED (CPIAUCSL)"
         },
         {
-          "label": "Gasoline price",
+          "label": "Price at the pump",
           "value": "$3.78/gal (-1.4% wk/wk)",
           "sourceName": "EIA"
         },
         {
-          "label": "Housing CPI, MoM",
+          "label": "Housing costs",
           "value": "0.32%",
           "sourceName": "BLS"
         },
         {
-          "label": "Food CPI, MoM",
+          "label": "Food costs",
           "value": "0.16%",
           "sourceName": "BLS"
         },
         {
-          "label": "Energy CPI, MoM",
+          "label": "Energy costs",
           "value": "3.88%",
           "sourceName": "BLS"
         }
@@ -39,16 +39,16 @@
     {
       "lens": "investments",
       "severity": 2,
-      "oneLiner": "Investments & Markets is elevated today: S&P 500 (SPY) daily change -2.30% (Alpha Vantage).",
-      "narrative": "The S&P 500 experienced a daily change of -2.30%. The largest sector move observed was 2.40%.",
+      "oneLiner": "Your Savings: elevated today. The stock market today — -2.30%.",
+      "narrative": "The stock market dropped today by -2.30%. Big industry swings of 2.40% also happened. This might mean your bills could be a bit higher or your savings might not grow as much right now.",
       "metrics": [
         {
-          "label": "S&P 500 (SPY) daily change",
+          "label": "The stock market today",
           "value": "-2.30%",
-          "sourceName": "Alpha Vantage"
+          "sourceName": "Alpha Vantage (S&P 500)"
         },
         {
-          "label": "Largest sector move",
+          "label": "Biggest industry swing",
           "value": "2.40%",
           "sourceName": "Alpha Vantage"
         }
@@ -57,22 +57,22 @@
     {
       "lens": "standardOfLiving",
       "severity": 2,
-      "oneLiner": "Standard of Living is elevated today: Unemployment rate change -0.10pt (FRED (UNRATE)).",
-      "narrative": "The standard of living is elevated, supported by a -0.10pt decrease in the unemployment rate and a +0.52% quarter-over-quarter increase in real GDP. However, real wage growth was -0.21pt versus CPI in the latest month.",
+      "oneLiner": "Jobs & Paychecks: elevated today. Jobs picture — -0.10pt unemployment.",
+      "narrative": "Your job security looks pretty stable, with unemployment at -0.10pt. While the economy is growing at +0.52% GDP, your paychecks aren't quite keeping up with rising prices, trailing inflation by -0.21pt.",
       "metrics": [
         {
-          "label": "Unemployment rate change",
-          "value": "-0.10pt",
+          "label": "Jobs picture",
+          "value": "-0.10pt unemployment",
           "sourceName": "FRED (UNRATE)"
         },
         {
-          "label": "Real wage growth (latest month)",
-          "value": "-0.21pt vs CPI",
-          "sourceName": "FRED (wages CES0500000003 vs CPI)"
+          "label": "Are paychecks keeping up with prices?",
+          "value": "-0.21pt vs inflation",
+          "sourceName": "FRED (wages vs CPI)"
         },
         {
-          "label": "Real GDP, quarter-over-quarter",
-          "value": "+0.52%",
+          "label": "Is the economy growing?",
+          "value": "+0.52% GDP",
           "sourceName": "FRED (GDPC1)"
         }
       ]
@@ -80,16 +80,16 @@
     {
       "lens": "security",
       "severity": 2,
-      "oneLiner": "Security is elevated today: Worst Goldstein score today -6.2 (GDELT).",
-      "narrative": "Security remains elevated, with the worst Goldstein score today at -6.2. This coincides with the largest recent quake registering an M7.5.",
+      "oneLiner": "Safety & Tension: elevated today. Global tension level — -6.2.",
+      "narrative": "Things are a bit tense globally, with a tension level of -6.2. There was also a big earthquake recently, measuring M7.5. This means it's a good idea to stay aware of your surroundings and keep an eye on things.",
       "metrics": [
         {
-          "label": "Worst Goldstein score today",
+          "label": "Global tension level",
           "value": "-6.2",
-          "sourceName": "GDELT"
+          "sourceName": "GDELT (Goldstein scale, -10 tense to +10 cooperative)"
         },
         {
-          "label": "Largest recent quake",
+          "label": "Biggest recent earthquake",
           "value": "M7.5",
           "sourceName": "USGS"
         }
@@ -98,12 +98,12 @@
     {
       "lens": "dailyRoutine",
       "severity": 0,
-      "oneLiner": "Daily Routine is calm today: Gasoline price change -1.4% (EIA).",
-      "narrative": "Gasoline prices saw a -1.4% change. This data point is from the EIA.",
+      "oneLiner": "Everyday Life: calm today. Price at the pump — -1.4% this week.",
+      "narrative": "Good news on gas prices! They dropped -1.4% this week. This might mean a little extra breathing room in your budget for everyday things.",
       "metrics": [
         {
-          "label": "Gasoline price change",
-          "value": "-1.4%",
+          "label": "Price at the pump",
+          "value": "-1.4% this week",
           "sourceName": "EIA"
         }
       ]
@@ -112,7 +112,7 @@
   "trends": [
     {
       "id": "cpi",
-      "label": "CPI Index",
+      "label": "Price Level",
       "unit": "index",
       "points": [
         {
@@ -475,7 +475,7 @@
     },
     {
       "id": "gas",
-      "label": "Gasoline Price",
+      "label": "Gas Price",
       "unit": "$/gal",
       "points": [
         {
@@ -534,7 +534,7 @@
     },
     {
       "id": "conflict",
-      "label": "Conflict Intensity (GDELT)",
+      "label": "Global Tension",
       "unit": "index",
       "points": [
         {

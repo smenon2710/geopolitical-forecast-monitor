@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "category": "housing",
+      "areaCode": "US",
+      "mom_pct_change": 0.31783087459743636
+    },
+    {
+      "category": "food",
+      "areaCode": "US",
+      "mom_pct_change": 0.15587815667620875
+    },
+    {
+      "category": "energy",
+      "areaCode": "US",
+      "mom_pct_change": 3.88400444201756
+    }
+  ],
+  "cachedAt": "2026-07-10T20:29:40.803Z"
+}

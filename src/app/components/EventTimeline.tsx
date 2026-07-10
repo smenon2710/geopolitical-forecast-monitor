@@ -26,11 +26,14 @@ export function EventTimeline({ events, referenceDate }: { events: GeoEvent[]; r
 
   return (
     <div
-      className="rounded-lg p-4 relative"
+      className="rounded-2xl p-4 relative"
       style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
     >
-      <div className="text-xs font-medium mb-3" style={{ color: "var(--text-secondary)" }}>
-        Trailing 7-day event timeline
+      <div
+        className="text-xs font-semibold uppercase tracking-wide mb-3"
+        style={{ color: "var(--text-secondary)", fontFamily: "var(--font-display)" }}
+      >
+        The last 7 days
       </div>
       <div className="flex gap-1">
         {days.map((day) => {

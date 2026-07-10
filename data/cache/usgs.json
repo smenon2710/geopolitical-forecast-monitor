@@ -1,0 +1,125 @@
+{
+  "data": [
+    {
+      "id": "uw714040221",
+      "place": "2 km E of Oak Harbor, Washington",
+      "magnitude": 3.8,
+      "lon": -122.6065,
+      "lat": 48.2888333333333,
+      "time": "2026-07-02T06:35:47.600Z"
+    },
+    {
+      "id": "us6000t9bg",
+      "place": "272 km SSE of Dunhuang, China",
+      "magnitude": 5.3,
+      "lon": 95.4116,
+      "lat": 37.7819,
+      "time": "2026-06-30T23:44:54.898Z"
+    },
+    {
+      "id": "aka2026mpitdk",
+      "place": "27 km WNW of Hope, Alaska",
+      "magnitude": 4.2,
+      "lon": -150.125,
+      "lat": 60.989,
+      "time": "2026-06-27T05:25:52.321Z"
+    },
+    {
+      "id": "us6000t8ec",
+      "place": "34 km WSW of Sarangani, Philippines",
+      "magnitude": 6.5,
+      "lon": 125.1965,
+      "lat": 5.2392,
+      "time": "2026-06-26T11:34:41.498Z"
+    },
+    {
+      "id": "us6000t7zq",
+      "place": "33 km ENE of Noda, Japan",
+      "magnitude": 6.9,
+      "lon": 142.1614,
+      "lat": 40.2515,
+      "time": "2026-06-24T22:30:12.989Z"
+    },
+    {
+      "id": "us6000t7zp",
+      "place": "20 km ESE of Yumare, Venezuela",
+      "magnitude": 7.5,
+      "lon": -68.5036,
+      "lat": 10.5086,
+      "time": "2026-06-24T22:05:11.743Z"
+    },
+    {
+      "id": "us6000t7zc",
+      "place": "21 km ENE of San Felipe, Venezuela",
+      "magnitude": 7.2,
+      "lon": -68.5571,
+      "lat": 10.4085,
+      "time": "2026-06-24T22:04:34.363Z"
+    },
+    {
+      "id": "nc75382936",
+      "place": "11 km N of Redwood Valley, CA",
+      "magnitude": 5.59,
+      "lon": -123.228833333333,
+      "lat": 39.3623333333333,
+      "time": "2026-06-24T15:10:40.760Z"
+    },
+    {
+      "id": "us7000sui3",
+      "place": "133 km ESE of Petropavlovsk-Kamchatsky, Russia",
+      "magnitude": 6.6,
+      "lon": 160.5652,
+      "lat": 52.7943,
+      "time": "2026-06-19T06:52:31.597Z"
+    },
+    {
+      "id": "us7000stti",
+      "place": "central Mid-Atlantic Ridge",
+      "magnitude": 6.6,
+      "lon": -20.0163,
+      "lat": -0.5458,
+      "time": "2026-06-17T18:56:58.028Z"
+    },
+    {
+      "id": "us7000stcs",
+      "place": "272 km S of Dunhuang, China",
+      "magnitude": 5.4,
+      "lon": 95.2738,
+      "lat": 37.7544,
+      "time": "2026-06-16T09:45:26.194Z"
+    },
+    {
+      "id": "us7000stbz",
+      "place": "262 km SSE of Dunhuang, China",
+      "magnitude": 6.3,
+      "lon": 95.4919,
+      "lat": 37.888,
+      "time": "2026-06-16T09:06:55.517Z"
+    },
+    {
+      "id": "us7000st95",
+      "place": "42 km SE of Palu, Indonesia",
+      "magnitude": 6.7,
+      "lon": 120.1842,
+      "lat": -1.1245,
+      "time": "2026-06-16T03:27:44.379Z"
+    },
+    {
+      "id": "us7000st41",
+      "place": "8 km NE of Bel Air North, Maryland",
+      "magnitude": 2.4,
+      "lon": -76.3094,
+      "lat": 39.6177,
+      "time": "2026-06-15T15:02:24.168Z"
+    },
+    {
+      "id": "us7000st1c",
+      "place": "68 km ESE of Pondaguitan, Philippines",
+      "magnitude": 6.2,
+      "lon": 126.7773,
+      "lat": 6.2076,
+      "time": "2026-06-15T09:18:36.126Z"
+    }
+  ],
+  "cachedAt": "2026-07-10T20:29:40.574Z"
+}

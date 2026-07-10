@@ -1,5 +1,6 @@
 import { fetchWithTimeout } from "../fetchWithTimeout";
 import { envelope, isForceMock, type SourceEnvelope } from "./types";
+import { fetchWithFallback } from "./fetchWithFallback";
 
 /**
  * US Census Bureau International Trade API — keyless for low-volume use,
@@ -19,19 +20,20 @@ const CENSUS_BASE = "https://api.census.gov/data/timeseries/intltrade/imports/hs
 export async function fetchTradeFlows(hsCodes: string[]): Promise<SourceEnvelope<TradeFlow[]>> {
   if (isForceMock()) return envelope(mockFlows(), true);
 
-  try {
-    const apiKey = process.env.CENSUS_API_KEY;
-    const url = `${CENSUS_BASE}?get=GEN_VAL_MO,CTY_NAME&YEAR=2026&I_COMMODITY=${hsCodes.join(",")}${apiKey ? `&key=${apiKey}` : ""}`;
-    const res = await fetchWithTimeout(url);
-    if (!res.ok) throw new Error(`Census fetch failed: ${res.status}`);
-    const json = await res.json();
-    // TODO: Census returns array-of-arrays with header row; map into TradeFlow[]
-    // once the specific HS codes to monitor (energy, semiconductors, ag) are chosen.
-    return envelope(json.slice(1) ?? [], false);
-  } catch (err) {
-    console.warn(`[census] falling back to mock data: ${(err as Error).message}`);
-    return envelope(mockFlows(), true);
-  }
+  return fetchWithFallback(
+    "census",
+    async () => {
+      const apiKey = process.env.CENSUS_API_KEY;
+      const url = `${CENSUS_BASE}?get=GEN_VAL_MO,CTY_NAME&YEAR=2026&I_COMMODITY=${hsCodes.join(",")}${apiKey ? `&key=${apiKey}` : ""}`;
+      const res = await fetchWithTimeout(url);
+      if (!res.ok) throw new Error(`Census fetch failed: ${res.status}`);
+      const json = await res.json();
+      // TODO: Census returns array-of-arrays with header row; map into TradeFlow[]
+      // once the specific HS codes to monitor (energy, semiconductors, ag) are chosen.
+      return (json.slice(1) ?? []) as TradeFlow[];
+    },
+    mockFlows
+  );
 }
 
 function mockFlows(): TradeFlow[] {

@@ -117,8 +117,6 @@ async function main() {
     sectorQuotes.push(await fetchDailyQuote(s.symbol));
   }
 
-  const isMockData = [gdelt, cpi, gasCpi, gas, quakes, broadIndex, ...sectorQuotes].some((e) => e.isMock);
-
   // --- Cost of Living ---
   const cpiLatest = cpi.data.at(-1)!;
   const cpiPrev = cpi.data.at(-2)!;
@@ -128,10 +126,10 @@ async function main() {
   const gasPctChange = ((gasLatest.value - gasPrev.value) / gasPrev.value) * 100;
   const costOfLivingSeverity = scoreCostOfLiving({ cpiMoMPct, gasPctChange });
   const costOfLivingMetrics: CitedMetric[] = [
-    { label: "CPI, month-over-month", value: `${cpiMoMPct.toFixed(2)}%`, sourceName: "FRED (CPIAUCSL)" },
-    { label: "Gasoline price", value: `$${gasLatest.value.toFixed(2)}/gal (${gasPctChange.toFixed(1)}% wk/wk)`, sourceName: "EIA" },
+    { label: "How fast prices are rising", value: `${cpiMoMPct.toFixed(2)}%`, sourceName: "FRED (CPIAUCSL)" },
+    { label: "Price at the pump", value: `$${gasLatest.value.toFixed(2)}/gal (${gasPctChange.toFixed(1)}% wk/wk)`, sourceName: "EIA" },
     ...gasCpi.data.map((c) => ({
-      label: `${c.category[0].toUpperCase()}${c.category.slice(1)} CPI, MoM`,
+      label: `${c.category[0].toUpperCase()}${c.category.slice(1)} costs`,
       value: `${c.mom_pct_change.toFixed(2)}%`,
       sourceName: "BLS",
     })),
@@ -145,8 +143,8 @@ async function main() {
     maxSectorEtfPctChange: maxSectorMove,
   });
   const investmentsMetrics: CitedMetric[] = [
-    { label: "S&P 500 (SPY) daily change", value: `${broadIndex.data.pctChangeDaily.toFixed(2)}%`, sourceName: "Alpha Vantage" },
-    { label: "Largest sector move", value: `${maxSectorMove.toFixed(2)}%`, sourceName: "Alpha Vantage" },
+    { label: "The stock market today", value: `${broadIndex.data.pctChangeDaily.toFixed(2)}%`, sourceName: "Alpha Vantage (S&P 500)" },
+    { label: "Biggest industry swing", value: `${maxSectorMove.toFixed(2)}%`, sourceName: "Alpha Vantage" },
   ];
 
   // --- Standard of Living ---
@@ -174,15 +172,15 @@ async function main() {
     majorDisasterDeclared: !!majorDisaster,
   });
   const standardOfLivingMetrics: CitedMetric[] = [
-    { label: "Unemployment rate change", value: `${unemploymentDeltaPts >= 0 ? "+" : ""}${unemploymentDeltaPts.toFixed(2)}pt`, sourceName: "FRED (UNRATE)" },
+    { label: "Jobs picture", value: `${unemploymentDeltaPts >= 0 ? "+" : ""}${unemploymentDeltaPts.toFixed(2)}pt unemployment`, sourceName: "FRED (UNRATE)" },
     {
-      label: "Real wage growth (latest month)",
-      value: realWageGrowthPct === null ? "n/a" : `${realWageGrowthPct >= 0 ? "+" : ""}${realWageGrowthPct.toFixed(2)}pt vs CPI`,
-      sourceName: "FRED (wages CES0500000003 vs CPI)",
+      label: "Are paychecks keeping up with prices?",
+      value: realWageGrowthPct === null ? "n/a" : `${realWageGrowthPct >= 0 ? "+" : ""}${realWageGrowthPct.toFixed(2)}pt vs inflation`,
+      sourceName: "FRED (wages vs CPI)",
     },
-    { label: "Real GDP, quarter-over-quarter", value: `${gdpQoQPct >= 0 ? "+" : ""}${gdpQoQPct.toFixed(2)}%`, sourceName: "FRED (GDPC1)" },
+    { label: "Is the economy growing?", value: `${gdpQoQPct >= 0 ? "+" : ""}${gdpQoQPct.toFixed(2)}% GDP`, sourceName: "FRED (GDPC1)" },
     ...(majorDisaster
-      ? [{ label: "Climate disaster declared", value: `${majorDisaster.event} — ${majorDisaster.area}`, sourceName: "NOAA" }]
+      ? [{ label: "Extreme weather", value: `${majorDisaster.event} — ${majorDisaster.area}`, sourceName: "NOAA" }]
       : []),
   ];
 
@@ -195,14 +193,14 @@ async function main() {
     nearbyQuakeMagnitude: Math.max(0, ...quakes.data.map((q) => q.magnitude)),
   });
   const securityMetrics: CitedMetric[] = [
-    { label: "Worst Goldstein score today", value: worstGoldstein.toFixed(1), sourceName: "GDELT" },
-    { label: "Largest recent quake", value: `M${Math.max(0, ...quakes.data.map((q) => q.magnitude)).toFixed(1)}`, sourceName: "USGS" },
+    { label: "Global tension level", value: worstGoldstein.toFixed(1), sourceName: "GDELT (Goldstein scale, -10 tense to +10 cooperative)" },
+    { label: "Biggest recent earthquake", value: `M${Math.max(0, ...quakes.data.map((q) => q.magnitude)).toFixed(1)}`, sourceName: "USGS" },
   ];
 
   // --- Daily Routine ---
   const dailyRoutineSeverity = scoreDailyRoutine({ gasPctChange });
   const dailyRoutineMetrics: CitedMetric[] = [
-    { label: "Gasoline price change", value: `${gasPctChange.toFixed(1)}%`, sourceName: "EIA" },
+    { label: "Price at the pump", value: `${gasPctChange.toFixed(1)}% this week`, sourceName: "EIA" },
   ];
 
   const lenses = await Promise.all([
@@ -214,11 +212,11 @@ async function main() {
   ]);
 
   const trends: TrendSeries[] = [
-    { id: "cpi", label: "CPI Index", unit: "index", points: cpi.data.map((p) => ({ date: p.date, value: p.value })) },
-    { id: "gas", label: "Gasoline Price", unit: "$/gal", points: gas.data.map((p) => ({ date: p.period, value: p.value })) },
+    { id: "cpi", label: "Price Level", unit: "index", points: cpi.data.map((p) => ({ date: p.date, value: p.value })) },
+    { id: "gas", label: "Gas Price", unit: "$/gal", points: gas.data.map((p) => ({ date: p.period, value: p.value })) },
     {
       id: "conflict",
-      label: "Conflict Intensity (GDELT)",
+      label: "Global Tension",
       unit: "index",
       points: buildConflictIntensityTrend(today, -worstGoldstein),
     },
@@ -256,10 +254,17 @@ async function main() {
     pctChange: sectorQuotes[i].data.pctChangeDaily,
   }));
 
+  const allEnvelopes = [gdelt, cpi, gasCpi, gas, quakes, broadIndex, ...sectorQuotes, unemployment, wages, gdp, climate];
+  const dataQuality: DailyDigest["dataQuality"] = allEnvelopes.some((e) => e.isMock && !e.isStale)
+    ? "demo"
+    : allEnvelopes.some((e) => e.isStale)
+      ? "stale"
+      : "live";
+
   const digest: DailyDigest = {
     date: today,
     generatedAt: new Date().toISOString(),
-    isMockData,
+    dataQuality,
     lenses,
     trends,
     events,
@@ -271,7 +276,7 @@ async function main() {
   writeFileSync(join(dataDir, "latest.json"), JSON.stringify(digest, null, 2));
   writeFileSync(join(dataDir, "history", `${today}.json`), JSON.stringify(digest, null, 2));
 
-  console.log(`Wrote data/latest.json (mock=${isMockData}) for ${today}`);
+  console.log(`Wrote data/latest.json (quality=${dataQuality}) for ${today}`);
 }
 
 main().catch((err) => {

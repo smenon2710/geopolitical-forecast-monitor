@@ -1,37 +1,35 @@
 @import "tailwindcss";
 
+/*
+ * "The Briefing Room" — an instrument-panel + dossier concept. Two
+ * materials carry the whole design: warm paper (dossier pages) and dark
+ * ink (a night briefing room). Light/dark theme swaps which one is the
+ * page and which is the card — the dial gauge itself always has a dark
+ * instrument face, like a real analog gauge, regardless of theme.
+ */
 :root {
-  --page: #f9f9f7;
-  --surface: #fcfcfb;
-  --text-primary: #0b0b0b;
-  --text-secondary: #52514e;
-  --text-muted: #898781;
-  --gridline: #e1e0d9;
-  --baseline: #c3c2b7;
-  --border: rgba(11, 11, 11, 0.1);
+  --page: #f5f0e6;
+  --surface: #faf7f0;
+  --text-primary: #1f1b16;
+  --text-secondary: #5c5648;
+  --text-muted: #8c8575;
+  --gridline: #e3ddd0;
+  --baseline: #cfc7b5;
+  --border: rgba(31, 27, 22, 0.12);
 
-  --status-good: #0ca30c;
-  --status-warning: #fab219;
-  --status-serious: #ec835a;
-  --status-critical: #d03b3b;
+  --brass: #b8860b;
+  --ink-deep: #14181f;
 
-  --series-1: #2a78d6; /* blue */
-  --series-2: #1baf7a; /* aqua */
-  --series-3: #eda100; /* yellow */
-  --series-4: #008300; /* green */
-  --series-5: #4a3aa7; /* violet */
-  --series-6: #e34948; /* red */
-  --series-7: #e87ba4; /* magenta */
-  --series-8: #eb6834; /* orange */
+  --status-good: #3f8a52;
+  --status-warning: #b8860b;
+  --status-serious: #c2703d;
+  --status-critical: #a8342a;
 
-  --seq-100: #cde2fb;
-  --seq-300: #6da7ec;
-  --seq-500: #256abf;
-  --seq-700: #0d366b;
+  --div-cool: #3f8a52;
+  --div-warm: #a8342a;
+  --div-mid: #e3ddd0;
 
-  --div-cool: #2a78d6;
-  --div-warm: #e34948;
-  --div-mid: #f0efec;
+  --series-1: #b8860b;
 
   --background: var(--page);
   --foreground: var(--text-primary);
@@ -40,46 +38,64 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-plex-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --page: #0d0d0d;
-    --surface: #1a1a19;
-    --text-primary: #ffffff;
-    --text-secondary: #c3c2b7;
-    --text-muted: #898781;
-    --gridline: #2c2c2a;
-    --baseline: #383835;
-    --border: rgba(255, 255, 255, 0.1);
+    --page: #14181f;
+    --surface: #1c212b;
+    --text-primary: #f5f0e6;
+    --text-secondary: #c3bfae;
+    --text-muted: #8c8575;
+    --gridline: #2a303c;
+    --baseline: #3a4150;
+    --border: rgba(245, 240, 230, 0.12);
 
-    --status-good: #0ca30c;
-    --status-warning: #fab219;
-    --status-serious: #ec835a;
-    --status-critical: #d03b3b;
+    --brass: #c99a45;
+    --ink-deep: #0c0f14;
 
-    --series-1: #3987e5;
-    --series-2: #199e70;
-    --series-3: #c98500;
-    --series-4: #008300;
-    --series-5: #9085e9;
-    --series-6: #e66767;
-    --series-7: #d55181;
-    --series-8: #d95926;
+    --status-good: #4ba05f;
+    --status-warning: #b07d1f;
+    --status-serious: #c97a45;
+    --status-critical: #c9524a;
 
-    --div-cool: #3987e5;
-    --div-warm: #e66767;
-    --div-mid: #383835;
+    --div-cool: #4ba05f;
+    --div-warm: #c9524a;
+    --div-mid: #2a303c;
+
+    --series-1: #c99a45;
 
     --background: var(--page);
     --foreground: var(--text-primary);
   }
 }
 
+/* The dial gauge's face is fixed dark regardless of theme — an instrument
+   has its own face, independent of the room's lighting. */
+.dial-face {
+  --dial-ink: #14181f;
+  --dial-paper: #f5f0e6;
+  --dial-brass: #c99a45;
+  --dial-good: #4ba05f;
+  --dial-warning: #b07d1f;
+  --dial-serious: #c97a45;
+  --dial-critical: #c9524a;
+}
+
+.dial-needle {
+  transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .dial-needle {
+    transition: none;
+  }
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
 }

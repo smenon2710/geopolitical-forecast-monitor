@@ -6,10 +6,10 @@ import type { GeoEvent } from "@/types";
 import { SEVERITY_STATUS } from "@/types";
 
 const STATUS_COLOR_VAR: Record<string, string> = {
-  good: "#0ca30c",
-  warning: "#fab219",
-  serious: "#ec835a",
-  critical: "#d03b3b",
+  good: "#4ba05f",
+  warning: "#b07d1f",
+  serious: "#c97a45",
+  critical: "#c9524a",
 };
 
 const US_CENTER: [number, number] = [39.8283, -98.5795];

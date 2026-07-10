@@ -7,53 +7,72 @@ import { DashboardView } from "./DashboardView";
 
 type Mode = "read" | "skim";
 
+function formatDate(iso: string): string {
+  const d = new Date(iso + "T00:00:00Z");
+  return d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
+}
+
 export function HomeClient({ digest }: { digest: DailyDigest }) {
   const [mode, setMode] = useState<Mode>("skim");
 
   return (
-    <div className="flex flex-col gap-6 p-6 max-w-6xl mx-auto w-full">
-      <header className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-        <div>
-          <h1 className="text-xl font-semibold" style={{ color: "var(--text-primary)" }}>
-            Geopolitical Impact Monitor
-          </h1>
-          <p className="text-sm" style={{ color: "var(--text-muted)" }}>
-            {digest.date} · US lens
-            {digest.isMockData && (
+    <div className="min-h-full flex flex-col" style={{ background: "var(--page)" }}>
+      <div className="flex flex-col gap-8 p-6 max-w-6xl mx-auto w-full">
+        <header className="flex flex-col gap-4">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+            <div>
               <span
-                className="ml-2 rounded-full px-2 py-0.5 text-xs"
-                style={{ background: "var(--status-warning)", color: "#1a1a19" }}
+                className="text-xs uppercase tracking-[0.2em]"
+                style={{ color: "var(--brass)", fontFamily: "var(--font-mono)" }}
               >
-                One or more sources unavailable — showing mock data for those
+                Daily briefing · {formatDate(digest.date)}
               </span>
-            )}
-          </p>
-        </div>
-        <div
-          className="inline-flex rounded-md self-start"
-          style={{ border: "1px solid var(--border)", background: "var(--surface)" }}
-          role="tablist"
-          aria-label="View mode"
-        >
-          {(["skim", "read"] as const).map((m) => (
-            <button
-              key={m}
-              role="tab"
-              aria-selected={mode === m}
-              onClick={() => setMode(m)}
-              className="px-4 py-1.5 text-sm font-medium rounded-md transition-colors"
-              style={{
-                background: mode === m ? "var(--series-1)" : "transparent",
-                color: mode === m ? "#ffffff" : "var(--text-secondary)",
-              }}
-            >
-              {m === "skim" ? "Skim" : "Read"}
-            </button>
-          ))}
-        </div>
-      </header>
+              <h1
+                className="text-3xl sm:text-4xl italic leading-tight"
+                style={{ color: "var(--text-primary)", fontFamily: "var(--font-display)", fontWeight: 600 }}
+              >
+                Geopolitical Forecast Monitor
+              </h1>
+            </div>
 
-      {mode === "skim" ? <DashboardView digest={digest} /> : <DigestView digest={digest} />}
+            <div
+              className="inline-flex rounded-full self-start p-1"
+              style={{ border: "1px solid var(--border)", background: "var(--surface)" }}
+              role="tablist"
+              aria-label="View mode"
+            >
+              {(["skim", "read"] as const).map((m) => (
+                <button
+                  key={m}
+                  role="tab"
+                  aria-selected={mode === m}
+                  onClick={() => setMode(m)}
+                  className="px-4 py-1.5 text-sm font-medium rounded-full transition-colors"
+                  style={{
+                    background: mode === m ? "var(--brass)" : "transparent",
+                    color: mode === m ? "var(--ink-deep)" : "var(--text-secondary)",
+                  }}
+                >
+                  {m === "skim" ? "Skim" : "Read"}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {digest.dataQuality !== "live" && (
+            <p
+              className="text-xs rounded-md px-3 py-2 self-start"
+              style={{ background: "var(--surface)", border: "1px solid var(--border)", color: "var(--text-secondary)" }}
+            >
+              {digest.dataQuality === "stale"
+                ? "Some sources didn't respond today — showing their last known reading instead of a guess."
+                : "Some sources have no reading yet — showing placeholder demo data until the first real pull."}
+            </p>
+          )}
+        </header>
+
+        {mode === "skim" ? <DashboardView digest={digest} /> : <DigestView digest={digest} />}
+      </div>
     </div>
   );
 }
