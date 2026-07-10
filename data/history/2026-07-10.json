@@ -1,0 +1,917 @@
+{
+  "date": "2026-07-10",
+  "generatedAt": "2026-07-10T18:34:16.998Z",
+  "isMockData": true,
+  "lenses": [
+    {
+      "lens": "costOfLiving",
+      "severity": 2,
+      "oneLiner": "Cost of Living is elevated today: CPI, month-over-month 0.47% (FRED (CPIAUCSL)).",
+      "narrative": "The Consumer Price Index (CPI) rose 0.47% month-over-month, with gasoline prices dropping 1.4% weekly to $3.78 per gallon, the smallest weekly increase since 2023. Annual energy prices surged 3.88% MoM. Housing and food prices rose moderately at 0.32% and 0.16% respectively. These trends contributed to a continued \"Elevated\" cost of living reading.",
+      "metrics": [
+        {
+          "label": "CPI, month-over-month",
+          "value": "0.47%",
+          "sourceName": "FRED (CPIAUCSL)"
+        },
+        {
+          "label": "Gasoline price",
+          "value": "$3.78/gal (-1.4% wk/wk)",
+          "sourceName": "EIA"
+        },
+        {
+          "label": "Housing CPI, MoM",
+          "value": "0.32%",
+          "sourceName": "BLS"
+        },
+        {
+          "label": "Food CPI, MoM",
+          "value": "0.16%",
+          "sourceName": "BLS"
+        },
+        {
+          "label": "Energy CPI, MoM",
+          "value": "3.88%",
+          "sourceName": "BLS"
+        }
+      ]
+    },
+    {
+      "lens": "investments",
+      "severity": 1,
+      "oneLiner": "Investments & Markets is watch today: S&P 500 (SPY) daily change 0.85% (Alpha Vantage).",
+      "narrative": "S&P 500 (SPY) daily change: 0.85% (source: Alpha Vantage). Largest sector move: 2.18% (source: Alpha Vantage).",
+      "metrics": [
+        {
+          "label": "S&P 500 (SPY) daily change",
+          "value": "0.85%",
+          "sourceName": "Alpha Vantage"
+        },
+        {
+          "label": "Largest sector move",
+          "value": "2.18%",
+          "sourceName": "Alpha Vantage"
+        }
+      ]
+    },
+    {
+      "lens": "standardOfLiving",
+      "severity": 0,
+      "oneLiner": "Standard of Living is calm today: Unemployment rate change -0.10pt (FRED (UNRATE)).",
+      "narrative": "The Standard of Living section currently reads \"Calm\". Unemployment rate change: -0.10pt (source: FRED (UNRATE)).",
+      "metrics": [
+        {
+          "label": "Unemployment rate change",
+          "value": "-0.10pt",
+          "sourceName": "FRED (UNRATE)"
+        }
+      ]
+    },
+    {
+      "lens": "security",
+      "severity": 2,
+      "oneLiner": "Security is elevated today: Worst Goldstein score today -6.2 (GDELT).",
+      "narrative": "Today's security metrics show a worst Goldstein score of -6.2, per GDELT, alongside the largest recent earthquake recorded at magnitude 7.5, as per USGS. These readings indicate heightened global risk levels without specifying causes or locations. The figures solely reflect underlying data trends captured by these monitoring sources.",
+      "metrics": [
+        {
+          "label": "Worst Goldstein score today",
+          "value": "-6.2",
+          "sourceName": "GDELT"
+        },
+        {
+          "label": "Largest recent quake",
+          "value": "M7.5",
+          "sourceName": "USGS"
+        }
+      ]
+    },
+    {
+      "lens": "dailyRoutine",
+      "severity": 0,
+      "oneLiner": "Daily Routine is calm today: Gasoline price change -1.4% (EIA).",
+      "narrative": "Today's routine assessment remains calm. Gasoline price change: -1.4% (source: EIA).",
+      "metrics": [
+        {
+          "label": "Gasoline price change",
+          "value": "-1.4%",
+          "sourceName": "EIA"
+        }
+      ]
+    }
+  ],
+  "trends": [
+    {
+      "id": "cpi",
+      "label": "CPI Index",
+      "unit": "index",
+      "points": [
+        {
+          "date": "2018-12-01",
+          "value": 252.767
+        },
+        {
+          "date": "2019-01-01",
+          "value": 252.561
+        },
+        {
+          "date": "2019-02-01",
+          "value": 253.319
+        },
+        {
+          "date": "2019-03-01",
+          "value": 254.277
+        },
+        {
+          "date": "2019-04-01",
+          "value": 255.233
+        },
+        {
+          "date": "2019-05-01",
+          "value": 255.296
+        },
+        {
+          "date": "2019-06-01",
+          "value": 255.213
+        },
+        {
+          "date": "2019-07-01",
+          "value": 255.802
+        },
+        {
+          "date": "2019-08-01",
+          "value": 256.036
+        },
+        {
+          "date": "2019-09-01",
+          "value": 256.43
+        },
+        {
+          "date": "2019-10-01",
+          "value": 257.155
+        },
+        {
+          "date": "2019-11-01",
+          "value": 257.879
+        },
+        {
+          "date": "2019-12-01",
+          "value": 258.63
+        },
+        {
+          "date": "2020-01-01",
+          "value": 259.127
+        },
+        {
+          "date": "2020-02-01",
+          "value": 259.25
+        },
+        {
+          "date": "2020-03-01",
+          "value": 258.076
+        },
+        {
+          "date": "2020-04-01",
+          "value": 256.032
+        },
+        {
+          "date": "2020-05-01",
+          "value": 255.802
+        },
+        {
+          "date": "2020-06-01",
+          "value": 257.042
+        },
+        {
+          "date": "2020-07-01",
+          "value": 258.352
+        },
+        {
+          "date": "2020-08-01",
+          "value": 259.316
+        },
+        {
+          "date": "2020-09-01",
+          "value": 259.997
+        },
+        {
+          "date": "2020-10-01",
+          "value": 260.319
+        },
+        {
+          "date": "2020-11-01",
+          "value": 260.911
+        },
+        {
+          "date": "2020-12-01",
+          "value": 262.045
+        },
+        {
+          "date": "2021-01-01",
+          "value": 262.687
+        },
+        {
+          "date": "2021-02-01",
+          "value": 263.579
+        },
+        {
+          "date": "2021-03-01",
+          "value": 264.961
+        },
+        {
+          "date": "2021-04-01",
+          "value": 266.614
+        },
+        {
+          "date": "2021-05-01",
+          "value": 268.383
+        },
+        {
+          "date": "2021-06-01",
+          "value": 270.654
+        },
+        {
+          "date": "2021-07-01",
+          "value": 271.903
+        },
+        {
+          "date": "2021-08-01",
+          "value": 272.676
+        },
+        {
+          "date": "2021-09-01",
+          "value": 273.91
+        },
+        {
+          "date": "2021-10-01",
+          "value": 276.55
+        },
+        {
+          "date": "2021-11-01",
+          "value": 278.919
+        },
+        {
+          "date": "2021-12-01",
+          "value": 280.845
+        },
+        {
+          "date": "2022-01-01",
+          "value": 282.543
+        },
+        {
+          "date": "2022-02-01",
+          "value": 284.5
+        },
+        {
+          "date": "2022-03-01",
+          "value": 287.674
+        },
+        {
+          "date": "2022-04-01",
+          "value": 288.561
+        },
+        {
+          "date": "2022-05-01",
+          "value": 291.298
+        },
+        {
+          "date": "2022-06-01",
+          "value": 294.957
+        },
+        {
+          "date": "2022-07-01",
+          "value": 294.913
+        },
+        {
+          "date": "2022-08-01",
+          "value": 295.097
+        },
+        {
+          "date": "2022-09-01",
+          "value": 296.349
+        },
+        {
+          "date": "2022-10-01",
+          "value": 298.007
+        },
+        {
+          "date": "2022-11-01",
+          "value": 298.786
+        },
+        {
+          "date": "2022-12-01",
+          "value": 298.832
+        },
+        {
+          "date": "2023-01-01",
+          "value": 300.42
+        },
+        {
+          "date": "2023-02-01",
+          "value": 301.45
+        },
+        {
+          "date": "2023-03-01",
+          "value": 301.821
+        },
+        {
+          "date": "2023-04-01",
+          "value": 302.845
+        },
+        {
+          "date": "2023-05-01",
+          "value": 303.334
+        },
+        {
+          "date": "2023-06-01",
+          "value": 304.014
+        },
+        {
+          "date": "2023-07-01",
+          "value": 304.609
+        },
+        {
+          "date": "2023-08-01",
+          "value": 306.082
+        },
+        {
+          "date": "2023-09-01",
+          "value": 307.276
+        },
+        {
+          "date": "2023-10-01",
+          "value": 307.696
+        },
+        {
+          "date": "2023-11-01",
+          "value": 308.148
+        },
+        {
+          "date": "2023-12-01",
+          "value": 308.741
+        },
+        {
+          "date": "2024-01-01",
+          "value": 309.698
+        },
+        {
+          "date": "2024-02-01",
+          "value": 310.967
+        },
+        {
+          "date": "2024-03-01",
+          "value": 312.345
+        },
+        {
+          "date": "2024-04-01",
+          "value": 313.023
+        },
+        {
+          "date": "2024-05-01",
+          "value": 313.175
+        },
+        {
+          "date": "2024-06-01",
+          "value": 313.044
+        },
+        {
+          "date": "2024-07-01",
+          "value": 313.569
+        },
+        {
+          "date": "2024-08-01",
+          "value": 314.062
+        },
+        {
+          "date": "2024-09-01",
+          "value": 314.732
+        },
+        {
+          "date": "2024-10-01",
+          "value": 315.631
+        },
+        {
+          "date": "2024-11-01",
+          "value": 316.528
+        },
+        {
+          "date": "2024-12-01",
+          "value": 317.604
+        },
+        {
+          "date": "2025-01-01",
+          "value": 318.961
+        },
+        {
+          "date": "2025-02-01",
+          "value": 319.679
+        },
+        {
+          "date": "2025-03-01",
+          "value": 319.785
+        },
+        {
+          "date": "2025-04-01",
+          "value": 320.302
+        },
+        {
+          "date": "2025-05-01",
+          "value": 320.62
+        },
+        {
+          "date": "2025-06-01",
+          "value": 321.435
+        },
+        {
+          "date": "2025-07-01",
+          "value": 322.169
+        },
+        {
+          "date": "2025-08-01",
+          "value": 323.291
+        },
+        {
+          "date": "2025-09-01",
+          "value": 324.245
+        },
+        {
+          "date": "2025-11-01",
+          "value": 325.063
+        },
+        {
+          "date": "2025-12-01",
+          "value": 326.031
+        },
+        {
+          "date": "2026-01-01",
+          "value": 326.588
+        },
+        {
+          "date": "2026-02-01",
+          "value": 327.46
+        },
+        {
+          "date": "2026-03-01",
+          "value": 330.293
+        },
+        {
+          "date": "2026-04-01",
+          "value": 332.407
+        },
+        {
+          "date": "2026-05-01",
+          "value": 333.979
+        }
+      ]
+    },
+    {
+      "id": "gas",
+      "label": "Gasoline Price",
+      "unit": "$/gal",
+      "points": [
+        {
+          "date": "2026-04-13",
+          "value": 4.123
+        },
+        {
+          "date": "2026-04-20",
+          "value": 4.044
+        },
+        {
+          "date": "2026-04-27",
+          "value": 4.123
+        },
+        {
+          "date": "2026-05-04",
+          "value": 4.452
+        },
+        {
+          "date": "2026-05-11",
+          "value": 4.5
+        },
+        {
+          "date": "2026-05-18",
+          "value": 4.49
+        },
+        {
+          "date": "2026-05-25",
+          "value": 4.475
+        },
+        {
+          "date": "2026-06-01",
+          "value": 4.305
+        },
+        {
+          "date": "2026-06-08",
+          "value": 4.146
+        },
+        {
+          "date": "2026-06-15",
+          "value": 4.052
+        },
+        {
+          "date": "2026-06-22",
+          "value": 3.914
+        },
+        {
+          "date": "2026-06-29",
+          "value": 3.831
+        },
+        {
+          "date": "2026-07-06",
+          "value": 3.777
+        }
+      ]
+    },
+    {
+      "id": "conflict",
+      "label": "Conflict Intensity (GDELT)",
+      "unit": "index",
+      "points": [
+        {
+          "date": "2026-06-11",
+          "value": 0
+        },
+        {
+          "date": "2026-06-12",
+          "value": 0.5
+        },
+        {
+          "date": "2026-06-13",
+          "value": 1
+        },
+        {
+          "date": "2026-06-14",
+          "value": 1.47
+        },
+        {
+          "date": "2026-06-15",
+          "value": 1.9
+        },
+        {
+          "date": "2026-06-16",
+          "value": 2.3
+        },
+        {
+          "date": "2026-06-17",
+          "value": 2.64
+        },
+        {
+          "date": "2026-06-18",
+          "value": 2.92
+        },
+        {
+          "date": "2026-06-19",
+          "value": 3.15
+        },
+        {
+          "date": "2026-06-20",
+          "value": 3.32
+        },
+        {
+          "date": "2026-06-21",
+          "value": 3.43
+        },
+        {
+          "date": "2026-06-22",
+          "value": 3.49
+        },
+        {
+          "date": "2026-06-23",
+          "value": 3.49
+        },
+        {
+          "date": "2026-06-24",
+          "value": 3.46
+        },
+        {
+          "date": "2026-06-25",
+          "value": 3.4
+        },
+        {
+          "date": "2026-06-26",
+          "value": 3.31
+        },
+        {
+          "date": "2026-06-27",
+          "value": 3.22
+        },
+        {
+          "date": "2026-06-28",
+          "value": 3.13
+        },
+        {
+          "date": "2026-06-29",
+          "value": 3.06
+        },
+        {
+          "date": "2026-06-30",
+          "value": 3.01
+        },
+        {
+          "date": "2026-07-01",
+          "value": 3
+        },
+        {
+          "date": "2026-07-02",
+          "value": 3.03
+        },
+        {
+          "date": "2026-07-03",
+          "value": 3.12
+        },
+        {
+          "date": "2026-07-04",
+          "value": 3.26
+        },
+        {
+          "date": "2026-07-05",
+          "value": 3.47
+        },
+        {
+          "date": "2026-07-06",
+          "value": 3.73
+        },
+        {
+          "date": "2026-07-07",
+          "value": 4.05
+        },
+        {
+          "date": "2026-07-08",
+          "value": 4.42
+        },
+        {
+          "date": "2026-07-09",
+          "value": 4.84
+        },
+        {
+          "date": "2026-07-10",
+          "value": 6.2
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "gdelt-mock-1",
+      "date": "2026-07-10",
+      "title": "Naval patrols increase near contested shipping lane",
+      "description": "Avg tone -4.1, 342 mentions.",
+      "lat": 12.5,
+      "lon": 108,
+      "severity": 2,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -6.2,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://example.com/mock-gdelt-1"
+    },
+    {
+      "id": "gdelt-mock-2",
+      "date": "2026-07-10",
+      "title": "Trade ministers announce new tariff exemption talks",
+      "description": "Avg tone 2.4, 118 mentions.",
+      "lat": 50.85,
+      "lon": 4.35,
+      "severity": 2,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.1,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://example.com/mock-gdelt-2"
+    },
+    {
+      "id": "uw714040221",
+      "date": "2026-07-02",
+      "title": "M3.8 earthquake — 2 km E of Oak Harbor, Washington",
+      "description": "Magnitude 3.8 recorded 2026-07-02T06:35:47.600Z.",
+      "lat": 48.2888333333333,
+      "lon": -122.6065,
+      "severity": 1,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us6000t9bg",
+      "date": "2026-06-30",
+      "title": "M5.3 earthquake — 272 km SSE of Dunhuang, China",
+      "description": "Magnitude 5.3 recorded 2026-06-30T23:44:54.898Z.",
+      "lat": 37.7819,
+      "lon": 95.4116,
+      "severity": 2,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "aka2026mpitdk",
+      "date": "2026-06-27",
+      "title": "M4.2 earthquake — 27 km WNW of Hope, Alaska",
+      "description": "Magnitude 4.2 recorded 2026-06-27T05:25:52.321Z.",
+      "lat": 60.989,
+      "lon": -150.125,
+      "severity": 1,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us6000t8ec",
+      "date": "2026-06-26",
+      "title": "M6.5 earthquake — 34 km WSW of Sarangani, Philippines",
+      "description": "Magnitude 6.5 recorded 2026-06-26T11:34:41.498Z.",
+      "lat": 5.2392,
+      "lon": 125.1965,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us6000t7zq",
+      "date": "2026-06-24",
+      "title": "M6.9 earthquake — 33 km ENE of Noda, Japan",
+      "description": "Magnitude 6.9 recorded 2026-06-24T22:30:12.989Z.",
+      "lat": 40.2515,
+      "lon": 142.1614,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us6000t7zp",
+      "date": "2026-06-24",
+      "title": "M7.5 earthquake — 20 km ESE of Yumare, Venezuela",
+      "description": "Magnitude 7.5 recorded 2026-06-24T22:05:11.743Z.",
+      "lat": 10.5086,
+      "lon": -68.5036,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us6000t7zc",
+      "date": "2026-06-24",
+      "title": "M7.2 earthquake — 21 km ENE of San Felipe, Venezuela",
+      "description": "Magnitude 7.2 recorded 2026-06-24T22:04:34.363Z.",
+      "lat": 10.4085,
+      "lon": -68.5571,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "nc75382936",
+      "date": "2026-06-24",
+      "title": "M5.6 earthquake — 11 km N of Redwood Valley, CA",
+      "description": "Magnitude 5.59 recorded 2026-06-24T15:10:40.760Z.",
+      "lat": 39.3623333333333,
+      "lon": -123.228833333333,
+      "severity": 2,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us7000sui3",
+      "date": "2026-06-19",
+      "title": "M6.6 earthquake — 133 km ESE of Petropavlovsk-Kamchatsky, Russia",
+      "description": "Magnitude 6.6 recorded 2026-06-19T06:52:31.597Z.",
+      "lat": 52.7943,
+      "lon": 160.5652,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us7000stti",
+      "date": "2026-06-17",
+      "title": "M6.6 earthquake — central Mid-Atlantic Ridge",
+      "description": "Magnitude 6.6 recorded 2026-06-17T18:56:58.028Z.",
+      "lat": -0.5458,
+      "lon": -20.0163,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us7000stcs",
+      "date": "2026-06-16",
+      "title": "M5.4 earthquake — 272 km S of Dunhuang, China",
+      "description": "Magnitude 5.4 recorded 2026-06-16T09:45:26.194Z.",
+      "lat": 37.7544,
+      "lon": 95.2738,
+      "severity": 2,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us7000stbz",
+      "date": "2026-06-16",
+      "title": "M6.3 earthquake — 262 km SSE of Dunhuang, China",
+      "description": "Magnitude 6.3 recorded 2026-06-16T09:06:55.517Z.",
+      "lat": 37.888,
+      "lon": 95.4919,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us7000st95",
+      "date": "2026-06-16",
+      "title": "M6.7 earthquake — 42 km SE of Palu, Indonesia",
+      "description": "Magnitude 6.7 recorded 2026-06-16T03:27:44.379Z.",
+      "lat": -1.1245,
+      "lon": 120.1842,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us7000st41",
+      "date": "2026-06-15",
+      "title": "M2.4 earthquake — 8 km NE of Bel Air North, Maryland",
+      "description": "Magnitude 2.4 recorded 2026-06-15T15:02:24.168Z.",
+      "lat": 39.6177,
+      "lon": -76.3094,
+      "severity": 1,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us7000st1c",
+      "date": "2026-06-15",
+      "title": "M6.2 earthquake — 68 km ESE of Pondaguitan, Philippines",
+      "description": "Magnitude 6.2 recorded 2026-06-15T09:18:36.126Z.",
+      "lat": 6.2076,
+      "lon": 126.7773,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    }
+  ],
+  "sectors": [
+    {
+      "sector": "Energy",
+      "pctChange": -1.4029
+    },
+    {
+      "sector": "Technology",
+      "pctChange": 2.1775
+    },
+    {
+      "sector": "Agriculture",
+      "pctChange": 0.3259
+    },
+    {
+      "sector": "Defense",
+      "pctChange": -0.0042
+    },
+    {
+      "sector": "Consumer Goods",
+      "pctChange": -1.4101
+    }
+  ]
+}
