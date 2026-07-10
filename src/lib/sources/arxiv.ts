@@ -1,3 +1,4 @@
+import { fetchWithTimeout } from "../fetchWithTimeout";
 import { envelope, isForceMock, type SourceEnvelope } from "./types";
 
 /** arXiv API — fully keyless, free. https://arxiv.org/help/api */
@@ -16,7 +17,7 @@ export async function fetchRecentPapers(searchQuery: string): Promise<SourceEnve
 
   try {
     const url = `${ARXIV_BASE}?search_query=${encodeURIComponent(searchQuery)}&sortBy=submittedDate&sortOrder=descending&max_results=10`;
-    const res = await fetch(url);
+    const res = await fetchWithTimeout(url);
     if (!res.ok) throw new Error(`arXiv fetch failed: ${res.status}`);
     const xml = await res.text();
     // TODO: arXiv returns Atom XML, not JSON — parse entries into ArxivPaper[]

@@ -1,3 +1,4 @@
+import { fetchWithTimeout } from "../fetchWithTimeout";
 import { envelope, isForceMock, type SourceEnvelope } from "./types";
 
 /**
@@ -23,7 +24,7 @@ export async function fetchGdeltEvents(query: string): Promise<SourceEnvelope<Gd
 
   try {
     const url = `${GDELT_DOC_API}?query=${encodeURIComponent(query)}&mode=artlist&format=json&maxrecords=50`;
-    const res = await fetch(url);
+    const res = await fetchWithTimeout(url);
     if (!res.ok) throw new Error(`GDELT fetch failed: ${res.status}`);
     const json = await res.json();
     // TODO: map GDELT's raw article list shape into GdeltEvent[] (title/url/tone

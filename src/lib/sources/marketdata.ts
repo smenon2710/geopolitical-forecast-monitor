@@ -1,3 +1,4 @@
+import { fetchWithTimeout } from "../fetchWithTimeout";
 import { envelope, isForceMock, type SourceEnvelope } from "./types";
 
 /**
@@ -21,7 +22,7 @@ export async function fetchDailyQuote(symbol: string): Promise<SourceEnvelope<Ma
 
   try {
     const url = `${ALPHA_VANTAGE_BASE}?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${apiKey}`;
-    const res = await fetch(url);
+    const res = await fetchWithTimeout(url);
     if (!res.ok) throw new Error(`Alpha Vantage fetch failed for ${symbol}: ${res.status}`);
     const json = await res.json();
     // Rate limiting comes back as HTTP 200 with a "Note"/"Information" field

@@ -1,3 +1,4 @@
+import { fetchWithTimeout } from "../fetchWithTimeout";
 import { envelope, isForceMock, type SourceEnvelope } from "./types";
 
 /**
@@ -26,7 +27,7 @@ export async function fetchBlsCpiBreakdown(): Promise<SourceEnvelope<BlsCpiBreak
   if (isForceMock()) return envelope(mockBreakdown(), true);
 
   try {
-    const res = await fetch(BLS_V1_BASE, {
+    const res = await fetchWithTimeout(BLS_V1_BASE, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ seriesid: SERIES.map((s) => s.seriesId) }),

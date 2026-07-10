@@ -1,3 +1,4 @@
+import { fetchWithTimeout } from "../fetchWithTimeout";
 import { envelope, isForceMock, type SourceEnvelope } from "./types";
 
 /**
@@ -20,7 +21,7 @@ export async function fetchFredSeries(seriesId: string): Promise<SourceEnvelope<
     // ascending (oldest-first) so callers can rely on .at(-1) being latest,
     // matching mockSeries()'s ordering.
     const url = `${FRED_BASE}?series_id=${seriesId}&api_key=${apiKey}&file_type=json&sort_order=desc&limit=90`;
-    const res = await fetch(url);
+    const res = await fetchWithTimeout(url);
     if (!res.ok) throw new Error(`FRED fetch failed for ${seriesId}: ${res.status}`);
     const json = await res.json();
     const points: FredSeriesPoint[] = (json.observations ?? [])
@@ -34,10 +35,15 @@ export async function fetchFredSeries(seriesId: string): Promise<SourceEnvelope<
   }
 }
 
-/** CPIAUCSL (CPI), UNRATE (unemployment), GDPC1 (real GDP) are the series used by the scoring lenses. */
+/**
+ * CPIAUCSL (CPI), UNRATE (unemployment), GDPC1 (real GDP), and
+ * CES0500000003 (average hourly earnings) are the series used by the
+ * scoring lenses.
+ */
 function mockSeries(seriesId: string): FredSeriesPoint[] {
   const today = new Date();
-  const base = seriesId === "UNRATE" ? 4.1 : seriesId === "GDPC1" ? 23500 : 314.2;
+  const base =
+    seriesId === "UNRATE" ? 4.1 : seriesId === "GDPC1" ? 23500 : seriesId === "CES0500000003" ? 35.5 : 314.2;
   return Array.from({ length: 90 }, (_, i) => {
     const d = new Date(today);
     d.setDate(d.getDate() - (89 - i));

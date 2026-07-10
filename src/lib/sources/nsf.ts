@@ -1,3 +1,4 @@
+import { fetchWithTimeout } from "../fetchWithTimeout";
 import { envelope, isForceMock, type SourceEnvelope } from "./types";
 
 /** NSF Award Search API — fully keyless, free. https://www.research.gov/common/webapi/awardapisearch-v1.htm */
@@ -16,7 +17,7 @@ export async function fetchRecentAwards(keyword: string): Promise<SourceEnvelope
 
   try {
     const url = `${NSF_BASE}?keyword=${encodeURIComponent(keyword)}&printFields=id,title,fundsObligatedAmt,startDate,fundingOrg`;
-    const res = await fetch(url);
+    const res = await fetchWithTimeout(url);
     if (!res.ok) throw new Error(`NSF fetch failed: ${res.status}`);
     const json = await res.json();
     return envelope(json.response?.award ?? [], false);

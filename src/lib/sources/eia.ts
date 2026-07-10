@@ -1,3 +1,4 @@
+import { fetchWithTimeout } from "../fetchWithTimeout";
 import { envelope, isForceMock, type SourceEnvelope } from "./types";
 
 /**
@@ -25,7 +26,7 @@ export async function fetchEiaGasolinePrice(): Promise<SourceEnvelope<EiaPricePo
       `${EIA_BASE}/petroleum/pri/gnd/data/?api_key=${apiKey}&frequency=weekly&data[0]=value` +
       `&facets[duoarea][]=NUS&facets[product][]=EPMR` +
       `&sort[0][column]=period&sort[0][direction]=desc&length=13`;
-    const res = await fetch(url);
+    const res = await fetchWithTimeout(url);
     if (!res.ok) throw new Error(`EIA fetch failed: ${res.status}`);
     const json = await res.json();
     // API returns newest-first; reverse to ascending so .at(-1) is latest,

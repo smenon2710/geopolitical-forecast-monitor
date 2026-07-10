@@ -1,3 +1,4 @@
+import { fetchWithTimeout } from "../fetchWithTimeout";
 import { envelope, isForceMock, type SourceEnvelope } from "./types";
 
 /**
@@ -19,7 +20,7 @@ export async function fetchClimateAlerts(): Promise<SourceEnvelope<ClimateAlert[
   if (isForceMock() || !token) return envelope(mockAlerts(), true);
 
   try {
-    const res = await fetch(`${NOAA_BASE}?datasetid=GHCND&limit=25`, {
+    const res = await fetchWithTimeout(`${NOAA_BASE}?datasetid=GHCND&limit=25`, {
       headers: { token },
     });
     if (!res.ok) throw new Error(`NOAA fetch failed: ${res.status}`);

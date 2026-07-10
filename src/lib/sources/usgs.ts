@@ -1,3 +1,4 @@
+import { fetchWithTimeout } from "../fetchWithTimeout";
 import { envelope, isForceMock, type SourceEnvelope } from "./types";
 
 /**
@@ -19,7 +20,7 @@ export async function fetchSignificantQuakes(): Promise<SourceEnvelope<QuakeEven
   if (isForceMock()) return envelope(mockQuakes(), true);
 
   try {
-    const res = await fetch(USGS_FEED);
+    const res = await fetchWithTimeout(USGS_FEED);
     if (!res.ok) throw new Error(`USGS fetch failed: ${res.status}`);
     const json = await res.json();
     const quakes: QuakeEvent[] = (json.features ?? []).map(

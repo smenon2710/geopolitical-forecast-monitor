@@ -1,3 +1,4 @@
+import { fetchWithTimeout } from "./fetchWithTimeout";
 import type { CitedMetric, Lens, LensReading, Severity } from "@/types";
 import { LENS_LABELS, SEVERITY_LABEL } from "@/types";
 
@@ -57,7 +58,7 @@ export async function synthesizeWithLlm(
     `Write in plain, non-partisan language — restating and lightly connecting these data points is fine; adding anything beyond them is not.`;
 
   try {
-    const res = await fetch(OPENROUTER_BASE, {
+    const res = await fetchWithTimeout(OPENROUTER_BASE, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${apiKey}`,

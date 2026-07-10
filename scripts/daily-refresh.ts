@@ -19,6 +19,7 @@ import { fetchFredSeries } from "../src/lib/sources/fred";
 import { fetchBlsCpiBreakdown } from "../src/lib/sources/bls";
 import { fetchEiaGasolinePrice } from "../src/lib/sources/eia";
 import { fetchSignificantQuakes } from "../src/lib/sources/usgs";
+import { fetchClimateAlerts } from "../src/lib/sources/noaa";
 import { fetchDailyQuote, type MarketQuote } from "../src/lib/sources/marketdata";
 import type { SourceEnvelope } from "../src/lib/sources/types";
 
@@ -56,6 +57,42 @@ function buildConflictIntensityTrend(referenceDate: string, todayValue: number) 
     const value = i === days - 1 ? todayValue : Number(drift.toFixed(2));
     return { date: d.toISOString().slice(0, 10), value };
   });
+}
+
+function yearMonth(dateStr: string): string {
+  return dateStr.slice(0, 7);
+}
+
+/**
+ * Real wage growth = wage growth − CPI growth for the same month. Walks
+ * backward from the most recent month shared by both series and counts how
+ * many consecutive months (from today back) it's been negative, stopping at
+ * the first non-negative month — that streak is what the rubric's "real
+ * wages negative for 2+ consecutive months" threshold checks against.
+ */
+function trailingNegativeRealWageMonths(
+  cpiPoints: { date: string; value: number }[],
+  wagePoints: { date: string; value: number }[]
+): { streak: number; latestPct: number | null } {
+  const cpiByMonth = new Map(cpiPoints.map((p) => [yearMonth(p.date), p.value]));
+  const wageByMonth = new Map(wagePoints.map((p) => [yearMonth(p.date), p.value]));
+  const months = [...wageByMonth.keys()].filter((m) => cpiByMonth.has(m)).sort();
+
+  let streak = 0;
+  let latestPct: number | null = null;
+  for (let i = months.length - 1; i > 0; i--) {
+    const cpiNow = cpiByMonth.get(months[i])!;
+    const cpiPrev = cpiByMonth.get(months[i - 1])!;
+    const wageNow = wageByMonth.get(months[i])!;
+    const wagePrev = wageByMonth.get(months[i - 1])!;
+    const cpiGrowthPct = ((cpiNow - cpiPrev) / cpiPrev) * 100;
+    const wageGrowthPct = ((wageNow - wagePrev) / wagePrev) * 100;
+    const realWageGrowthPct = wageGrowthPct - cpiGrowthPct;
+    if (latestPct === null) latestPct = realWageGrowthPct;
+    if (realWageGrowthPct < 0) streak++;
+    else break;
+  }
+  return { streak, latestPct };
 }
 
 async function main() {
@@ -113,11 +150,44 @@ async function main() {
   ];
 
   // --- Standard of Living ---
-  const unemployment = await fetchFredSeries("UNRATE");
+  const [unemployment, wages, gdp, climate] = await Promise.all([
+    fetchFredSeries("UNRATE"),
+    fetchFredSeries("CES0500000003"), // avg hourly earnings, total private, monthly
+    fetchFredSeries("GDPC1"), // real GDP, quarterly (chained dollars)
+    fetchClimateAlerts(),
+  ]);
   const unemploymentDeltaPts = unemployment.data.at(-1)!.value - unemployment.data.at(-2)!.value;
-  const standardOfLivingSeverity = scoreStandardOfLiving({ unemploymentDeltaPts, realWageNegativeMonths: 0 });
+  const { streak: realWageNegativeMonths, latestPct: realWageGrowthPct } = trailingNegativeRealWageMonths(
+    cpi.data,
+    wages.data
+  );
+  const gdpLatest = gdp.data.at(-1);
+  const gdpPrev = gdp.data.at(-2);
+  const gdpQoQPct = gdpLatest && gdpPrev ? ((gdpLatest.value - gdpPrev.value) / gdpPrev.value) * 100 : 0;
+  const gdpContraction = gdpQoQPct < 0;
+  // NOTE: fetchClimateAlerts() only classifies severity in mock mode today —
+  // the real NOAA CDO endpoint returns raw observations (see the TODO in
+  // src/lib/sources/noaa.ts), so this will conservatively never fire against
+  // live data until that threshold-classification pass is built.
+  const majorDisaster = climate.data.find((a) => a.severity === "widespread");
+
+  const standardOfLivingSeverity = scoreStandardOfLiving({
+    unemploymentDeltaPts,
+    realWageNegativeMonths,
+    gdpContraction,
+    majorDisasterDeclared: !!majorDisaster,
+  });
   const standardOfLivingMetrics: CitedMetric[] = [
     { label: "Unemployment rate change", value: `${unemploymentDeltaPts >= 0 ? "+" : ""}${unemploymentDeltaPts.toFixed(2)}pt`, sourceName: "FRED (UNRATE)" },
+    {
+      label: "Real wage growth (latest month)",
+      value: realWageGrowthPct === null ? "n/a" : `${realWageGrowthPct >= 0 ? "+" : ""}${realWageGrowthPct.toFixed(2)}pt vs CPI`,
+      sourceName: "FRED (wages CES0500000003 vs CPI)",
+    },
+    { label: "Real GDP, quarter-over-quarter", value: `${gdpQoQPct >= 0 ? "+" : ""}${gdpQoQPct.toFixed(2)}%`, sourceName: "FRED (GDPC1)" },
+    ...(majorDisaster
+      ? [{ label: "Climate disaster declared", value: `${majorDisaster.event} — ${majorDisaster.area}`, sourceName: "NOAA" }]
+      : []),
   ];
 
   // --- Security ---

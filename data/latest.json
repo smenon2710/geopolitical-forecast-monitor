@@ -1,13 +1,13 @@
 {
   "date": "2026-07-10",
-  "generatedAt": "2026-07-10T19:10:32.698Z",
+  "generatedAt": "2026-07-10T19:26:22.103Z",
   "isMockData": true,
   "lenses": [
     {
       "lens": "costOfLiving",
       "severity": 2,
       "oneLiner": "Cost of Living is elevated today: CPI, month-over-month 0.47% (FRED (CPIAUCSL)).",
-      "narrative": "The consumer price index rose 0.47% month over month, with housing up 0.32% and food up 0.16%. Energy prices increased 3.88% month over month, while gasoline fell 1.4% week over week to $3.78 per gallon.",
+      "narrative": "The overall CPI rose 0.47% month-over-month, with Energy CPI seeing a significant increase of 3.88%. Housing CPI also contributed to this rise, up 0.32% month-over-month, while Food CPI saw a smaller increase of 0.16%. Gasoline prices decreased 1.4% week-over-week to $3.78/gal.",
       "metrics": [
         {
           "label": "CPI, month-over-month",
@@ -38,32 +38,47 @@
     },
     {
       "lens": "investments",
-      "severity": 1,
-      "oneLiner": "Investments & Markets is watch today: S&P 500 (SPY) daily change 0.85% (Alpha Vantage).",
-      "narrative": "The S&P 500 (SPY) daily change was 0.85%. The largest sector move was 2.18%.",
+      "severity": 2,
+      "oneLiner": "Investments & Markets is elevated today: S&P 500 (SPY) daily change -2.30% (Alpha Vantage).",
+      "narrative": "The S&P 500 experienced a daily change of -2.30%. The largest sector move observed was 2.40%.",
       "metrics": [
         {
           "label": "S&P 500 (SPY) daily change",
-          "value": "0.85%",
+          "value": "-2.30%",
           "sourceName": "Alpha Vantage"
         },
         {
           "label": "Largest sector move",
-          "value": "2.18%",
+          "value": "2.40%",
           "sourceName": "Alpha Vantage"
         }
       ]
     },
     {
       "lens": "standardOfLiving",
-      "severity": 0,
-      "oneLiner": "Standard of Living is calm today: Unemployment rate change -0.10pt (FRED (UNRATE)).",
-      "narrative": "The unemployment rate changed by -0.10pt. The data come from FRED (UNRATE).",
+      "severity": 3,
+      "oneLiner": "Standard of Living is high today: Unemployment rate change -0.10pt (FRED (UNRATE)).",
+      "narrative": "The unemployment rate changed by -0.10pt, while real GDP grew by +0.52% quarter-over-quarter. However, real wage growth was -0.21pt versus CPI. An excessive heat warning was declared for Phoenix, AZ metro.",
       "metrics": [
         {
           "label": "Unemployment rate change",
           "value": "-0.10pt",
           "sourceName": "FRED (UNRATE)"
+        },
+        {
+          "label": "Real wage growth (latest month)",
+          "value": "-0.21pt vs CPI",
+          "sourceName": "FRED (wages CES0500000003 vs CPI)"
+        },
+        {
+          "label": "Real GDP, quarter-over-quarter",
+          "value": "+0.52%",
+          "sourceName": "FRED (GDPC1)"
+        },
+        {
+          "label": "Climate disaster declared",
+          "value": "Excessive heat warning — Phoenix, AZ metro",
+          "sourceName": "NOAA"
         }
       ]
     },
@@ -71,7 +86,7 @@
       "lens": "security",
       "severity": 2,
       "oneLiner": "Security is elevated today: Worst Goldstein score today -6.2 (GDELT).",
-      "narrative": "The worst Goldstein score today at -6.2 and a recent M7.5 earthquake have contributed to the elevated security level. These events reflect heightened global tensions and natural disaster risks, prompting increased monitoring and preparedness measures.",
+      "narrative": "The Goldstein score reached -6.2 today, indicating heightened global tensions. This coincides with a significant seismic event, a M7.5 earthquake.",
       "metrics": [
         {
           "label": "Worst Goldstein score today",
@@ -89,7 +104,7 @@
       "lens": "dailyRoutine",
       "severity": 0,
       "oneLiner": "Daily Routine is calm today: Gasoline price change -1.4% (EIA).",
-      "narrative": "Gasoline prices decreased by 1.4% according to EIA data. This change is part of the current calm in the daily routine. No additional context or analysis is provided beyond the stated figure.",
+      "narrative": "Gasoline prices saw a -1.4% change. This data point is from the EIA.",
       "metrics": [
         {
           "label": "Gasoline price change",
@@ -895,23 +910,23 @@
   "sectors": [
     {
       "sector": "Energy",
-      "pctChange": -1.4029
+      "pctChange": 0.8
     },
     {
       "sector": "Technology",
-      "pctChange": 2.1775
+      "pctChange": 1.4
     },
     {
       "sector": "Agriculture",
-      "pctChange": 0.3259
+      "pctChange": 2.4
     },
     {
       "sector": "Defense",
-      "pctChange": -0.0042
+      "pctChange": -0.3
     },
     {
       "sector": "Consumer Goods",
-      "pctChange": -1.4101
+      "pctChange": 1.9
     }
   ]
 }

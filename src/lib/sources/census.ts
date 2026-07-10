@@ -1,3 +1,4 @@
+import { fetchWithTimeout } from "../fetchWithTimeout";
 import { envelope, isForceMock, type SourceEnvelope } from "./types";
 
 /**
@@ -21,7 +22,7 @@ export async function fetchTradeFlows(hsCodes: string[]): Promise<SourceEnvelope
   try {
     const apiKey = process.env.CENSUS_API_KEY;
     const url = `${CENSUS_BASE}?get=GEN_VAL_MO,CTY_NAME&YEAR=2026&I_COMMODITY=${hsCodes.join(",")}${apiKey ? `&key=${apiKey}` : ""}`;
-    const res = await fetch(url);
+    const res = await fetchWithTimeout(url);
     if (!res.ok) throw new Error(`Census fetch failed: ${res.status}`);
     const json = await res.json();
     // TODO: Census returns array-of-arrays with header row; map into TradeFlow[]
