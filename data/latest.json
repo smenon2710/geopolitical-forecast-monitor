@@ -1,13 +1,13 @@
 {
   "date": "2026-07-10",
-  "generatedAt": "2026-07-10T18:34:16.998Z",
+  "generatedAt": "2026-07-10T18:45:32.445Z",
   "isMockData": true,
   "lenses": [
     {
       "lens": "costOfLiving",
       "severity": 2,
       "oneLiner": "Cost of Living is elevated today: CPI, month-over-month 0.47% (FRED (CPIAUCSL)).",
-      "narrative": "The Consumer Price Index (CPI) rose 0.47% month-over-month, with gasoline prices dropping 1.4% weekly to $3.78 per gallon, the smallest weekly increase since 2023. Annual energy prices surged 3.88% MoM. Housing and food prices rose moderately at 0.32% and 0.16% respectively. These trends contributed to a continued \"Elevated\" cost of living reading.",
+      "narrative": "Cost of living remains elevated as the overall CPI increased 0.47% month-over-month, with housing up 0.32% and food up 0.16%. Gasoline prices held at $3.78/gal, -1.4% wk/wk, while energy CPI rose 3.88% month-over-month.",
       "metrics": [
         {
           "label": "CPI, month-over-month",
@@ -40,7 +40,7 @@
       "lens": "investments",
       "severity": 1,
       "oneLiner": "Investments & Markets is watch today: S&P 500 (SPY) daily change 0.85% (Alpha Vantage).",
-      "narrative": "S&P 500 (SPY) daily change: 0.85% (source: Alpha Vantage). Largest sector move: 2.18% (source: Alpha Vantage).",
+      "narrative": "The S&P 500 (SPY) daily change is 0.85% and the largest sector move is 2.18%. Investments & Markets remains Watch.",
       "metrics": [
         {
           "label": "S&P 500 (SPY) daily change",
@@ -58,7 +58,7 @@
       "lens": "standardOfLiving",
       "severity": 0,
       "oneLiner": "Standard of Living is calm today: Unemployment rate change -0.10pt (FRED (UNRATE)).",
-      "narrative": "The Standard of Living section currently reads \"Calm\". Unemployment rate change: -0.10pt (source: FRED (UNRATE)).",
+      "narrative": "Standard of Living reads calm. Unemployment rate change is -0.10pt, per FRED (UNRATE).",
       "metrics": [
         {
           "label": "Unemployment rate change",
@@ -71,7 +71,7 @@
       "lens": "security",
       "severity": 2,
       "oneLiner": "Security is elevated today: Worst Goldstein score today -6.2 (GDELT).",
-      "narrative": "Today's security metrics show a worst Goldstein score of -6.2, per GDELT, alongside the largest recent earthquake recorded at magnitude 7.5, as per USGS. These readings indicate heightened global risk levels without specifying causes or locations. The figures solely reflect underlying data trends captured by these monitoring sources.",
+      "narrative": "The Security section is Elevated today, marked by a Goldstein score of -6.2 and a recent M7.5 earthquake. These events are noted in the current security assessment without implying causation or specific origins.",
       "metrics": [
         {
           "label": "Worst Goldstein score today",
@@ -89,7 +89,7 @@
       "lens": "dailyRoutine",
       "severity": 0,
       "oneLiner": "Daily Routine is calm today: Gasoline price change -1.4% (EIA).",
-      "narrative": "Today's routine assessment remains calm. Gasoline price change: -1.4% (source: EIA).",
+      "narrative": "Gasoline prices fell by 1.4% according to the EIA. The daily routine remains calm.",
       "metrics": [
         {
           "label": "Gasoline price change",
@@ -907,11 +907,11 @@
     },
     {
       "sector": "Defense",
-      "pctChange": -0.0042
+      "pctChange": -0.3
     },
     {
       "sector": "Consumer Goods",
-      "pctChange": -1.4101
+      "pctChange": 1.9
     }
   ]
 }

@@ -44,12 +44,17 @@ export async function synthesizeWithLlm(
 
   const label = LENS_LABELS[lens];
   const severityWord = SEVERITY_LABEL[severity];
+  const metricLines = metrics.map((m) => `- ${m.label}: ${m.value} (source: ${m.sourceName})`).join("\n");
   const prompt =
     `You are writing one short paragraph (2-3 sentences) for a daily geopolitical impact monitor's "${label}" section, ` +
-    `currently reading "${severityWord}". Cite ONLY the following data points, verbatim — never introduce a number, ` +
-    `event, or source that isn't in this list:\n` +
-    metrics.map((m) => `- ${m.label}: ${m.value} (source: ${m.sourceName})`).join("\n") +
-    `\n\nWrite in plain, non-partisan language. No speculation beyond what these numbers show.`;
+    `currently reading "${severityWord}". Here is the ONLY data you may reference:\n${metricLines}\n\n` +
+    `Hard rules — breaking any of these makes the output unusable:\n` +
+    `1. Every number in your output must be one of the numbers listed above, unchanged. Do not compute, round, convert, or restate a number in different units.\n` +
+    `2. Do not add any date, year, historical comparison, or trend claim ("since 2023", "the smallest in five years", "record high", "for the first time") unless that exact comparison appears in the data above. You do not know history beyond what's listed — do not imply that you do.\n` +
+    `3. Do not name a specific cause, country, company, or event that isn't in the data above.\n` +
+    `4. Do not add qualifiers implying certainty about direction or causality beyond the bare numbers ("driven by", "due to", "signals a trend").\n` +
+    `5. If you are unsure whether a sentence is fully supported by the data above, cut it.\n\n` +
+    `Write in plain, non-partisan language — restating and lightly connecting these data points is fine; adding anything beyond them is not.`;
 
   try {
     const res = await fetch(OPENROUTER_BASE, {
@@ -61,14 +66,41 @@ export async function synthesizeWithLlm(
       body: JSON.stringify({
         model: process.env.OPENROUTER_MODEL || DEFAULT_MODEL,
         messages: [{ role: "user", content: prompt }],
+        temperature: 0,
       }),
     });
     if (!res.ok) return fallback;
     const json = await res.json();
     const narrative: string | undefined = json.choices?.[0]?.message?.content?.trim();
     if (!narrative) return fallback;
+    if (!isGroundedInMetrics(narrative, metrics)) {
+      console.warn(`[synthesis] rejected ungrounded LLM output for ${lens}, using template fallback`);
+      return fallback;
+    }
     return { lens, severity, oneLiner: fallback.oneLiner, narrative, metrics };
   } catch {
     return fallback;
   }
+}
+
+/**
+ * Defense in depth against the prompt alone: reject any narrative containing
+ * a number that doesn't appear anywhere in the source metrics (e.g. a
+ * fabricated year like "since 2023", or a recomputed/rounded figure). This
+ * catches exactly the class of hallucination the hard rules above target,
+ * without trusting the model to have followed them.
+ */
+function isGroundedInMetrics(narrative: string, metrics: CitedMetric[]): boolean {
+  if (narrative.trim().length < 20) return false; // too short to be real prose
+
+  const sourceText = metrics.map((m) => `${m.label} ${m.value} ${m.sourceName}`).join(" ");
+  const sourceNumbers = new Set(sourceText.match(/\d+(\.\d+)?/g) ?? []);
+  const narrativeNumbers = narrative.match(/\d+(\.\d+)?/g) ?? [];
+
+  // If the metrics carry real numbers, the narrative must actually cite at
+  // least one — catches non-answers (moderation artifacts, refusals, generic
+  // filler) that contain zero numbers and so'd otherwise vacuously pass.
+  if (sourceNumbers.size > 0 && narrativeNumbers.length === 0) return false;
+
+  return narrativeNumbers.every((n) => sourceNumbers.has(n));
 }
