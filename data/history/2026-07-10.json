@@ -1,6 +1,6 @@
 {
   "date": "2026-07-10",
-  "generatedAt": "2026-07-10T19:26:22.103Z",
+  "generatedAt": "2026-07-10T19:56:44.969Z",
   "isMockData": true,
   "lenses": [
     {
@@ -56,9 +56,9 @@
     },
     {
       "lens": "standardOfLiving",
-      "severity": 3,
-      "oneLiner": "Standard of Living is high today: Unemployment rate change -0.10pt (FRED (UNRATE)).",
-      "narrative": "The unemployment rate changed by -0.10pt, while real GDP grew by +0.52% quarter-over-quarter. However, real wage growth was -0.21pt versus CPI. An excessive heat warning was declared for Phoenix, AZ metro.",
+      "severity": 2,
+      "oneLiner": "Standard of Living is elevated today: Unemployment rate change -0.10pt (FRED (UNRATE)).",
+      "narrative": "The standard of living is elevated, supported by a -0.10pt decrease in the unemployment rate and a +0.52% quarter-over-quarter increase in real GDP. However, real wage growth was -0.21pt versus CPI in the latest month.",
       "metrics": [
         {
           "label": "Unemployment rate change",
@@ -74,11 +74,6 @@
           "label": "Real GDP, quarter-over-quarter",
           "value": "+0.52%",
           "sourceName": "FRED (GDPC1)"
-        },
-        {
-          "label": "Climate disaster declared",
-          "value": "Excessive heat warning — Phoenix, AZ metro",
-          "sourceName": "NOAA"
         }
       ]
     },
@@ -86,7 +81,7 @@
       "lens": "security",
       "severity": 2,
       "oneLiner": "Security is elevated today: Worst Goldstein score today -6.2 (GDELT).",
-      "narrative": "The Goldstein score reached -6.2 today, indicating heightened global tensions. This coincides with a significant seismic event, a M7.5 earthquake.",
+      "narrative": "Security remains elevated, with the worst Goldstein score today at -6.2. This coincides with the largest recent quake registering an M7.5.",
       "metrics": [
         {
           "label": "Worst Goldstein score today",

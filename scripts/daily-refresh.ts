@@ -165,10 +165,6 @@ async function main() {
   const gdpPrev = gdp.data.at(-2);
   const gdpQoQPct = gdpLatest && gdpPrev ? ((gdpLatest.value - gdpPrev.value) / gdpPrev.value) * 100 : 0;
   const gdpContraction = gdpQoQPct < 0;
-  // NOTE: fetchClimateAlerts() only classifies severity in mock mode today —
-  // the real NOAA CDO endpoint returns raw observations (see the TODO in
-  // src/lib/sources/noaa.ts), so this will conservatively never fire against
-  // live data until that threshold-classification pass is built.
   const majorDisaster = climate.data.find((a) => a.severity === "widespread");
 
   const standardOfLivingSeverity = scoreStandardOfLiving({
