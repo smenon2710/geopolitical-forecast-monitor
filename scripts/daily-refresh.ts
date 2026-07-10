@@ -30,7 +30,7 @@ import {
   scoreSecurity,
   scoreDailyRoutine,
 } from "../src/lib/scoring";
-import { synthesizeWithLlm } from "../src/lib/synthesis";
+import { synthesizeAllLenses } from "../src/lib/synthesis";
 import type { CitedMetric, DailyDigest, GeoEvent, SectorMove, TrendSeries } from "../src/types";
 
 const SECTOR_ETFS: { sector: string; symbol: string }[] = [
@@ -198,17 +198,33 @@ async function main() {
   ];
 
   // --- Daily Routine ---
-  const dailyRoutineSeverity = scoreDailyRoutine({ gasPctChange });
+  // Distinct signal from Cost of Living's gas citation, and reuses NOAA's
+  // weather read (already fetched above) — without this, Daily Routine was
+  // driven by gas price alone under the same label as Cost of Living used,
+  // which made the two dials look like they were contradicting each other
+  // off the same number instead of measuring different things.
+  const isolatedWeather = climate.data.find((a) => a.severity === "isolated");
+  const weatherAlert: "none" | "isolated" | "widespread" = majorDisaster
+    ? "widespread"
+    : isolatedWeather
+      ? "isolated"
+      : "none";
+  const dailyRoutineSeverity = scoreDailyRoutine({ gasPctChange, severeWeatherAlert: weatherAlert });
   const dailyRoutineMetrics: CitedMetric[] = [
-    { label: "Price at the pump", value: `${gasPctChange.toFixed(1)}% this week`, sourceName: "EIA" },
+    { label: "Cost of getting around", value: `${gasPctChange.toFixed(1)}% this week`, sourceName: "EIA" },
+    ...(majorDisaster || isolatedWeather
+      ? [{ label: "Weather disruption", value: (majorDisaster ?? isolatedWeather)!.event, sourceName: "NOAA" }]
+      : []),
   ];
 
-  const lenses = await Promise.all([
-    synthesizeWithLlm("costOfLiving", costOfLivingSeverity, costOfLivingMetrics),
-    synthesizeWithLlm("investments", investmentsSeverity, investmentsMetrics),
-    synthesizeWithLlm("standardOfLiving", standardOfLivingSeverity, standardOfLivingMetrics),
-    synthesizeWithLlm("security", securitySeverity, securityMetrics),
-    synthesizeWithLlm("dailyRoutine", dailyRoutineSeverity, dailyRoutineMetrics),
+  // One batched call for all five lenses instead of five separate calls —
+  // same grounding guardrail applied per-lens after parsing.
+  const lenses = await synthesizeAllLenses([
+    { lens: "costOfLiving", severity: costOfLivingSeverity, metrics: costOfLivingMetrics },
+    { lens: "investments", severity: investmentsSeverity, metrics: investmentsMetrics },
+    { lens: "standardOfLiving", severity: standardOfLivingSeverity, metrics: standardOfLivingMetrics },
+    { lens: "security", severity: securitySeverity, metrics: securityMetrics },
+    { lens: "dailyRoutine", severity: dailyRoutineSeverity, metrics: dailyRoutineMetrics },
   ]);
 
   const trends: TrendSeries[] = [

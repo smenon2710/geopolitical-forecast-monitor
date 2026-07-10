@@ -26,7 +26,7 @@ export const LENS_SUBLABELS: Record<Lens, string> = {
   investments: "Stocks and markets",
   standardOfLiving: "Work and wages",
   security: "Conflict and disasters",
-  dailyRoutine: "Travel and routine",
+  dailyRoutine: "Commute, travel, weather",
 };
 
 /** 0 = negligible, 1 = minor, 2 = moderate, 3 = major */

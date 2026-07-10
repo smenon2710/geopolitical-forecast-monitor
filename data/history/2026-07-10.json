@@ -1,13 +1,13 @@
 {
   "date": "2026-07-10",
-  "generatedAt": "2026-07-10T20:29:59.419Z",
+  "generatedAt": "2026-07-10T21:05:16.095Z",
   "dataQuality": "demo",
   "lenses": [
     {
       "lens": "costOfLiving",
       "severity": 2,
       "oneLiner": "Prices You Pay: elevated today. How fast prices are rising — 0.47%.",
-      "narrative": "Prices are still rising, up 0.47% overall.  Gas is $3.78/gal, a small drop from last week, but energy costs are up 3.88%.  Housing and food costs are also up slightly.",
+      "narrative": "Prices are still going up, but a bit slower than before. Gas prices dropped 1.4% this week, but energy costs overall are up 3.88%. Housing and food costs are also up slightly.",
       "metrics": [
         {
           "label": "How fast prices are rising",
@@ -40,7 +40,7 @@
       "lens": "investments",
       "severity": 2,
       "oneLiner": "Your Savings: elevated today. The stock market today — -2.30%.",
-      "narrative": "The stock market dropped today by -2.30%. Big industry swings of 2.40% also happened. This might mean your bills could be a bit higher or your savings might not grow as much right now.",
+      "narrative": "Your savings in the stock market took a hit today, dropping 2.30%. The biggest industry swing was 2.40%.",
       "metrics": [
         {
           "label": "The stock market today",
@@ -58,7 +58,7 @@
       "lens": "standardOfLiving",
       "severity": 2,
       "oneLiner": "Jobs & Paychecks: elevated today. Jobs picture — -0.10pt unemployment.",
-      "narrative": "Your job security looks pretty stable, with unemployment at -0.10pt. While the economy is growing at +0.52% GDP, your paychecks aren't quite keeping up with rising prices, trailing inflation by -0.21pt.",
+      "narrative": "The job market is slightly better with unemployment down 0.10 points. However, paychecks aren't quite keeping up with rising prices, falling 0.21 points behind inflation. The economy is growing at 0.52%.",
       "metrics": [
         {
           "label": "Jobs picture",
@@ -81,7 +81,7 @@
       "lens": "security",
       "severity": 2,
       "oneLiner": "Safety & Tension: elevated today. Global tension level — -6.2.",
-      "narrative": "Things are a bit tense globally, with a tension level of -6.2. There was also a big earthquake recently, measuring M7.5. This means it's a good idea to stay aware of your surroundings and keep an eye on things.",
+      "narrative": "Global tension is down 6.2 points, meaning things are a bit calmer. There was a large earthquake recently, measuring M7.5.",
       "metrics": [
         {
           "label": "Global tension level",
@@ -97,14 +97,19 @@
     },
     {
       "lens": "dailyRoutine",
-      "severity": 0,
-      "oneLiner": "Everyday Life: calm today. Price at the pump — -1.4% this week.",
-      "narrative": "Good news on gas prices! They dropped -1.4% this week. This might mean a little extra breathing room in your budget for everyday things.",
+      "severity": 1,
+      "oneLiner": "Everyday Life: watch today. Cost of getting around — -1.4% this week.",
+      "narrative": "Getting around is cheaper this week, with costs down 1.4%. Some areas are experiencing localized heat, with 25 out of 1000 stations reporting temperatures above 38°C.",
       "metrics": [
         {
-          "label": "Price at the pump",
+          "label": "Cost of getting around",
           "value": "-1.4% this week",
           "sourceName": "EIA"
+        },
+        {
+          "label": "Weather disruption",
+          "value": "Localized heat (25/1000 sampled US stations ≥ 38°C)",
+          "sourceName": "NOAA"
         }
       ]
     }
