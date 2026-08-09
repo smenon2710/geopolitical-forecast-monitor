@@ -59,6 +59,11 @@ export function HomeClient({ digest }: { digest: DailyDigest }) {
             </div>
           </div>
 
+          <p className="text-xs leading-relaxed max-w-2xl" style={{ color: "var(--text-muted)" }}>
+            Not a crystal ball: today&apos;s real numbers, not a guaranteed prediction of tomorrow.
+            Nothing here is financial or investment advice.
+          </p>
+
           {digest.dataQuality !== "live" && (
             <p
               className="text-xs rounded-md px-3 py-2 self-start"

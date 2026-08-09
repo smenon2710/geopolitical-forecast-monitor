@@ -31,9 +31,7 @@ export function DigestView({ digest }: { digest: DailyDigest }) {
     <div className="flex flex-col gap-6 max-w-2xl">
       <p className="text-sm leading-relaxed" style={{ color: "var(--text-muted)" }}>
         This briefing translates today&apos;s real data into plain language — every line
-        below traces back to a specific number, cited at the bottom of each section. It&apos;s
-        not a crystal ball: it tells you what&apos;s true today, not a guaranteed prediction
-        of tomorrow. Nothing here is financial or investment advice.
+        below traces back to a specific number, cited at the bottom of each section.
       </p>
 
       {digest.lenses.map((reading) => {
