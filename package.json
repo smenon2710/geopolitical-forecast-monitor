@@ -27,6 +27,7 @@
     "dotenv": "^17.4.2",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
+    "jszip": "^3.10.1",
     "playwright": "^1.61.1",
     "tailwindcss": "^4",
     "tsx": "^4.23.0",

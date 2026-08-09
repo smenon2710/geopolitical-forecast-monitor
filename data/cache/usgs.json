@@ -1,125 +1,133 @@
 {
   "data": [
     {
-      "id": "uw714040221",
-      "place": "2 km E of Oak Harbor, Washington",
-      "magnitude": 3.8,
-      "lon": -122.6065,
-      "lat": 48.2888333333333,
-      "time": "2026-07-02T06:35:47.600Z"
+      "id": "aka2026powmkf",
+      "place": "57 km WNW of Skwentna, Alaska",
+      "magnitude": 5.6,
+      "lon": -152.314,
+      "lat": 62.269,
+      "time": "2026-08-08T04:50:34.985Z"
     },
     {
-      "id": "us6000t9bg",
-      "place": "272 km SSE of Dunhuang, China",
-      "magnitude": 5.3,
-      "lon": 95.4116,
-      "lat": 37.7819,
-      "time": "2026-06-30T23:44:54.898Z"
-    },
-    {
-      "id": "aka2026mpitdk",
-      "place": "27 km WNW of Hope, Alaska",
-      "magnitude": 4.2,
-      "lon": -150.125,
-      "lat": 60.989,
-      "time": "2026-06-27T05:25:52.321Z"
-    },
-    {
-      "id": "us6000t8ec",
-      "place": "34 km WSW of Sarangani, Philippines",
-      "magnitude": 6.5,
-      "lon": 125.1965,
-      "lat": 5.2392,
-      "time": "2026-06-26T11:34:41.498Z"
-    },
-    {
-      "id": "us6000t7zq",
-      "place": "33 km ENE of Noda, Japan",
-      "magnitude": 6.9,
-      "lon": 142.1614,
-      "lat": 40.2515,
-      "time": "2026-06-24T22:30:12.989Z"
-    },
-    {
-      "id": "us6000t7zp",
-      "place": "20 km ESE of Yumare, Venezuela",
-      "magnitude": 7.5,
-      "lon": -68.5036,
-      "lat": 10.5086,
-      "time": "2026-06-24T22:05:11.743Z"
-    },
-    {
-      "id": "us6000t7zc",
-      "place": "21 km ENE of San Felipe, Venezuela",
-      "magnitude": 7.2,
-      "lon": -68.5571,
-      "lat": 10.4085,
-      "time": "2026-06-24T22:04:34.363Z"
-    },
-    {
-      "id": "nc75382936",
-      "place": "11 km N of Redwood Valley, CA",
-      "magnitude": 5.59,
-      "lon": -123.228833333333,
-      "lat": 39.3623333333333,
-      "time": "2026-06-24T15:10:40.760Z"
-    },
-    {
-      "id": "us7000sui3",
-      "place": "133 km ESE of Petropavlovsk-Kamchatsky, Russia",
-      "magnitude": 6.6,
-      "lon": 160.5652,
-      "lat": 52.7943,
-      "time": "2026-06-19T06:52:31.597Z"
-    },
-    {
-      "id": "us7000stti",
-      "place": "central Mid-Atlantic Ridge",
-      "magnitude": 6.6,
-      "lon": -20.0163,
-      "lat": -0.5458,
-      "time": "2026-06-17T18:56:58.028Z"
-    },
-    {
-      "id": "us7000stcs",
-      "place": "272 km S of Dunhuang, China",
-      "magnitude": 5.4,
-      "lon": 95.2738,
-      "lat": 37.7544,
-      "time": "2026-06-16T09:45:26.194Z"
-    },
-    {
-      "id": "us7000stbz",
-      "place": "262 km SSE of Dunhuang, China",
+      "id": "us6000ti8i",
+      "place": "south of the Kermadec Islands",
       "magnitude": 6.3,
-      "lon": 95.4919,
-      "lat": 37.888,
-      "time": "2026-06-16T09:06:55.517Z"
+      "lon": 179.4727,
+      "lat": -33.8063,
+      "time": "2026-08-05T07:43:27.317Z"
     },
     {
-      "id": "us7000st95",
-      "place": "42 km SE of Palu, Indonesia",
-      "magnitude": 6.7,
-      "lon": 120.1842,
-      "lat": -1.1245,
-      "time": "2026-06-16T03:27:44.379Z"
+      "id": "us6000ti6x",
+      "place": "32 km SW of Sarangani, Philippines",
+      "magnitude": 6.3,
+      "lon": 125.276,
+      "lat": 5.1812,
+      "time": "2026-08-05T04:14:06.625Z"
     },
     {
-      "id": "us7000st41",
-      "place": "8 km NE of Bel Air North, Maryland",
-      "magnitude": 2.4,
-      "lon": -76.3094,
-      "lat": 39.6177,
-      "time": "2026-06-15T15:02:24.168Z"
+      "id": "us6000tgb9",
+      "place": "The 2026 Kumamoto Region, Japan Earthquake",
+      "magnitude": 6.8,
+      "lon": 130.7217,
+      "lat": 32.6817,
+      "time": "2026-07-28T07:27:15.512Z"
     },
     {
-      "id": "us7000st1c",
-      "place": "68 km ESE of Pondaguitan, Philippines",
+      "id": "us6000tga9",
+      "place": "194 km NW of Oula Xiuma, China",
+      "magnitude": 5.8,
+      "lon": 99.5557,
+      "lat": 35.429,
+      "time": "2026-07-28T03:34:05.627Z"
+    },
+    {
+      "id": "us6000tga6",
+      "place": "199 km NW of Oula Xiuma, China",
+      "magnitude": 5.7,
+      "lon": 99.4752,
+      "lat": 35.4217,
+      "time": "2026-07-28T03:16:08.865Z"
+    },
+    {
+      "id": "tx2026ojlaky",
+      "place": "38 km SSE of Spearman, Texas",
+      "magnitude": 5,
+      "lon": -100.976,
+      "lat": 35.902,
+      "time": "2026-07-23T10:21:43.909Z"
+    },
+    {
+      "id": "us7000t1q7",
+      "place": "4 km SSW of Chupaca, Peru",
+      "magnitude": 5.5,
+      "lon": -75.3034,
+      "lat": -12.1036,
+      "time": "2026-07-19T02:24:35.623Z"
+    },
+    {
+      "id": "us7000t1cc",
+      "place": "96 km SW of Puerto Madero, Mexico",
+      "magnitude": 6.4,
+      "lon": -93.1385,
+      "lat": 14.2039,
+      "time": "2026-07-17T15:20:06.587Z"
+    },
+    {
+      "id": "us7000t1bu",
+      "place": "52 km W of Puerto Madero, Mexico",
+      "magnitude": 7.3,
+      "lon": -92.8969,
+      "lat": 14.6361,
+      "time": "2026-07-17T14:48:40.227Z"
+    },
+    {
+      "id": "us7000t0d0",
+      "place": "32 km WSW of Sarangani, Philippines",
       "magnitude": 6.2,
-      "lon": 126.7773,
-      "lat": 6.2076,
-      "time": "2026-06-15T09:18:36.126Z"
+      "lon": 125.181,
+      "lat": 5.3206,
+      "time": "2026-07-14T15:49:39.287Z"
+    },
+    {
+      "id": "ci41292687",
+      "place": "18 km WSW of Johannesburg, CA",
+      "magnitude": 4.31762677888687,
+      "lon": -117.814833333333,
+      "lat": 35.3121666666667,
+      "time": "2026-07-13T16:40:55.170Z"
+    },
+    {
+      "id": "us7000t01n",
+      "place": "southeast of the Loyalty Islands",
+      "magnitude": 6.3,
+      "lon": 171.5534,
+      "lat": -22.7876,
+      "time": "2026-07-13T14:45:49.630Z"
+    },
+    {
+      "id": "us7000szzy",
+      "place": "196 km SE of Lorengau, Papua New Guinea",
+      "magnitude": 6.4,
+      "lon": 148.5991,
+      "lat": -3.2114,
+      "time": "2026-07-13T08:53:27.219Z"
+    },
+    {
+      "id": "ci41291863",
+      "place": "2 km ESE of Frazier Park, CA",
+      "magnitude": 4.10922888670317,
+      "lon": -118.925833333333,
+      "lat": 34.8131666666667,
+      "time": "2026-07-12T10:38:04.730Z"
+    },
+    {
+      "id": "us7000szpb",
+      "place": "South Sandwich Islands region",
+      "magnitude": 6.4,
+      "lon": -28.9109,
+      "lat": -55.5349,
+      "time": "2026-07-11T10:26:42.630Z"
     }
   ],
-  "cachedAt": "2026-07-10T21:04:53.712Z"
+  "cachedAt": "2026-08-09T18:49:26.457Z"
 }

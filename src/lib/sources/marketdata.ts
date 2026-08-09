@@ -19,7 +19,11 @@ const ALPHA_VANTAGE_BASE = "https://www.alphavantage.co/query";
 
 export async function fetchDailyQuote(symbol: string): Promise<SourceEnvelope<MarketQuote>> {
   const apiKey = process.env.ALPHAVANTAGE_API_KEY;
-  if (isForceMock() || !apiKey) return envelope(mockQuote(symbol), true);
+  if (isForceMock()) return envelope(mockQuote(symbol), true);
+  if (!apiKey) {
+    console.warn(`[marketdata-${symbol}] no ALPHAVANTAGE_API_KEY set, falling back to mock data`);
+    return envelope(mockQuote(symbol), true);
+  }
 
   return fetchWithFallback(
     `marketdata-${symbol}`,

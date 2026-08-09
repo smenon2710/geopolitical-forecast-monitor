@@ -99,7 +99,7 @@ async function main() {
   const today = new Date().toISOString().slice(0, 10);
 
   const [gdelt, cpi, gasCpi, gas, quakes] = await Promise.all([
-    fetchGdeltEvents("geopolitical tension OR trade dispute"),
+    fetchGdeltEvents(),
     fetchFredSeries("CPIAUCSL"),
     fetchBlsCpiBreakdown(),
     fetchEiaGasolinePrice(),
