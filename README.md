@@ -26,3 +26,11 @@ Copy `.env.example` to `.env.local` and fill in the free API keys you want live 
 If a live source fails but has succeeded before, the pipeline falls back to that source's last real reading (cached in `data/cache/`, committed to the repo) rather than synthetic demo data — see `src/lib/sources/fetchWithFallback.ts`.
 
 A GitHub Action (`.github/workflows/daily-refresh.yml`) runs this on a schedule and commits the result; a connected Vercel deployment auto-redeploys on push.
+
+## Testing
+
+```bash
+npm test
+```
+
+Runs unit tests for the scoring rubric (`src/lib/scoring.ts`) and the anti-hallucination grounding check (`isGroundedInMetrics` in `src/lib/synthesis.ts`) via Node's built-in test runner (`node:test`, run through `tsx` — no separate test framework). A GitHub Action (`.github/workflows/test.yml`) runs this plus a typecheck on every push and PR to `main`.

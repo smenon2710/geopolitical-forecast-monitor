@@ -1,13 +1,14 @@
 # Geopolitical Forecast Monitor — Product Plan
 
-## Status (as of 2026-07-10)
+## Status (as of 2026-08-09)
 
 Phase 1 MVP is built and live: [smenon2710/geopolitical-forecast-monitor](https://github.com/smenon2710/geopolitical-forecast-monitor) on GitHub, deployed at [geopolitical-forecast-monitor.vercel.app](https://geopolitical-forecast-monitor.vercel.app), with a GitHub Action refreshing data daily and Vercel auto-deploying on every push. Live keys are wired for FRED, EIA, Census, NOAA, and Alpha Vantage; GDELT, BLS, and USGS are keyless. LLM synthesis runs through OpenRouter. See [README.md](./README.md) for setup.
 
-Since the initial build, three rounds of hardening/redesign have landed:
+Since the initial build, four rounds of hardening/redesign have landed:
 - **Reliability**: every source has a 10s fetch timeout and falls back to its last real cached reading (not synthetic data) on failure — see `src/lib/sources/fetchWithFallback.ts`. The Standard of Living lens's real-wage-growth, GDP, and disaster-alert inputs, previously hardcoded stubs, are now wired to live FRED/NOAA data.
 - **Language**: the UI uses plain-language lens names (see below) and the synthesis prompt explicitly targets a non-expert reader, translating jargon (CPI, Goldstein scale, quarter-over-quarter) into everyday words. Raw technical labels stay available as cited detail under each section.
 - **Visual design**: the dashboard uses a custom SVG dial gauge per lens (not flat KPI cards) — see "Visual Dashboard Layer" below for the current version of this section.
+- **Data integrity (2026-08-09)**: GDELT and Alpha Vantage had silently never produced a real reading in ~30 days of daily runs — every "success" was actually a demo-mode fallback, invisible because failures weren't logged and the `dataQuality` badge is a single global flag. Root causes: the GDELT Doc API endpoint was failing daily in production (429s/timeouts) and, even when it worked, never carried the Goldstein scale or coordinates the app needs (those only exist in GDELT's Event table); Alpha Vantage's GitHub Actions secret held a stale key while the code itself was fine. Fixed by switching GDELT to its raw Event export mirror (with a country-code filter so domestic US noise doesn't drown out real international events) and rotating the Alpha Vantage secret; `fetchDailyQuote` now logs instead of failing silently. Also added unit tests for the scoring rubric and the `isGroundedInMetrics` grounding check (`src/lib/*.test.ts`, run via `npm test`), plus a CI workflow (`.github/workflows/test.yml`) so they run on every push/PR.
 
 ## Concept
 
@@ -119,7 +120,8 @@ The GDELT Goldstein/tone/volume combo also feeds the dashboard's "Global Tension
 
 - **Forecasting overreach**: keep language probabilistic and cite sources, avoid definitive predictions that could be read as financial advice — a visible "not financial or investment advice" disclaimer belongs on every investment-related section given the legal exposure of a product used by others.
 - **Data source rate limits at scale**: free tiers are fine for an MVP's traffic but will need revisiting once there are enough daily active users hitting cached content versus live calls. Since the design pre-generates content once daily rather than live per-user, this risk is manageable longer than it would be otherwise.
-- **Hallucination/grounding**: every synthesis call is checked by `isGroundedInMetrics()` (`src/lib/synthesis.ts`) — any narrative containing a number not present in the source metrics, or containing no number at all when the metrics have real numbers to cite, is rejected and replaced with the fully-cited template fallback. Caught a real case in testing (a moderation-artifact non-answer with zero grounded numbers).
+- **Hallucination/grounding**: every synthesis call is checked by `isGroundedInMetrics()` (`src/lib/synthesis.ts`) — any narrative containing a number not present in the source metrics, or containing no number at all when the metrics have real numbers to cite, is rejected and replaced with the fully-cited template fallback. Caught a real case in testing (a moderation-artifact non-answer with zero grounded numbers). Covered by unit tests (`src/lib/synthesis.test.ts`) so this can't silently regress.
+- **Silent fallback to demo data**: reliability logic (cache fallback, mock fallback) is only as good as its visibility — GDELT and Alpha Vantage both ran in permanent demo mode for ~30 days before this was caught, because failures either weren't logged or the one global `dataQuality` badge couldn't point at which source was actually bad. Any new source should log on every fallback path, not just the ones that seemed likely to fail.
 
 ## What's Next
 
