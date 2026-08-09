@@ -1,5 +1,5 @@
 import type { DailyDigest } from "@/types";
-import { LENS_LABELS, SEVERITY_LABEL, SEVERITY_STATUS } from "@/types";
+import { DATA_QUALITY_DESCRIPTION, DATA_QUALITY_LABEL, LENS_LABELS, SEVERITY_LABEL, SEVERITY_STATUS } from "@/types";
 
 const STATUS_COLOR_VAR: Record<string, string> = {
   good: "var(--status-good)",
@@ -70,9 +70,20 @@ export function DigestView({ digest }: { digest: DailyDigest }) {
             </ul>
 
             <div className="mt-4">
-              <h3 className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>
-                Data & sources
-              </h3>
+              <div className="flex items-center gap-2">
+                <h3 className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>
+                  Data & sources
+                </h3>
+                {reading.dataQuality !== "live" && (
+                  <span
+                    title={DATA_QUALITY_DESCRIPTION[reading.dataQuality]}
+                    className="text-[10px] uppercase tracking-wide rounded-full px-2 py-0.5"
+                    style={{ border: "1px solid var(--border)", color: "var(--text-muted)" }}
+                  >
+                    {DATA_QUALITY_LABEL[reading.dataQuality]}
+                  </span>
+                )}
+              </div>
               <ul className="mt-2 flex flex-col gap-1">
                 {reading.metrics.map((m, i) => (
                   <li key={i} className="text-xs" style={{ color: "var(--text-muted)", fontFamily: "var(--font-mono)" }}>

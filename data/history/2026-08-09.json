@@ -1,13 +1,13 @@
 {
   "date": "2026-08-09",
-  "generatedAt": "2026-08-09T18:49:50.035Z",
+  "generatedAt": "2026-08-09T19:15:40.958Z",
   "dataQuality": "stale",
   "lenses": [
     {
       "lens": "costOfLiving",
       "severity": 2,
       "oneLiner": "Prices You Pay: elevated today. How fast prices are rising — -0.42%.",
-      "narrative": "Overall prices changed by -0.42%, while gas at the pump sits at $4.08/gal after a -0.4% wk/wk change. Housing costs are up 0.32% and food costs are at 0.16%, while energy costs stand at 3.88%. Overall, your cost of living remains elevated.",
+      "narrative": "Overall prices dropped -0.42%, but your monthly budget remains elevated. Gas at the pump is down -0.4% this week to $4.08/gal, while housing costs rose 0.32% and food costs increased 0.16%. Meanwhile, energy costs saw a bump of 3.88%.",
       "metrics": [
         {
           "label": "How fast prices are rising",
@@ -34,13 +34,14 @@
           "value": "3.88%",
           "sourceName": "BLS"
         }
-      ]
+      ],
+      "dataQuality": "stale"
     },
     {
       "lens": "investments",
       "severity": 1,
       "oneLiner": "Your Savings: watch today. The stock market today — 0.61%.",
-      "narrative": "Your savings status is on watch today as the stock market moved 0.61%. The biggest industry swing reached 1.42%. It is a steady day to keep an eye on your financial goals.",
+      "narrative": "Your savings are on watch today as the stock market moved up 0.61%. The biggest industry swing reached 1.42%. Overall, it is a relatively calm day for your money.",
       "metrics": [
         {
           "label": "The stock market today",
@@ -52,13 +53,14 @@
           "value": "1.42%",
           "sourceName": "Alpha Vantage"
         }
-      ]
+      ],
+      "dataQuality": "live"
     },
     {
       "lens": "standardOfLiving",
       "severity": 3,
       "oneLiner": "Jobs & Paychecks: high today. Jobs picture — -0.10pt unemployment.",
-      "narrative": "Economic growth is sitting at +0.37% and unemployment changed by -0.10pt. Paychecks are staying ahead of prices by +0.72pt vs inflation. Meanwhile, excessive heat is hitting parts of the United States, with 73/1000 sampled US stations recording temperatures ≥ 38°C.",
+      "narrative": "Your job picture looks strong, with unemployment down -0.10pt and paychecks growing +0.72pt faster than inflation. The broader economy is growing at +0.37%. However, excessive heat is hitting 73/1000 sampled US stations at temperatures of 38°C or higher across the United States.",
       "metrics": [
         {
           "label": "Jobs picture",
@@ -80,13 +82,14 @@
           "value": "Excessive heat (73/1000 sampled US stations ≥ 38°C) — United States (sampled stations)",
           "sourceName": "NOAA"
         }
-      ]
+      ],
+      "dataQuality": "live"
     },
     {
       "lens": "security",
       "severity": 3,
       "oneLiner": "Safety & Tension: high today. Global tension level — -10.0.",
-      "narrative": "Global tension is currently sitting at -10.0, keeping overall safety concerns high. On the natural disaster front, the biggest recent earthquake measured M7.3. Stay aware of world events today.",
+      "narrative": "Global tension is currently elevated at -10.0 on the scale. Meanwhile, the biggest recent earthquake was measured at M7.3. Stay aware of safety updates today.",
       "metrics": [
         {
           "label": "Global tension level",
@@ -98,13 +101,14 @@
           "value": "M7.3",
           "sourceName": "USGS"
         }
-      ]
+      ],
+      "dataQuality": "live"
     },
     {
       "lens": "dailyRoutine",
       "severity": 2,
       "oneLiner": "Everyday Life: elevated today. Cost of getting around — -0.4% this week.",
-      "narrative": "The cost of getting around changed by -0.4% this week. However, weather disruption is present with excessive heat, as 73/1000 sampled US stations are reaching temperatures ≥ 38°C. Plan your routine around staying cool today.",
+      "narrative": "The cost of getting around fell -0.4% this week, providing a slight break for travel expenses. However, daily plans may face weather disruptions as 73/1000 sampled US stations report excessive heat reaching 38°C or higher. Take extra precautions if you are spending time outdoors.",
       "metrics": [
         {
           "label": "Cost of getting around",
@@ -116,7 +120,8 @@
           "value": "Excessive heat (73/1000 sampled US stations ≥ 38°C)",
           "sourceName": "NOAA"
         }
-      ]
+      ],
+      "dataQuality": "live"
     }
   ],
   "trends": [
@@ -672,534 +677,414 @@
   ],
   "events": [
     {
-      "id": "gdelt-1317522082",
+      "id": "gdelt-1317524313",
       "date": "2026-08-09",
-      "title": "FRENCH expressed intent to cooperate — New Jersey, United States",
-      "description": "Avg tone 5.0, 10 mentions.",
-      "lat": 40.314,
-      "lon": -74.5089,
+      "title": "HONDA made an appeal — Tokyo, Tokyo, Japan",
+      "description": "Avg tone 3.0, 15 mentions.",
+      "lat": 35.685,
+      "lon": 139.751,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 4,
+      "goldstein": 3,
       "sourceName": "GDELT",
-      "sourceUrl": "https://wpst.com/ixp/385/p/white-manna-hackensack-burgers/"
+      "sourceUrl": "https://www.dailypolitical.com/2026/08/09/head-to-head-contrast-honda-motor-hmc-and-its-peers.html"
     },
     {
-      "id": "gdelt-1317522272",
+      "id": "gdelt-1317524089",
       "date": "2026-08-09",
-      "title": "MADRID exhibited military posturing toward SECURITY FORCE — Morocco",
-      "description": "Avg tone -3.5, 10 mentions.",
-      "lat": 32,
-      "lon": -5,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -7.2,
-      "sourceName": "GDELT",
-      "sourceUrl": "http://www.jpost.com/opinion/article-904980"
-    },
-    {
-      "id": "gdelt-1317522333",
-      "date": "2026-08-09",
-      "title": "KING engaged in diplomatic cooperation with VICTORIA — Nassau, New Providence, Bahamas, The",
-      "description": "Avg tone -0.2, 10 mentions.",
-      "lat": 25.0833,
-      "lon": -77.35,
+      "title": "BERLIN engaged in diplomatic cooperation with THE EUROPEAN UNION — Berlin, Berlin, Germany",
+      "description": "Avg tone 4.2, 10 mentions.",
+      "lat": 52.5167,
+      "lon": 13.4,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": 3.4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://nassauguardian.net/aboutus/"
+      "sourceUrl": "https://www.azernews.az/nation/262172.html"
     },
     {
-      "id": "gdelt-1317522334",
+      "id": "gdelt-1317524092",
       "date": "2026-08-09",
-      "title": "EDUCATION MINIST engaged in material cooperation with MILF — Cotabato City, Cotabato, Philippines",
-      "description": "Avg tone 2.9, 10 mentions.",
-      "lat": 7.22361,
-      "lon": 124.246,
+      "title": "BERLIN engaged in diplomatic cooperation with UNITED STATES — Berlin, Berlin, Germany",
+      "description": "Avg tone 4.2, 10 mentions.",
+      "lat": 52.5167,
+      "lon": 13.4,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 6,
+      "goldstein": 3.4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://mindanews.com/peace-process/2026/08/iqbal-bangsamoro-peace-process-continues-beyond-sept-14-polls/"
+      "sourceUrl": "https://www.azernews.az/nation/262172.html"
     },
     {
-      "id": "gdelt-1317522345",
+      "id": "gdelt-1317524394",
       "date": "2026-08-09",
-      "title": "HAITIAN coerced — Haiti",
-      "description": "Avg tone -8.2, 10 mentions.",
-      "lat": 19,
-      "lon": -72.416667,
+      "title": "SYRIA held consultations with THE US — Hauran, Dara, Syria",
+      "description": "Avg tone -4.0, 10 mentions.",
+      "lat": 32.75,
+      "lon": 36.1667,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": -5,
+      "goldstein": 7,
       "sourceName": "GDELT",
-      "sourceUrl": "https://jamaica-gleaner.com/article/news/20260809/haitian-woman-charged-overstaying-granted-bail-after-infant-daughter-injured"
+      "sourceUrl": "https://www.azernews.az/region/262171.html"
     },
     {
-      "id": "gdelt-1317522493",
+      "id": "gdelt-1317524507",
       "date": "2026-08-09",
-      "title": "PHILIPPINE rejected — Manila, Manila, Philippines",
-      "description": "Avg tone -3.0, 10 mentions.",
-      "lat": 14.6042,
-      "lon": 120.982,
+      "title": "THE US held consultations with SYRIA — Hauran, Dara, Syria",
+      "description": "Avg tone -4.0, 10 mentions.",
+      "lat": 32.75,
+      "lon": 36.1667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.azernews.az/region/262171.html"
+    },
+    {
+      "id": "gdelt-1317524205",
+      "date": "2026-08-09",
+      "title": "IRAN fought ISRAEL — Mecca, Makkah, Saudi Arabia",
+      "description": "Avg tone -1.3, 8 mentions.",
+      "lat": 21.4267,
+      "lon": 39.8261,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thehindu.com/opinion/editorial/shifting-sands-on-the-makkah-joint-defence-agreement/article71325024.ece"
+    },
+    {
+      "id": "gdelt-1317524229",
+      "date": "2026-08-09",
+      "title": "ISRAEL expressed intent to cooperate with SAUDI ARABIA — Mecca, Makkah, Saudi Arabia",
+      "description": "Avg tone -1.3, 8 mentions.",
+      "lat": 21.4267,
+      "lon": 39.8261,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thehindu.com/opinion/editorial/shifting-sands-on-the-makkah-joint-defence-agreement/article71325024.ece"
+    },
+    {
+      "id": "gdelt-1317524330",
+      "date": "2026-08-09",
+      "title": "PAKISTAN made an appeal — Lanjar, Balochistan, Pakistan",
+      "description": "Avg tone -1.6, 8 mentions.",
+      "lat": 27.4949,
+      "lon": 66.1966,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://en.dailypakistan.com.pk/09-Aug-2026/sindh-govt-decides-to-order-judicial-inquiry-into-mir-razas-mysterious-death"
+    },
+    {
+      "id": "gdelt-1317524338",
+      "date": "2026-08-09",
+      "title": "PAKISTAN expressed intent to cooperate with QATAR — Tehran, Tehran, Iran",
+      "description": "Avg tone -1.3, 8 mentions.",
+      "lat": 35.75,
+      "lon": 51.5148,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thehindu.com/opinion/editorial/shifting-sands-on-the-makkah-joint-defence-agreement/article71325024.ece"
+    },
+    {
+      "id": "gdelt-1317524340",
+      "date": "2026-08-09",
+      "title": "PAKISTAN expressed intent to cooperate with SAUDI ARABIA — Tehran, Tehran, Iran",
+      "description": "Avg tone -1.3, 8 mentions.",
+      "lat": 35.75,
+      "lon": 51.5148,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thehindu.com/opinion/editorial/shifting-sands-on-the-makkah-joint-defence-agreement/article71325024.ece"
+    },
+    {
+      "id": "gdelt-1317524365",
+      "date": "2026-08-09",
+      "title": "QATAR expressed intent to cooperate with PAKISTAN — Tehran, Tehran, Iran",
+      "description": "Avg tone -1.3, 8 mentions.",
+      "lat": 35.75,
+      "lon": 51.5148,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thehindu.com/opinion/editorial/shifting-sands-on-the-makkah-joint-defence-agreement/article71325024.ece"
+    },
+    {
+      "id": "gdelt-1317524367",
+      "date": "2026-08-09",
+      "title": "QATAR expressed intent to cooperate with SAUDI ARABIA — Tehran, Tehran, Iran",
+      "description": "Avg tone -1.3, 8 mentions.",
+      "lat": 35.75,
+      "lon": 51.5148,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thehindu.com/opinion/editorial/shifting-sands-on-the-makkah-joint-defence-agreement/article71325024.ece"
+    },
+    {
+      "id": "gdelt-1317524380",
+      "date": "2026-08-09",
+      "title": "SAUDI ARABIA expressed intent to cooperate with PAKISTAN — Tehran, Tehran, Iran",
+      "description": "Avg tone -1.3, 8 mentions.",
+      "lat": 35.75,
+      "lon": 51.5148,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thehindu.com/opinion/editorial/shifting-sands-on-the-makkah-joint-defence-agreement/article71325024.ece"
+    },
+    {
+      "id": "gdelt-1317524382",
+      "date": "2026-08-09",
+      "title": "SAUDI ARABIA expressed intent to cooperate with QATAR — Tehran, Tehran, Iran",
+      "description": "Avg tone -1.3, 8 mentions.",
+      "lat": 35.75,
+      "lon": 51.5148,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thehindu.com/opinion/editorial/shifting-sands-on-the-makkah-joint-defence-agreement/article71325024.ece"
+    },
+    {
+      "id": "gdelt-1317524392",
+      "date": "2026-08-09",
+      "title": "SYRIA expressed intent to cooperate with RUSSIA — Moscow, Moskva, Russia",
+      "description": "Avg tone -0.6, 8 mentions.",
+      "lat": 55.7522,
+      "lon": 37.6156,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 5.2,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.ynetnews.com/article/ryccwzilfg"
+    },
+    {
+      "id": "gdelt-1317524493",
+      "date": "2026-08-09",
+      "title": "WASHINGTON yielded to IRAN — Iran",
+      "description": "Avg tone -1.1, 8 mentions.",
+      "lat": 32,
+      "lon": 53,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://targetednews.com/pr_disp.php?pr_id=9704075"
+    },
+    {
+      "id": "gdelt-1317524494",
+      "date": "2026-08-09",
+      "title": "WASHINGTON yielded to IRANIAN — Iran",
+      "description": "Avg tone -0.5, 8 mentions.",
+      "lat": 32,
+      "lon": 53,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://targetednews.com/pr_disp.php?pr_id=9704074"
+    },
+    {
+      "id": "gdelt-1317524185",
+      "date": "2026-08-09",
+      "title": "FOREIGN MINIST engaged in diplomatic cooperation with SAUDI — New Delhi, Delhi, India",
+      "description": "Avg tone -4.3, 7 mentions.",
+      "lat": 28.6,
+      "lon": 77.2,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thehindu.com/opinion/op-ed/a-new-security-triangle-emerges-with-the-makkah-pact/article71325559.ece"
+    },
+    {
+      "id": "gdelt-1317524298",
+      "date": "2026-08-09",
+      "title": "MEDIA rejected GAZA — Gaza, Israel (general), Israel",
+      "description": "Avg tone -0.7, 6 mentions.",
+      "lat": 31.4167,
+      "lon": 34.3333,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": -4,
       "sourceName": "GDELT",
-      "sourceUrl": "http://www.philippinetimes.com/news/279226466/philippine-foreign-reserves-decline-in-july"
+      "sourceUrl": "https://www.ynetnews.com/article/skxw2giumx"
     },
     {
-      "id": "gdelt-1317522519",
+      "id": "gdelt-1317524062",
       "date": "2026-08-09",
-      "title": "SAUDI fought YEMEN — Yemen",
-      "description": "Avg tone -7.6, 10 mentions.",
-      "lat": 15.5,
-      "lon": 47.5,
+      "title": "CUBA provided aid — La Perla, Santiago de Cuba, Cuba",
+      "description": "Avg tone -1.7, 5 mentions.",
+      "lat": 20.1514,
+      "lon": -75.4675,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.cubaheadlines.com/articles/337414"
+    },
+    {
+      "id": "gdelt-1317524126",
+      "date": "2026-08-09",
+      "title": "ACTOR threatened IRAN — Iran",
+      "description": "Avg tone -4.3, 5 mentions.",
+      "lat": 32,
+      "lon": 53,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thehindu.com/opinion/op-ed/a-new-security-triangle-emerges-with-the-makkah-pact/article71325559.ece"
+    },
+    {
+      "id": "gdelt-1317524128",
+      "date": "2026-08-09",
+      "title": "ACTOR threatened ISRAELI — Israel",
+      "description": "Avg tone -4.3, 5 mentions.",
+      "lat": 31.5,
+      "lon": 34.75,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thehindu.com/opinion/op-ed/a-new-security-triangle-emerges-with-the-makkah-pact/article71325559.ece"
+    },
+    {
+      "id": "gdelt-1317524345",
+      "date": "2026-08-09",
+      "title": "PARAGUAY fought INVESTOR — Paraguay",
+      "description": "Avg tone -3.3, 5 mentions.",
+      "lat": -22.993333,
+      "lon": -57.996389,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": -10,
       "sourceName": "GDELT",
-      "sourceUrl": "https://en.apa.az/asia/new-demands-for-concessions-failed-agreement-latest-situation-in-the-iran-war-519624"
+      "sourceUrl": "https://www.ibtimes.co.uk/cryptocurrency-investor-harry-yeh-found-dead-paraguay-1813159"
     },
     {
-      "id": "gdelt-1317522625",
+      "id": "gdelt-1317524007",
       "date": "2026-08-09",
-      "title": "YEMEN fought SAUDI — Yemen",
-      "description": "Avg tone -7.6, 10 mentions.",
-      "lat": 15.5,
-      "lon": 47.5,
+      "title": "AUSTRALIA made an appeal — Brisbane, Queensland, Australia",
+      "description": "Avg tone 1.3, 4 mentions.",
+      "lat": -27.5,
+      "lon": 153.017,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": -10,
+      "goldstein": 3,
       "sourceName": "GDELT",
-      "sourceUrl": "https://en.apa.az/asia/new-demands-for-concessions-failed-agreement-latest-situation-in-the-iran-war-519624"
+      "sourceUrl": "https://www.brisbanetimes.com.au/national/queensland/why-private-schools-are-asking-for-your-kids-naplan-results-20260608-p604xn.html"
     },
     {
-      "id": "gdelt-1317522186",
+      "id": "gdelt-1317524090",
       "date": "2026-08-09",
-      "title": "CHINA engaged in diplomatic cooperation with CHINESE — Philippine, Benguet, Philippines",
-      "description": "Avg tone -5.2, 8 mentions.",
-      "lat": 16.45,
-      "lon": 120.55,
+      "title": "GERMANY engaged in diplomatic cooperation with COMMENTATOR — Germany",
+      "description": "Avg tone -5.3, 4 mentions.",
+      "lat": 51.5,
+      "lon": 10.5,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": 3.4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.manilatimes.net/2026/08/10/opinion/of-martyrdom-and-misinformation/2401627"
+      "sourceUrl": "https://www.ibtimes.co.uk/elon-musk-hitler-left-wing-socialist-controversy-1813161"
     },
     {
-      "id": "gdelt-1317522248",
+      "id": "gdelt-1317524159",
       "date": "2026-08-09",
-      "title": "STUDENT fought TOULOUSE — Paris, France (general), France",
-      "description": "Avg tone -5.0, 8 mentions.",
-      "lat": 48.8667,
-      "lon": 2.33333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "http://www.jpost.com/diaspora/antisemitism/article-905013"
-    },
-    {
-      "id": "gdelt-1317522368",
-      "date": "2026-08-09",
-      "title": "IRANIAN rejected ENVOY — Calgary, Alberta, Canada",
-      "description": "Avg tone -0.5, 8 mentions.",
-      "lat": 51.0833,
-      "lon": -114.083,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://calgarysun.com/news/world/a-hormuz-deal-was-close-now-iran-says-direct-talks-with-u-s-are-off/wcm/0842c490-a593-4dbf-898b-38c74f927520"
-    },
-    {
-      "id": "gdelt-1317522393",
-      "date": "2026-08-09",
-      "title": "ISRAEL fought SYRIA — Golan Heights, Syria (general), Syria",
-      "description": "Avg tone -2.0, 8 mentions.",
-      "lat": 32.9049,
-      "lon": 35.8072,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -9.5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.israelnationalnews.com/news/431458"
-    },
-    {
-      "id": "gdelt-1317522494",
-      "date": "2026-08-09",
-      "title": "PHILIPPINE fought CHINESE — Beijing, Beijing, China",
-      "description": "Avg tone -5.2, 8 mentions.",
-      "lat": 39.9289,
-      "lon": 116.388,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.manilatimes.net/2026/08/10/opinion/of-martyrdom-and-misinformation/2401627"
-    },
-    {
-      "id": "gdelt-1317522525",
-      "date": "2026-08-09",
-      "title": "SYRIA coerced SYRIA — Aleppo, ?alab, Syria",
-      "description": "Avg tone -5.4, 8 mentions.",
-      "lat": 36.2028,
-      "lon": 37.1586,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "http://www.jpost.com/middle-east/isis-threat/article-905011"
-    },
-    {
-      "id": "gdelt-1317522596",
-      "date": "2026-08-09",
-      "title": "THE US engaged in diplomatic cooperation with HAMAS — Philadelphia, Pennsylvania, United States",
-      "description": "Avg tone -4.7, 8 mentions.",
-      "lat": 39.9523,
-      "lon": -75.1638,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.5,
-      "sourceName": "GDELT",
-      "sourceUrl": "http://www.jpost.com/diaspora/article-905008"
-    },
-    {
-      "id": "gdelt-1317522079",
-      "date": "2026-08-09",
-      "title": "ALEXANDRIA expressed intent to cooperate — Puerto Rico",
-      "description": "Avg tone 1.3, 6 mentions.",
-      "lat": 18.2359,
-      "lon": -66.4838,
+      "title": "GOVERNMENT REPRESENTATIVE held consultations with RANCHI — Ranchi, Jharkhand, India",
+      "description": "Avg tone -5.9, 4 mentions.",
+      "lat": 23.35,
+      "lon": 85.3333,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": 7,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.hindustantimes.com/world-news/us-news/who-is-riley-roberts-what-to-know-about-aocs-fiance-and-their-decade-long-relationship-101786295100188.html"
+      "sourceUrl": "https://www.newsx.com/regionals/jharkhand-protest-hemant-soren-considers-scrapping-of-3-jpsc-exams-but-students-continue-protests-over-cbi-probe-258634/"
     },
     {
-      "id": "gdelt-1317522155",
+      "id": "gdelt-1317524197",
       "date": "2026-08-09",
-      "title": "BOSS coerced DUBAI — Dubai, Dubayy, United Arab Emirates",
-      "description": "Avg tone -6.6, 6 mentions.",
-      "lat": 25.2522,
-      "lon": 55.28,
+      "title": "DELHI assaulted GANG — New Delhi, Delhi, India",
+      "description": "Avg tone -8.3, 4 mentions.",
+      "lat": 28.6,
+      "lon": 77.2,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": -5,
+      "goldstein": -9,
       "sourceName": "GDELT",
-      "sourceUrl": "https://krmg.com/2026/08/09/alleged-irish-organized-crime-boss-daniel-kinahan-extradited-to-dublin-from-dubai/"
+      "sourceUrl": "https://www.newsx.com/regionals/girls-enjoy-rape-remark-lands-kerala-right-wing-commentator-tg-mohandas-in-trouble-detained-258662/"
     },
     {
-      "id": "gdelt-1317522255",
+      "id": "gdelt-1317524218",
       "date": "2026-08-09",
-      "title": "ACADEMICS issued a demand to MANILA — Manila, Manila, Philippines",
-      "description": "Avg tone -1.6, 6 mentions.",
-      "lat": 14.6042,
-      "lon": 120.982,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.manilatimes.net/2026/08/10/news/batanes-issue-could-resurface-analyst/2401595"
-    },
-    {
-      "id": "gdelt-1317522399",
-      "date": "2026-08-09",
-      "title": "JEWISH coerced FRANCE — Quatzenheim, Alsace, France",
-      "description": "Avg tone -5.0, 6 mentions.",
-      "lat": 48.6261,
-      "lon": 7.57243,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -9.2,
-      "sourceName": "GDELT",
-      "sourceUrl": "http://www.jpost.com/diaspora/antisemitism/article-905013"
-    },
-    {
-      "id": "gdelt-1317522489",
-      "date": "2026-08-09",
-      "title": "PHILIPPINE engaged in material cooperation — Beijing, Beijing, China",
-      "description": "Avg tone -5.2, 6 mentions.",
-      "lat": 39.9289,
-      "lon": 116.388,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 6,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.manilatimes.net/2026/08/10/opinion/of-martyrdom-and-misinformation/2401627"
-    },
-    {
-      "id": "gdelt-1317522496",
-      "date": "2026-08-09",
-      "title": "PHILIPPINE engaged in diplomatic cooperation with ADMINISTRATION — Batanes, Batanes, Philippines",
-      "description": "Avg tone -1.6, 6 mentions.",
-      "lat": 20.6667,
-      "lon": 121.917,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.manilatimes.net/2026/08/10/news/batanes-issue-could-resurface-analyst/2401595"
-    },
-    {
-      "id": "gdelt-1317522511",
-      "date": "2026-08-09",
-      "title": "HAMAS engaged in diplomatic cooperation — Philadelphia, Pennsylvania, United States",
-      "description": "Avg tone -4.7, 6 mentions.",
-      "lat": 39.9523,
-      "lon": -75.1638,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.5,
-      "sourceName": "GDELT",
-      "sourceUrl": "http://www.jpost.com/diaspora/article-905008"
-    },
-    {
-      "id": "gdelt-1317522513",
-      "date": "2026-08-09",
-      "title": "HAMAS coerced — Philadelphia, Pennsylvania, United States",
-      "description": "Avg tone -4.7, 6 mentions.",
-      "lat": 39.9523,
-      "lon": -75.1638,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "http://www.jpost.com/diaspora/article-905008"
-    },
-    {
-      "id": "gdelt-1317522101",
-      "date": "2026-08-09",
-      "title": "ISRAEL engaged in diplomatic cooperation — Jerusalem, Israel (general), Israel",
-      "description": "Avg tone -0.1, 4 mentions.",
-      "lat": 31.7667,
-      "lon": 35.2333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 8,
-      "sourceName": "GDELT",
-      "sourceUrl": "http://www.jpost.com/middle-east/article-905010"
-    },
-    {
-      "id": "gdelt-1317522113",
-      "date": "2026-08-09",
-      "title": "PHILIPPINE held consultations — Cotabato City, Cotabato, Philippines",
-      "description": "Avg tone 2.9, 4 mentions.",
-      "lat": 7.22361,
-      "lon": 124.246,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://mindanews.com/peace-process/2026/08/iqbal-bangsamoro-peace-process-continues-beyond-sept-14-polls/"
-    },
-    {
-      "id": "gdelt-1317522156",
-      "date": "2026-08-09",
-      "title": "BUSINESS made an appeal to UNITED KINGDOM — Burnham, Somerset, United Kingdom",
-      "description": "Avg tone 1.1, 4 mentions.",
-      "lat": 51.2417,
-      "lon": -2.99528,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.maldonandburnhamstandard.co.uk/news/26449024.essex-aldi-stores-closing-earlier-cost-saving-trial/"
-    },
-    {
-      "id": "gdelt-1317522157",
-      "date": "2026-08-09",
-      "title": "BUSINESS made an appeal to UNITED KINGDOM — Chelmsford, Essex, United Kingdom",
-      "description": "Avg tone 1.1, 4 mentions.",
-      "lat": 51.7333,
-      "lon": 0.483333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.chelmsfordweeklynews.co.uk/news/26449024.essex-aldi-stores-closing-earlier-cost-saving-trial/"
-    },
-    {
-      "id": "gdelt-1317522183",
-      "date": "2026-08-09",
-      "title": "SWITZERLAND yielded — Spain",
-      "description": "Avg tone 3.5, 4 mentions.",
-      "lat": 40,
-      "lon": -4,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://variety.com/2026/film/global/olivia-wilde-the-invite-locarno-comedy-1236830775/"
-    },
-    {
-      "id": "gdelt-1317522212",
-      "date": "2026-08-09",
-      "title": "CUBA coerced — White House, District of Columbia, United States",
-      "description": "Avg tone -4.6, 4 mentions.",
-      "lat": 38.8951,
-      "lon": -77.0364,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://havanatimes.org/opinion/the-children-of-ice/"
-    },
-    {
-      "id": "gdelt-1317522343",
-      "date": "2026-08-09",
-      "title": "HOSPITAL made an appeal to ISRAEL — Israel",
-      "description": "Avg tone -4.2, 4 mentions.",
-      "lat": 31.5,
-      "lon": 34.75,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.israelnationalnews.com/news/431456"
-    },
-    {
-      "id": "gdelt-1317522344",
-      "date": "2026-08-09",
-      "title": "HOSPITAL expressed intent to cooperate with ISRAEL — Israel",
-      "description": "Avg tone -4.2, 4 mentions.",
-      "lat": 31.5,
-      "lon": 34.75,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.israelnationalnews.com/news/431456"
-    },
-    {
-      "id": "gdelt-1317522353",
-      "date": "2026-08-09",
-      "title": "MORO ISLAMIC LIBERATION FRONT held consultations with PHILIPPINE — Cotabato City, Cotabato, Philippines",
-      "description": "Avg tone 2.9, 4 mentions.",
-      "lat": 7.22361,
-      "lon": 124.246,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://mindanews.com/peace-process/2026/08/iqbal-bangsamoro-peace-process-continues-beyond-sept-14-polls/"
-    },
-    {
-      "id": "gdelt-1317522377",
-      "date": "2026-08-09",
-      "title": "ISRAEL engaged in diplomatic cooperation — Jerusalem, Israel (general), Israel",
-      "description": "Avg tone -0.1, 4 mentions.",
-      "lat": 31.7667,
-      "lon": 35.2333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 8,
-      "sourceName": "GDELT",
-      "sourceUrl": "http://www.jpost.com/middle-east/article-905010"
-    },
-    {
-      "id": "gdelt-1317522380",
-      "date": "2026-08-09",
-      "title": "ISRAEL threatened — Tel Aviv, Tel Aviv, Israel",
-      "description": "Avg tone 1.7, 4 mentions.",
-      "lat": 32.0667,
-      "lon": 34.7667,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -7,
-      "sourceName": "GDELT",
-      "sourceUrl": "http://www.jpost.com/israel-news/culture/article-905006"
-    },
-    {
-      "id": "gdelt-1317522387",
-      "date": "2026-08-09",
-      "title": "ISRAEL expressed intent to cooperate with HOSPITAL — Israel",
-      "description": "Avg tone -4.2, 4 mentions.",
-      "lat": 31.5,
-      "lon": 34.75,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.israelnationalnews.com/news/431456"
-    },
-    {
-      "id": "gdelt-1317522392",
-      "date": "2026-08-09",
-      "title": "ISRAEL rejected GAZETTE — Tehran, Tehran, Iran",
+      "title": "ISRAEL rejected LONDON — Tehran, Tehran, Iran",
       "description": "Avg tone -5.2, 4 mentions.",
       "lat": 35.75,
       "lon": 51.5148,
@@ -1209,217 +1094,337 @@
       ],
       "goldstein": -4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.gazetteandherald.co.uk/news/national/26449119.israel-rejects-trumps-gaza-plan-details-emerge-strait-hormuz/"
+      "sourceUrl": "https://www.guardian-series.co.uk/news/national/26449119.israel-rejects-trumps-gaza-plan-details-emerge-strait-hormuz/"
     },
     {
-      "id": "gdelt-1317522463",
+      "id": "gdelt-1317524239",
       "date": "2026-08-09",
-      "title": "NIGERIA made an appeal — Algeria",
-      "description": "Avg tone 1.4, 4 mentions.",
-      "lat": 28,
-      "lon": 3,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.2,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://thesun.ng/tinubu-seeks-tijjaniyya-networks-support-to-counter-extremism-build-peace-across-sahel/"
-    },
-    {
-      "id": "gdelt-1317522487",
-      "date": "2026-08-09",
-      "title": "PHILIPPINE held consultations — Manila, Manila, Philippines",
-      "description": "Avg tone 0.0, 4 mentions.",
-      "lat": 14.6042,
-      "lon": 120.982,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.manilatimes.net/2026/08/10/business/corporate-news/sec-pse-board-seat-a-privilege-not-a-right/2401610"
-    },
-    {
-      "id": "gdelt-1317522488",
-      "date": "2026-08-09",
-      "title": "PHILIPPINE held consultations — Cotabato City, Cotabato, Philippines",
-      "description": "Avg tone 2.9, 4 mentions.",
-      "lat": 7.22361,
-      "lon": 124.246,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://mindanews.com/peace-process/2026/08/iqbal-bangsamoro-peace-process-continues-beyond-sept-14-polls/"
-    },
-    {
-      "id": "gdelt-1317522491",
-      "date": "2026-08-09",
-      "title": "PHILIPPINE provided aid — Manila, Manila, Philippines",
-      "description": "Avg tone 2.7, 4 mentions.",
-      "lat": 14.6042,
-      "lon": 120.982,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.manilatimes.net/2026/08/10/news/pag-ibig-developer-to-build-7300-houses/2401600"
-    },
-    {
-      "id": "gdelt-1317522499",
-      "date": "2026-08-09",
-      "title": "PHILIPPINE held consultations with MORO ISLAMIC LIBERATION FRONT — Cotabato City, Cotabato, Philippines",
-      "description": "Avg tone 2.9, 4 mentions.",
-      "lat": 7.22361,
-      "lon": 124.246,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://mindanews.com/peace-process/2026/08/iqbal-bangsamoro-peace-process-continues-beyond-sept-14-polls/"
-    },
-    {
-      "id": "gdelt-1317522512",
-      "date": "2026-08-09",
-      "title": "HAMAS coerced — Gaza, Israel (general), Israel",
-      "description": "Avg tone -4.7, 4 mentions.",
+      "title": "ISRAELI held consultations with WASHINGTON — Gaza, Israel (general), Israel",
+      "description": "Avg tone -5.2, 4 mentions.",
       "lat": 31.4167,
       "lon": 34.3333,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": -5,
+      "goldstein": 7,
       "sourceName": "GDELT",
-      "sourceUrl": "http://www.jpost.com/diaspora/article-905008"
+      "sourceUrl": "https://www.guardian-series.co.uk/news/national/26449119.israel-rejects-trumps-gaza-plan-details-emerge-strait-hormuz/"
     },
     {
-      "id": "gdelt-1317522615",
+      "id": "gdelt-1317524243",
       "date": "2026-08-09",
-      "title": "HILLARY CLINTON engaged in diplomatic cooperation with ISRAEL — Gaza, Israel (general), Israel",
-      "description": "Avg tone -3.3, 4 mentions.",
+      "title": "ITALY assaulted — Rome, Lazio, Italy",
+      "description": "Avg tone -16.1, 4 mentions.",
+      "lat": 41.9,
+      "lon": 12.4833,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -9,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.1049therebel.com/2026/08/09/arrest-reports-for-august-9-2/"
+    },
+    {
+      "id": "gdelt-1317524297",
+      "date": "2026-08-09",
+      "title": "MEDIA rejected ISRAEL — Gaza, Israel (general), Israel",
+      "description": "Avg tone -0.7, 4 mentions.",
       "lat": 31.4167,
       "lon": 34.3333,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 3.5,
+      "goldstein": -4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.israelnationalnews.com/news/431461"
+      "sourceUrl": "https://www.ynetnews.com/article/skxw2giumx"
     },
     {
-      "id": "gdelt-1317522623",
+      "id": "gdelt-1317524318",
       "date": "2026-08-09",
-      "title": "PUERTO RICO expressed intent to cooperate with ALEXANDRIA — Puerto Rico",
-      "description": "Avg tone 1.3, 4 mentions.",
-      "lat": 18.2359,
-      "lon": -66.4838,
+      "title": "NIGERIA provided aid — Kano State, Kano, Nigeria",
+      "description": "Avg tone 2.6, 4 mentions.",
+      "lat": 11.5,
+      "lon": 8.5,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": 7,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.hindustantimes.com/world-news/us-news/who-is-riley-roberts-what-to-know-about-aocs-fiance-and-their-decade-long-relationship-101786295100188.html"
+      "sourceUrl": "https://thenewsnigeria.com.ng/2026/08/09/kano-holds-mass-wedding-for-1500-widows-supports-victims-of-terror-attack-allocates-n300m/"
     },
     {
-      "id": "gdelt-1317522218",
+      "id": "gdelt-1317524342",
       "date": "2026-08-09",
-      "title": "COMMUNITY engaged in diplomatic cooperation with BAHAMA — Nassau, New Providence, Bahamas, The",
-      "description": "Avg tone -0.2, 3 mentions.",
-      "lat": 25.0833,
-      "lon": -77.35,
+      "title": "PHILIPPINE yielded — Philippines",
+      "description": "Avg tone 1.0, 4 mentions.",
+      "lat": 13,
+      "lon": 122,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 3.4,
+      "goldstein": 10,
       "sourceName": "GDELT",
-      "sourceUrl": "https://nassauguardian.net/aboutus/"
+      "sourceUrl": "https://boxingnewsonline.net/news/ex-champ-says-he-would-have-ko-pacquiao/"
     },
     {
-      "id": "gdelt-1317522357",
+      "id": "gdelt-1317524349",
       "date": "2026-08-09",
-      "title": "NEW DELHI engaged in diplomatic cooperation with JERUSALEM — Jerusalem, Israel (general), Israel",
-      "description": "Avg tone -0.1, 3 mentions.",
-      "lat": 31.7667,
-      "lon": 35.2333,
+      "title": "PALESTINIAN assaulted ISRAEL — Israel",
+      "description": "Avg tone -2.7, 4 mentions.",
+      "lat": 31.5,
+      "lon": 34.75,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 8,
+      "goldstein": -10,
       "sourceName": "GDELT",
-      "sourceUrl": "http://www.jpost.com/middle-east/article-905010"
+      "sourceUrl": "https://www.i24news.tv/en/news/israel/society/artc-the-israeli-metal-star-who-turned-hatred-into-a-bridge-and-watched-it-crack-on-oct-7th"
     },
     {
-      "id": "gdelt-1317522389",
+      "id": "gdelt-1317524497",
       "date": "2026-08-09",
-      "title": "JERUSALEM engaged in diplomatic cooperation with NEW DELHI — Jerusalem, Israel (general), Israel",
-      "description": "Avg tone -0.1, 3 mentions.",
-      "lat": 31.7667,
-      "lon": 35.2333,
+      "title": "WASHINGTON held consultations with ISRAELI — Gaza, Israel (general), Israel",
+      "description": "Avg tone -5.2, 4 mentions.",
+      "lat": 31.4167,
+      "lon": 34.3333,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 8,
+      "goldstein": 7,
       "sourceName": "GDELT",
-      "sourceUrl": "http://www.jpost.com/middle-east/article-905010"
+      "sourceUrl": "https://www.guardian-series.co.uk/news/national/26449119.israel-rejects-trumps-gaza-plan-details-emerge-strait-hormuz/"
     },
     {
-      "id": "gdelt-1317522088",
+      "id": "gdelt-1317524132",
       "date": "2026-08-09",
-      "title": "UNITED KINGDOM engaged in diplomatic cooperation — Burnham, Somerset, United Kingdom",
-      "description": "Avg tone 1.9, 2 mentions.",
-      "lat": 51.2417,
-      "lon": -2.99528,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.maldonandburnhamstandard.co.uk/news/national/uk-today/26448807.morrisons-new-yellow-stickers-not-reduced-items/"
-    },
-    {
-      "id": "gdelt-1317522089",
-      "date": "2026-08-09",
-      "title": "UNITED KINGDOM engaged in diplomatic cooperation — Chelmsford, Essex, United Kingdom",
-      "description": "Avg tone 1.9, 2 mentions.",
-      "lat": 51.7333,
-      "lon": 0.483333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.chelmsfordweeklynews.co.uk/news/national/uk-today/26448807.morrisons-new-yellow-stickers-not-reduced-items/"
-    },
-    {
-      "id": "gdelt-1317522154",
-      "date": "2026-08-09",
-      "title": "BOSS coerced UNITED ARAB EMIRATES — Dublin, Dublin, Ireland",
-      "description": "Avg tone -6.6, 2 mentions.",
-      "lat": 53.3331,
-      "lon": -6.24889,
+      "title": "BRITISH coerced — Oxfordshire, Oxfordshire, United Kingdom",
+      "description": "Avg tone -3.1, 3 mentions.",
+      "lat": 51.7823,
+      "lon": -1.31405,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": -5,
       "sourceName": "GDELT",
-      "sourceUrl": "https://krmg.com/2026/08/09/alleged-irish-organized-crime-boss-daniel-kinahan-extradited-to-dublin-from-dubai/"
+      "sourceUrl": "https://www.dailymail.com/news/article-16039985/Jeremy-Clarkson-Diddly-Squat-Farm-harvest-heatwave.html"
+    },
+    {
+      "id": "gdelt-1317524160",
+      "date": "2026-08-09",
+      "title": "PRIME MINISTER rejected IRAN — Iran",
+      "description": "Avg tone -7.0, 3 mentions.",
+      "lat": 32,
+      "lon": 53,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.ibtimes.co.uk/netanyahu-rejects-trump-gaza-peace-plan-1813171"
+    },
+    {
+      "id": "gdelt-1317524170",
+      "date": "2026-08-09",
+      "title": "EMBASSY made an appeal to NICARAGUAN — Managua, Managua, Nicaragua",
+      "description": "Avg tone -6.0, 3 mentions.",
+      "lat": 12.1508,
+      "lon": -86.2683,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.cubaheadlines.com/articles/337409"
+    },
+    {
+      "id": "gdelt-1317524176",
+      "date": "2026-08-09",
+      "title": "PRESIDENT reduced relations with RUSSIA — Kyiv, Kyyiv, Misto, Ukraine",
+      "description": "Avg tone -8.5, 3 mentions.",
+      "lat": 50.4333,
+      "lon": 30.5167,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -8,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.aol.com/articles/german-minister-warns-daily-hybrid-221221000.html"
+    },
+    {
+      "id": "gdelt-1317524213",
+      "date": "2026-08-09",
+      "title": "ISRAEL rejected — United Arab Emirates",
+      "description": "Avg tone -1.9, 3 mentions.",
+      "lat": 24,
+      "lon": 54,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://fortune.com/2026/08/09/israel-netanyahu-hamas-disarmament-trump-board-of-peace/"
+    },
+    {
+      "id": "gdelt-1317524214",
+      "date": "2026-08-09",
+      "title": "ISRAELI threatened — Iran",
+      "description": "Avg tone -4.3, 3 mentions.",
+      "lat": 32,
+      "lon": 53,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thehindu.com/opinion/op-ed/a-new-security-triangle-emerges-with-the-makkah-pact/article71325559.ece"
+    },
+    {
+      "id": "gdelt-1317524237",
+      "date": "2026-08-09",
+      "title": "ISRAELI held consultations with UNITED STATES — Gaza, Israel (general), Israel",
+      "description": "Avg tone -5.2, 3 mentions.",
+      "lat": 31.4167,
+      "lon": 34.3333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.guardian-series.co.uk/news/national/26449119.israel-rejects-trumps-gaza-plan-details-emerge-strait-hormuz/"
+    },
+    {
+      "id": "gdelt-1317524495",
+      "date": "2026-08-09",
+      "title": "WASHINGTON yielded to IRANIAN — Iran",
+      "description": "Avg tone 0.0, 3 mentions.",
+      "lat": 32,
+      "lon": 53,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://targetednews.com/pr_disp.php?pr_id=9704074"
+    },
+    {
+      "id": "gdelt-1317524496",
+      "date": "2026-08-09",
+      "title": "UNITED STATES held consultations with ISRAELI — Gaza, Israel (general), Israel",
+      "description": "Avg tone -5.2, 3 mentions.",
+      "lat": 31.4167,
+      "lon": 34.3333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.guardian-series.co.uk/news/national/26449119.israel-rejects-trumps-gaza-plan-details-emerge-strait-hormuz/"
+    },
+    {
+      "id": "gdelt-1317523961",
+      "date": "2026-08-09",
+      "title": "ISRAEL held consultations — Jordan River, Israel (general), Israel",
+      "description": "Avg tone -0.4, 2 mentions.",
+      "lat": 31.7633,
+      "lon": 35.5575,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.ynetnews.com/article/syjbsbl8ge"
+    },
+    {
+      "id": "gdelt-1317524093",
+      "date": "2026-08-09",
+      "title": "GERMANY rejected — Germany",
+      "description": "Avg tone -5.3, 2 mentions.",
+      "lat": 51.5,
+      "lon": 10.5,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.ibtimes.co.uk/elon-musk-hitler-left-wing-socialist-controversy-1813161"
+    },
+    {
+      "id": "gdelt-1317524127",
+      "date": "2026-08-09",
+      "title": "ACTOR threatened ISRAELI — Iran",
+      "description": "Avg tone -4.3, 2 mentions.",
+      "lat": 32,
+      "lon": 53,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thehindu.com/opinion/op-ed/a-new-security-triangle-emerges-with-the-makkah-pact/article71325559.ece"
+    },
+    {
+      "id": "gdelt-1317524158",
+      "date": "2026-08-09",
+      "title": "GOVERNMENT REPRESENTATIVE held consultations with RANCHI — New Delhi, Delhi, India",
+      "description": "Avg tone -5.9, 2 mentions.",
+      "lat": 28.6,
+      "lon": 77.2,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.newsx.com/regionals/jharkhand-protest-hemant-soren-considers-scrapping-of-3-jpsc-exams-but-students-continue-protests-over-cbi-probe-258634/"
+    },
+    {
+      "id": "gdelt-1317524169",
+      "date": "2026-08-09",
+      "title": "EMBASSY made an appeal to NICARAGUAN — Managua, Managua, Nicaragua",
+      "description": "Avg tone -6.0, 2 mentions.",
+      "lat": 12.1508,
+      "lon": -86.2683,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.cubaheadlines.com/articles/337409"
+    },
+    {
+      "id": "gdelt-1317524198",
+      "date": "2026-08-09",
+      "title": "ARUNACHAL PRADESH made an appeal to GOVERNOR — Arunachal, Assam, India",
+      "description": "Avg tone 7.9, 2 mentions.",
+      "lat": 24.8667,
+      "lon": 92.7667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.newkerala.com/news/a/arunachal-pradesh-governor-cm-launch-har-ghar-tiranga-290.htm"
     },
     {
       "id": "aka2026powmkf",

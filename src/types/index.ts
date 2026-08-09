@@ -59,6 +59,8 @@ export interface LensReading {
   oneLiner: string;
   narrative: string;
   metrics: CitedMetric[];
+  /** Data quality for just the sources feeding this lens — see DailyDigest.dataQuality for the digest-wide rollup. */
+  dataQuality: DataQuality;
 }
 
 export interface GeoEvent {
@@ -94,6 +96,18 @@ export interface TrendSeries {
 
 /** "live" = every source fetched fresh; "stale" = some sources fell back to a cached last-known-good reading; "demo" = at least one source has never had a real reading and is showing synthetic demo data */
 export type DataQuality = "live" | "stale" | "demo";
+
+export const DATA_QUALITY_LABEL: Record<DataQuality, string> = {
+  live: "Live",
+  stale: "Last known reading",
+  demo: "Demo data",
+};
+
+export const DATA_QUALITY_DESCRIPTION: Record<DataQuality, string> = {
+  live: "Fetched fresh from the source today.",
+  stale: "Today's live fetch failed — showing the last real reading instead of a guess.",
+  demo: "This source has never had a real reading yet — showing placeholder demo data.",
+};
 
 export interface DailyDigest {
   date: string;

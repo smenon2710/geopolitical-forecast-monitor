@@ -64,6 +64,17 @@ function yearMonth(dateStr: string): string {
 }
 
 /**
+ * Same rollup used for the digest-wide `dataQuality`, but scoped to just the
+ * envelopes feeding one lens — the global flag alone can't tell a reader
+ * which lens is actually live vs. which one silently fell back today.
+ */
+function computeDataQuality(envelopes: { isMock: boolean; isStale?: boolean }[]): DailyDigest["dataQuality"] {
+  if (envelopes.some((e) => e.isMock && !e.isStale)) return "demo";
+  if (envelopes.some((e) => e.isStale)) return "stale";
+  return "live";
+}
+
+/**
  * Real wage growth = wage growth − CPI growth for the same month. Walks
  * backward from the most recent month shared by both series and counts how
  * many consecutive months (from today back) it's been negative, stopping at
@@ -217,14 +228,28 @@ async function main() {
       : []),
   ];
 
+  // Scoped to exactly the envelopes that feed each lens's metrics above, so
+  // a reader can tell e.g. "Your Savings" apart from "Safety & Tension" when
+  // only one of them is running on a stale/demo source today.
+  const costOfLivingQuality = computeDataQuality([cpi, gasCpi, gas]);
+  const investmentsQuality = computeDataQuality([broadIndex, ...sectorQuotes]);
+  const standardOfLivingQuality = computeDataQuality([unemployment, wages, gdp, climate]);
+  const securityQuality = computeDataQuality([gdelt, quakes]);
+  const dailyRoutineQuality = computeDataQuality([gas, climate]);
+
   // One batched call for all five lenses instead of five separate calls —
   // same grounding guardrail applied per-lens after parsing.
   const lenses = await synthesizeAllLenses([
-    { lens: "costOfLiving", severity: costOfLivingSeverity, metrics: costOfLivingMetrics },
-    { lens: "investments", severity: investmentsSeverity, metrics: investmentsMetrics },
-    { lens: "standardOfLiving", severity: standardOfLivingSeverity, metrics: standardOfLivingMetrics },
-    { lens: "security", severity: securitySeverity, metrics: securityMetrics },
-    { lens: "dailyRoutine", severity: dailyRoutineSeverity, metrics: dailyRoutineMetrics },
+    { lens: "costOfLiving", severity: costOfLivingSeverity, metrics: costOfLivingMetrics, dataQuality: costOfLivingQuality },
+    { lens: "investments", severity: investmentsSeverity, metrics: investmentsMetrics, dataQuality: investmentsQuality },
+    {
+      lens: "standardOfLiving",
+      severity: standardOfLivingSeverity,
+      metrics: standardOfLivingMetrics,
+      dataQuality: standardOfLivingQuality,
+    },
+    { lens: "security", severity: securitySeverity, metrics: securityMetrics, dataQuality: securityQuality },
+    { lens: "dailyRoutine", severity: dailyRoutineSeverity, metrics: dailyRoutineMetrics, dataQuality: dailyRoutineQuality },
   ]);
 
   const trends: TrendSeries[] = [
@@ -271,11 +296,7 @@ async function main() {
   }));
 
   const allEnvelopes = [gdelt, cpi, gasCpi, gas, quakes, broadIndex, ...sectorQuotes, unemployment, wages, gdp, climate];
-  const dataQuality: DailyDigest["dataQuality"] = allEnvelopes.some((e) => e.isMock && !e.isStale)
-    ? "demo"
-    : allEnvelopes.some((e) => e.isStale)
-      ? "stale"
-      : "live";
+  const dataQuality = computeDataQuality(allEnvelopes);
 
   const digest: DailyDigest = {
     date: today,

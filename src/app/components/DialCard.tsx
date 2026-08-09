@@ -1,5 +1,12 @@
 import type { LensReading } from "@/types";
-import { LENS_LABELS, LENS_SUBLABELS, SEVERITY_LABEL, SEVERITY_STATUS } from "@/types";
+import {
+  DATA_QUALITY_DESCRIPTION,
+  DATA_QUALITY_LABEL,
+  LENS_LABELS,
+  LENS_SUBLABELS,
+  SEVERITY_LABEL,
+  SEVERITY_STATUS,
+} from "@/types";
 import { Dial } from "./Dial";
 
 const STATUS_COLOR_VAR: Record<string, string> = {
@@ -37,6 +44,15 @@ export function DialCard({ reading }: { reading: LensReading }) {
       <p className="text-sm leading-snug text-center" style={{ color: "var(--text-secondary)" }}>
         {reading.oneLiner}
       </p>
+      {reading.dataQuality !== "live" && (
+        <span
+          title={DATA_QUALITY_DESCRIPTION[reading.dataQuality]}
+          className="text-[10px] uppercase tracking-wide rounded-full px-2 py-0.5 mt-1"
+          style={{ border: "1px solid var(--border)", color: "var(--text-muted)" }}
+        >
+          {DATA_QUALITY_LABEL[reading.dataQuality]}
+        </span>
+      )}
     </div>
   );
 }

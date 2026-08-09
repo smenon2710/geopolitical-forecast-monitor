@@ -1,5 +1,5 @@
 import { fetchWithTimeout } from "./fetchWithTimeout";
-import type { CitedMetric, Lens, LensReading, Severity } from "@/types";
+import type { CitedMetric, DataQuality, Lens, LensReading, Severity } from "@/types";
 import { LENS_LABELS, SEVERITY_LABEL } from "@/types";
 
 /**
@@ -14,7 +14,12 @@ import { LENS_LABELS, SEVERITY_LABEL } from "@/types";
  * or the whole call fails.
  */
 
-export function synthesizeLensNarrative(lens: Lens, severity: Severity, metrics: CitedMetric[]): LensReading {
+export function synthesizeLensNarrative(
+  lens: Lens,
+  severity: Severity,
+  metrics: CitedMetric[],
+  dataQuality: DataQuality
+): LensReading {
   const label = LENS_LABELS[lens];
   const severityWord = SEVERITY_LABEL[severity].toLowerCase();
 
@@ -26,13 +31,14 @@ export function synthesizeLensNarrative(lens: Lens, severity: Severity, metrics:
     ? `${label} is ${severityWord} today. ` + metrics.map((m) => `${m.label}: ${m.value}.`).join(" ")
     : `${label} is ${severityWord} today. Nothing crossed the threshold worth flagging.`;
 
-  return { lens, severity, oneLiner, narrative, metrics };
+  return { lens, severity, oneLiner, narrative, metrics, dataQuality };
 }
 
 export interface LensSynthesisInput {
   lens: Lens;
   severity: Severity;
   metrics: CitedMetric[];
+  dataQuality: DataQuality;
 }
 
 const OPENROUTER_BASE = "https://openrouter.ai/api/v1/chat/completions";
@@ -41,7 +47,7 @@ const OPENROUTER_BASE = "https://openrouter.ai/api/v1/chat/completions";
 const DEFAULT_MODEL = "google/gemini-2.0-flash-exp:free";
 
 export async function synthesizeAllLenses(inputs: LensSynthesisInput[]): Promise<LensReading[]> {
-  const fallbacks = inputs.map((i) => synthesizeLensNarrative(i.lens, i.severity, i.metrics));
+  const fallbacks = inputs.map((i) => synthesizeLensNarrative(i.lens, i.severity, i.metrics, i.dataQuality));
 
   const apiKey = process.env.OPENROUTER_API_KEY;
   if (!apiKey) return fallbacks;
@@ -106,7 +112,14 @@ export async function synthesizeAllLenses(inputs: LensSynthesisInput[]): Promise
         console.warn(`[synthesis] rejected ungrounded or missing LLM output for ${input.lens}, using template fallback`);
         return fallbacks[idx];
       }
-      return { lens: input.lens, severity: input.severity, oneLiner: fallbacks[idx].oneLiner, narrative, metrics: input.metrics };
+      return {
+        lens: input.lens,
+        severity: input.severity,
+        oneLiner: fallbacks[idx].oneLiner,
+        narrative,
+        metrics: input.metrics,
+        dataQuality: input.dataQuality,
+      };
     });
   } catch (err) {
     console.warn(`[synthesis] batched call failed, using template fallback for all lenses: ${(err as Error).message}`);
