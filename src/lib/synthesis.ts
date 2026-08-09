@@ -132,7 +132,7 @@ function parseJsonObject(content: string): Record<string, unknown> | null {
  * catches exactly the class of hallucination the hard rules above target,
  * without trusting the model to have followed them.
  */
-function isGroundedInMetrics(narrative: string, metrics: CitedMetric[]): boolean {
+export function isGroundedInMetrics(narrative: string, metrics: CitedMetric[]): boolean {
   if (narrative.trim().length < 20) return false; // too short to be real prose
 
   const sourceText = metrics.map((m) => `${m.label} ${m.value} ${m.sourceName}`).join(" ");
