@@ -1,6 +1,14 @@
 {
   "data": [
     {
+      "id": "us6000tjl2",
+      "place": "5 km E of San José del Palmar, Colombia",
+      "magnitude": 7.4,
+      "lon": -76.1885,
+      "lat": 4.9031,
+      "time": "2026-08-10T12:34:27.787Z"
+    },
+    {
       "id": "aka2026powmkf",
       "place": "57 km WNW of Skwentna, Alaska",
       "magnitude": 5.6,
@@ -119,15 +127,7 @@
       "lon": -118.925833333333,
       "lat": 34.8131666666667,
       "time": "2026-07-12T10:38:04.730Z"
-    },
-    {
-      "id": "us7000szpb",
-      "place": "South Sandwich Islands region",
-      "magnitude": 6.4,
-      "lon": -28.9109,
-      "lat": -55.5349,
-      "time": "2026-07-11T10:26:42.630Z"
     }
   ],
-  "cachedAt": "2026-08-09T19:15:17.690Z"
+  "cachedAt": "2026-08-10T13:08:41.597Z"
 }

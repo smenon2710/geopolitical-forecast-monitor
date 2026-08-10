@@ -90,6 +90,15 @@ describe("scoreInvestments", () => {
     assert.equal(scoreInvestments({ indexPctChange: 3.1, vix: 0 }), 3);
     assert.equal(scoreInvestments({ indexPctChange: 0, vix: 25.1 }), 3);
   });
+
+  test("10yr Treasury yield move escalates severity like the other inputs", () => {
+    assert.equal(scoreInvestments({ indexPctChange: 0, vix: 0, yieldChangePts: 0.05 }), 0);
+    assert.equal(scoreInvestments({ indexPctChange: 0, vix: 0, yieldChangePts: 0.06 }), 1);
+    assert.equal(scoreInvestments({ indexPctChange: 0, vix: 0, yieldChangePts: 0.11 }), 2);
+    assert.equal(scoreInvestments({ indexPctChange: 0, vix: 0, yieldChangePts: 0.21 }), 3);
+    // Direction doesn't matter, only magnitude.
+    assert.equal(scoreInvestments({ indexPctChange: 0, vix: 0, yieldChangePts: -0.21 }), 3);
+  });
 });
 
 describe("scoreStandardOfLiving", () => {

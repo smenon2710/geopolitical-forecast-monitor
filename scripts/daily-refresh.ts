@@ -16,11 +16,12 @@ config({ path: join(process.cwd(), ".env.local") });
 
 import { fetchGdeltEvents } from "../src/lib/sources/gdelt";
 import { fetchFredSeries } from "../src/lib/sources/fred";
-import { fetchBlsCpiBreakdown } from "../src/lib/sources/bls";
+import { fetchBlsCpiBreakdown, fetchBlsMetroCpi, METRO_CPI_SERIES } from "../src/lib/sources/bls";
 import { fetchEiaGasolinePrice } from "../src/lib/sources/eia";
 import { fetchSignificantQuakes } from "../src/lib/sources/usgs";
 import { fetchClimateAlerts } from "../src/lib/sources/noaa";
 import { fetchDailyQuote, type MarketQuote } from "../src/lib/sources/marketdata";
+import { fetchTravelAdvisories, isMajorHub } from "../src/lib/sources/travelAdvisory";
 import type { SourceEnvelope } from "../src/lib/sources/types";
 
 import {
@@ -30,8 +31,8 @@ import {
   scoreSecurity,
   scoreDailyRoutine,
 } from "../src/lib/scoring";
-import { synthesizeAllLenses } from "../src/lib/synthesis";
-import type { CitedMetric, DailyDigest, GeoEvent, SectorMove, TrendSeries } from "../src/types";
+import { synthesizeAllLenses, synthesizeLensNarrative } from "../src/lib/synthesis";
+import type { CitedMetric, DailyDigest, GeoEvent, MetroCostOfLiving, SectorMove, TrendSeries } from "../src/types";
 
 const SECTOR_ETFS: { sector: string; symbol: string }[] = [
   { sector: "Energy", symbol: "XLE" },
@@ -109,12 +110,15 @@ function trailingNegativeRealWageMonths(
 async function main() {
   const today = new Date().toISOString().slice(0, 10);
 
-  const [gdelt, cpi, gasCpi, gas, quakes] = await Promise.all([
+  const [gdelt, cpi, gasCpi, gas, quakes, tenYearYield, travelAdvisories, metroCpi] = await Promise.all([
     fetchGdeltEvents(),
     fetchFredSeries("CPIAUCSL"),
     fetchBlsCpiBreakdown(),
     fetchEiaGasolinePrice(),
     fetchSignificantQuakes(),
+    fetchFredSeries("DGS10"), // 10yr Treasury constant maturity yield, daily
+    fetchTravelAdvisories(),
+    fetchBlsMetroCpi(),
   ]);
 
   // Alpha Vantage's free tier is 1 request/second — fire these sequentially
@@ -148,14 +152,23 @@ async function main() {
 
   // --- Investments ---
   const maxSectorMove = Math.max(...sectorQuotes.map((q) => Math.abs(q.data.pctChangeDaily)));
+  const yieldLatest = tenYearYield.data.at(-1)!;
+  const yieldPrev = tenYearYield.data.at(-2)!;
+  const yieldChangePts = yieldLatest.value - yieldPrev.value;
   const investmentsSeverity = scoreInvestments({
     indexPctChange: broadIndex.data.pctChangeDaily,
     vix: 14 + Math.abs(broadIndex.data.pctChangeDaily) * 3,
     maxSectorEtfPctChange: maxSectorMove,
+    yieldChangePts,
   });
   const investmentsMetrics: CitedMetric[] = [
     { label: "The stock market today", value: `${broadIndex.data.pctChangeDaily.toFixed(2)}%`, sourceName: "Alpha Vantage (S&P 500)" },
     { label: "Biggest industry swing", value: `${maxSectorMove.toFixed(2)}%`, sourceName: "Alpha Vantage" },
+    {
+      label: "Cost of long-term borrowing",
+      value: `${yieldLatest.value.toFixed(2)}% (${yieldChangePts >= 0 ? "+" : ""}${yieldChangePts.toFixed(2)}pt today)`,
+      sourceName: "FRED (DGS10)",
+    },
   ];
 
   // --- Standard of Living ---
@@ -220,11 +233,35 @@ async function main() {
     : isolatedWeather
       ? "isolated"
       : "none";
-  const dailyRoutineSeverity = scoreDailyRoutine({ gasPctChange, severeWeatherAlert: weatherAlert });
+
+  // Restricted to a fixed list of major/popular-with-US-travelers countries
+  // (isMajorHub) — see the comment in travelAdvisory.ts for why. "Upgraded"
+  // is approximated as "currently at Level 3" rather than a true day-over-day
+  // change, since detecting a real change would need historical diffing this
+  // pass doesn't build; documented here and in PLAN.md as a known simplification.
+  const majorHubAdvisories = travelAdvisories.data.filter((a) => isMajorHub(a.countryCode));
+  const majorHubLevel4 = majorHubAdvisories.find((a) => a.level === 4);
+  const majorHubLevel3 = majorHubAdvisories.find((a) => a.level === 3);
+
+  const dailyRoutineSeverity = scoreDailyRoutine({
+    gasPctChange,
+    severeWeatherAlert: weatherAlert,
+    advisoryAgainstMajorHub: !!majorHubLevel4,
+    travelAdvisoryUpgraded: !!majorHubLevel3,
+  });
   const dailyRoutineMetrics: CitedMetric[] = [
     { label: "Cost of getting around", value: `${gasPctChange.toFixed(1)}% this week`, sourceName: "EIA" },
     ...(majorDisaster || isolatedWeather
       ? [{ label: "Weather disruption", value: (majorDisaster ?? isolatedWeather)!.event, sourceName: "NOAA" }]
+      : []),
+    ...(majorHubLevel4 || majorHubLevel3
+      ? [
+          {
+            label: "Travel advisory",
+            value: `${(majorHubLevel4 ?? majorHubLevel3)!.countryName} — Level ${(majorHubLevel4 ?? majorHubLevel3)!.level}`,
+            sourceName: "US State Department",
+          },
+        ]
       : []),
   ];
 
@@ -232,10 +269,11 @@ async function main() {
   // a reader can tell e.g. "Your Savings" apart from "Safety & Tension" when
   // only one of them is running on a stale/demo source today.
   const costOfLivingQuality = computeDataQuality([cpi, gasCpi, gas]);
-  const investmentsQuality = computeDataQuality([broadIndex, ...sectorQuotes]);
+  const investmentsQuality = computeDataQuality([broadIndex, ...sectorQuotes, tenYearYield]);
   const standardOfLivingQuality = computeDataQuality([unemployment, wages, gdp, climate]);
   const securityQuality = computeDataQuality([gdelt, quakes]);
-  const dailyRoutineQuality = computeDataQuality([gas, climate]);
+  const dailyRoutineQuality = computeDataQuality([gas, climate, travelAdvisories]);
+  const metroCpiQuality = computeDataQuality([metroCpi]);
 
   // One batched call for all five lenses instead of five separate calls —
   // same grounding guardrail applied per-lens after parsing.
@@ -251,6 +289,39 @@ async function main() {
     { lens: "security", severity: securitySeverity, metrics: securityMetrics, dataQuality: securityQuality },
     { lens: "dailyRoutine", severity: dailyRoutineSeverity, metrics: dailyRoutineMetrics, dataQuality: dailyRoutineQuality },
   ]);
+
+  // --- Cost of Living, per metro (personalization without accounts) ---
+  // Same scoring rubric as the national reading, using this metro's own BLS
+  // CPI change in place of the national figure; gas price stays the national
+  // EIA figure since gas isn't fetched at metro granularity here. Narratives
+  // use the deterministic template (not the batched LLM call above) to keep
+  // synthesis cost bounded to the five national lenses, per PLAN.md.
+  const metroReadings: MetroCostOfLiving[] = metroCpi.data.map((m) => {
+    const metroInfo = METRO_CPI_SERIES.find((s) => s.metroId === m.metroId)!;
+    // Scored on the monthly-equivalent rate (see BlsMetroCpi.monthlyEquivalentPct)
+    // so bi-monthly metros aren't scored as more severe purely for spanning
+    // more time; the citation still shows the real reported change and period.
+    const severity = scoreCostOfLiving({ cpiMoMPct: m.monthlyEquivalentPct, gasPctChange });
+    const period = metroInfo.cadenceMonths === 1 ? "last month" : "last published reading (2 months ago)";
+    const metrics: CitedMetric[] = [
+      {
+        label: "How fast prices are rising here",
+        value: `${m.pctChange.toFixed(2)}% since ${period}`,
+        sourceName: `BLS (${metroInfo.metroName} CPI)`,
+      },
+      { label: "Price at the pump", value: `$${gasLatest.value.toFixed(2)}/gal (${gasPctChange.toFixed(1)}% wk/wk)`, sourceName: "EIA" },
+    ];
+    const reading = synthesizeLensNarrative("costOfLiving", severity, metrics, metroCpiQuality);
+    return {
+      metroId: m.metroId,
+      metroName: metroInfo.metroName,
+      severity,
+      oneLiner: reading.oneLiner,
+      narrative: reading.narrative,
+      metrics,
+      dataQuality: metroCpiQuality,
+    };
+  });
 
   const trends: TrendSeries[] = [
     { id: "cpi", label: "Price Level", unit: "index", points: cpi.data.map((p) => ({ date: p.date, value: p.value })) },
@@ -295,7 +366,22 @@ async function main() {
     pctChange: sectorQuotes[i].data.pctChangeDaily,
   }));
 
-  const allEnvelopes = [gdelt, cpi, gasCpi, gas, quakes, broadIndex, ...sectorQuotes, unemployment, wages, gdp, climate];
+  const allEnvelopes = [
+    gdelt,
+    cpi,
+    gasCpi,
+    gas,
+    quakes,
+    broadIndex,
+    ...sectorQuotes,
+    unemployment,
+    wages,
+    gdp,
+    climate,
+    tenYearYield,
+    travelAdvisories,
+    metroCpi,
+  ];
   const dataQuality = computeDataQuality(allEnvelopes);
 
   const digest: DailyDigest = {
@@ -306,6 +392,7 @@ async function main() {
     trends,
     events,
     sectors,
+    metroReadings,
   };
 
   const dataDir = join(process.cwd(), "data");

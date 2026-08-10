@@ -1,0 +1,1247 @@
+{
+  "data": [
+    {
+      "countryCode": "BT",
+      "countryName": "Bhutan",
+      "level": 1,
+      "pubDate": "Mon, 20 Oct 2025"
+    },
+    {
+      "countryCode": "SG",
+      "countryName": "Senegal",
+      "level": 1,
+      "pubDate": "Mon, 01 Dec 2025"
+    },
+    {
+      "countryCode": "TI",
+      "countryName": "Tajikistan",
+      "level": 2,
+      "pubDate": "Fri, 16 May 2025"
+    },
+    {
+      "countryCode": "IC",
+      "countryName": "Iceland",
+      "level": 1,
+      "pubDate": "Tue, 05 May 2026"
+    },
+    {
+      "countryCode": "CH",
+      "countryName": "Mainland China, Hong Kong &amp; Macau - See Summaries",
+      "level": 2,
+      "pubDate": "Wed, 27 Nov 2024"
+    },
+    {
+      "countryCode": "ZA",
+      "countryName": "Zambia",
+      "level": 1,
+      "pubDate": "Mon, 31 Jul 2023"
+    },
+    {
+      "countryCode": "AM",
+      "countryName": "Armenia",
+      "level": 2,
+      "pubDate": "Fri, 05 Sep 2025"
+    },
+    {
+      "countryCode": "SY",
+      "countryName": "Syria",
+      "level": 4,
+      "pubDate": "Thu, 11 Dec 2025"
+    },
+    {
+      "countryCode": "BL",
+      "countryName": "Bolivia",
+      "level": 2,
+      "pubDate": "Tue, 28 Apr 2026"
+    },
+    {
+      "countryCode": "TW",
+      "countryName": "Taiwan",
+      "level": 1,
+      "pubDate": "Tue, 25 Nov 2025"
+    },
+    {
+      "countryCode": "RW",
+      "countryName": "Rwanda",
+      "level": 3,
+      "pubDate": "Mon, 11 May 2026"
+    },
+    {
+      "countryCode": "UY",
+      "countryName": "Uruguay",
+      "level": 2,
+      "pubDate": "Tue, 28 Jul 2026"
+    },
+    {
+      "countryCode": "BB",
+      "countryName": "Barbados",
+      "level": 1,
+      "pubDate": "Fri, 10 Apr 2026"
+    },
+    {
+      "countryCode": "KN",
+      "countryName": "North Korea",
+      "level": 4,
+      "pubDate": "Tue, 29 Apr 2025"
+    },
+    {
+      "countryCode": "CD",
+      "countryName": "Chad",
+      "level": 4,
+      "pubDate": "Tue, 28 Apr 2026"
+    },
+    {
+      "countryCode": "HU",
+      "countryName": "Hungary",
+      "level": 1,
+      "pubDate": "Wed, 15 Apr 2026"
+    },
+    {
+      "countryCode": "MT",
+      "countryName": "Malta",
+      "level": 1,
+      "pubDate": "Thu, 09 Jul 2026"
+    },
+    {
+      "countryCode": "BM",
+      "countryName": "Burma",
+      "level": 4,
+      "pubDate": "Fri, 08 May 2026"
+    },
+    {
+      "countryCode": "QA",
+      "countryName": "Qatar",
+      "level": 3,
+      "pubDate": "Mon, 02 Mar 2026"
+    },
+    {
+      "countryCode": "SA",
+      "countryName": "Saudi Arabia",
+      "level": 3,
+      "pubDate": "Fri, 13 Mar 2026"
+    },
+    {
+      "countryCode": "EN",
+      "countryName": "Estonia",
+      "level": 1,
+      "pubDate": "Tue, 31 Mar 2026"
+    },
+    {
+      "countryCode": "VI",
+      "countryName": "British Virgin Islands",
+      "level": 1,
+      "pubDate": "Fri, 22 May 2026"
+    },
+    {
+      "countryCode": "BF",
+      "countryName": "The Bahamas",
+      "level": 2,
+      "pubDate": "Tue, 28 Jul 2026"
+    },
+    {
+      "countryCode": "MJ",
+      "countryName": "Montenegro",
+      "level": 1,
+      "pubDate": "Tue, 26 Nov 2024"
+    },
+    {
+      "countryCode": "AR",
+      "countryName": "Argentina",
+      "level": 1,
+      "pubDate": "Wed, 20 May 2026"
+    },
+    {
+      "countryCode": "BE",
+      "countryName": "Belgium",
+      "level": 2,
+      "pubDate": "Thu, 23 Jul 2026"
+    },
+    {
+      "countryCode": "JO",
+      "countryName": "Jordan",
+      "level": 3,
+      "pubDate": "Mon, 04 May 2026"
+    },
+    {
+      "countryCode": "SU",
+      "countryName": "Sudan",
+      "level": 4,
+      "pubDate": "Fri, 15 May 2026"
+    },
+    {
+      "countryCode": "CU",
+      "countryName": "Cuba",
+      "level": 2,
+      "pubDate": "Wed, 07 May 2025"
+    },
+    {
+      "countryCode": "LO",
+      "countryName": "Slovakia",
+      "level": 1,
+      "pubDate": "Tue, 10 Feb 2026"
+    },
+    {
+      "countryCode": "GW",
+      "countryName": "Guinea-Bissau",
+      "level": 3,
+      "pubDate": "Thu, 11 Dec 2025"
+    },
+    {
+      "countryCode": "CY",
+      "countryName": "Cyprus",
+      "level": 1,
+      "pubDate": "Mon, 01 Jun 2026"
+    },
+    {
+      "countryCode": "ER",
+      "countryName": "Eritrea",
+      "level": 2,
+      "pubDate": "Mon, 31 Jul 2023"
+    },
+    {
+      "countryCode": "MO",
+      "countryName": "Morocco",
+      "level": 2,
+      "pubDate": "Mon, 21 Apr 2025"
+    },
+    {
+      "countryCode": "GM",
+      "countryName": "Germany",
+      "level": 2,
+      "pubDate": "Tue, 13 May 2025"
+    },
+    {
+      "countryCode": "JM",
+      "countryName": "Jamaica",
+      "level": 2,
+      "pubDate": "Tue, 23 Jun 2026"
+    },
+    {
+      "countryCode": "AG",
+      "countryName": "Algeria",
+      "level": 2,
+      "pubDate": "Thu, 26 Sep 2024"
+    },
+    {
+      "countryCode": "PA",
+      "countryName": "Paraguay",
+      "level": 1,
+      "pubDate": "Wed, 30 Apr 2025"
+    },
+    {
+      "countryCode": "AN",
+      "countryName": "Andorra",
+      "level": 1,
+      "pubDate": "Thu, 21 May 2026"
+    },
+    {
+      "countryCode": "LT",
+      "countryName": "Lesotho",
+      "level": 2,
+      "pubDate": "Wed, 17 Jun 2026"
+    },
+    {
+      "countryCode": "DO",
+      "countryName": "Dominica",
+      "level": 1,
+      "pubDate": "Wed, 20 May 2026"
+    },
+    {
+      "countryCode": "TU",
+      "countryName": "Turkey",
+      "level": 2,
+      "pubDate": "Tue, 09 Jun 2026"
+    },
+    {
+      "countryCode": "PO",
+      "countryName": "Portugal",
+      "level": 1,
+      "pubDate": "Mon, 03 Mar 2025"
+    },
+    {
+      "countryCode": "AF",
+      "countryName": "Afghanistan",
+      "level": 4,
+      "pubDate": "Fri, 20 Feb 2026"
+    },
+    {
+      "countryCode": "NS",
+      "countryName": "Suriname",
+      "level": 1,
+      "pubDate": "Fri, 13 Dec 2024"
+    },
+    {
+      "countryCode": "GT",
+      "countryName": "Guatemala",
+      "level": 3,
+      "pubDate": "Thu, 12 Mar 2026"
+    },
+    {
+      "countryCode": "UC",
+      "countryName": "Cura&#231;ao",
+      "level": 1,
+      "pubDate": "Mon, 19 Aug 2024"
+    },
+    {
+      "countryCode": "MU",
+      "countryName": "Oman",
+      "level": 3,
+      "pubDate": "Thu, 09 Apr 2026"
+    },
+    {
+      "countryCode": "BR",
+      "countryName": "Brazil",
+      "level": 2,
+      "pubDate": "Thu, 29 May 2025"
+    },
+    {
+      "countryCode": "AU",
+      "countryName": "Austria",
+      "level": 1,
+      "pubDate": "Fri, 23 Aug 2024"
+    },
+    {
+      "countryCode": "AJ",
+      "countryName": "Azerbaijan",
+      "level": 3,
+      "pubDate": "Tue, 28 Apr 2026"
+    },
+    {
+      "countryCode": "CM",
+      "countryName": "Cameroon",
+      "level": 2,
+      "pubDate": "Fri, 15 May 2026"
+    },
+    {
+      "countryCode": "CO",
+      "countryName": "Colombia",
+      "level": 3,
+      "pubDate": "Thu, 17 Apr 2025"
+    },
+    {
+      "countryCode": "GG",
+      "countryName": "Georgia",
+      "level": 1,
+      "pubDate": "Thu, 13 Mar 2025"
+    },
+    {
+      "countryCode": "VC",
+      "countryName": "Saint Vincent and the Grenadines",
+      "level": 1,
+      "pubDate": "Tue, 07 Jul 2026"
+    },
+    {
+      "countryCode": "CI",
+      "countryName": "Chile",
+      "level": 2,
+      "pubDate": "Wed, 20 May 2026"
+    },
+    {
+      "countryCode": "CA",
+      "countryName": "Canada",
+      "level": 1,
+      "pubDate": "Wed, 11 Jun 2025"
+    },
+    {
+      "countryCode": "BO",
+      "countryName": "Belarus",
+      "level": 4,
+      "pubDate": "Mon, 22 Dec 2025"
+    },
+    {
+      "countryCode": "AO",
+      "countryName": "Angola",
+      "level": 2,
+      "pubDate": "Mon, 23 Sep 2024"
+    },
+    {
+      "countryCode": "LU",
+      "countryName": "Luxembourg",
+      "level": 1,
+      "pubDate": "Wed, 08 Apr 2026"
+    },
+    {
+      "countryCode": "TV",
+      "countryName": "Tuvalu",
+      "level": 1,
+      "pubDate": "Mon, 02 Dec 2024"
+    },
+    {
+      "countryCode": "KR",
+      "countryName": "Kiribati",
+      "level": 1,
+      "pubDate": "Mon, 02 Dec 2024"
+    },
+    {
+      "countryCode": "ZI",
+      "countryName": "Zimbabwe",
+      "level": 2,
+      "pubDate": "Tue, 27 Jun 2023"
+    },
+    {
+      "countryCode": "AV",
+      "countryName": "Anguilla",
+      "level": 1,
+      "pubDate": "Fri, 22 May 2026"
+    },
+    {
+      "countryCode": "MK",
+      "countryName": "North Macedonia",
+      "level": 1,
+      "pubDate": "Tue, 14 Jan 2025"
+    },
+    {
+      "countryCode": "JA",
+      "countryName": "Japan",
+      "level": 1,
+      "pubDate": "Thu, 15 May 2025"
+    },
+    {
+      "countryCode": "BG",
+      "countryName": "Bangladesh",
+      "level": 3,
+      "pubDate": "Tue, 20 Jan 2026"
+    },
+    {
+      "countryCode": "GH",
+      "countryName": "Ghana",
+      "level": 2,
+      "pubDate": "Tue, 07 Jul 2026"
+    },
+    {
+      "countryCode": "AA",
+      "countryName": "Aruba",
+      "level": 1,
+      "pubDate": "Mon, 19 Aug 2024"
+    },
+    {
+      "countryCode": "SW",
+      "countryName": "Sweden",
+      "level": 2,
+      "pubDate": "Mon, 18 May 2026"
+    },
+    {
+      "countryCode": "SC",
+      "countryName": "Saint Kitts and Nevis",
+      "level": 1,
+      "pubDate": "Tue, 07 Jul 2026"
+    },
+    {
+      "countryCode": "GB",
+      "countryName": "Gabon",
+      "level": 2,
+      "pubDate": "Mon, 30 Mar 2026"
+    },
+    {
+      "countryCode": "MG",
+      "countryName": "Mongolia",
+      "level": 1,
+      "pubDate": "Wed, 29 Jul 2026"
+    },
+    {
+      "countryCode": "ES",
+      "countryName": "El Salvador",
+      "level": 1,
+      "pubDate": "Thu, 25 Jun 2026"
+    },
+    {
+      "countryCode": "MA",
+      "countryName": "Madagascar",
+      "level": 2,
+      "pubDate": "Thu, 04 Dec 2025"
+    },
+    {
+      "countryCode": "PL",
+      "countryName": "Poland",
+      "level": 1,
+      "pubDate": "Thu, 05 Jun 2025"
+    },
+    {
+      "countryCode": "MP",
+      "countryName": "Mauritius",
+      "level": 2,
+      "pubDate": "Mon, 08 Dec 2025"
+    },
+    {
+      "countryCode": "MD",
+      "countryName": "Moldova",
+      "level": 2,
+      "pubDate": "Tue, 07 Jul 2026"
+    },
+    {
+      "countryCode": "WA",
+      "countryName": "Namibia",
+      "level": 2,
+      "pubDate": "Fri, 15 May 2026"
+    },
+    {
+      "countryCode": "NI",
+      "countryName": "Nigeria",
+      "level": 3,
+      "pubDate": "Fri, 12 Jun 2026"
+    },
+    {
+      "countryCode": "TS",
+      "countryName": "Tunisia",
+      "level": 2,
+      "pubDate": "Thu, 21 May 2026"
+    },
+    {
+      "countryCode": "MV",
+      "countryName": "Maldives",
+      "level": 2,
+      "pubDate": "Tue, 07 Oct 2025"
+    },
+    {
+      "countryCode": "GR",
+      "countryName": "Greece",
+      "level": 1,
+      "pubDate": "Thu, 23 Oct 2025"
+    },
+    {
+      "countryCode": "CT",
+      "countryName": "Central African Republic",
+      "level": 4,
+      "pubDate": "Mon, 10 Nov 2025"
+    },
+    {
+      "countryCode": "SO",
+      "countryName": "Somalia",
+      "level": 4,
+      "pubDate": "Thu, 21 May 2026"
+    },
+    {
+      "countryCode": "GJ",
+      "countryName": "Grenada",
+      "level": 2,
+      "pubDate": "Mon, 05 Jan 2026"
+    },
+    {
+      "countryCode": "NO",
+      "countryName": "Norway",
+      "level": 1,
+      "pubDate": "Mon, 06 Jul 2026"
+    },
+    {
+      "countryCode": "TZ",
+      "countryName": "Tanzania",
+      "level": 3,
+      "pubDate": "Fri, 31 Oct 2025"
+    },
+    {
+      "countryCode": "TN",
+      "countryName": "Tonga",
+      "level": 1,
+      "pubDate": "Mon, 02 Dec 2024"
+    },
+    {
+      "countryCode": "OD",
+      "countryName": "South Sudan",
+      "level": 4,
+      "pubDate": "Thu, 13 Nov 2025"
+    },
+    {
+      "countryCode": "UP",
+      "countryName": "Ukraine",
+      "level": 4,
+      "pubDate": "Thu, 14 Nov 2024"
+    },
+    {
+      "countryCode": "EI",
+      "countryName": "Ireland",
+      "level": 1,
+      "pubDate": "Fri, 20 Mar 2026"
+    },
+    {
+      "countryCode": "PS",
+      "countryName": "Palau",
+      "level": 1,
+      "pubDate": "Tue, 06 Aug 2024"
+    },
+    {
+      "countryCode": "RS",
+      "countryName": "Russia",
+      "level": 4,
+      "pubDate": "Mon, 29 Dec 2025"
+    },
+    {
+      "countryCode": "TP",
+      "countryName": "Sao Tome and Principe",
+      "level": 2,
+      "pubDate": "Wed, 08 Oct 2025"
+    },
+    {
+      "countryCode": "AY",
+      "countryName": "Antarctica",
+      "level": 2,
+      "pubDate": "Tue, 23 Sep 2025"
+    },
+    {
+      "countryCode": "CG",
+      "countryName": "Democratic Republic of the Congo",
+      "level": 4,
+      "pubDate": "Wed, 15 Jul 2026"
+    },
+    {
+      "countryCode": "EC",
+      "countryName": "Ecuador",
+      "level": 2,
+      "pubDate": "Tue, 14 Oct 2025"
+    },
+    {
+      "countryCode": "ID",
+      "countryName": "Indonesia",
+      "level": 2,
+      "pubDate": "Tue, 07 Jul 2026"
+    },
+    {
+      "countryCode": "LG",
+      "countryName": "Latvia",
+      "level": 1,
+      "pubDate": "Wed, 01 Apr 2026"
+    },
+    {
+      "countryCode": "RP",
+      "countryName": "Philippines",
+      "level": 2,
+      "pubDate": "Thu, 08 May 2025"
+    },
+    {
+      "countryCode": "RM",
+      "countryName": "Marshall Islands",
+      "level": 1,
+      "pubDate": "Thu, 21 May 2026"
+    },
+    {
+      "countryCode": "TO",
+      "countryName": "Togo",
+      "level": 2,
+      "pubDate": "Mon, 09 Mar 2026"
+    },
+    {
+      "countryCode": "UG",
+      "countryName": "Uganda",
+      "level": 4,
+      "pubDate": "Mon, 08 Dec 2025"
+    },
+    {
+      "countryCode": "FI",
+      "countryName": "Finland",
+      "level": 1,
+      "pubDate": "Fri, 13 Mar 2026"
+    },
+    {
+      "countryCode": "HR",
+      "countryName": "Croatia",
+      "level": 1,
+      "pubDate": "Mon, 18 May 2026"
+    },
+    {
+      "countryCode": "UK",
+      "countryName": "United Kingdom",
+      "level": 2,
+      "pubDate": "Thu, 08 May 2025"
+    },
+    {
+      "countryCode": "TK",
+      "countryName": "Turks and Caicos Islands",
+      "level": 2,
+      "pubDate": "Tue, 07 Jul 2026"
+    },
+    {
+      "countryCode": "NU",
+      "countryName": "Nicaragua",
+      "level": 3,
+      "pubDate": "Thu, 14 May 2026"
+    },
+    {
+      "countryCode": "CB",
+      "countryName": "Cambodia",
+      "level": 2,
+      "pubDate": "Fri, 25 Jul 2025"
+    },
+    {
+      "countryCode": "BK",
+      "countryName": "Bosnia and Herzegovina",
+      "level": 2,
+      "pubDate": "Thu, 12 Dec 2024"
+    },
+    {
+      "countryCode": "DR",
+      "countryName": "Dominican Republic",
+      "level": 2,
+      "pubDate": "Thu, 12 Jun 2025"
+    },
+    {
+      "countryCode": "SP",
+      "countryName": "Spain",
+      "level": 2,
+      "pubDate": "Mon, 12 May 2025"
+    },
+    {
+      "countryCode": "LS",
+      "countryName": "Liechtenstein",
+      "level": 1,
+      "pubDate": "Thu, 22 May 2025"
+    },
+    {
+      "countryCode": "BX",
+      "countryName": "Brunei",
+      "level": 1,
+      "pubDate": "Thu, 14 May 2026"
+    },
+    {
+      "countryCode": "UZ",
+      "countryName": "Uzbekistan",
+      "level": 1,
+      "pubDate": "Thu, 22 Jan 2026"
+    },
+    {
+      "countryCode": "KE",
+      "countryName": "Kenya",
+      "level": 2,
+      "pubDate": "Tue, 28 Jul 2026"
+    },
+    {
+      "countryCode": "ST",
+      "countryName": "Saint Lucia",
+      "level": 2,
+      "pubDate": "Fri, 10 Jul 2026"
+    },
+    {
+      "countryCode": "BN",
+      "countryName": "Benin",
+      "level": 2,
+      "pubDate": "Wed, 07 Jan 2026"
+    },
+    {
+      "countryCode": "PP",
+      "countryName": "Papua New Guinea",
+      "level": 3,
+      "pubDate": "Tue, 29 Apr 2025"
+    },
+    {
+      "countryCode": "SI",
+      "countryName": "Slovenia",
+      "level": 1,
+      "pubDate": "Fri, 15 May 2026"
+    },
+    {
+      "countryCode": "CE",
+      "countryName": "Sri Lanka",
+      "level": 2,
+      "pubDate": "Thu, 09 Oct 2025"
+    },
+    {
+      "countryCode": "FP",
+      "countryName": "French Polynesia",
+      "level": 1,
+      "pubDate": "Mon, 02 Dec 2024"
+    },
+    {
+      "countryCode": "VM",
+      "countryName": "Vietnam",
+      "level": 1,
+      "pubDate": "Wed, 24 Jun 2026"
+    },
+    {
+      "countryCode": "AC",
+      "countryName": "Antigua and Barbuda",
+      "level": 1,
+      "pubDate": "Wed, 20 May 2026"
+    },
+    {
+      "countryCode": "UV",
+      "countryName": "Burkina Faso",
+      "level": 4,
+      "pubDate": "Mon, 04 May 2026"
+    },
+    {
+      "countryCode": "SR",
+      "countryName": "Switzerland",
+      "level": 1,
+      "pubDate": "Tue, 20 May 2025"
+    },
+    {
+      "countryCode": "IS",
+      "countryName": "See Individual Summaries",
+      "level": 4,
+      "pubDate": "Fri, 27 Feb 2026"
+    },
+    {
+      "countryCode": "SN",
+      "countryName": "Singapore",
+      "level": 1,
+      "pubDate": "Mon, 09 Mar 2026"
+    },
+    {
+      "countryCode": "IZ",
+      "countryName": "Iraq",
+      "level": 4,
+      "pubDate": "Mon, 02 Mar 2026"
+    },
+    {
+      "countryCode": "AL",
+      "countryName": "Albania",
+      "level": 2,
+      "pubDate": "Tue, 31 Dec 2024"
+    },
+    {
+      "countryCode": "GA",
+      "countryName": "The Gambia",
+      "level": 2,
+      "pubDate": "Fri, 16 Jan 2026"
+    },
+    {
+      "countryCode": "NL",
+      "countryName": "Netherlands",
+      "level": 2,
+      "pubDate": "Fri, 09 Aug 2024"
+    },
+    {
+      "countryCode": "NR",
+      "countryName": "Nauru",
+      "level": 1,
+      "pubDate": "Mon, 02 Dec 2024"
+    },
+    {
+      "countryCode": "SE",
+      "countryName": "Seychelles",
+      "level": 1,
+      "pubDate": "Tue, 09 Dec 2025"
+    },
+    {
+      "countryCode": "YM",
+      "countryName": "Yemen",
+      "level": 4,
+      "pubDate": "Fri, 19 Dec 2025"
+    },
+    {
+      "countryCode": "CN",
+      "countryName": "Comoros",
+      "level": 2,
+      "pubDate": "Mon, 12 Jan 2026"
+    },
+    {
+      "countryCode": "TD",
+      "countryName": "Trinidad and Tobago",
+      "level": 3,
+      "pubDate": "Mon, 13 Apr 2026"
+    },
+    {
+      "countryCode": "MZ",
+      "countryName": "Mozambique",
+      "level": 2,
+      "pubDate": "Mon, 16 Jun 2025"
+    },
+    {
+      "countryCode": "DA",
+      "countryName": "Kingdom of Denmark",
+      "level": 2,
+      "pubDate": "Tue, 17 Sep 2024"
+    },
+    {
+      "countryCode": "NP",
+      "countryName": "Nepal",
+      "level": 2,
+      "pubDate": "Tue, 31 Mar 2026"
+    },
+    {
+      "countryCode": "HO",
+      "countryName": "Honduras",
+      "level": 3,
+      "pubDate": "Tue, 10 Dec 2024"
+    },
+    {
+      "countryCode": "ML",
+      "countryName": "Mali",
+      "level": 4,
+      "pubDate": "Mon, 08 Jun 2026"
+    },
+    {
+      "countryCode": "EK",
+      "countryName": "Equatorial Guinea",
+      "level": 2,
+      "pubDate": "Tue, 07 Oct 2025"
+    },
+    {
+      "countryCode": "KZ",
+      "countryName": "Kazakhstan",
+      "level": 1,
+      "pubDate": "Mon, 05 Aug 2024"
+    },
+    {
+      "countryCode": "LA",
+      "countryName": "Laos",
+      "level": 2,
+      "pubDate": "Tue, 28 Jul 2026"
+    },
+    {
+      "countryCode": "DJ",
+      "countryName": "Djibouti",
+      "level": 2,
+      "pubDate": "Thu, 06 Mar 2025"
+    },
+    {
+      "countryCode": "SL",
+      "countryName": "Sierra Leone",
+      "level": 2,
+      "pubDate": "Mon, 15 Sep 2025"
+    },
+    {
+      "countryCode": "PE",
+      "countryName": "Peru",
+      "level": 2,
+      "pubDate": "Fri, 16 May 2025"
+    },
+    {
+      "countryCode": "LH",
+      "countryName": "Lithuania",
+      "level": 1,
+      "pubDate": "Tue, 28 Apr 2026"
+    },
+    {
+      "countryCode": "FJ",
+      "countryName": "Fiji",
+      "level": 1,
+      "pubDate": "Mon, 02 Dec 2024"
+    },
+    {
+      "countryCode": "EG",
+      "countryName": "Egypt",
+      "level": 2,
+      "pubDate": "Tue, 15 Jul 2025"
+    },
+    {
+      "countryCode": "RI",
+      "countryName": "Serbia",
+      "level": 2,
+      "pubDate": "Fri, 11 Apr 2025"
+    },
+    {
+      "countryCode": "CV",
+      "countryName": "Cabo Verde",
+      "level": 1,
+      "pubDate": "Mon, 15 Dec 2025"
+    },
+    {
+      "countryCode": "HA",
+      "countryName": "Haiti",
+      "level": 4,
+      "pubDate": "Fri, 10 Jul 2026"
+    },
+    {
+      "countryCode": "TH",
+      "countryName": "Thailand",
+      "level": 1,
+      "pubDate": "Tue, 07 Jul 2026"
+    },
+    {
+      "countryCode": "NC",
+      "countryName": "New Caledonia",
+      "level": 2,
+      "pubDate": "Thu, 21 May 2026"
+    },
+    {
+      "countryCode": "BY",
+      "countryName": "Burundi",
+      "level": 3,
+      "pubDate": "Tue, 29 Apr 2025"
+    },
+    {
+      "countryCode": "CS",
+      "countryName": "Costa Rica",
+      "level": 2,
+      "pubDate": "Thu, 02 Apr 2026"
+    },
+    {
+      "countryCode": "KS",
+      "countryName": "South Korea",
+      "level": 1,
+      "pubDate": "Wed, 28 May 2025"
+    },
+    {
+      "countryCode": "PK",
+      "countryName": "Pakistan",
+      "level": 3,
+      "pubDate": "Tue, 03 Mar 2026"
+    },
+    {
+      "countryCode": "VE",
+      "countryName": "Venezuela",
+      "level": 3,
+      "pubDate": "Thu, 19 Mar 2026"
+    },
+    {
+      "countryCode": "BP",
+      "countryName": "Solomon Islands",
+      "level": 2,
+      "pubDate": "Tue, 29 Apr 2025"
+    },
+    {
+      "countryCode": "BH",
+      "countryName": "Belize",
+      "level": 2,
+      "pubDate": "Thu, 12 Mar 2026"
+    },
+    {
+      "countryCode": "MY",
+      "countryName": "Malaysia",
+      "level": 1,
+      "pubDate": "Sun, 22 Feb 2026"
+    },
+    {
+      "countryCode": "AE",
+      "countryName": "United Arab Emirates",
+      "level": 3,
+      "pubDate": "Tue, 03 Mar 2026"
+    },
+    {
+      "countryCode": "LI",
+      "countryName": "Liberia",
+      "level": 2,
+      "pubDate": "Thu, 11 Dec 2025"
+    },
+    {
+      "countryCode": "TT",
+      "countryName": "Timor-Leste",
+      "level": 2,
+      "pubDate": "Thu, 21 May 2026"
+    },
+    {
+      "countryCode": "IR",
+      "countryName": "Iran",
+      "level": 4,
+      "pubDate": "Fri, 05 Dec 2025"
+    },
+    {
+      "countryCode": "MR",
+      "countryName": "Mauritania",
+      "level": 3,
+      "pubDate": "Tue, 15 Jul 2025"
+    },
+    {
+      "countryCode": "GV",
+      "countryName": "Guinea",
+      "level": 2,
+      "pubDate": "Wed, 25 Feb 2026"
+    },
+    {
+      "countryCode": "GY",
+      "countryName": "Guyana",
+      "level": 3,
+      "pubDate": "Mon, 12 May 2025"
+    },
+    {
+      "countryCode": "NG",
+      "countryName": "Niger",
+      "level": 4,
+      "pubDate": "Fri, 31 Oct 2025"
+    },
+    {
+      "countryCode": "CF",
+      "countryName": "Republic of the Congo",
+      "level": 2,
+      "pubDate": "Wed, 02 Oct 2024"
+    },
+    {
+      "countryCode": "BC",
+      "countryName": "Botswana",
+      "level": 2,
+      "pubDate": "Wed, 17 Jun 2026"
+    },
+    {
+      "countryCode": "WS",
+      "countryName": "Samoa",
+      "level": 1,
+      "pubDate": "Tue, 07 Jul 2026"
+    },
+    {
+      "countryCode": "BA",
+      "countryName": "Bahrain",
+      "level": 3,
+      "pubDate": "Mon, 02 Mar 2026"
+    },
+    {
+      "countryCode": "KV",
+      "countryName": "Kosovo",
+      "level": 2,
+      "pubDate": "Mon, 02 Dec 2024"
+    },
+    {
+      "countryCode": "CJ",
+      "countryName": "Cayman Islands",
+      "level": 1,
+      "pubDate": "Thu, 21 May 2026"
+    },
+    {
+      "countryCode": "MI",
+      "countryName": "Malawi",
+      "level": 2,
+      "pubDate": "Wed, 25 Feb 2026"
+    },
+    {
+      "countryCode": "KG",
+      "countryName": "The Kyrgyz Republic",
+      "level": 1,
+      "pubDate": "Tue, 10 Feb 2026"
+    },
+    {
+      "countryCode": "BU",
+      "countryName": "Bulgaria",
+      "level": 1,
+      "pubDate": "Thu, 09 Oct 2025"
+    },
+    {
+      "countryCode": "WZ",
+      "countryName": "Eswatini",
+      "level": 2,
+      "pubDate": "Fri, 10 Jul 2026"
+    },
+    {
+      "countryCode": "TX",
+      "countryName": "Turkmenistan",
+      "level": 1,
+      "pubDate": "Fri, 28 Feb 2025"
+    },
+    {
+      "countryCode": "AS",
+      "countryName": "Australia",
+      "level": 1,
+      "pubDate": "Fri, 30 May 2025"
+    },
+    {
+      "countryCode": "BD",
+      "countryName": "Bermuda",
+      "level": 1,
+      "pubDate": "Fri, 10 Apr 2026"
+    },
+    {
+      "countryCode": "FR",
+      "countryName": "France",
+      "level": 2,
+      "pubDate": "Wed, 28 May 2025"
+    },
+    {
+      "countryCode": "NN",
+      "countryName": "Sint Maarten",
+      "level": 1,
+      "pubDate": "Mon, 19 Aug 2024"
+    },
+    {
+      "countryCode": "KU",
+      "countryName": "Kuwait",
+      "level": 3,
+      "pubDate": "Sun, 28 Jun 2026"
+    },
+    {
+      "countryCode": "LY",
+      "countryName": "Libya",
+      "level": 4,
+      "pubDate": "Wed, 16 Jul 2025"
+    },
+    {
+      "countryCode": "NZ",
+      "countryName": "New Zealand",
+      "level": 1,
+      "pubDate": "Wed, 29 Apr 2026"
+    },
+    {
+      "countryCode": "ET",
+      "countryName": "Ethiopia",
+      "level": 3,
+      "pubDate": "Wed, 01 Apr 2026"
+    },
+    {
+      "countryCode": "SF",
+      "countryName": "South Africa",
+      "level": 2,
+      "pubDate": "Tue, 27 May 2025"
+    },
+    {
+      "countryCode": "PM",
+      "countryName": "Panama",
+      "level": 2,
+      "pubDate": "Mon, 23 Sep 2024"
+    },
+    {
+      "countryCode": "RO",
+      "countryName": "Romania",
+      "level": 1,
+      "pubDate": "Tue, 14 Oct 2025"
+    },
+    {
+      "countryCode": "IT",
+      "countryName": "Italy",
+      "level": 2,
+      "pubDate": "Fri, 23 May 2025"
+    },
+    {
+      "countryCode": "IV",
+      "countryName": "Cote d Ivoire",
+      "level": 2,
+      "pubDate": "Wed, 18 Feb 2026"
+    },
+    {
+      "countryCode": "MH",
+      "countryName": "Montserrat",
+      "level": 1,
+      "pubDate": "Tue, 07 Jul 2026"
+    },
+    {
+      "countryCode": "LE",
+      "countryName": "Lebanon",
+      "level": 4,
+      "pubDate": "Wed, 06 May 2026"
+    },
+    {
+      "countryCode": "MX",
+      "countryName": "Mexico Travel Advisory",
+      "level": 2,
+      "pubDate": "Tue, 12 Aug 2025"
+    },
+    {
+      "countryCode": "IN",
+      "countryName": "India",
+      "level": 2,
+      "pubDate": "Mon, 16 Jun 2025"
+    },
+    {
+      "countryCode": "NH",
+      "countryName": "Vanuatu",
+      "level": 1,
+      "pubDate": "Thu, 22 May 2025"
+    },
+    {
+      "countryCode": "GL",
+      "countryName": "Greenland",
+      "level": 2,
+      "pubDate": "Tue, 29 Oct 2024"
+    },
+    {
+      "countryCode": "FM",
+      "countryName": "Federated States of Micronesia",
+      "level": 1,
+      "pubDate": "Tue, 07 Jul 2026"
+    },
+    {
+      "countryCode": "EZ",
+      "countryName": "Czechia",
+      "level": 1,
+      "pubDate": "Mon, 28 Apr 2025"
+    },
+    {
+      "countryCode": "MC",
+      "countryName": "Mainland China, Hong Kong &amp; Macau - See Summaries",
+      "level": 2,
+      "pubDate": "Wed, 27 Nov 2024"
+    },
+    {
+      "countryCode": "HK",
+      "countryName": "Mainland China, Hong Kong &amp; Macau - See Summaries",
+      "level": 2,
+      "pubDate": "Wed, 27 Nov 2024"
+    }
+  ],
+  "cachedAt": "2026-08-10T13:08:41.707Z"
+}

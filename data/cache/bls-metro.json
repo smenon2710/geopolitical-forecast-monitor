@@ -1,0 +1,77 @@
+{
+  "data": [
+    {
+      "metroId": "nyc",
+      "pctChange": -0.23051676711995914,
+      "monthlyEquivalentPct": -0.23051676711995914,
+      "latestDate": "2026-06-01"
+    },
+    {
+      "metroId": "la",
+      "pctChange": -0.2845194407546728,
+      "monthlyEquivalentPct": -0.2845194407546728,
+      "latestDate": "2026-06-01"
+    },
+    {
+      "metroId": "chicago",
+      "pctChange": -0.9435319161177107,
+      "monthlyEquivalentPct": -0.9435319161177107,
+      "latestDate": "2026-06-01"
+    },
+    {
+      "metroId": "houston",
+      "pctChange": -1.6368620923580406,
+      "monthlyEquivalentPct": -0.8184310461790203,
+      "latestDate": "2026-06-01"
+    },
+    {
+      "metroId": "miami",
+      "pctChange": 0.05493003861339031,
+      "monthlyEquivalentPct": 0.027465019306695156,
+      "latestDate": "2026-06-01"
+    },
+    {
+      "metroId": "dallas",
+      "pctChange": -0.25540123951315735,
+      "monthlyEquivalentPct": -0.12770061975657868,
+      "latestDate": "2026-05-01"
+    },
+    {
+      "metroId": "sf",
+      "pctChange": 0.18904974066601735,
+      "monthlyEquivalentPct": 0.09452487033300867,
+      "latestDate": "2026-06-01"
+    },
+    {
+      "metroId": "seattle",
+      "pctChange": 0.9965764231975786,
+      "monthlyEquivalentPct": 0.4982882115987893,
+      "latestDate": "2026-06-01"
+    },
+    {
+      "metroId": "boston",
+      "pctChange": 2.3812035756547525,
+      "monthlyEquivalentPct": 1.1906017878273762,
+      "latestDate": "2026-05-01"
+    },
+    {
+      "metroId": "denver",
+      "pctChange": 1.7963846492345417,
+      "monthlyEquivalentPct": 0.8981923246172708,
+      "latestDate": "2026-05-01"
+    },
+    {
+      "metroId": "dc",
+      "pctChange": 1.3412983647059915,
+      "monthlyEquivalentPct": 0.6706491823529958,
+      "latestDate": "2026-05-01"
+    },
+    {
+      "metroId": "atlanta",
+      "pctChange": 0.5178517741331776,
+      "monthlyEquivalentPct": 0.2589258870665888,
+      "latestDate": "2026-06-01"
+    }
+  ],
+  "cachedAt": "2026-08-10T13:08:41.861Z"
+}

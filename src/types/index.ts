@@ -63,6 +63,43 @@ export interface LensReading {
   dataQuality: DataQuality;
 }
 
+/**
+ * The 12 metro areas with a real, verified BLS CPI series (see
+ * METRO_CPI_SERIES in src/lib/sources/bls.ts) — client-safe id/name pairs
+ * for the area picker; no accounts, just a localStorage preference.
+ */
+export const SUPPORTED_METROS: { id: string; name: string }[] = [
+  { id: "nyc", name: "New York" },
+  { id: "la", name: "Los Angeles" },
+  { id: "chicago", name: "Chicago" },
+  { id: "houston", name: "Houston" },
+  { id: "miami", name: "Miami" },
+  { id: "dallas", name: "Dallas" },
+  { id: "sf", name: "San Francisco Bay Area" },
+  { id: "seattle", name: "Seattle" },
+  { id: "boston", name: "Boston" },
+  { id: "denver", name: "Denver" },
+  { id: "dc", name: "Washington" },
+  { id: "atlanta", name: "Atlanta" },
+];
+
+/**
+ * A Cost of Living reading scoped to one metro instead of the national
+ * aggregate. Deliberately not a full LensReading: narratives are built with
+ * the deterministic template (synthesizeLensNarrative), not a per-metro LLM
+ * call, to keep the daily synthesis cost bounded to the five national
+ * lenses as PLAN.md intends.
+ */
+export interface MetroCostOfLiving {
+  metroId: string;
+  metroName: string;
+  severity: Severity;
+  oneLiner: string;
+  narrative: string;
+  metrics: CitedMetric[];
+  dataQuality: DataQuality;
+}
+
 export interface GeoEvent {
   id: string;
   date: string;
@@ -117,4 +154,5 @@ export interface DailyDigest {
   trends: TrendSeries[];
   events: GeoEvent[];
   sectors: SectorMove[];
+  metroReadings: MetroCostOfLiving[];
 }

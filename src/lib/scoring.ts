@@ -27,14 +27,17 @@ export function scoreInvestments(input: {
   indexPctChange: number;
   vix: number;
   maxSectorEtfPctChange?: number;
+  /** Day-over-day move in the 10yr Treasury yield, in percentage points (e.g. 0.12 = 12bps) — named in the locked rubric alongside VIX/sector ETFs but previously never wired to a real source. */
+  yieldChangePts?: number;
 }): Severity {
-  const { indexPctChange, vix, maxSectorEtfPctChange = 0 } = input;
+  const { indexPctChange, vix, maxSectorEtfPctChange = 0, yieldChangePts = 0 } = input;
   const absIndex = Math.abs(indexPctChange);
   const absSector = Math.abs(maxSectorEtfPctChange);
+  const absYield = Math.abs(yieldChangePts);
 
-  if (absIndex > 3 || vix > 25) return 3;
-  if (absIndex > 1.5 || vix > 20 || absSector > 3) return 2;
-  if (absIndex >= 0.5 || vix >= 15) return 1;
+  if (absIndex > 3 || vix > 25 || absYield > 0.2) return 3;
+  if (absIndex > 1.5 || vix > 20 || absSector > 3 || absYield > 0.1) return 2;
+  if (absIndex >= 0.5 || vix >= 15 || absYield > 0.05) return 1;
   return 0;
 }
 

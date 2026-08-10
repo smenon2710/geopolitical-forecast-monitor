@@ -1,12 +1,12 @@
 {
   "data": [
     {
-      "id": "noaa-heat-2026-08-04",
-      "event": "Excessive heat (73/1000 sampled US stations ≥ 38°C)",
+      "id": "noaa-heat-2026-08-05",
+      "event": "Excessive heat (85/1000 sampled US stations ≥ 38°C)",
       "area": "United States (sampled stations)",
       "severity": "widespread",
-      "date": "2026-08-04"
+      "date": "2026-08-05"
     }
   ],
-  "cachedAt": "2026-08-09T19:15:28.091Z"
+  "cachedAt": "2026-08-10T13:08:50.654Z"
 }

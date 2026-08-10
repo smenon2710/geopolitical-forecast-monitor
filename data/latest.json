@@ -1,13 +1,13 @@
 {
   "date": "2026-08-10",
-  "generatedAt": "2026-08-10T11:47:17.392Z",
-  "dataQuality": "live",
+  "generatedAt": "2026-08-10T13:09:06.212Z",
+  "dataQuality": "stale",
   "lenses": [
     {
       "lens": "costOfLiving",
       "severity": 2,
       "oneLiner": "Prices You Pay: elevated today. How fast prices are rising — -0.42%.",
-      "narrative": "Gas prices are $4.08 a gallon, down a bit this week. Prices overall are down slightly, but food and housing costs are up a little. Energy costs are down a lot.",
+      "narrative": "How fast prices are rising sits at -0.42%, with energy costs at -5.71%. The price at the pump is currently $4.08/gal (-0.4% wk/wk). Housing costs are showing 0.12% while food costs are at 0.21%.",
       "metrics": [
         {
           "label": "How fast prices are rising",
@@ -41,7 +41,7 @@
       "lens": "investments",
       "severity": 1,
       "oneLiner": "Your Savings: watch today. The stock market today — 0.61%.",
-      "narrative": "Stocks are up 0.61% today. There was a bigger jump in one industry, 1.42%.",
+      "narrative": "The stock market today is sitting at 0.61%, with the biggest industry swing at 1.42%. Meanwhile, the cost of long-term borrowing is at 4.69% (+0.06pt today).",
       "metrics": [
         {
           "label": "The stock market today",
@@ -52,15 +52,20 @@
           "label": "Biggest industry swing",
           "value": "1.42%",
           "sourceName": "Alpha Vantage"
+        },
+        {
+          "label": "Cost of long-term borrowing",
+          "value": "4.69% (+0.06pt today)",
+          "sourceName": "FRED (DGS10)"
         }
       ],
-      "dataQuality": "live"
+      "dataQuality": "stale"
     },
     {
       "lens": "standardOfLiving",
       "severity": 3,
       "oneLiner": "Jobs & Paychecks: high today. Jobs picture — -0.10pt unemployment.",
-      "narrative": "Jobs & Paychecks is high today. Jobs picture: -0.10pt unemployment. Are paychecks keeping up with prices?: +0.72pt vs inflation. Is the economy growing?: +0.37% GDP. Extreme weather: Excessive heat (85/1000 sampled US stations ≥ 38°C) — United States (sampled stations).",
+      "narrative": "The economy shows growth at +0.37%, while paychecks are standing at +0.72pt vs inflation. The jobs picture shows unemployment at -0.10pt. For your environment, excessive heat is hitting 85/1000 sampled US stations at ≥ 38°C in the United States (sampled stations).",
       "metrics": [
         {
           "label": "Jobs picture",
@@ -89,7 +94,7 @@
       "lens": "security",
       "severity": 3,
       "oneLiner": "Safety & Tension: high today. Global tension level — -10.0.",
-      "narrative": "Global tension is at its highest level. There was a major earthquake, M7.3.",
+      "narrative": "The global tension level is currently reading -10.0. On the natural safety front, the biggest recent earthquake measured M7.4.",
       "metrics": [
         {
           "label": "Global tension level",
@@ -98,7 +103,7 @@
         },
         {
           "label": "Biggest recent earthquake",
-          "value": "M7.3",
+          "value": "M7.4",
           "sourceName": "USGS"
         }
       ],
@@ -108,7 +113,7 @@
       "lens": "dailyRoutine",
       "severity": 2,
       "oneLiner": "Everyday Life: elevated today. Cost of getting around — -0.4% this week.",
-      "narrative": "Everyday Life is elevated today. Cost of getting around: -0.4% this week. Weather disruption: Excessive heat (85/1000 sampled US stations ≥ 38°C).",
+      "narrative": "The cost of getting around is -0.4% this week. For your daily travel, expect weather disruption from excessive heat, with 85/1000 sampled US stations reaching ≥ 38°C.",
       "metrics": [
         {
           "label": "Cost of getting around",
@@ -677,99 +682,294 @@
   ],
   "events": [
     {
-      "id": "gdelt-1317601400",
+      "id": "gdelt-1317613311",
       "date": "2026-08-10",
-      "title": "IRAN held consultations with OMAN — Tehran, Tehran, Iran",
-      "description": "Avg tone -5.8, 24 mentions.",
-      "lat": 35.75,
-      "lon": 51.5148,
+      "title": "FINNISH made an appeal — Helsinki, Eteläuomen Läi, Finland",
+      "description": "Avg tone 1.0, 15 mentions.",
+      "lat": 60.1756,
+      "lon": 24.9342,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 7,
+      "goldstein": 3,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.mainlinemedianews.com/2026/08/10/iran-strait-of-hormuz-mideast-developments/"
+      "sourceUrl": "https://news.am/en/news/1054374"
     },
     {
-      "id": "gdelt-1317601539",
+      "id": "gdelt-1317613228",
       "date": "2026-08-10",
-      "title": "OMAN held consultations with IRAN — Tehran, Tehran, Iran",
-      "description": "Avg tone -5.8, 24 mentions.",
-      "lat": 35.75,
-      "lon": 51.5148,
+      "title": "COMMUNITY engaged in diplomatic cooperation with IRELAND — Belfast, Belfast, United Kingdom",
+      "description": "Avg tone 3.4, 12 mentions.",
+      "lat": 54.5833,
+      "lon": -5.93333,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 7,
+      "goldstein": 3.4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.mainlinemedianews.com/2026/08/10/iran-strait-of-hormuz-mideast-developments/"
+      "sourceUrl": "https://www.dissexpress.co.uk/national/more-than-1-6-million-people-estimated-to-have-attended-fleadh-in-belfast-170383/"
     },
     {
-      "id": "gdelt-1317601010",
-      "date": "2026-08-10",
-      "title": "CANADA coerced PRISON — Kamloops, British Columbia, Canada",
-      "description": "Avg tone -7.7, 16 mentions.",
-      "lat": 50.6667,
-      "lon": -120.333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.castanetkamloops.net/news/Kamloops/627417/Kamloops-man-sentenced-to-3-5-years-in-prison-for-raping-two-former-partners"
-    },
-    {
-      "id": "gdelt-1317600802",
+      "id": "gdelt-1317612928",
       "date": "2025-08-10",
-      "title": "GOVERNMENT protested against JAPAN — Japan",
-      "description": "Avg tone -4.6, 10 mentions.",
-      "lat": 36,
-      "lon": 138,
+      "title": "AZERBAIJAN engaged in material cooperation — Azerbaijan",
+      "description": "Avg tone -1.6, 10 mentions.",
+      "lat": 40.5,
+      "lon": 47.5,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": -6.5,
+      "goldstein": 6.4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.japantimes.co.jp/news/2026/08/10/japan/japan-misinformation-social-media/"
+      "sourceUrl": "https://en.apa.az/energy-and-industry/azerbaijans-non-oil-exports-increase-by-over-18-519721"
     },
     {
-      "id": "gdelt-1317600813",
+      "id": "gdelt-1317612985",
       "date": "2026-08-10",
-      "title": "BULGARIAN held consultations — Kardam, Turgovishte, Bulgaria",
-      "description": "Avg tone -0.8, 10 mentions.",
-      "lat": 43.3667,
-      "lon": 26.2833,
+      "title": "GREECE made an appeal — Port Said, Bur Said, Egypt",
+      "description": "Avg tone 0.7, 10 mentions.",
+      "lat": 31.2565,
+      "lon": 32.2841,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.rustourismnews.com/2026/08/10/astoria-grande-moves-all-cruise-departures-from-sochi-to-antalya/"
+    },
+    {
+      "id": "gdelt-1317612992",
+      "date": "2026-08-10",
+      "title": "ANDHRA PRADESH held consultations — India",
+      "description": "Avg tone 0.7, 10 mentions.",
+      "lat": 20,
+      "lon": 77,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": 7,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.novinite.com/articles/240050/Ukrainian+Ambassador:+The+Drone+Was+Not+Directed+at+Bulgaria"
+      "sourceUrl": "https://timesofindia.indiatimes.com/india/rss-coordination-meeting-of-32-outfits-to-be-held-in-andhra-pradesh-from-august-19-21/articleshow/133106102.cms"
     },
     {
-      "id": "gdelt-1317600824",
+      "id": "gdelt-1317613001",
       "date": "2026-08-10",
-      "title": "ONTARIO engaged in diplomatic cooperation — Goldboro, Nova Scotia, Canada",
-      "description": "Avg tone 5.8, 10 mentions.",
-      "lat": 45.1833,
-      "lon": -61.65,
+      "title": "ISRAELI expressed intent to cooperate — Tel Aviv, Tel Aviv, Israel",
+      "description": "Avg tone 0.6, 10 mentions.",
+      "lat": 32.0667,
+      "lon": 34.7667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://ejewishphilanthropy.com/philanthropic-entrepreneurs-israeli-giving-13-years-on/"
+    },
+    {
+      "id": "gdelt-1317613046",
+      "date": "2026-08-10",
+      "title": "AFRICA engaged in diplomatic cooperation with CHAD — Chad",
+      "description": "Avg tone 6.1, 10 mentions.",
+      "lat": 15,
+      "lon": 19,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://afreximbank.africa-newsroom.com/press/afreximbank-extends-eur110million-facility-to-chad-in-largest-ever-financing-support-to-the-country"
+    },
+    {
+      "id": "gdelt-1317613048",
+      "date": "2026-08-10",
+      "title": "AFRICA yielded to ZAMBIA — Zambia",
+      "description": "Avg tone -6.8, 10 mentions.",
+      "lat": -15,
+      "lon": 30,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.africa-newsroom.com/press/zambia-stalled-reforms-risk-reversing-human-rights-gains"
+    },
+    {
+      "id": "gdelt-1317613052",
+      "date": "2026-08-10",
+      "title": "DUBAI engaged in diplomatic cooperation with GOVERNMENT — Dubai, Dubayy, United Arab Emirates",
+      "description": "Avg tone 1.0, 10 mentions.",
+      "lat": 25.2522,
+      "lon": 55.28,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": 8,
       "sourceName": "GDELT",
-      "sourceUrl": "https://finance.yahoo.com/markets/commodities/articles/golden-rapture-agrees-deal-land-105840314.html"
+      "sourceUrl": "https://www.rustourismnews.com/2026/08/10/what-can-you-pay-for-with-crypto-in-dubai-in-2026/"
     },
     {
-      "id": "gdelt-1317600846",
+      "id": "gdelt-1317613063",
       "date": "2026-08-10",
-      "title": "UNITED KINGDOM made an appeal — Llanasa, Flintshire, United Kingdom",
+      "title": "AZERBAIJAN engaged in material cooperation — Azerbaijan",
+      "description": "Avg tone -1.6, 10 mentions.",
+      "lat": 40.5,
+      "lon": 47.5,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 6.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://en.apa.az/energy-and-industry/azerbaijans-non-oil-exports-increase-by-over-18-519721"
+    },
+    {
+      "id": "gdelt-1317613081",
+      "date": "2026-08-10",
+      "title": "BAKU engaged in diplomatic cooperation with SIKH — Haryana, Haryana, India",
+      "description": "Avg tone -2.4, 10 mentions.",
+      "lat": 29.6161,
+      "lon": 76.9806,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://news.az/news/baku-initiative-group-voices-solidarity-with-sikhs-protesting-in-india"
+    },
+    {
+      "id": "gdelt-1317613084",
+      "date": "2026-08-10",
+      "title": "ILHAM ALIYEV issued a demand — Azerbaijan",
+      "description": "Avg tone 8.7, 10 mentions.",
+      "lat": 40.5,
+      "lon": 47.5,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://en.apa.az/official-news/azerbaijan-ukraine-healthcare-cooperation-agreement-approved-519702"
+    },
+    {
+      "id": "gdelt-1317613150",
+      "date": "2026-08-10",
+      "title": "XI JINPING made an appeal — Yangtze River, China (general), China",
+      "description": "Avg tone -6.1, 10 mentions.",
+      "lat": 31.7867,
+      "lon": 121.141,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.hindustantimes.com/world-news/typhoon-dolphin-china-shanghai-flights-ferries-trains-landfall-red-alert-101786351394207.html"
+    },
+    {
+      "id": "gdelt-1317613161",
+      "date": "2026-08-10",
+      "title": "COLOMBIA fought REBEL LEADER — Espriella, NariñO, Colombia",
+      "description": "Avg tone -6.3, 10 mentions.",
+      "lat": 1.43333,
+      "lon": -77.4167,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c5yrljp9x9eo"
+    },
+    {
+      "id": "gdelt-1317613294",
+      "date": "2026-08-10",
+      "title": "SPAIN protested against — Spain",
+      "description": "Avg tone -5.6, 10 mentions.",
+      "lat": 40,
+      "lon": -4,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -6.5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://news.am/en/news/1054552"
+    },
+    {
+      "id": "gdelt-1317613295",
+      "date": "2026-08-10",
+      "title": "SPAIN fought AFRICA — Madrid, Madrid, Spain",
+      "description": "Avg tone -6.7, 10 mentions.",
+      "lat": 40.4,
+      "lon": -3.68333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -9.5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.pakistantoday.com.pk/2026/08/10/spain-starts-checks-on-italy-arrivals-as-ceuta-row-deepens"
+    },
+    {
+      "id": "gdelt-1317613296",
+      "date": "2026-08-10",
+      "title": "SPAIN engaged in diplomatic cooperation with EUROPEAN — Spain",
+      "description": "Avg tone 10.4, 10 mentions.",
+      "lat": 40,
+      "lon": -4,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.parking.net/parking-news/go2sim/announces-strategic-partnership-with-stc"
+    },
+    {
+      "id": "gdelt-1317613307",
+      "date": "2026-08-10",
+      "title": "EUROPEAN reduced relations with BOEING — Prague, Praha, Hlavníesto, Czech Republic",
+      "description": "Avg tone -0.9, 10 mentions.",
+      "lat": 50.0833,
+      "lon": 14.4667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.rustourismnews.com/2026/08/10/emirates-suspends-a380-flights-to-prague-and-glasgow/"
+    },
+    {
+      "id": "gdelt-1317613309",
+      "date": "2026-08-10",
+      "title": "EUROPE engaged in material cooperation with RUSSIA — Russia",
+      "description": "Avg tone -0.7, 10 mentions.",
+      "lat": 60,
+      "lon": 100,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 6.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://news.am/en/news/1054499"
+    },
+    {
+      "id": "gdelt-1317613353",
+      "date": "2026-08-10",
+      "title": "UNITED KINGDOM made an appeal to COMPANY — Llanasa, Flintshire, United Kingdom",
       "description": "Avg tone -0.7, 10 mentions.",
       "lat": 53.3167,
       "lon": -3.35,
@@ -779,652 +979,471 @@
       ],
       "goldstein": 3,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.dailypost.co.uk/news/north-wales-news/anger-over-plans-house-asylum-34432642"
+      "sourceUrl": "https://www.walesonline.co.uk/news/wales-news/worries-over-plans-house-asylum-34433389"
     },
     {
-      "id": "gdelt-1317600885",
+      "id": "gdelt-1317613354",
       "date": "2026-08-10",
-      "title": "MALAYSIA engaged in material cooperation — Singapore",
-      "description": "Avg tone -1.9, 10 mentions.",
-      "lat": 1.366667,
-      "lon": 103.8,
+      "title": "UNITED KINGDOM yielded to COMPANY — Flintshire, Flintshire, United Kingdom",
+      "description": "Avg tone -0.7, 10 mentions.",
+      "lat": 53.25,
+      "lon": -3.16667,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 6,
+      "goldstein": 5,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.thestar.com.my/business/business-news/2026/08/10/fbm-klci-ends-flat-despite-gains-across-regional-markets"
+      "sourceUrl": "https://www.walesonline.co.uk/news/wales-news/worries-over-plans-house-asylum-34433389"
     },
     {
-      "id": "gdelt-1317600912",
+      "id": "gdelt-1317613382",
       "date": "2026-08-10",
-      "title": "AFRICA engaged in material cooperation with CHINA — Shenzhen, Guangdong, China",
-      "description": "Avg tone 2.9, 10 mentions.",
-      "lat": 22.2,
-      "lon": 111.117,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 6.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "http://www.chinanationalnews.com/news/279229151/xinhua-headlines-african-exporters-reap-early-benefits-of-china-zero-tariff-treatment"
-    },
-    {
-      "id": "gdelt-1317600949",
-      "date": "2026-08-10",
-      "title": "BULGARIAN held consultations — Kardam, Turgovishte, Bulgaria",
-      "description": "Avg tone -0.8, 10 mentions.",
-      "lat": 43.3667,
-      "lon": 26.2833,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.novinite.com/articles/240050/Ukrainian+Ambassador:+The+Drone+Was+Not+Directed+at+Bulgaria"
-    },
-    {
-      "id": "gdelt-1317601001",
-      "date": "2026-08-10",
-      "title": "ONTARIO expressed intent to cooperate — Goldboro, Nova Scotia, Canada",
-      "description": "Avg tone 5.8, 10 mentions.",
-      "lat": 45.1833,
-      "lon": -61.65,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://finance.yahoo.com/markets/commodities/articles/golden-rapture-agrees-deal-land-105840314.html"
-    },
-    {
-      "id": "gdelt-1317601006",
-      "date": "2026-08-10",
-      "title": "ONTARIO engaged in diplomatic cooperation — Goldboro, Nova Scotia, Canada",
-      "description": "Avg tone 5.8, 10 mentions.",
-      "lat": 45.1833,
-      "lon": -61.65,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 8,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://finance.yahoo.com/markets/commodities/articles/golden-rapture-agrees-deal-land-105840314.html"
-    },
-    {
-      "id": "gdelt-1317601011",
-      "date": "2026-08-10",
-      "title": "TORONTO yielded to GANG — Toronto, Ontario, Canada",
-      "description": "Avg tone -7.1, 10 mentions.",
-      "lat": 43.6667,
-      "lon": -79.4167,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.hindustantimes.com/world-news/canada-judge-overrules-decision-to-release-indian-national-from-detention-over-bishnoi-gang-links-101786360647277.html"
-    },
-    {
-      "id": "gdelt-1317601026",
-      "date": "2026-08-10",
-      "title": "CANADA yielded to GANG — Vancouver, British Columbia, Canada",
-      "description": "Avg tone -7.1, 10 mentions.",
-      "lat": 49.25,
-      "lon": -123.133,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.hindustantimes.com/world-news/canada-judge-overrules-decision-to-release-indian-national-from-detention-over-bishnoi-gang-links-101786360647277.html"
-    },
-    {
-      "id": "gdelt-1317601028",
-      "date": "2026-08-10",
-      "title": "SWITZERLAND fought — Switzerland",
-      "description": "Avg tone 7.7, 10 mentions.",
-      "lat": 47,
-      "lon": 8,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -9.5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.castanetkamloops.net/news/StandOUT/627525/BC-family-business-that-has-been-redefining-retirement-living-for-25-years"
-    },
-    {
-      "id": "gdelt-1317601220",
-      "date": "2026-08-10",
-      "title": "UNITED KINGDOM threatened — Northern Ireland, Craigavon, United Kingdom",
-      "description": "Avg tone -0.8, 10 mentions.",
-      "lat": 54.5,
-      "lon": -6.5,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -4.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.mirror.co.uk/lifestyle/health/ramipril-bisoprolol-health-heat-caution-37532614"
-    },
-    {
-      "id": "gdelt-1317601221",
-      "date": "2026-08-10",
-      "title": "UNITED KINGDOM threatened — West Yorkshire, United Kingdom (general), United Kingdom",
-      "description": "Avg tone -0.8, 10 mentions.",
-      "lat": 53.7,
-      "lon": -1.58333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -4.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.mirror.co.uk/lifestyle/health/ramipril-bisoprolol-health-heat-caution-37532614"
-    },
-    {
-      "id": "gdelt-1317601274",
-      "date": "2026-08-10",
-      "title": "ADMINISTRATION engaged in material cooperation with AFRICA — Zhang Jian, Jiangsu, China",
-      "description": "Avg tone 2.9, 10 mentions.",
-      "lat": 33.1369,
-      "lon": 120.198,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 6.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "http://www.chinanationalnews.com/news/279229151/xinhua-headlines-african-exporters-reap-early-benefits-of-china-zero-tariff-treatment"
-    },
-    {
-      "id": "gdelt-1317601303",
-      "date": "2026-08-10",
-      "title": "FOREIGN MINIST engaged in diplomatic cooperation with EGYPT — Egypt",
-      "description": "Avg tone 6.1, 10 mentions.",
-      "lat": 27,
-      "lon": 30,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.egyptindependent.com/foreign-minister-reaffirms-egypts-firm-support-for-sudans-unity/"
-    },
-    {
-      "id": "gdelt-1317601326",
-      "date": "2026-08-10",
-      "title": "FOREIGN MINIST engaged in diplomatic cooperation with SUDAN — Egypt",
-      "description": "Avg tone 6.1, 10 mentions.",
-      "lat": 27,
-      "lon": 30,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.egyptindependent.com/foreign-minister-reaffirms-egypts-firm-support-for-sudans-unity/"
-    },
-    {
-      "id": "gdelt-1317601499",
-      "date": "2026-08-10",
-      "title": "MEXICAN engaged in diplomatic cooperation with COMMUNITY — Mexico",
-      "description": "Avg tone 2.6, 10 mentions.",
-      "lat": 23,
-      "lon": -102,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.newson6.com/tulsa-oklahoma-news/peppers-grill-cantina-closing-tulsa"
-    },
-    {
-      "id": "gdelt-1317601505",
-      "date": "2026-08-10",
-      "title": "ROYAL BANK OF CANADA made an appeal — Canada",
-      "description": "Avg tone 5.7, 10 mentions.",
-      "lat": 60,
-      "lon": -96,
+      "title": "UNITED KINGDOM made an appeal — English Channel, United Kingdom (general), United Kingdom",
+      "description": "Avg tone -5.5, 10 mentions.",
+      "lat": 54.5833,
+      "lon": -3.68333,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": 3,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.tickerreport.com/banking-finance/13537455/royal-bank-of-canada-reiterates-underperform-rating-for-wizz-air-lonwizz.html"
+      "sourceUrl": "https://news.az/news/record-230-migrants-cross-english-channel-in-single-boat"
     },
     {
-      "id": "gdelt-1317601506",
+      "id": "gdelt-1317613419",
       "date": "2026-08-10",
-      "title": "ROYAL BANK OF CANADA rejected — London, London, City of, United Kingdom",
-      "description": "Avg tone 5.7, 10 mentions.",
-      "lat": 51.5,
-      "lon": -0.116667,
+      "title": "GOVERNMENT engaged in diplomatic cooperation with DUBAI — Dubai, Dubayy, United Arab Emirates",
+      "description": "Avg tone 1.0, 10 mentions.",
+      "lat": 25.2522,
+      "lon": 55.28,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": -4,
+      "goldstein": 8,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.tickerreport.com/banking-finance/13537455/royal-bank-of-canada-reiterates-underperform-rating-for-wizz-air-lonwizz.html"
+      "sourceUrl": "https://www.rustourismnews.com/2026/08/10/what-can-you-pay-for-with-crypto-in-dubai-in-2026/"
     },
     {
-      "id": "gdelt-1317601549",
+      "id": "gdelt-1317613508",
       "date": "2026-08-10",
-      "title": "ACTIVIST provided aid to BHARAT — India",
-      "description": "Avg tone 0.5, 10 mentions.",
+      "title": "ANDHRA PRADESH held consultations — India",
+      "description": "Avg tone 0.7, 10 mentions.",
       "lat": 20,
       "lon": 77,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 7.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://santabanta.com/cinema/bollywood/titbits/a-light-after-sunset-brings-safety-bhumi-pednekar-navigates-submerged-roads-to-distribute-solar-ligh-171760/"
-    },
-    {
-      "id": "gdelt-1317601606",
-      "date": "2026-08-10",
-      "title": "THAI assaulted — Nonthaburi, Nonthaburi, Thailand",
-      "description": "Avg tone -4.1, 10 mentions.",
-      "lat": 13.8622,
-      "lon": 100.513,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.bbc.co.uk/news/articles/cqx7lje8l79o"
-    },
-    {
-      "id": "gdelt-1317601696",
-      "date": "2026-08-10",
-      "title": "HOUSTON fought MEXICAN — Mexico",
-      "description": "Avg tone -6.9, 10 mentions.",
-      "lat": 23,
-      "lon": -102,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://english.hani.co.kr/arti/english_edition/e_international/1272225.html"
-    },
-    {
-      "id": "gdelt-1317601697",
-      "date": "2026-08-10",
-      "title": "HOUSTON fought MEXICAN — Montana, United States",
-      "description": "Avg tone -6.9, 10 mentions.",
-      "lat": 46.9048,
-      "lon": -110.326,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://english.hani.co.kr/arti/english_edition/e_international/1272225.html"
-    },
-    {
-      "id": "gdelt-1317601024",
-      "date": "2026-08-10",
-      "title": "CANADA provided aid to JUDGE — Vancouver, British Columbia, Canada",
-      "description": "Avg tone -7.1, 8 mentions.",
-      "lat": 49.25,
-      "lon": -123.133,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.hindustantimes.com/world-news/canada-judge-overrules-decision-to-release-indian-national-from-detention-over-bishnoi-gang-links-101786360647277.html"
-    },
-    {
-      "id": "gdelt-1317601194",
-      "date": "2026-08-10",
-      "title": "UNITED KINGDOM engaged in diplomatic cooperation — Chessington, Kingston upon Thames, United Kingdom",
-      "description": "Avg tone -2.3, 8 mentions.",
-      "lat": 51.35,
-      "lon": -0.3,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.bbc.co.uk/news/articles/c3ekx90jww9o"
-    },
-    {
-      "id": "gdelt-1317601197",
-      "date": "2026-08-10",
-      "title": "UNITED KINGDOM engaged in diplomatic cooperation — Chessington, Kingston upon Thames, United Kingdom",
-      "description": "Avg tone -2.3, 8 mentions.",
-      "lat": 51.35,
-      "lon": -0.3,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
       "goldstein": 7,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.bbc.co.uk/news/articles/c3ekx90jww9o"
+      "sourceUrl": "https://timesofindia.indiatimes.com/india/rss-coordination-meeting-of-32-outfits-to-be-held-in-andhra-pradesh-from-august-19-21/articleshow/133106102.cms"
     },
     {
-      "id": "gdelt-1317601302",
+      "id": "gdelt-1317613529",
       "date": "2026-08-10",
-      "title": "MINIST engaged in diplomatic cooperation with EGYPT — Cairo, Al Qahirah, Egypt",
-      "description": "Avg tone 3.8, 8 mentions.",
-      "lat": 30.05,
-      "lon": 31.25,
+      "title": "KOCHI coerced COMMENTATOR — Thiruvananthapuram, Kerala, India",
+      "description": "Avg tone -3.2, 10 mentions.",
+      "lat": 8.50694,
+      "lon": 76.9569,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 3.4,
+      "goldstein": -5,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.egyptindependent.com/government-following-up-entrepreneurship-file-closely/"
+      "sourceUrl": "https://organiser.org/2026/08/10/374404/bharat/keralams-witch-hunt-against-tg-mohandas-weekend-arrest-media-drama-congress-political-spectacle/"
     },
     {
-      "id": "gdelt-1317601433",
+      "id": "gdelt-1317613666",
       "date": "2026-08-10",
-      "title": "JAPANESE fought MEDIA — Japan",
-      "description": "Avg tone -4.6, 8 mentions.",
-      "lat": 36,
-      "lon": 138,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.japantimes.co.jp/news/2026/08/10/japan/japan-misinformation-social-media/"
-    },
-    {
-      "id": "gdelt-1317601470",
-      "date": "2026-08-10",
-      "title": "KUWAIT engaged in diplomatic cooperation with SAUDI ARABIA — Islamabad, Islamabad, Pakistan",
-      "description": "Avg tone 3.1, 8 mentions.",
-      "lat": 33.7,
-      "lon": 73.1667,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 8,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.middleeastmonitor.com/20260810-kuwait-congratulates-pakistan-on-tripartite-defense-pact-with-turkiye-saudi-arabia/"
-    },
-    {
-      "id": "gdelt-1317601472",
-      "date": "2026-08-10",
-      "title": "KUWAIT engaged in diplomatic cooperation with TURKIYE — Islamabad, Islamabad, Pakistan",
-      "description": "Avg tone 3.1, 8 mentions.",
-      "lat": 33.7,
-      "lon": 73.1667,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 8,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.middleeastmonitor.com/20260810-kuwait-congratulates-pakistan-on-tripartite-defense-pact-with-turkiye-saudi-arabia/"
-    },
-    {
-      "id": "gdelt-1317601497",
-      "date": "2026-08-10",
-      "title": "MEDIA fought JAPANESE — Japan",
-      "description": "Avg tone -4.6, 8 mentions.",
-      "lat": 36,
-      "lon": 138,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.japantimes.co.jp/news/2026/08/10/japan/japan-misinformation-social-media/"
-    },
-    {
-      "id": "gdelt-1317601504",
-      "date": "2026-08-10",
-      "title": "ARMY fought ABDULLAH — Gaza, Israel (general), Israel",
-      "description": "Avg tone -9.0, 8 mentions.",
-      "lat": 31.4167,
-      "lon": 34.3333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.middleeastmonitor.com/20260810-gaza-girl-dies-of-wounds-from-israeli-fire-amid-ongoing-ceasefire-violations/"
-    },
-    {
-      "id": "gdelt-1317601582",
-      "date": "2026-08-10",
-      "title": "SAUDI ARABIA engaged in diplomatic cooperation with KUWAIT — Islamabad, Islamabad, Pakistan",
-      "description": "Avg tone 3.1, 8 mentions.",
-      "lat": 33.7,
-      "lon": 73.1667,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 8,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.middleeastmonitor.com/20260810-kuwait-congratulates-pakistan-on-tripartite-defense-pact-with-turkiye-saudi-arabia/"
-    },
-    {
-      "id": "gdelt-1317601609",
-      "date": "2026-08-10",
-      "title": "TURKIYE engaged in diplomatic cooperation with KUWAIT — Islamabad, Islamabad, Pakistan",
-      "description": "Avg tone 3.1, 8 mentions.",
-      "lat": 33.7,
-      "lon": 73.1667,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 8,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.middleeastmonitor.com/20260810-kuwait-congratulates-pakistan-on-tripartite-defense-pact-with-turkiye-saudi-arabia/"
-    },
-    {
-      "id": "gdelt-1317601673",
-      "date": "2026-08-10",
-      "title": "PENNSYLVANIA fought CHINA — Chaofeng, Jiangsu, China",
-      "description": "Avg tone -7.0, 8 mentions.",
-      "lat": 32.1168,
-      "lon": 119.288,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://english.hani.co.kr/arti/english_edition/e_international/1272221.html"
-    },
-    {
-      "id": "gdelt-1317601689",
-      "date": "2026-08-10",
-      "title": "WASHINGTON engaged in diplomatic cooperation with ISRAEL — Washington, District of Columbia, United States",
-      "description": "Avg tone -0.6, 8 mentions.",
-      "lat": 38.8951,
-      "lon": -77.0364,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.middle-east-online.com/en/gaza-michigan-how-abdul-el-sayed-challenging-old-democratic-order"
-    },
-    {
-      "id": "gdelt-1317601705",
-      "date": "2026-08-10",
-      "title": "UNITED STATES made an appeal to UKRAINE — United States",
-      "description": "Avg tone -0.4, 8 mentions.",
-      "lat": 39.828175,
-      "lon": -98.5795,
+      "title": "TYRE made an appeal — Malaysia",
+      "description": "Avg tone -0.9, 10 mentions.",
+      "lat": 2.5,
+      "lon": 112.5,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": 3,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.novinite.com/articles/240046/Bulgarian+Company+Named+in+Turkey-Ukraine+Arms+Transfer"
+      "sourceUrl": "https://paultan.org/2026/08/10/icaur-v27-spotted-in-malaysia-rhd-rwd-unit-252-ps-300-nm-1-5t-reev-suv-launching-as-ckd/"
     },
     {
-      "id": "gdelt-1317600847",
+      "id": "gdelt-1317613676",
       "date": "2026-08-10",
-      "title": "UNITED KINGDOM expressed intent to cooperate — Midlands, Leicestershire, United Kingdom",
-      "description": "Avg tone 1.4, 7 mentions.",
-      "lat": 52.75,
-      "lon": -1.5,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.stourbridgenews.co.uk/news/26450270.know-watch-solar-eclipse-west-midlands/"
-    },
-    {
-      "id": "gdelt-1317601132",
-      "date": "2026-08-10",
-      "title": "GERMAN rejected CHINESE — China",
-      "description": "Avg tone 1.3, 7 mentions.",
-      "lat": 35,
-      "lon": 105,
+      "title": "MOLDOVA reduced relations with RUSSIA — Crocmaz, Stefan-Voda, Moldova",
+      "description": "Avg tone -3.5, 10 mentions.",
+      "lat": 46.4519,
+      "lon": 29.9825,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": -4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://weeklyblitz.net/2026/08/10/germanys-auto-industry-crisis-offers-a-stark-warning-for-detroit/"
+      "sourceUrl": "https://en.apa.az/social/moldova-recalls-ambassador-to-russia-after-drone-explodes-near-homes-519724"
     },
     {
-      "id": "gdelt-1317601189",
+      "id": "gdelt-1317613705",
       "date": "2026-08-10",
-      "title": "UNITED KINGDOM expressed intent to cooperate — Midlands, Leicestershire, United Kingdom",
-      "description": "Avg tone 1.4, 7 mentions.",
-      "lat": 52.75,
-      "lon": -1.5,
+      "title": "BOEING expressed intent to cooperate with PRAGUE — Prague, Praha, Hlavníesto, Czech Republic",
+      "description": "Avg tone -0.9, 10 mentions.",
+      "lat": 50.0833,
+      "lon": 14.4667,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": 4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.stourbridgenews.co.uk/news/26450270.know-watch-solar-eclipse-west-midlands/"
+      "sourceUrl": "https://www.rustourismnews.com/2026/08/10/emirates-suspends-a380-flights-to-prague-and-glasgow/"
     },
     {
-      "id": "gdelt-1317601407",
+      "id": "gdelt-1317613713",
       "date": "2026-08-10",
-      "title": "ISRAEL engaged in material cooperation with EUROPE — Israel",
-      "description": "Avg tone -4.6, 7 mentions.",
+      "title": "NIGERIA made an appeal to MIGRANT — Israel",
+      "description": "Avg tone -0.7, 10 mentions.",
       "lat": 31.5,
       "lon": 34.75,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 6.4,
+      "goldstein": 3,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.middleeastmonitor.com/20260810-explainer-how-products-from-illegal-israeli-settlements-reach-european-markets/"
+      "sourceUrl": "https://www.dailymail.com/news/article-16041601/Proportion-voters-think-migration-bad-UK-jumps.html"
     },
     {
-      "id": "gdelt-1317600874",
+      "id": "gdelt-1317613729",
       "date": "2026-08-10",
-      "title": "RAILA ODINGA engaged in diplomatic cooperation — Naivasha, Rift Valley, Kenya",
-      "description": "Avg tone -1.4, 6 mentions.",
-      "lat": -0.716667,
-      "lon": 36.4359,
+      "title": "DEMONSTRATOR protested against SPANISH — Spain",
+      "description": "Avg tone -5.6, 10 mentions.",
+      "lat": 40,
+      "lon": -4,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -6.5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://news.am/en/news/1054552"
+    },
+    {
+      "id": "gdelt-1317613755",
+      "date": "2026-08-10",
+      "title": "PAKISTAN held consultations with COMMUNITY — Pakistan",
+      "description": "Avg tone 7.3, 10 mentions.",
+      "lat": 30,
+      "lon": 70,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.pakistantoday.com.pk/2026/08/10/pakistan-envoy-urges-stronger-economic-partnership-with-us"
+    },
+    {
+      "id": "gdelt-1317613791",
+      "date": "2026-08-10",
+      "title": "RUSSIA expressed intent to cooperate — Chennai, Tamil Nadu, India",
+      "description": "Avg tone -1.9, 10 mentions.",
+      "lat": 13.0833,
+      "lon": 80.2833,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 5.2,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://economictimes.indiatimes.com/news/economy/foreign-trade/russia-explores-rail-link-to-india-to-bypass-maritime-chokepoints/articleshow/133105859.cms"
+    },
+    {
+      "id": "gdelt-1317613884",
+      "date": "2026-08-10",
+      "title": "TURKISH rejected — Cappadocia, Turkey (general), Turkey",
+      "description": "Avg tone -0.6, 9 mentions.",
+      "lat": 38.65,
+      "lon": 34.8333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.liverpoolecho.co.uk/travel/cheshire-couple-miss-973-flight-34431914"
+    },
+    {
+      "id": "gdelt-1317613030",
+      "date": "2026-08-10",
+      "title": "KYIV engaged in diplomatic cooperation — Warsaw, (PL67), Poland",
+      "description": "Avg tone -1.5, 8 mentions.",
+      "lat": 52.25,
+      "lon": 21,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": 3.4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://capitalfm.africa/oburu-we-chose-ruto-because-he-was-the-better-devil/"
+      "sourceUrl": "https://news.am/en/news/1054370"
     },
     {
-      "id": "gdelt-1317600926",
+      "id": "gdelt-1317613072",
       "date": "2026-08-10",
-      "title": "AUSTRALIAN yielded to CHINA — Germany",
-      "description": "Avg tone -5.7, 6 mentions.",
-      "lat": 51.5,
-      "lon": 10.5,
+      "title": "AZERBAIJAN reduced relations with AMBASSADOR — Azerbaijan",
+      "description": "Avg tone 4.1, 8 mentions.",
+      "lat": 40.5,
+      "lon": 47.5,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 10,
+      "goldstein": -4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.borsaitaliana.it/borsa/notizie/radiocor/finanza/dettaglio/morning-note-economia-e-finanza-dai-giornali-esteri-nRC_10082026_1006_153640575.html"
+      "sourceUrl": "https://en.apa.az/official-news/azerbaijan-recalls-ambassadors-to-switzerland-and-the-netherlands-519700"
     },
     {
-      "id": "gdelt-1317600935",
+      "id": "gdelt-1317613079",
       "date": "2026-08-10",
-      "title": "AUSTRALIAN expressed intent to cooperate with UNITED STATES — San Francisco, California, United States",
-      "description": "Avg tone -0.2, 6 mentions.",
-      "lat": 37.7749,
-      "lon": -122.419,
+      "title": "AZERBAIJAN reduced relations with THE NETHERLAND — Azerbaijan",
+      "description": "Avg tone 4.1, 8 mentions.",
+      "lat": 40.5,
+      "lon": 47.5,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 4,
+      "goldstein": -4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.theepochtimes.com/world/south-australia-announces-countrys-1st-royal-commission-probe-into-ai-6073111"
+      "sourceUrl": "https://en.apa.az/official-news/azerbaijan-recalls-ambassadors-to-switzerland-and-the-netherlands-519700"
     },
     {
-      "id": "gdelt-1317601007",
+      "id": "gdelt-1317613133",
       "date": "2026-08-10",
-      "title": "CANADA provided aid — United Kingdom",
-      "description": "Avg tone 6.5, 6 mentions.",
+      "title": "CANADA reduced relations with BRITISH — United Kingdom",
+      "description": "Avg tone -1.0, 8 mentions.",
       "lat": 54,
       "lon": -4,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 7.4,
+      "goldstein": -4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.mirror.co.uk/news/royals/meghan-markle-prince-harry-bagpipes-37533115"
+      "sourceUrl": "https://organiser.org/2026/08/10/374365/world/canada-wildfire-20000-evacuated-from-british-columbia-pm-carney-assures-relief-support-as-properties-damaged/"
     },
     {
-      "id": "gdelt-1317601202",
+      "id": "gdelt-1317613159",
       "date": "2026-08-10",
-      "title": "UNITED KINGDOM fought — Belfast, Belfast, United Kingdom",
-      "description": "Avg tone 1.4, 6 mentions.",
-      "lat": 54.5833,
-      "lon": -5.93333,
+      "title": "COLOMBIA fought DISSIDENT — Espriella, NariñO, Colombia",
+      "description": "Avg tone -6.3, 8 mentions.",
+      "lat": 1.43333,
+      "lon": -77.4167,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.bbc.co.uk/news/articles/c5yrljp9x9eo"
+    },
+    {
+      "id": "gdelt-1317613203",
+      "date": "2026-08-10",
+      "title": "MISCREANT assaulted ASSAM — Dhemaji, Assam, India",
+      "description": "Avg tone -9.2, 8 mentions.",
+      "lat": 27.4833,
+      "lon": 94.5833,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": -9.5,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.stourbridgenews.co.uk/news/26450270.know-watch-solar-eclipse-west-midlands/"
+      "sourceUrl": "https://www.hindustantimes.com/india-news/injured-toll-in-assam-arunachal-border-firing-situation-almost-resolved-says-cm-sarma-101786363782237.html"
+    },
+    {
+      "id": "gdelt-1317613226",
+      "date": "2026-08-10",
+      "title": "COMMUNITY engaged in diplomatic cooperation with UNITED KINGDOM — Belfast, Belfast, United Kingdom",
+      "description": "Avg tone 3.4, 8 mentions.",
+      "lat": 54.5833,
+      "lon": -5.93333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.dissexpress.co.uk/national/more-than-1-6-million-people-estimated-to-have-attended-fleadh-in-belfast-170383/"
+    },
+    {
+      "id": "gdelt-1317613355",
+      "date": "2026-08-10",
+      "title": "UNITED KINGDOM yielded to BUSINESS — Belfast, Belfast, United Kingdom",
+      "description": "Avg tone 3.4, 8 mentions.",
+      "lat": 54.5833,
+      "lon": -5.93333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.dissexpress.co.uk/national/more-than-1-6-million-people-estimated-to-have-attended-fleadh-in-belfast-170383/"
+    },
+    {
+      "id": "gdelt-1317613367",
+      "date": "2026-08-10",
+      "title": "UNITED KINGDOM engaged in diplomatic cooperation with UNITED KINGDOM — Kenninghall, Norfolk, United Kingdom",
+      "description": "Avg tone 2.7, 8 mentions.",
+      "lat": 52.4333,
+      "lon": 1,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.edp24.co.uk/news/26449683.norfolk-villagers-praised-help-kenninghall-fire/"
+    },
+    {
+      "id": "gdelt-1317613721",
+      "date": "2026-08-10",
+      "title": "NETHERLANDS expressed intent to cooperate — Netherlands",
+      "description": "Avg tone 5.0, 8 mentions.",
+      "lat": 52.5,
+      "lon": 5.75,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.edp24.co.uk/news/26448466.caister-lifeboat-bernard-matthews-returning-village/"
+    },
+    {
+      "id": "gdelt-1317613361",
+      "date": "2026-08-10",
+      "title": "BRITAIN engaged in diplomatic cooperation with ACTOR — Hartpury, Gloucestershire, United Kingdom",
+      "description": "Avg tone 0.5, 7 mentions.",
+      "lat": 51.9167,
+      "lon": -2.3,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.walesonline.co.uk/lifestyle/showbiz/martin-clunes-shares-major-family-34432461"
+    },
+    {
+      "id": "gdelt-1317614006",
+      "date": "2026-08-10",
+      "title": "AMERICAN coerced MADAGASCAR — Ampasindava, Toliara, Madagascar",
+      "description": "Avg tone 5.3, 7 mentions.",
+      "lat": -23.8167,
+      "lon": 44.3667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.mining-technology.com/news/us-dfc-to-fund-harena-rare-earths/"
+    },
+    {
+      "id": "gdelt-1317614041",
+      "date": "2026-08-10",
+      "title": "YEMEN fought ARMED FORCES — Al-Maha, ?ajjah, Yemen",
+      "description": "Avg tone -8.9, 7 mentions.",
+      "lat": 16.1561,
+      "lon": 43.4487,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://news.am/en/news/1054440"
+    },
+    {
+      "id": "gdelt-1317613045",
+      "date": "2026-08-10",
+      "title": "AFGHAN assaulted — Nottinghamshire, Nottinghamshire, United Kingdom",
+      "description": "Avg tone -4.6, 6 mentions.",
+      "lat": 53.1667,
+      "lon": -1,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -9,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.dailymail.com/news/article-16041581/Afghan-asylum-seeker-raped-schoolgirl-woods-masquerading-14-year-old-boy-Snapchat-jailed-nearly-10-years.html"
+    },
+    {
+      "id": "gdelt-1317613057",
+      "date": "2026-08-10",
+      "title": "ARMENIA engaged in material cooperation with UNITED STATES — Georgia, United States",
+      "description": "Avg tone 0.0, 6 mentions.",
+      "lat": 32.9866,
+      "lon": -83.6487,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 6.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://news.am/en/news/1054504"
+    },
+    {
+      "id": "gdelt-1317613070",
+      "date": "2026-08-10",
+      "title": "AZERBAIJAN reduced relations with SWITZERLAND — Liechtenstein",
+      "description": "Avg tone 4.1, 6 mentions.",
+      "lat": 47.166667,
+      "lon": 9.533333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://en.apa.az/official-news/azerbaijan-recalls-ambassadors-to-switzerland-and-the-netherlands-519700"
+    },
+    {
+      "id": "gdelt-1317613071",
+      "date": "2026-08-10",
+      "title": "BAKU yielded to STATE MINIST — Baku, Baki*, Azerbaijan",
+      "description": "Avg tone -1.9, 6 mentions.",
+      "lat": 40.3953,
+      "lon": 49.8822,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://news.am/en/news/1054539"
+    },
+    {
+      "id": "us6000tjl2",
+      "date": "2026-08-10",
+      "title": "M7.4 earthquake — 5 km E of San José del Palmar, Colombia",
+      "description": "Magnitude 7.4 recorded 2026-08-10T12:34:27.787Z.",
+      "lat": 4.9031,
+      "lon": -76.1885,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
     },
     {
       "id": "aka2026powmkf",
@@ -1657,6 +1676,248 @@
     {
       "sector": "Consumer Goods",
       "pctChange": 0.0117
+    }
+  ],
+  "metroReadings": [
+    {
+      "metroId": "nyc",
+      "metroName": "New York",
+      "severity": 1,
+      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — -0.23% since last month.",
+      "narrative": "Prices You Pay is watch today. How fast prices are rising here: -0.23% since last month. Price at the pump: $4.08/gal (-0.4% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "-0.23% since last month",
+          "sourceName": "BLS (New York CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$4.08/gal (-0.4% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "la",
+      "metroName": "Los Angeles",
+      "severity": 1,
+      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — -0.28% since last month.",
+      "narrative": "Prices You Pay is watch today. How fast prices are rising here: -0.28% since last month. Price at the pump: $4.08/gal (-0.4% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "-0.28% since last month",
+          "sourceName": "BLS (Los Angeles CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$4.08/gal (-0.4% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "chicago",
+      "metroName": "Chicago",
+      "severity": 3,
+      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — -0.94% since last month.",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: -0.94% since last month. Price at the pump: $4.08/gal (-0.4% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "-0.94% since last month",
+          "sourceName": "BLS (Chicago CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$4.08/gal (-0.4% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "houston",
+      "metroName": "Houston",
+      "severity": 3,
+      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — -1.64% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: -1.64% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "-1.64% since last published reading (2 months ago)",
+          "sourceName": "BLS (Houston CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$4.08/gal (-0.4% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "miami",
+      "metroName": "Miami",
+      "severity": 0,
+      "oneLiner": "Prices You Pay: calm today. How fast prices are rising here — 0.05% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is calm today. How fast prices are rising here: 0.05% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "0.05% since last published reading (2 months ago)",
+          "sourceName": "BLS (Miami CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$4.08/gal (-0.4% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "dallas",
+      "metroName": "Dallas",
+      "severity": 1,
+      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — -0.26% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is watch today. How fast prices are rising here: -0.26% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "-0.26% since last published reading (2 months ago)",
+          "sourceName": "BLS (Dallas CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$4.08/gal (-0.4% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "sf",
+      "metroName": "San Francisco Bay Area",
+      "severity": 0,
+      "oneLiner": "Prices You Pay: calm today. How fast prices are rising here — 0.19% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is calm today. How fast prices are rising here: 0.19% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "0.19% since last published reading (2 months ago)",
+          "sourceName": "BLS (San Francisco Bay Area CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$4.08/gal (-0.4% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "seattle",
+      "metroName": "Seattle",
+      "severity": 2,
+      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 1.00% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 1.00% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "1.00% since last published reading (2 months ago)",
+          "sourceName": "BLS (Seattle CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$4.08/gal (-0.4% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "boston",
+      "metroName": "Boston",
+      "severity": 3,
+      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 2.38% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 2.38% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "2.38% since last published reading (2 months ago)",
+          "sourceName": "BLS (Boston CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$4.08/gal (-0.4% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "denver",
+      "metroName": "Denver",
+      "severity": 3,
+      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 1.80% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 1.80% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "1.80% since last published reading (2 months ago)",
+          "sourceName": "BLS (Denver CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$4.08/gal (-0.4% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "dc",
+      "metroName": "Washington",
+      "severity": 3,
+      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 1.34% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 1.34% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "1.34% since last published reading (2 months ago)",
+          "sourceName": "BLS (Washington CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$4.08/gal (-0.4% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "atlanta",
+      "metroName": "Atlanta",
+      "severity": 1,
+      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — 0.52% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is watch today. How fast prices are rising here: 0.52% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "0.52% since last published reading (2 months ago)",
+          "sourceName": "BLS (Atlanta CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$4.08/gal (-0.4% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
     }
   ]
 }

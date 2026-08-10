@@ -19,7 +19,7 @@ Open [http://localhost:3000](http://localhost:3000).
 npm run refresh
 ```
 
-Pulls from GDELT, FRED, BLS, EIA, USGS, NOAA, and Alpha Vantage, scores each impact lens, synthesizes a digest via OpenRouter, and writes `data/latest.json` + `data/history/<date>.json`.
+Pulls from GDELT, FRED, BLS (national + 12-metro CPI), EIA, USGS, NOAA, Alpha Vantage, and the US State Department (travel advisories), scores each impact lens, synthesizes a digest via OpenRouter, and writes `data/latest.json` + `data/history/<date>.json`. No new API keys needed for the metro CPI, Treasury yield, or travel advisory data — they reuse the existing keyless BLS/State Dept feeds and the already-configured `FRED_API_KEY`.
 
 Copy `.env.example` to `.env.local` and fill in the free API keys you want live — see that file for registration links. Without any keys, `npm run refresh` runs entirely in mock/demo mode (`MOCK_SOURCES` defaults to `true`).
 
