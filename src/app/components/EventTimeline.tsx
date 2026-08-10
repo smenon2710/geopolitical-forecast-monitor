@@ -11,6 +11,11 @@ const STATUS_COLOR_VAR: Record<string, string> = {
   critical: "var(--status-critical)",
 };
 
+// Real GDELT days can carry dozens of flagged events — past this many dots,
+// a single day's column would swallow the whole week's layout, so the rest
+// collapse into a count chip instead.
+const DOTS_PER_DAY_CAP = 6;
+
 function trailingDays(referenceDate: string, count: number): string[] {
   const ref = new Date(referenceDate + "T00:00:00Z");
   return Array.from({ length: count }, (_, i) => {
@@ -38,13 +43,15 @@ export function EventTimeline({ events, referenceDate }: { events: GeoEvent[]; r
       <div className="flex gap-1">
         {days.map((day) => {
           const dayEvents = events.filter((e) => e.date === day);
+          const visible = dayEvents.slice(0, DOTS_PER_DAY_CAP);
+          const overflow = dayEvents.length - visible.length;
           return (
             <div key={day} className="flex-1 flex flex-col items-center gap-2 min-w-0">
               <div
                 className="w-full flex flex-wrap gap-1 justify-center items-center"
                 style={{ minHeight: 24, borderTop: "1px solid var(--baseline)", paddingTop: 6 }}
               >
-                {dayEvents.map((e) => (
+                {visible.map((e) => (
                   <button
                     key={e.id}
                     onMouseEnter={() => setHovered(e)}
@@ -60,6 +67,19 @@ export function EventTimeline({ events, referenceDate }: { events: GeoEvent[]; r
                     }}
                   />
                 ))}
+                {overflow > 0 && (
+                  <span
+                    className="text-[9px] leading-none rounded-full px-1.5 py-0.5"
+                    style={{
+                      color: "var(--text-muted)",
+                      border: "1px solid var(--border)",
+                      fontFamily: "var(--font-mono)",
+                    }}
+                    title={`${overflow} more event${overflow === 1 ? "" : "s"} on this day`}
+                  >
+                    +{overflow}
+                  </span>
+                )}
               </div>
               <span className="text-[10px]" style={{ color: "var(--text-muted)" }}>
                 {day.slice(5)}

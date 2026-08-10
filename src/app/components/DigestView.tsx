@@ -1,5 +1,6 @@
 import type { DailyDigest } from "@/types";
-import { DATA_QUALITY_DESCRIPTION, DATA_QUALITY_LABEL, LENS_LABELS, SEVERITY_LABEL, SEVERITY_STATUS } from "@/types";
+import { LENS_LABELS, SEVERITY_LABEL, SEVERITY_STATUS } from "@/types";
+import { DataQualityBadge } from "./DataQualityBadge";
 
 const STATUS_COLOR_VAR: Record<string, string> = {
   good: "var(--status-good)",
@@ -44,7 +45,11 @@ export function DigestView({ digest }: { digest: DailyDigest }) {
           <section
             key={reading.lens}
             className="rounded-2xl p-5"
-            style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
+            style={{
+              background: "var(--surface)",
+              border: "1px solid var(--border)",
+              borderLeft: `4px solid ${color}`,
+            }}
           >
             <div className="flex items-center justify-between gap-2 mb-3">
               <h2
@@ -74,15 +79,7 @@ export function DigestView({ digest }: { digest: DailyDigest }) {
                 <h3 className="text-sm font-semibold" style={{ color: "var(--text-primary)" }}>
                   Data & sources
                 </h3>
-                {reading.dataQuality !== "live" && (
-                  <span
-                    title={DATA_QUALITY_DESCRIPTION[reading.dataQuality]}
-                    className="text-[10px] uppercase tracking-wide rounded-full px-2 py-0.5"
-                    style={{ border: "1px solid var(--border)", color: "var(--text-muted)" }}
-                  >
-                    {DATA_QUALITY_LABEL[reading.dataQuality]}
-                  </span>
-                )}
+                {reading.dataQuality !== "live" && <DataQualityBadge quality={reading.dataQuality} />}
               </div>
               <ul className="mt-2 flex flex-col gap-1">
                 {reading.metrics.map((m, i) => (

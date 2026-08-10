@@ -22,6 +22,11 @@ function arcPath(startAngle: number, endAngle: number, radius: number) {
   return `M ${start.x} ${start.y} A ${radius} ${radius} 0 0 1 ${end.x} ${end.y}`;
 }
 
+// Two minor ticks per 45° zone (at the thirds) — pure instrument texture,
+// deliberately unlabeled: the product avoids surfacing the raw 0-3 severity
+// scale as user-facing jargon, so these read as scale graduation, not data.
+const MINOR_TICK_ANGLES = ZONE_BOUNDS.slice(0, -1).flatMap((start) => [start - 15, start - 30]);
+
 export function Dial({ severity, size = 200 }: { severity: Severity; size?: number }) {
   const needleAngle = NEEDLE_ANGLES[severity];
   const needleTip = point(needleAngle, NEEDLE_LEN);
@@ -35,6 +40,17 @@ export function Dial({ severity, size = 200 }: { severity: Severity; size?: numb
       aria-hidden="true"
     >
       <rect x="0" y="0" width="200" height="120" rx="10" fill="var(--dial-ink)" />
+      {/* Inset bezel — a physical panel is recessed, not flat-printed. */}
+      <rect
+        x="1.5"
+        y="1.5"
+        width="197"
+        height="117"
+        rx="9"
+        fill="none"
+        stroke="rgba(245,240,230,0.08)"
+        strokeWidth="1"
+      />
 
       {ZONE_COLORS.map((color, i) => (
         <path
@@ -46,6 +62,22 @@ export function Dial({ severity, size = 200 }: { severity: Severity; size?: numb
           strokeLinecap="butt"
         />
       ))}
+
+      {MINOR_TICK_ANGLES.map((angle, i) => {
+        const inner = point(angle, R - ARC_STROKE / 2 - 2);
+        const outer = point(angle, R + ARC_STROKE / 2);
+        return (
+          <line
+            key={i}
+            x1={inner.x}
+            y1={inner.y}
+            x2={outer.x}
+            y2={outer.y}
+            stroke="rgba(20,24,31,0.55)"
+            strokeWidth={1}
+          />
+        );
+      })}
 
       {ZONE_BOUNDS.map((angle, i) => {
         const inner = point(angle, R - ARC_STROKE / 2 - 3);
@@ -75,6 +107,7 @@ export function Dial({ severity, size = 200 }: { severity: Severity; size?: numb
         style={{ transformOrigin: `${CX}px ${CY}px` }}
       />
       <circle cx={CX} cy={CY} r={6} fill="var(--dial-brass)" />
+      <circle cx={CX} cy={CY} r={2} fill="var(--dial-ink)" />
     </svg>
   );
 }

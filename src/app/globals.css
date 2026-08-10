@@ -74,11 +74,16 @@
 }
 
 /* The dial gauge's face is fixed dark regardless of theme — an instrument
-   has its own face, independent of the room's lighting. */
-.dial-face {
-  --dial-ink: #14181f;
+   has its own face, independent of the room's lighting. The same fixed
+   palette extends to the panel the gauges are mounted in (.instrument-panel
+   below): a real console doesn't repaint itself to match the room either. */
+.dial-face,
+.instrument-panel {
+  --dial-ink: #181d26;
   --dial-paper: #f5f0e6;
+  --dial-paper-muted: #a39d8c;
   --dial-brass: #c99a45;
+  --dial-seam: rgba(245, 240, 230, 0.1);
   --dial-good: #4ba05f;
   --dial-warning: #b07d1f;
   --dial-serious: #c97a45;
@@ -88,9 +93,38 @@
 .dial-needle {
   transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
+
+/* Gauge cells sit edge-to-edge on the panel; the 1px gap plus a seam-colored
+   panel background is what draws the hairline between them, so the grid
+   never needs per-cell border bookkeeping across responsive column counts. */
+.instrument-panel {
+  background: var(--dial-seam);
+  border: 1px solid rgba(245, 240, 230, 0.16);
+  box-shadow:
+    0 1px 0 rgba(245, 240, 230, 0.08) inset,
+    0 12px 28px -12px rgba(0, 0, 0, 0.55);
+}
+.instrument-panel > * {
+  background: var(--dial-ink);
+}
+
+.indicator-pulse {
+  animation: indicator-pulse 2.4s ease-in-out infinite;
+}
 @media (prefers-reduced-motion: reduce) {
-  .dial-needle {
+  .dial-needle,
+  .indicator-pulse {
     transition: none;
+    animation: none;
+  }
+}
+@keyframes indicator-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
   }
 }
 

@@ -11,8 +11,8 @@ const EventMap = dynamic(() => import("./EventMap").then((m) => m.EventMap), {
   ssr: false,
   loading: () => (
     <div
-      className="rounded-lg flex items-center justify-center text-sm"
-      style={{ height: 320, background: "var(--surface)", border: "1px solid var(--border)", color: "var(--text-muted)" }}
+      className="rounded-2xl p-4 flex items-center justify-center text-sm"
+      style={{ background: "var(--surface)", border: "1px solid var(--border)", color: "var(--text-muted)", minHeight: 383 }}
     >
       Loading map…
     </div>
@@ -34,10 +34,27 @@ export function DashboardView({ digest }: { digest: DailyDigest }) {
   return (
     <div className="flex flex-col gap-8">
       <section>
-        <SectionLabel>Today&apos;s readings</SectionLabel>
-        <div className="grid grid-cols-2 lg:grid-cols-5 gap-3">
-          {digest.lenses.map((reading) => (
-            <DialCard key={reading.lens} reading={reading} />
+        <div className="flex items-baseline justify-between mb-2">
+          <h2
+            className="text-lg italic"
+            style={{ color: "var(--brass)", fontFamily: "var(--font-display)", fontWeight: 600 }}
+          >
+            Today&apos;s readings
+          </h2>
+          <span
+            className="text-[10px] uppercase tracking-[0.15em]"
+            style={{ color: "var(--text-muted)", fontFamily: "var(--font-mono)" }}
+          >
+            5-lens instrument panel
+          </span>
+        </div>
+        <div className="instrument-panel rounded-2xl overflow-hidden grid grid-cols-2 lg:grid-cols-5 gap-px">
+          {digest.lenses.map((reading, i) => (
+            <DialCard
+              key={reading.lens}
+              reading={reading}
+              className={i === digest.lenses.length - 1 && digest.lenses.length % 2 === 1 ? "col-span-2 lg:col-span-1" : ""}
+            />
           ))}
         </div>
       </section>
@@ -52,7 +69,6 @@ export function DashboardView({ digest }: { digest: DailyDigest }) {
       </section>
 
       <section>
-        <SectionLabel>Where it&apos;s happening</SectionLabel>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
           <EventMap events={digest.events} />
           <SectorHeatmap sectors={digest.sectors} />

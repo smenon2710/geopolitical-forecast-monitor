@@ -17,14 +17,26 @@ export function SectorHeatmap({ sectors }: { sectors: SectorMove[] }) {
 
   return (
     <div
-      className="rounded-2xl p-4"
+      className="rounded-2xl p-4 flex flex-col gap-3"
       style={{ background: "var(--surface)", border: "1px solid var(--border)" }}
     >
-      <div
-        className="text-xs font-semibold uppercase tracking-wide mb-3"
-        style={{ color: "var(--text-secondary)", fontFamily: "var(--font-display)" }}
-      >
-        What&apos;s moving today
+      <div className="flex items-center justify-between flex-wrap gap-2">
+        <div
+          className="text-xs font-semibold uppercase tracking-wide"
+          style={{ color: "var(--text-secondary)", fontFamily: "var(--font-display)" }}
+        >
+          What&apos;s moving today
+        </div>
+        <div className="flex items-center gap-2 text-[11px]" style={{ color: "var(--text-muted)" }}>
+          <span className="inline-flex items-center gap-1">
+            <span className="rounded-sm" style={{ width: 8, height: 8, background: "var(--div-cool)" }} />
+            Cooling
+          </span>
+          <span className="inline-flex items-center gap-1">
+            <span className="rounded-sm" style={{ width: 8, height: 8, background: "var(--div-warm)" }} />
+            Heating up
+          </span>
+        </div>
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
         {sectors.map((s) => (
