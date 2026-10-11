@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-10",
-  "generatedAt": "2026-10-10T16:07:16.145Z",
+  "date": "2026-10-11",
+  "generatedAt": "2026-10-11T16:36:41.893Z",
   "dataQuality": "live",
   "lenses": [
     {
       "lens": "costOfLiving",
       "severity": 2,
       "oneLiner": "Prices You Pay: elevated today. How fast prices are rising — 0.40%.",
-      "narrative": "Prices are rising at a 0.40% pace. Gas costs $4.35 a gallon and dropped 2.5% this week. Housing, food, and energy costs are up 0.26%, 0.12%, and 2.10% respectively.",
+      "narrative": "Prices are 0.40%. Gas costs $4.35 per gallon, -2.5% change from the prior week. Housing costs are 0.26%, food costs are 0.12%, and energy costs are 2.10%.",
       "metrics": [
         {
           "label": "How fast prices are rising",
@@ -41,7 +41,7 @@
       "lens": "investments",
       "severity": 1,
       "oneLiner": "Your Savings: watch today. The stock market today — 0.60%.",
-      "narrative": "The stock market is up 0.60% today. The biggest industry swing is 0.86%. Long‑term borrowing costs 5.22% and moved down 0.06 today.",
+      "narrative": "The stock market is 0.60%. Biggest industry swing is 0.86%. Long-term borrowing costs are 5.22% with -0.06 point change today.",
       "metrics": [
         {
           "label": "The stock market today",
@@ -65,7 +65,7 @@
       "lens": "standardOfLiving",
       "severity": 1,
       "oneLiner": "Jobs & Paychecks: watch today. Jobs picture — +0.10pt unemployment.",
-      "narrative": "Unemployment increased 0.10. Paychecks fell 0.08 compared to prices. The economy grew 0.55%.",
+      "narrative": "Unemployment is +0.10pt. Paychecks are -0.08pt vs inflation. GDP is +0.55%.",
       "metrics": [
         {
           "label": "Jobs picture",
@@ -89,7 +89,7 @@
       "lens": "security",
       "severity": 3,
       "oneLiner": "Safety & Tension: high today. Global tension level — -10.0.",
-      "narrative": "Global tension is at -10.0. The biggest recent earthquake was magnitude 7.7.",
+      "narrative": "Global tension is -10.0. The biggest recent earthquake was M7.7.",
       "metrics": [
         {
           "label": "Global tension level",
@@ -108,12 +108,17 @@
       "lens": "dailyRoutine",
       "severity": 1,
       "oneLiner": "Everyday Life: watch today. Cost of getting around — -2.5% this week.",
-      "narrative": "Getting around costs fell 2.5% this week. You might notice a small savings on fuel.",
+      "narrative": "Cost of getting around is -2.5% this week. Heat affected 17 out of 1000 stations, with temperatures of 38°C.",
       "metrics": [
         {
           "label": "Cost of getting around",
           "value": "-2.5% this week",
           "sourceName": "EIA"
+        },
+        {
+          "label": "Weather disruption",
+          "value": "Localized heat (17/1000 sampled US stations ≥ 38°C)",
+          "sourceName": "NOAA"
         }
       ],
       "dataQuality": "live"
@@ -548,123 +553,123 @@
       "unit": "index",
       "points": [
         {
-          "date": "2026-09-11",
+          "date": "2026-09-12",
           "value": 0
         },
         {
-          "date": "2026-09-12",
+          "date": "2026-09-13",
           "value": 0.63
         },
         {
-          "date": "2026-09-13",
+          "date": "2026-09-14",
           "value": 1.25
         },
         {
-          "date": "2026-09-14",
+          "date": "2026-09-15",
           "value": 1.85
         },
         {
-          "date": "2026-09-15",
+          "date": "2026-09-16",
           "value": 2.41
         },
         {
-          "date": "2026-09-16",
+          "date": "2026-09-17",
           "value": 2.93
         },
         {
-          "date": "2026-09-17",
+          "date": "2026-09-18",
           "value": 3.4
         },
         {
-          "date": "2026-09-18",
+          "date": "2026-09-19",
           "value": 3.81
         },
         {
-          "date": "2026-09-19",
+          "date": "2026-09-20",
           "value": 4.17
         },
         {
-          "date": "2026-09-20",
+          "date": "2026-09-21",
           "value": 4.46
         },
         {
-          "date": "2026-09-21",
+          "date": "2026-09-22",
           "value": 4.7
         },
         {
-          "date": "2026-09-22",
+          "date": "2026-09-23",
           "value": 4.88
         },
         {
-          "date": "2026-09-23",
+          "date": "2026-09-24",
           "value": 5.01
         },
         {
-          "date": "2026-09-24",
+          "date": "2026-09-25",
           "value": 5.11
         },
         {
-          "date": "2026-09-25",
+          "date": "2026-09-26",
           "value": 5.17
         },
         {
-          "date": "2026-09-26",
+          "date": "2026-09-27",
           "value": 5.21
         },
         {
-          "date": "2026-09-27",
+          "date": "2026-09-28",
           "value": 5.25
         },
         {
-          "date": "2026-09-28",
+          "date": "2026-09-29",
           "value": 5.28
         },
         {
-          "date": "2026-09-29",
+          "date": "2026-09-30",
           "value": 5.34
         },
         {
-          "date": "2026-09-30",
+          "date": "2026-10-01",
           "value": 5.42
         },
         {
-          "date": "2026-10-01",
+          "date": "2026-10-02",
           "value": 5.53
         },
         {
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "value": 5.69
         },
         {
-          "date": "2026-10-03",
+          "date": "2026-10-04",
           "value": 5.91
         },
         {
-          "date": "2026-10-04",
+          "date": "2026-10-05",
           "value": 6.18
         },
         {
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "value": 6.51
         },
         {
-          "date": "2026-10-06",
+          "date": "2026-10-07",
           "value": 6.89
         },
         {
-          "date": "2026-10-07",
+          "date": "2026-10-08",
           "value": 7.34
         },
         {
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "value": 7.84
         },
         {
-          "date": "2026-10-09",
+          "date": "2026-10-10",
           "value": 8.39
         },
         {
-          "date": "2026-10-10",
+          "date": "2026-10-11",
           "value": 10
         }
       ]
@@ -672,754 +677,754 @@
   ],
   "events": [
     {
-      "id": "gdelt-1327291862",
-      "date": "2026-10-10",
-      "title": "AUSTRALIAN provided aid — Canberra, Australian Capital Territory, Australia",
-      "description": "Avg tone 7.6, 20 mentions.",
-      "lat": -35.2833,
-      "lon": 149.217,
+      "id": "gdelt-1327405566",
+      "date": "2026-10-11",
+      "title": "TAIWAN engaged in material cooperation with JAPAN — Sakishima, Japan (general), Japan",
+      "description": "Avg tone -0.5, 20 mentions.",
+      "lat": 34.3333,
+      "lon": 133.117,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 7.4,
+      "goldstein": 6.4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://english.news.cn/20261010/29c753b506ce4831890d7fa99eb37846/c.html"
+      "sourceUrl": "https://www.taipeitimes.com/News/taiwan/archives/2026/10/12/2003865809"
     },
     {
-      "id": "gdelt-1327291761",
-      "date": "2026-09-10",
-      "title": "PAKISTANI fought BALOCH — Uthal, Balochistan, Pakistan",
-      "description": "Avg tone -9.5, 12 mentions.",
-      "lat": 25.8072,
-      "lon": 66.6219,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.prokerala.com/news/articles/a1822895.html"
-    },
-    {
-      "id": "gdelt-1327292029",
-      "date": "2026-10-10",
-      "title": "UNIVERSITY made an appeal to ISRAELI — Gaza, Israel (general), Israel",
-      "description": "Avg tone -7.8, 10 mentions.",
-      "lat": 31.4167,
-      "lon": 34.3333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.thenational.scot/news/26625414.pro-palestine-protesters-line-edinburgh-streets-solidarity/"
-    },
-    {
-      "id": "gdelt-1327292064",
-      "date": "2026-10-10",
-      "title": "GLASGOW engaged in diplomatic cooperation — Washington, District of Columbia, United States",
-      "description": "Avg tone 1.6, 10 mentions.",
-      "lat": 38.8951,
-      "lon": -77.0364,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://wset.com/news/local/glasgow-gains-a-purple-heart-modular-home-offering-a-veteran-a-forever-place-to-land"
-    },
-    {
-      "id": "gdelt-1327292066",
-      "date": "2026-10-10",
-      "title": "BRITISH yielded — Australia",
-      "description": "Avg tone 2.1, 10 mentions.",
-      "lat": -25,
-      "lon": 135,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.outinperth.com/horse-meat-disco-add-their-magic-to-a-communards-classic/"
-    },
-    {
-      "id": "gdelt-1327292129",
-      "date": "2026-10-10",
-      "title": "PRESIDENT threatened IRAN — Riyadh, Ar Riya?, Saudi Arabia",
-      "description": "Avg tone -5.5, 10 mentions.",
-      "lat": 24.6408,
-      "lon": 46.7728,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.wlwt.com/article/the-airport-in-the-capital-of-saudi-arabia-has-been-attacked-again-officials-say/74098618"
-    },
-    {
-      "id": "gdelt-1327292182",
-      "date": "2026-10-10",
-      "title": "THE EU reduced relations with UKRAINE — Kremlin, Moskva, Russia",
-      "description": "Avg tone -3.6, 10 mentions.",
-      "lat": 55.7522,
-      "lon": 37.6156,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.aol.co.uk/articles/eu-says-us-deal-lifting-150641000.html"
-    },
-    {
-      "id": "gdelt-1327292280",
-      "date": "2026-10-10",
-      "title": "HIGH COURT coerced TURK — Turkey",
-      "description": "Avg tone -5.7, 10 mentions.",
-      "lat": 39.059012,
-      "lon": 34.911546,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.geo.tv/latest/685939-andrews-court-shock-potential-testimony-dates-released"
-    },
-    {
-      "id": "gdelt-1327292327",
-      "date": "2026-10-10",
-      "title": "ARM HOLDINGS issued a demand to SERVER — United States",
-      "description": "Avg tone 1.1, 10 mentions.",
-      "lat": 39.828175,
-      "lon": -98.5795,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.fool.com/investing/2026/10/10/like-metas-muse-ai-agents-4-ai-semiconductor-stock/"
-    },
-    {
-      "id": "gdelt-1327292336",
-      "date": "2026-10-10",
-      "title": "NIGERIA expressed intent to cooperate with CANADA — Toronto, Ontario, Canada",
-      "description": "Avg tone 2.7, 10 mentions.",
+      "id": "gdelt-1327405047",
+      "date": "2026-10-11",
+      "title": "TORONTO coerced — Toronto, Ontario, Canada",
+      "description": "Avg tone -5.3, 12 mentions.",
       "lat": 43.6667,
       "lon": -79.4167,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 7,
+      "goldstein": -5,
       "sourceName": "GDELT",
-      "sourceUrl": "https://leadership.ng/organisers-postpone-18th-headies-to-april-2027/"
+      "sourceUrl": "https://www.stcatharinesstandard.ca/news/ontario/toronto-police-officer-charged-after-cbsa-finds-illegal-firearm-suppressors/article_301efc73-1e40-5172-bff0-a80cc58375bf.html"
     },
     {
-      "id": "gdelt-1327292363",
+      "id": "gdelt-1327404897",
       "date": "2026-10-10",
-      "title": "PAKISTAN yielded — Palri, Azad Kashmir, Pakistan",
-      "description": "Avg tone -6.6, 10 mentions.",
-      "lat": 34.58,
-      "lon": 73.8991,
+      "title": "TAIWAN made an appeal to CHINA — National Chung Cheng University, Jiayi Xian, Taiwan",
+      "description": "Avg tone -1.4, 10 mentions.",
+      "lat": 23.5643,
+      "lon": 120.476,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 7,
+      "goldstein": 3,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.indiablooms.com/world/pakistan-kidnapping-drama-ends-11-labourers-released-after-days-in-captivity/details"
+      "sourceUrl": "https://www.taipeitimes.com/News/front/archives/2026/10/12/2003865798"
     },
     {
-      "id": "gdelt-1327292364",
-      "date": "2026-10-10",
-      "title": "PAKISTAN yielded — Kohlu, Balochistan, Pakistan",
-      "description": "Avg tone -6.6, 10 mentions.",
-      "lat": 29.8962,
-      "lon": 69.252,
+      "id": "gdelt-1327404963",
+      "date": "2026-10-11",
+      "title": "SINGAPOREAN engaged in material cooperation — Singapore",
+      "description": "Avg tone 2.4, 10 mentions.",
+      "lat": 1.366667,
+      "lon": 103.8,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 7,
+      "goldstein": 6,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.indiablooms.com/world/pakistan-kidnapping-drama-ends-11-labourers-released-after-days-in-captivity/details"
+      "sourceUrl": "https://www.channelnewsasia.com/watch/singapore-roll-out-subsidies-haze-related-conditions-gp-clinics-polyclinics-oct-12-6450396"
     },
     {
-      "id": "gdelt-1327292394",
-      "date": "2026-10-10",
-      "title": "QATAR expressed intent to cooperate — Qatar",
-      "description": "Avg tone -1.0, 10 mentions.",
-      "lat": 25.5,
-      "lon": 51.25,
+      "id": "gdelt-1327405340",
+      "date": "2026-10-11",
+      "title": "JAPAN engaged in material cooperation with TAIWAN — Sakishima, Japan (general), Japan",
+      "description": "Avg tone -0.5, 10 mentions.",
+      "lat": 34.3333,
+      "lon": 133.117,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 4,
+      "goldstein": 6.4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.qatar-tribune.com/article/258413/latest-news/qatar-underscores-importance-of-complying-with-disarmament-obligations-and-halting-nuclear-tests"
+      "sourceUrl": "https://www.taipeitimes.com/News/taiwan/archives/2026/10/12/2003865809"
     },
     {
-      "id": "gdelt-1327292421",
-      "date": "2026-10-10",
-      "title": "RIYADH fought — Cairo, Al Qahirah, Egypt",
-      "description": "Avg tone -4.1, 10 mentions.",
-      "lat": 30.05,
-      "lon": 31.25,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://kdhnews.com/news/world/a-missile-struck-a-passenger-terminal-at-the-riyadh-airport-and-many-people-were-wounded/article_15484c75-7e50-5906-9d3e-e3733ad3ffa3.html"
-    },
-    {
-      "id": "gdelt-1327292673",
-      "date": "2026-10-10",
-      "title": "VIETNAM reduced relations — Vietnam, Republic Of",
-      "description": "Avg tone 0.9, 10 mentions.",
+      "id": "gdelt-1327405357",
+      "date": "2026-10-11",
+      "title": "CAMBODIA engaged in material cooperation — Vietnam, Republic Of",
+      "description": "Avg tone 2.5, 10 mentions.",
       "lat": 16.166667,
       "lon": 107.833333,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": -4,
+      "goldstein": 6.4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://news.tuoitre.vn/vietnam-welcomes-eu-decision-to-remove-it-from-tax-blacklist-103261010200954983.htm"
+      "sourceUrl": "https://vietnamnews.vn/politics-laws/1801756/cambodian-media-give-heavy-coverage-to-vietnamese-pm-s-visit.html"
     },
     {
-      "id": "gdelt-1327291791",
-      "date": "2026-10-10",
-      "title": "PRAGUE coerced — Prague, Praha, Hlavníesto, Czech Republic",
-      "description": "Avg tone 4.5, 8 mentions.",
-      "lat": 50.0833,
-      "lon": 14.4667,
+      "id": "gdelt-1327405358",
+      "date": "2026-10-11",
+      "title": "CAMBODIA expressed intent to cooperate with UNITED NATIONS — Phnom Penh, (CB11), Cambodia",
+      "description": "Avg tone 0.0, 10 mentions.",
+      "lat": 11.55,
+      "lon": 104.917,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.akp.gov.kh/post/detail/383640"
+    },
+    {
+      "id": "gdelt-1327405396",
+      "date": "2026-10-11",
+      "title": "MALE coerced PROTESTER — Connaught Place, Delhi, India",
+      "description": "Avg tone -3.3, 10 mentions.",
+      "lat": 28.6333,
+      "lon": 77.2167,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": -5,
       "sourceName": "GDELT",
-      "sourceUrl": "http://www.prnewswire.com/news-releases/apsystems-to-showcase-advanced-ci-energy-storage-solutions-at-smart-energy-forum-2026-302905058.html"
+      "sourceUrl": "https://www.thehindu.com/newsletter/the-evening-wrap/evening-wrap-october-11-2026/article71572329.ece"
     },
     {
-      "id": "gdelt-1327291820",
-      "date": "2026-10-10",
-      "title": "NEPAL yielded — Kathmandu, Bagmati, Nepal",
-      "description": "Avg tone -7.6, 8 mentions.",
-      "lat": 27.7167,
-      "lon": 85.3167,
+      "id": "gdelt-1327405520",
+      "date": "2026-10-11",
+      "title": "STAVROPOL fought MILITARY — Stavropol, Stavropol'skiy Kray, Russia",
+      "description": "Avg tone -1.7, 10 mentions.",
+      "lat": 45.0428,
+      "lon": 41.9734,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 5,
+      "goldstein": -10,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.prokerala.com/news/articles/a1822888.html"
+      "sourceUrl": "https://www.eng.kavkaz-uzel.eu/articles/79304"
     },
     {
-      "id": "gdelt-1327291870",
-      "date": "2026-10-10",
-      "title": "BRUSSELS yielded to EUROPEAN PARLIAMENT — Ireland",
-      "description": "Avg tone 1.4, 8 mentions.",
-      "lat": 53,
-      "lon": -8,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://targetednews.com/pr_disp.php?pr_id=9776693"
-    },
-    {
-      "id": "gdelt-1327291887",
-      "date": "2026-10-10",
-      "title": "BAHRAIN engaged in diplomatic cooperation with ISLAMABAD — Bahrain",
-      "description": "Avg tone 5.3, 8 mentions.",
-      "lat": 26,
-      "lon": 50.5,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://newsmakers.pk/pakistan-and-bahrain-pledge-to-strengthen-bilateral-cooperation/"
-    },
-    {
-      "id": "gdelt-1327291934",
-      "date": "2026-10-10",
-      "title": "URUMQI yielded — Tajikistan",
-      "description": "Avg tone -2.4, 8 mentions.",
-      "lat": 39,
-      "lon": 71,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://english.news.cn/20261010/6cd68833ffd945f9bd378bea67fbe5b3/c.html"
-    },
-    {
-      "id": "gdelt-1327291936",
-      "date": "2026-10-10",
-      "title": "CHINESE made an appeal to PREMIER — Jilin, Jilin, China",
-      "description": "Avg tone 8.3, 8 mentions.",
-      "lat": 43.8508,
-      "lon": 126.56,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://english.news.cn/20261010/0e4ba7d520d74754a5d8f079c94693a7/c.html"
-    },
-    {
-      "id": "gdelt-1327291937",
-      "date": "2026-10-10",
-      "title": "CHINA issued a demand to UNITED STATES — United States",
-      "description": "Avg tone -2.1, 8 mentions.",
-      "lat": 39.828175,
-      "lon": -98.5795,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.theepochtimes.com/article/epoch-readers-cautious-about-restrictions-on-ai-amid-competition-with-china-6101849"
-    },
-    {
-      "id": "gdelt-1327291939",
-      "date": "2026-10-10",
-      "title": "CHINA reduced relations with UNITED STATES — United States",
-      "description": "Avg tone -2.1, 8 mentions.",
-      "lat": 39.828175,
-      "lon": -98.5795,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -8,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.theepochtimes.com/article/epoch-readers-cautious-about-restrictions-on-ai-amid-competition-with-china-6101849"
-    },
-    {
-      "id": "gdelt-1327291966",
-      "date": "2026-10-10",
-      "title": "POLICE coerced PAKISTAN — Balochistan, Balochistan, Pakistan",
-      "description": "Avg tone -8.2, 8 mentions.",
-      "lat": 28.4785,
-      "lon": 65.6436,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://ianslive.in/pakistan-over-35-christian-families-flee-homes-after-mob-sets-fire-to-house-shop-of-minority-man--20261010201754"
-    },
-    {
-      "id": "gdelt-1327291967",
-      "date": "2026-10-10",
-      "title": "POLICE coerced PAKISTAN — Balochistan, Balochistan, Pakistan",
-      "description": "Avg tone -8.2, 8 mentions.",
-      "lat": 28.4785,
-      "lon": 65.6436,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://ianslive.in/pakistan-over-35-christian-families-flee-homes-after-mob-sets-fire-to-house-shop-of-minority-man--20261010201754"
-    },
-    {
-      "id": "gdelt-1327292071",
-      "date": "2026-10-10",
-      "title": "UNITED KINGDOM threatened CANADIAN — Drumchapel, Glasgow City, United Kingdom",
-      "description": "Avg tone -8.6, 8 mentions.",
-      "lat": 55.9,
-      "lon": -4.36667,
+      "id": "gdelt-1327405072",
+      "date": "2026-10-11",
+      "title": "CHINA coerced INTELLIGENCE — China",
+      "description": "Avg tone -6.3, 9 mentions.",
+      "lat": 35,
+      "lon": 105,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": -7,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.thenational.scot/news/26625474.two-arrested-stolen-car-crashes-paisley-vehicles/"
+      "sourceUrl": "https://www.taipeitimes.com/News/biz/archives/2026/10/12/2003865786"
     },
     {
-      "id": "gdelt-1327292288",
-      "date": "2026-10-10",
-      "title": "CONGRESS made an appeal to DELHI — New Delhi, Delhi, India",
-      "description": "Avg tone 1.6, 8 mentions.",
-      "lat": 28.6,
-      "lon": 77.2,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.thehindu.com/news/national/telangana/telangana-congress-leaders-called-to-delhi-on-october-12/article71569013.ece"
-    },
-    {
-      "id": "gdelt-1327292302",
-      "date": "2026-10-10",
-      "title": "LOCAL MEDIA fought RIO DE JANEIRO — Brazil",
-      "description": "Avg tone -9.3, 8 mentions.",
-      "lat": -10,
-      "lon": -55,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://english.news.cn/20261010/75ba017d06c14d6faaa30273e0ac29e2/c.html"
-    },
-    {
-      "id": "gdelt-1327292373",
-      "date": "2026-10-10",
-      "title": "ISLAMABAD engaged in diplomatic cooperation with BAHRAIN — Bahrain",
-      "description": "Avg tone 5.3, 8 mentions.",
-      "lat": 26,
-      "lon": 50.5,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://newsmakers.pk/pakistan-and-bahrain-pledge-to-strengthen-bilateral-cooperation/"
-    },
-    {
-      "id": "gdelt-1327292375",
-      "date": "2026-10-10",
-      "title": "ISLAMABAD engaged in diplomatic cooperation with BAHRAIN — Bahrain",
-      "description": "Avg tone 5.3, 8 mentions.",
-      "lat": 26,
-      "lon": 50.5,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://newsmakers.pk/pakistan-and-bahrain-pledge-to-strengthen-bilateral-cooperation/"
-    },
-    {
-      "id": "gdelt-1327292423",
-      "date": "2026-10-10",
-      "title": "RIYADH made an appeal to AIRLINE — Yemen",
-      "description": "Avg tone -5.2, 8 mentions.",
-      "lat": 15.5,
-      "lon": 47.5,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.arabnews.com/saudi-arabia/passengers-told-to-confirm-flight-status-before-heading-to-riyadh-airport-3005640"
-    },
-    {
-      "id": "gdelt-1327292424",
-      "date": "2026-10-10",
-      "title": "RIYADH reduced relations with AIRLINE — Riyadh, Ar Riya?, Saudi Arabia",
-      "description": "Avg tone -7.5, 8 mentions.",
-      "lat": 24.6408,
-      "lon": 46.7728,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://cyprus-mail.com/2026/10/10/loud-blast-heard-at-riyadh-airport-as-airlines-cancel-more-flights"
-    },
-    {
-      "id": "gdelt-1327292447",
-      "date": "2026-10-10",
-      "title": "RIYADH fought YEMEN — Kuwait",
-      "description": "Avg tone -8.2, 8 mentions.",
-      "lat": 29.5,
-      "lon": 47.75,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.euronews.com/2026/10/10/evacuations-and-injuries-reported-at-riyadh-airport-after-another-alleged-houthi-attack"
-    },
-    {
-      "id": "gdelt-1327292674",
-      "date": "2026-10-10",
-      "title": "HO CHI MINH CITY engaged in diplomatic cooperation with STUDENT — Ho Chi Minh City, H? Chíinh, Vietnam, Republic Of",
-      "description": "Avg tone 2.9, 8 mentions.",
-      "lat": 10.75,
-      "lon": 106.667,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://news.tuoitre.vn/16-vietnamese-students-win-new-zealand-government-scholarships-with-2-securing-record-36500-each-103261010190709635.htm"
-    },
-    {
-      "id": "gdelt-1327292676",
-      "date": "2026-10-10",
-      "title": "HO CHI MINH CITY rejected STUDENT — Ho Chi Minh City, H? Chíinh, Vietnam, Republic Of",
-      "description": "Avg tone 2.9, 8 mentions.",
-      "lat": 10.75,
-      "lon": 106.667,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://news.tuoitre.vn/16-vietnamese-students-win-new-zealand-government-scholarships-with-2-securing-record-36500-each-103261010190709635.htm"
-    },
-    {
-      "id": "gdelt-1327291872",
-      "date": "2026-10-10",
-      "title": "BRUSSELS yielded to EUROPEAN PARLIAMENT — Russia",
-      "description": "Avg tone -9.8, 7 mentions.",
-      "lat": 60,
-      "lon": 100,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://targetednews.com/pr_disp.php?pr_id=9776713"
-    },
-    {
-      "id": "gdelt-1327292076",
-      "date": "2026-10-10",
-      "title": "UNITED KINGDOM coerced CANADA — Canada",
-      "description": "Avg tone -6.6, 7 mentions.",
-      "lat": 60,
-      "lon": -96,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.thenational.scot/news/26625474.two-arrested-stolen-car-crashes-paisley-vehicles/"
-    },
-    {
-      "id": "gdelt-1327292453",
-      "date": "2026-10-10",
-      "title": "INTELLIGENCE made an appeal to ARCADIA — Arcadia University, Pennsylvania, United States",
-      "description": "Avg tone 3.7, 7 mentions.",
-      "lat": 40.0915,
-      "lon": -75.1632,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://targetednews.com/pr_disp.php?pr_id=9777541"
-    },
-    {
-      "id": "gdelt-1327291854",
-      "date": "2026-10-10",
-      "title": "AFRICA engaged in diplomatic cooperation with ISRAEL — Burnham, Somerset, United Kingdom",
-      "description": "Avg tone -2.2, 6 mentions.",
-      "lat": 51.2417,
-      "lon": -2.99528,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.thenational.scot/politics/26624751.john-swinney-must-oppose-israeli-apartheid-uk-arms-trade-israel/"
-    },
-    {
-      "id": "gdelt-1327291952",
-      "date": "2026-10-10",
-      "title": "POLICE coerced AFRICA — Durban, KwaZulu-Natal, South Africa",
-      "description": "Avg tone -10.8, 6 mentions.",
-      "lat": -29.85,
-      "lon": 31.0167,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.sanews.gov.za/south-africa/police-arrest-man-who-threatened-shut-down-moses-mabhida-stadium"
-    },
-    {
-      "id": "gdelt-1327292039",
-      "date": "2026-10-10",
-      "title": "CAIRO assaulted IRAN — Iran",
-      "description": "Avg tone -5.5, 6 mentions.",
-      "lat": 32,
-      "lon": 53,
+      "id": "gdelt-1327405332",
+      "date": "2026-10-11",
+      "title": "HIROSHIMA assaulted — Hiroshima, Hiroshima, Japan",
+      "description": "Avg tone -4.9, 8 mentions.",
+      "lat": 34.4,
+      "lon": 132.45,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": -9,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.wlwt.com/article/the-airport-in-the-capital-of-saudi-arabia-has-been-attacked-again-officials-say/74098618"
+      "sourceUrl": "https://okinawa.stripes.com/travel/be-on-lookout-for-japan%E2%80%99s-creepy-crows.html"
     },
     {
-      "id": "gdelt-1327292040",
-      "date": "2026-10-10",
-      "title": "CAIRO fought RIYADH — Cairo, Al Qahirah, Egypt",
-      "description": "Avg tone -4.1, 6 mentions.",
-      "lat": 30.05,
-      "lon": 31.25,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://kdhnews.com/news/world/a-missile-struck-a-passenger-terminal-at-the-riyadh-airport-and-many-people-were-wounded/article_15484c75-7e50-5906-9d3e-e3733ad3ffa3.html"
-    },
-    {
-      "id": "gdelt-1327292065",
-      "date": "2026-10-10",
-      "title": "BRITISH engaged in diplomatic cooperation — United States",
-      "description": "Avg tone -2.5, 6 mentions.",
-      "lat": 39.828175,
-      "lon": -98.5795,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.thepeterboroughexaminer.com/opinion/columnists/peterborough-column-groarke/article_21b1510b-13f5-5cef-90f6-f5f4e31152b4.html"
-    },
-    {
-      "id": "gdelt-1327292068",
-      "date": "2026-10-10",
-      "title": "UNITED KINGDOM coerced — Glasgow, Glasgow City, United Kingdom",
-      "description": "Avg tone -5.7, 6 mentions.",
-      "lat": 55.8333,
-      "lon": -4.25,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.thenational.scot/news/26625284.black-scottish-workers-hit-far-right-lies-migrants/"
-    },
-    {
-      "id": "gdelt-1327292190",
-      "date": "2026-10-10",
-      "title": "UTTAR PRADESH fought — Ayodhya, Uttar Pradesh, India",
-      "description": "Avg tone -2.2, 6 mentions.",
-      "lat": 26.8,
-      "lon": 82.2,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.oneindia.com/india/yogi-adityanath-openly-challenges-akhilesh-yadav-to-contest-from-ayodhya-says-let-us-test-our-luck-8231269.html"
-    },
-    {
-      "id": "gdelt-1327292199",
-      "date": "2026-10-10",
-      "title": "JAIPUR coerced SMUGGLER — Kathmandu, Bagmati, Nepal",
-      "description": "Avg tone -7.6, 6 mentions.",
-      "lat": 27.7167,
-      "lon": 85.3167,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.prokerala.com/news/articles/a1822888.html"
-    },
-    {
-      "id": "gdelt-1327292200",
-      "date": "2026-10-10",
-      "title": "DELHI reduced relations with VOTER — Delhi, Delhi, India",
-      "description": "Avg tone -4.1, 6 mentions.",
-      "lat": 28.6667,
-      "lon": 77.2167,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.oneindia.com/new-delhi/delhi-metro-extends-closure-of-45-stations-till-10-pm-on-10-october-amid-cjp-protest-8231203.html"
-    },
-    {
-      "id": "gdelt-1327292237",
-      "date": "2026-10-10",
-      "title": "IRAN fought RIYADH — Iran",
-      "description": "Avg tone -5.5, 6 mentions.",
-      "lat": 32,
-      "lon": 53,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.wlwt.com/article/the-airport-in-the-capital-of-saudi-arabia-has-been-attacked-again-officials-say/74098618"
-    },
-    {
-      "id": "gdelt-1327292250",
-      "date": "2026-10-10",
-      "title": "ISRAEL engaged in diplomatic cooperation with AFRICA — Gaza, Israel (general), Israel",
-      "description": "Avg tone -2.2, 6 mentions.",
+      "id": "gdelt-1327405479",
+      "date": "2026-10-11",
+      "title": "PAKISTAN engaged in diplomatic cooperation with UNESCO — Gaza, Israel (general), Israel",
+      "description": "Avg tone -0.8, 8 mentions.",
       "lat": 31.4167,
       "lon": 34.3333,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 3.5,
+      "goldstein": 3.4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.thenational.scot/politics/26624751.john-swinney-must-oppose-israeli-apartheid-uk-arms-trade-israel/"
+      "sourceUrl": "https://www.radio.gov.pk/11-10-2026/pakistan-reaffirms-support-for-multilateralism-at-unesco-session"
     },
     {
-      "id": "gdelt-1327292256",
-      "date": "2026-10-10",
-      "title": "ISRAEL coerced JORDANIAN — Saudi Arabia",
+      "id": "gdelt-1327405057",
+      "date": "2026-10-11",
+      "title": "CHINA engaged in diplomatic cooperation — Luoyang, Henan, China",
+      "description": "Avg tone 4.8, 7 mentions.",
+      "lat": 34.6836,
+      "lon": 112.454,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://english.news.cn/20261011/81240154d026466eb9d1b15739e87693/c.html"
+    },
+    {
+      "id": "gdelt-1327405190",
+      "date": "2026-10-11",
+      "title": "BRITISH engaged in material cooperation — British Isles, United Kingdom (general), United Kingdom",
+      "description": "Avg tone 2.5, 7 mentions.",
+      "lat": 54,
+      "lon": -4,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 6.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://globalnews.ca/news/12092395/heres-how-the-u-k-manages-to-produce-so-much-innovation-in-music/"
+    },
+    {
+      "id": "gdelt-1327405587",
+      "date": "2026-10-11",
+      "title": "TANZANIAN made an appeal to DUBAI — Dubai, Dubayy, United Arab Emirates",
+      "description": "Avg tone 4.8, 7 mentions.",
+      "lat": 25.2522,
+      "lon": 55.28,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://dailynews.co.tz/tanzanian-property-investors-urged-to-invest-in-dubai/"
+    },
+    {
+      "id": "gdelt-1327404959",
+      "date": "2026-10-11",
+      "title": "RUSSIA fought — Yessentuki, Stavropol'skiy Kray, Russia",
+      "description": "Avg tone -1.7, 6 mentions.",
+      "lat": 44.0444,
+      "lon": 42.8606,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.eng.kavkaz-uzel.eu/articles/79304"
+    },
+    {
+      "id": "gdelt-1327404994",
+      "date": "2026-10-11",
+      "title": "AFRICA issued a demand to NIGERIAN — Kwara, Zamfara, Nigeria",
       "description": "Avg tone 0.2, 6 mentions.",
-      "lat": 25,
-      "lon": 45,
+      "lat": 12.3337,
+      "lon": 6.28493,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": -5,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.prokerala.com/news/articles/a1822896.html"
+      "sourceUrl": "https://leadership.ng/why-media-must-lead-charge-for-good-governance-adedoyin/"
+    },
+    {
+      "id": "gdelt-1327405033",
+      "date": "2026-10-11",
+      "title": "VANCOUVER made an appeal — New York, United States",
+      "description": "Avg tone 0.6, 6 mentions.",
+      "lat": 42.1497,
+      "lon": -74.9384,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://nanaimobulletin.com/2026/10/11/hereditary-chiefs-call-for-closure-of-park-on-vancouver-island-over-ancestral-graves/"
+    },
+    {
+      "id": "gdelt-1327405043",
+      "date": "2026-10-11",
+      "title": "TORONTO coerced CANADA — Toronto, Ontario, Canada",
+      "description": "Avg tone -5.3, 6 mentions.",
+      "lat": 43.6667,
+      "lon": -79.4167,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.stcatharinesstandard.ca/news/ontario/toronto-police-officer-charged-after-cbsa-finds-illegal-firearm-suppressors/article_301efc73-1e40-5172-bff0-a80cc58375bf.html"
+    },
+    {
+      "id": "gdelt-1327405045",
+      "date": "2026-10-11",
+      "title": "CANADA provided aid to STUDENT — Tuktoyaktuk, Northwest Territories, Canada",
+      "description": "Avg tone 2.9, 6 mentions.",
+      "lat": 69.45,
+      "lon": -133.067,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.cbc.ca/news/canada/north/such-good-help-tuktoyaktuk-n-w-t-students-receive-donated-winter-gear-9.7373112"
+    },
+    {
+      "id": "gdelt-1327405050",
+      "date": "2026-10-11",
+      "title": "GENEVA provided aid — New York, United States",
+      "description": "Avg tone 1.0, 6 mentions.",
+      "lat": 42.1497,
+      "lon": -74.9384,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.fltimes.com/lifestyle/looking-back-geneva-united-welfare-council-was-a-fundraising-success/article_603b8b91-3333-4111-b265-12264228e4ed.html"
+    },
+    {
+      "id": "gdelt-1327405053",
+      "date": "2026-10-11",
+      "title": "BALE fought HAMBURG — Hamburg, Hamburg, Germany",
+      "description": "Avg tone -1.1, 6 mentions.",
+      "lat": 53.55,
+      "lon": 10,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.kmaland.com/news/hay-bales-burn-near-hamburg/article_f398fd8d-c94e-484d-9b24-defa6b602e68.html"
+    },
+    {
+      "id": "gdelt-1327405145",
+      "date": "2026-10-11",
+      "title": "HAMBURG fought BALE — Hamburg, Hamburg, Germany",
+      "description": "Avg tone -1.1, 6 mentions.",
+      "lat": 53.55,
+      "lon": 10,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.kmaland.com/news/hay-bales-burn-near-hamburg/article_f398fd8d-c94e-484d-9b24-defa6b602e68.html"
+    },
+    {
+      "id": "gdelt-1327405182",
+      "date": "2026-10-11",
+      "title": "SPAIN engaged in diplomatic cooperation with PRODUCER — Getaria, Pais Vasco, Spain",
+      "description": "Avg tone 3.1, 6 mentions.",
+      "lat": 43.303,
+      "lon": -2.20333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "http://www.sommelierindia.com/beyond-rioja-the-new-face-of-spanish-wine/"
+    },
+    {
+      "id": "gdelt-1327405292",
+      "date": "2026-10-11",
+      "title": "CHENNAI coerced HINDU — Chennai, Tamil Nadu, India",
+      "description": "Avg tone -3.5, 6 mentions.",
+      "lat": 13.0833,
+      "lon": 80.2833,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thehindu.com/news/cities/Visakhapatnam/coastal-protection-project-cleared-to-shield-vizag-shoreline/article71571416.ece"
+    },
+    {
+      "id": "gdelt-1327405295",
+      "date": "2026-10-11",
+      "title": "RANCHI protested against JHARKHAND — Delhi, Delhi, India",
+      "description": "Avg tone -2.5, 6 mentions.",
+      "lat": 28.6667,
+      "lon": 77.2167,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -6.5,
+      "sourceName": "GDELT",
+      "sourceUrl": "http://www.indiagazette.com/news/279366152/jharkhand-congress-leaders-head-to-delhi-to-protest-against-cec-over-alleged-sir-irregularities"
+    },
+    {
+      "id": "gdelt-1327405311",
+      "date": "2026-10-11",
+      "title": "CHHATTISGARH made an appeal to PARTY LEADER — Delhi, Delhi, India",
+      "description": "Avg tone -6.4, 6 mentions.",
+      "lat": 28.6667,
+      "lon": 77.2167,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "http://www.bignewsnetwork.com/news/279366161/public-mandate-has-been-stolen-bhupesh-baghel-alleges-evm-tampering-voter-deletions-ahead-of-scheduled-congress-protest"
+    },
+    {
+      "id": "gdelt-1327405341",
+      "date": "2026-10-11",
+      "title": "JAPAN engaged in material cooperation with TAIWAN — Taipei, T'ai-pei, Taiwan",
+      "description": "Avg tone -0.5, 6 mentions.",
+      "lat": 25.0478,
+      "lon": 121.532,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 6.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.taipeitimes.com/News/taiwan/archives/2026/10/12/2003865809"
+    },
+    {
+      "id": "gdelt-1327405344",
+      "date": "2026-10-11",
+      "title": "JAPAN engaged in diplomatic cooperation with UNITED STATES — Tokyo, Tokyo, Japan",
+      "description": "Avg tone -6.2, 6 mentions.",
+      "lat": 35.685,
+      "lon": 139.751,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 8,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://english.news.cn/20261011/a0b8a1f3df4d4902b4628dd1f9dc7db1/c.html"
+    },
+    {
+      "id": "gdelt-1327405367",
+      "date": "2026-10-11",
+      "title": "SOUTH KOREAN engaged in diplomatic cooperation with SOUTH KOREAN — Busan, Pusan-gwangyoksi, South Korea",
+      "description": "Avg tone -4.0, 6 mentions.",
+      "lat": 35.1028,
+      "lon": 129.04,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.taipeitimes.com/News/world/archives/2026/10/12/2003865823"
+    },
+    {
+      "id": "gdelt-1327405373",
+      "date": "2026-10-11",
+      "title": "VIENTIANE engaged in diplomatic cooperation with VIETNAMESE — Vietnam, Republic Of",
+      "description": "Avg tone 6.5, 6 mentions.",
+      "lat": 16.166667,
+      "lon": 107.833333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://vietnamnews.vn/politics-laws/1801753/lao-media-hail-vietnamese-pm-s-first-overseas-trip-as-proof-of-special-ties.html"
+    },
+    {
+      "id": "gdelt-1327405376",
+      "date": "2026-10-11",
+      "title": "LAOS engaged in diplomatic cooperation with VIETNAMESE — Vientiane, (LA11), Laos",
+      "description": "Avg tone 6.5, 6 mentions.",
+      "lat": 17.9667,
+      "lon": 102.6,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://vietnamnews.vn/politics-laws/1801753/lao-media-hail-vietnamese-pm-s-first-overseas-trip-as-proof-of-special-ties.html"
+    },
+    {
+      "id": "gdelt-1327405433",
+      "date": "2026-10-11",
+      "title": "MILITARY fought RUSSIA — Yessentuki, Stavropol'skiy Kray, Russia",
+      "description": "Avg tone -1.7, 6 mentions.",
+      "lat": 44.0444,
+      "lon": 42.8606,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.eng.kavkaz-uzel.eu/articles/79304"
+    },
+    {
+      "id": "gdelt-1327405529",
+      "date": "2026-10-11",
+      "title": "VLADIMIR PUTIN expressed intent to cooperate — Black Sea, Oceans (general), Oceans",
+      "description": "Avg tone -5.0, 6 mentions.",
+      "lat": 43,
+      "lon": 35,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.aol.co.uk/articles/trump-announces-partial-ceasefire-ukraine-155629000.html"
+    },
+    {
+      "id": "gdelt-1327405563",
+      "date": "2026-10-11",
+      "title": "TAIWAN engaged in diplomatic cooperation with CHINESE — Taipei, T'ai-pei, Taiwan",
+      "description": "Avg tone -0.3, 6 mentions.",
+      "lat": 25.0478,
+      "lon": 121.532,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.taipeitimes.com/News/editorials/archives/2026/10/12/2003865791"
+    },
+    {
+      "id": "gdelt-1327405611",
+      "date": "2026-10-11",
+      "title": "KYIV made an appeal to UKRAINIAN — Chernihiv, Chernihivs'ka Oblast', Ukraine",
+      "description": "Avg tone -3.1, 6 mentions.",
+      "lat": 51.5055,
+      "lon": 31.2849,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.taipeitimes.com/News/front/archives/2026/10/12/2003865802"
+    },
+    {
+      "id": "gdelt-1327405684",
+      "date": "2026-10-11",
+      "title": "UNITED STATES engaged in diplomatic cooperation with JAPAN — Tokyo, Tokyo, Japan",
+      "description": "Avg tone -6.2, 6 mentions.",
+      "lat": 35.685,
+      "lon": 139.751,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 8,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://english.news.cn/20261011/a0b8a1f3df4d4902b4628dd1f9dc7db1/c.html"
+    },
+    {
+      "id": "gdelt-1327405738",
+      "date": "2026-10-11",
+      "title": "VIETNAMESE made an appeal to CHINA — Vietnam, Republic Of",
+      "description": "Avg tone 6.0, 6 mentions.",
+      "lat": 16.166667,
+      "lon": 107.833333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://vietnamnews.vn/politics-laws/1801755/vietnamese-community-in-china-urged-to-stay-united-contribute-to-homeland.html"
+    },
+    {
+      "id": "gdelt-1327405009",
+      "date": "2026-10-11",
+      "title": "BANGLADESHI fought SAUDI — Riyadh, Ar Riya?, Saudi Arabia",
+      "description": "Avg tone -8.4, 5 mentions.",
+      "lat": 24.6408,
+      "lon": 46.7728,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://tribune.net.ph/2026/10/11/deadly-riyadh-attack-wounds-2-pinoys-dmw"
+    },
+    {
+      "id": "gdelt-1327405139",
+      "date": "2026-10-11",
+      "title": "COMMUNITY engaged in diplomatic cooperation with VIETNAMESE — Beijing, Beijing, China",
+      "description": "Avg tone 6.0, 5 mentions.",
+      "lat": 39.9289,
+      "lon": 116.388,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://vietnamnews.vn/politics-laws/1801755/vietnamese-community-in-china-urged-to-stay-united-contribute-to-homeland.html"
+    },
+    {
+      "id": "gdelt-1327405168",
+      "date": "2026-10-11",
+      "title": "SCHOOL engaged in diplomatic cooperation with NIGERIA — Osun, Nigeria (general), Nigeria",
+      "description": "Avg tone 5.1, 5 mentions.",
+      "lat": 7.53333,
+      "lon": 4.05,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://leadership.ng/access-women-network-evolve-charity-partner-to-support-schoolgirls-in-12-states/"
+    },
+    {
+      "id": "gdelt-1327405246",
+      "date": "2026-10-11",
+      "title": "GOVERNOR held consultations with PESHAWAR — Peshawar, North-West Frontier, Pakistan",
+      "description": "Avg tone 1.7, 5 mentions.",
+      "lat": 34.0078,
+      "lon": 71.5733,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.radio.gov.pk/11-10-2026/kp-governor-vows-to-restore-peace-security-in-province"
+    },
+    {
+      "id": "gdelt-1327405275",
+      "date": "2026-10-11",
+      "title": "MANIPUR yielded — Kangpokpi, Manipur, India",
+      "description": "Avg tone -4.3, 5 mentions.",
+      "lat": 25.1333,
+      "lon": 93.9667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.hindustantimes.com/india-news/manipur-violence-bodies-of-seven-victims-handed-over-to-families-101791731653500.html"
+    },
+    {
+      "id": "gdelt-1327405281",
+      "date": "2026-10-11",
+      "title": "MAHARASHTRA made an appeal to POLICE — Delhi, Delhi, India",
+      "description": "Avg tone -3.5, 5 mentions.",
+      "lat": 28.6667,
+      "lon": 77.2167,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "http://www.bignewsnetwork.com/news/279366174/abhijeet-dipke-parents-allege-delhi-police-delay-prevented-him-from-attending-grandmother-funeral"
+    },
+    {
+      "id": "gdelt-1327405335",
+      "date": "2026-10-11",
+      "title": "CHUGOKU assaulted TELEVISION — Iwakuni, Yamaguchi, Japan",
+      "description": "Avg tone -4.9, 5 mentions.",
+      "lat": 34.15,
+      "lon": 132.183,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -9,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://okinawa.stripes.com/travel/be-on-lookout-for-japan%E2%80%99s-creepy-crows.html"
+    },
+    {
+      "id": "gdelt-1327405336",
+      "date": "2026-10-11",
+      "title": "CHUGOKU fought TELEVISION — Iwakuni, Yamaguchi, Japan",
+      "description": "Avg tone -4.9, 5 mentions.",
+      "lat": 34.15,
+      "lon": 132.183,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://okinawa.stripes.com/travel/be-on-lookout-for-japan%E2%80%99s-creepy-crows.html"
+    },
+    {
+      "id": "gdelt-1327405360",
+      "date": "2026-10-11",
+      "title": "CAMBODIA expressed intent to cooperate with THE HAGUE — Thailand",
+      "description": "Avg tone 0.0, 5 mentions.",
+      "lat": 15,
+      "lon": 100,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.akp.gov.kh/post/detail/383640"
+    },
+    {
+      "id": "gdelt-1327405405",
+      "date": "2026-10-11",
+      "title": "MEDIA expressed intent to cooperate with QATAR — Doha, Ad Daw?ah, Qatar",
+      "description": "Avg tone -2.2, 5 mentions.",
+      "lat": 25.2867,
+      "lon": 51.5333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "http://thepeninsulaqatar.com/article/11/10/2026/tickets-for-ufc-fight-night-in-doha-now-on-sale-visit-qatar"
+    },
+    {
+      "id": "gdelt-1327405464",
+      "date": "2026-10-11",
+      "title": "THE HAGUE expressed intent to cooperate with CAMBODIA — Thailand",
+      "description": "Avg tone 0.0, 5 mentions.",
+      "lat": 15,
+      "lon": 100,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.akp.gov.kh/post/detail/383640"
+    },
+    {
+      "id": "gdelt-1327405476",
+      "date": "2026-10-11",
+      "title": "PESHAWAR held consultations with GOVERNOR — Peshawar, North-West Frontier, Pakistan",
+      "description": "Avg tone 1.7, 5 mentions.",
+      "lat": 34.0078,
+      "lon": 71.5733,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.radio.gov.pk/11-10-2026/kp-governor-vows-to-restore-peace-security-in-province"
     },
     {
       "id": "us6000u1cf",
