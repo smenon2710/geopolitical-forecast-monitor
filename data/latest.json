@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-18",
-  "generatedAt": "2026-10-18T14:21:10.501Z",
+  "date": "2026-10-19",
+  "generatedAt": "2026-10-19T17:21:29.623Z",
   "dataQuality": "stale",
   "lenses": [
     {
       "lens": "costOfLiving",
       "severity": 3,
       "oneLiner": "Prices You Pay: high today. How fast prices are rising — 0.65%.",
-      "narrative": "Prices you pay are high, rising at 0.65%. The price at the pump is $4.08 per gallon, down 0.4% this week. Housing costs increased 0.39%, food costs by 0.05%, and energy costs by 5.20%.",
+      "narrative": "Prices are 0.65%. Gas costs $4.08 per gallon, -0.4% wk/wk. Housing costs are 0.39%, food costs are 0.05%, and energy costs are 5.20%.",
       "metrics": [
         {
           "label": "How fast prices are rising",
@@ -41,7 +41,7 @@
       "lens": "investments",
       "severity": 2,
       "oneLiner": "Your Savings: elevated today. The stock market today — -1.11%.",
-      "narrative": "Your savings are elevated, but the stock market fell 1.11% today. The biggest industry swing was 3.02%. The cost of long-term borrowing is 5.10%, down 0.09 points today.",
+      "narrative": "The stock market is -1.11%. The biggest industry swing is 3.02%. Long-term borrowing costs are 5.10% and -0.09pt.",
       "metrics": [
         {
           "label": "The stock market today",
@@ -65,7 +65,7 @@
       "lens": "standardOfLiving",
       "severity": 2,
       "oneLiner": "Jobs & Paychecks: elevated today. Jobs picture — +0.10pt unemployment.",
-      "narrative": "Jobs and paychecks are elevated. Unemployment rose 0.10 points. Paychecks are not keeping up with prices, down 0.52 points versus inflation. The economy grew 0.55%.",
+      "narrative": "Unemployment is +0.10pt. Paychecks are -0.52pt versus inflation. The economy grew 0.55%.",
       "metrics": [
         {
           "label": "Jobs picture",
@@ -89,7 +89,7 @@
       "lens": "security",
       "severity": 3,
       "oneLiner": "Safety & Tension: high today. Global tension level — -10.0.",
-      "narrative": "Safety and tension are high. Global tension is at -10.0 on a scale where -10 is tense and +10 is cooperative. The biggest recent earthquake was magnitude 7.7.",
+      "narrative": "Global tension is -10.0. The biggest recent earthquake was M7.7.",
       "metrics": [
         {
           "label": "Global tension level",
@@ -108,7 +108,7 @@
       "lens": "dailyRoutine",
       "severity": 0,
       "oneLiner": "Everyday Life: calm today. Cost of getting around — -0.4% this week.",
-      "narrative": "Everyday life is calm. The cost of getting around is down 0.4% this week.",
+      "narrative": "Getting around costs -0.4% this week. The cost of getting around is -0.4%.",
       "metrics": [
         {
           "label": "Cost of getting around",
@@ -548,123 +548,123 @@
       "unit": "index",
       "points": [
         {
-          "date": "2026-09-19",
+          "date": "2026-09-20",
           "value": 0
         },
         {
-          "date": "2026-09-20",
+          "date": "2026-09-21",
           "value": 0.63
         },
         {
-          "date": "2026-09-21",
+          "date": "2026-09-22",
           "value": 1.25
         },
         {
-          "date": "2026-09-22",
+          "date": "2026-09-23",
           "value": 1.85
         },
         {
-          "date": "2026-09-23",
+          "date": "2026-09-24",
           "value": 2.41
         },
         {
-          "date": "2026-09-24",
+          "date": "2026-09-25",
           "value": 2.93
         },
         {
-          "date": "2026-09-25",
+          "date": "2026-09-26",
           "value": 3.4
         },
         {
-          "date": "2026-09-26",
+          "date": "2026-09-27",
           "value": 3.81
         },
         {
-          "date": "2026-09-27",
+          "date": "2026-09-28",
           "value": 4.17
         },
         {
-          "date": "2026-09-28",
+          "date": "2026-09-29",
           "value": 4.46
         },
         {
-          "date": "2026-09-29",
+          "date": "2026-09-30",
           "value": 4.7
         },
         {
-          "date": "2026-09-30",
+          "date": "2026-10-01",
           "value": 4.88
         },
         {
-          "date": "2026-10-01",
+          "date": "2026-10-02",
           "value": 5.01
         },
         {
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "value": 5.11
         },
         {
-          "date": "2026-10-03",
+          "date": "2026-10-04",
           "value": 5.17
         },
         {
-          "date": "2026-10-04",
+          "date": "2026-10-05",
           "value": 5.21
         },
         {
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "value": 5.25
         },
         {
-          "date": "2026-10-06",
+          "date": "2026-10-07",
           "value": 5.28
         },
         {
-          "date": "2026-10-07",
+          "date": "2026-10-08",
           "value": 5.34
         },
         {
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "value": 5.42
         },
         {
-          "date": "2026-10-09",
+          "date": "2026-10-10",
           "value": 5.53
         },
         {
-          "date": "2026-10-10",
+          "date": "2026-10-11",
           "value": 5.69
         },
         {
-          "date": "2026-10-11",
+          "date": "2026-10-12",
           "value": 5.91
         },
         {
-          "date": "2026-10-12",
+          "date": "2026-10-13",
           "value": 6.18
         },
         {
-          "date": "2026-10-13",
+          "date": "2026-10-14",
           "value": 6.51
         },
         {
-          "date": "2026-10-14",
+          "date": "2026-10-15",
           "value": 6.89
         },
         {
-          "date": "2026-10-15",
+          "date": "2026-10-16",
           "value": 7.34
         },
         {
-          "date": "2026-10-16",
+          "date": "2026-10-17",
           "value": 7.84
         },
         {
-          "date": "2026-10-17",
+          "date": "2026-10-18",
           "value": 8.39
         },
         {
-          "date": "2026-10-18",
+          "date": "2026-10-19",
           "value": 10
         }
       ]
@@ -672,715 +672,745 @@
   ],
   "events": [
     {
-      "id": "gdelt-1328566545",
-      "date": "2026-10-18",
-      "title": "EUROPEAN exhibited military posturing toward — Somalia",
-      "description": "Avg tone -0.2, 20 mentions.",
-      "lat": 6,
-      "lon": 48,
+      "id": "gdelt-1328740650",
+      "date": "2026-10-19",
+      "title": "BUSINESS made an appeal to NIGERIAN — Nigeria",
+      "description": "Avg tone -5.7, 20 mentions.",
+      "lat": 10,
+      "lon": 8,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": -7.2,
+      "goldstein": 3,
       "sourceName": "GDELT",
-      "sourceUrl": "https://theleader.info/2026/10/18/guardia-civil-is-eurogendfors-second-largest-contributor/"
+      "sourceUrl": "https://dailypost.ng/2026/10/19/2027-only-pos-business-this-govt-has-given-you-adc-urges-nigerians-to-reject-apc/"
     },
     {
-      "id": "gdelt-1328566593",
-      "date": "2026-10-18",
-      "title": "UNITED KINGDOM yielded — Essex, Essex, United Kingdom",
-      "description": "Avg tone -2.9, 20 mentions.",
-      "lat": 51.8333,
-      "lon": 0.583333,
+      "id": "gdelt-1328741302",
+      "date": "2026-10-19",
+      "title": "KENYAN fought — Galana, Kenya (general), Kenya",
+      "description": "Avg tone -5.8, 18 mentions.",
+      "lat": -3.16829,
+      "lon": 40.1443,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": 7,
+      "goldstein": -10,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.lbc.co.uk/article/kemi-badenoch-ripping-tory-reform-council-agreements-5Hjdk5Y_2/"
+      "sourceUrl": "https://www.aol.com/articles/judgement-day-kenya-pastor-accused-034407000.html"
     },
     {
-      "id": "gdelt-1328566440",
-      "date": "2026-10-18",
-      "title": "ALBERTA assaulted GOVERNMENT — Saskatchewan, Manitoba, Canada",
-      "description": "Avg tone -2.2, 10 mentions.",
-      "lat": 52.15,
-      "lon": -97.7167,
+      "id": "gdelt-1328740651",
+      "date": "2026-10-19",
+      "title": "BUSINESS rejected NIGERIAN — Nigeria",
+      "description": "Avg tone -5.7, 16 mentions.",
+      "lat": 10,
+      "lon": 8,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": -9.5,
+      "goldstein": -4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.thestar.com/news/canada/alberta/alberta-military-base-fire-and-deaths/article_ed32925a-60b5-4839-ae19-7a2027ce5ca0.html"
+      "sourceUrl": "https://dailypost.ng/2026/10/19/2027-only-pos-business-this-govt-has-given-you-adc-urges-nigerians-to-reject-apc/"
     },
     {
-      "id": "gdelt-1328566649",
-      "date": "2026-10-18",
-      "title": "GOVERNMENT provided aid to AUSTRALIAN — Canberra, Australian Capital Territory, Australia",
-      "description": "Avg tone 4.6, 10 mentions.",
-      "lat": -35.2833,
-      "lon": 149.217,
+      "id": "gdelt-1328741001",
+      "date": "2026-10-19",
+      "title": "BRITISH made an appeal — United Kingdom",
+      "description": "Avg tone -3.2, 13 mentions.",
+      "lat": 54,
+      "lon": -4,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://dailypost.ng/2026/10/19/ipob-asks-british-govt-to-explain-failure-to-intervene-in-nnamdi-kanus-case/"
+    },
+    {
+      "id": "gdelt-1328740380",
+      "date": "2026-09-19",
+      "title": "FRANCE provided aid to GOVERNMENT — Paris, France (general), France",
+      "description": "Avg tone -8.2, 10 mentions.",
+      "lat": 48.8667,
+      "lon": 2.33333,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": 7.4,
       "sourceName": "GDELT",
-      "sourceUrl": "http://www.bignewsnetwork.com/news/279382907/australian-govt-commits-6-mln-aud-to-children-charity-telethon"
+      "sourceUrl": "https://www.aol.com/articles/rioting-arson-attacks-why-protests-163142000.html"
     },
     {
-      "id": "gdelt-1328566650",
-      "date": "2026-10-18",
-      "title": "EMBASSY engaged in diplomatic cooperation with AZERBAIJAN — Baku, Baki*, Azerbaijan",
-      "description": "Avg tone 8.0, 10 mentions.",
-      "lat": 40.3953,
-      "lon": 49.8822,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.trend.az/azerbaijan/4236272.html"
-    },
-    {
-      "id": "gdelt-1328566745",
-      "date": "2026-10-18",
-      "title": "GWALIOR issued a demand — Bhopal, Madhya Pradesh, India",
-      "description": "Avg tone -10.3, 10 mentions.",
-      "lat": 23.2667,
-      "lon": 77.4,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://timesofindia.indiatimes.com/city/bhopal/gwalior-temple-tragedy-shrine-panel-suspects-terror-attack-demands-sit-probe-death-toll-rises-to-16/articleshow/135028953.cms"
-    },
-    {
-      "id": "gdelt-1328566988",
-      "date": "2026-10-18",
-      "title": "OMAN held consultations with THAI — Ministry Of Finance, Masqat, Oman",
-      "description": "Avg tone 2.6, 10 mentions.",
-      "lat": 23.6134,
-      "lon": 58.5954,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://timesofoman.com/article/178127-omans-participation-in-meetings-of-imf-world-bank-group-concludes"
-    },
-    {
-      "id": "gdelt-1328566997",
-      "date": "2026-10-18",
-      "title": "PRISONER protested against IRAN — Iran",
-      "description": "Avg tone -9.5, 10 mentions.",
-      "lat": 32,
-      "lon": 53,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -6.5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://irannewsupdate.com/news/iranian-opposition/berlin-conference-highlights-organized-resistance-as-democratic-solution-to-irans-crisis/"
-    },
-    {
-      "id": "gdelt-1328567090",
-      "date": "2026-10-18",
-      "title": "THAILAND fought ISRAELI — Gilboa, Ha?afon, Israel",
-      "description": "Avg tone -10.3, 10 mentions.",
-      "lat": 32.5472,
-      "lon": 35.3583,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.israelnationalnews.com/news/434784"
-    },
-    {
-      "id": "gdelt-1328567091",
-      "date": "2026-10-18",
-      "title": "THAI held consultations with OMAN — Bangkok, Krung Thep Mahanakhon, Thailand",
-      "description": "Avg tone 2.6, 10 mentions.",
-      "lat": 13.75,
-      "lon": 100.517,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://timesofoman.com/article/178127-omans-participation-in-meetings-of-imf-world-bank-group-concludes"
-    },
-    {
-      "id": "gdelt-1328566706",
-      "date": "2026-10-18",
-      "title": "INDONESIA made an appeal — Antara, Aceh, Indonesia",
-      "description": "Avg tone 2.8, 9 mentions.",
-      "lat": 3.5292,
-      "lon": 99.0184,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://en.antaranews.com/news/436277/trade-ministry-promotes-asean-deals-to-boost-indonesian-exports"
-    },
-    {
-      "id": "gdelt-1328566319",
-      "date": "2026-10-18",
-      "title": "INDONESIA coerced — Antara, Aceh, Indonesia",
-      "description": "Avg tone 5.6, 8 mentions.",
-      "lat": 3.5292,
-      "lon": 99.0184,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://en.antaranews.com/news/436277/trade-ministry-promotes-asean-deals-to-boost-indonesian-exports"
-    },
-    {
-      "id": "gdelt-1328566714",
-      "date": "2026-10-18",
-      "title": "JAKARTA engaged in diplomatic cooperation with UNITED NATIONS — Antara, Aceh, Indonesia",
-      "description": "Avg tone 2.2, 8 mentions.",
-      "lat": 3.5292,
-      "lon": 99.0184,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://en.antaranews.com/news/436317/president-prabowo-welcomes-un-secretary-general-for-talks-in-hambalang"
-    },
-    {
-      "id": "gdelt-1328566967",
-      "date": "2026-10-18",
-      "title": "NETHERLANDS engaged in diplomatic cooperation with AZERBAIJAN — Netherlands",
-      "description": "Avg tone 8.0, 8 mentions.",
-      "lat": 52.5,
-      "lon": 5.75,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.trend.az/azerbaijan/4236272.html"
-    },
-    {
-      "id": "gdelt-1328567003",
-      "date": "2026-10-18",
-      "title": "RAWALPINDI coerced — Rawalpindi, Punjab, Pakistan",
-      "description": "Avg tone -18.9, 8 mentions.",
-      "lat": 33.6,
-      "lon": 73.0667,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://dunyanews.tv/en/Crime/978122-nccia-rawalpindi-arrests-three-suspects-in-international-cyber-fraud-n"
-    },
-    {
-      "id": "gdelt-1328567087",
-      "date": "2026-10-18",
-      "title": "BANGKOK coerced CHINESE — United States",
-      "description": "Avg tone -7.2, 8 mentions.",
-      "lat": 39.828175,
-      "lon": -98.5795,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://cointelegraph.com/news/chinese-suspect-in-75m-international-crime-network-arrested-in-bangkok"
-    },
-    {
-      "id": "gdelt-1328567089",
-      "date": "2026-10-18",
-      "title": "THAILAND fought JERUSALEM — Jerusalem, Israel (general), Israel",
-      "description": "Avg tone -10.3, 7 mentions.",
-      "lat": 31.7667,
-      "lon": 35.2333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.israelnationalnews.com/news/434784"
-    },
-    {
-      "id": "gdelt-1328566352",
-      "date": "2026-10-18",
-      "title": "AFRICA expressed intent to cooperate with ARMENIA — Texas, United States",
-      "description": "Avg tone -1.0, 6 mentions.",
-      "lat": 31.106,
-      "lon": -97.6475,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.politicsweb.co.za/news/godongwana-tables-mini-budget-ahead-of-local-elections-ockham-weekly-news-diary"
-    },
-    {
-      "id": "gdelt-1328566574",
-      "date": "2026-10-18",
-      "title": "FRENCH coerced CHICAGO — Paris, France (general), France",
-      "description": "Avg tone -8.4, 6 mentions.",
-      "lat": 48.8667,
-      "lon": 2.33333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.nbcchicago.com/news/national-international/french-police-arrests-violent-clashes-and-looting-mar-protests/4003987/"
-    },
-    {
-      "id": "gdelt-1328566660",
-      "date": "2026-10-18",
-      "title": "PRESIDENT engaged in diplomatic cooperation with INDONESIA — Bandung, Jawa Barat, Indonesia",
-      "description": "Avg tone 2.2, 6 mentions.",
-      "lat": -6.90389,
-      "lon": 107.619,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://en.antaranews.com/news/436317/president-prabowo-welcomes-un-secretary-general-for-talks-in-hambalang"
-    },
-    {
-      "id": "gdelt-1328566750",
-      "date": "2026-10-18",
-      "title": "CHHATTISGARH rejected — Mumbai, Maharashtra, India",
-      "description": "Avg tone -0.7, 6 mentions.",
-      "lat": 18.975,
-      "lon": 72.8258,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "http://www.bignewsnetwork.com/news/279382899/ranji-trophy-gill-scores-just-1-for-punjab-priyansh-arya-ayush-badoni-shine-for-delhi"
-    },
-    {
-      "id": "gdelt-1328566751",
-      "date": "2026-10-18",
-      "title": "AHMEDABAD threatened — Ahmedabad, Gujarat, India",
-      "description": "Avg tone -5.2, 6 mentions.",
-      "lat": 23.0333,
-      "lon": 72.6167,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.mid-day.com/news/india-news/article/hyderabad-bound-flight-receives-bomb-threat-alert-after-12-year-olds-prank-23655711"
-    },
-    {
-      "id": "gdelt-1328566752",
-      "date": "2026-10-18",
-      "title": "AHMEDABAD threatened — Hyderabad, Andhra Pradesh, India",
-      "description": "Avg tone -5.2, 6 mentions.",
-      "lat": 17.3753,
-      "lon": 78.4744,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.mid-day.com/news/india-news/article/hyderabad-bound-flight-receives-bomb-threat-alert-after-12-year-olds-prank-23655711"
-    },
-    {
-      "id": "gdelt-1328566755",
-      "date": "2026-10-18",
-      "title": "LUCKNOW protested against — Lucknow, Uttar Pradesh, India",
-      "description": "Avg tone -1.5, 6 mentions.",
-      "lat": 26.85,
-      "lon": 80.9167,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -6.5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://organiser.org/2026/10/18/413520/bharat/stop-anarchy-embrace-democracy-abvp-holds-massive-rally-in-lucknow-vows-to-protect-constitution-against-coercion/"
-    },
-    {
-      "id": "gdelt-1328566758",
-      "date": "2026-10-18",
-      "title": "MANIPUR exhibited military posturing toward POLICE — Malung, India (general), India",
-      "description": "Avg tone -5.5, 6 mentions.",
-      "lat": 32.95,
-      "lon": 77.6,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -7.2,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://morungexpress.com/15-houses-burnt-in-manipurs-kamjong-kuki-civilians-flee-four-injured-in-attacks"
-    },
-    {
-      "id": "gdelt-1328566775",
-      "date": "2026-10-18",
-      "title": "IRAN threatened — Dhahran, Ash Sharqiyah, Saudi Arabia",
-      "description": "Avg tone -3.5, 6 mentions.",
-      "lat": 26.3032,
-      "lon": 50.1353,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.cnbc.com/2026/10/18/iran-us-war-rezaei-operational-plan-shipping-attacks.html"
-    },
-    {
-      "id": "gdelt-1328566836",
-      "date": "2026-10-18",
-      "title": "ISRAELI assaulted WASHINGTON — Washington, District of Columbia, United States",
-      "description": "Avg tone -7.6, 6 mentions.",
-      "lat": 38.8951,
-      "lon": -77.0364,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -9,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.lbc.co.uk/article/israel-west-bank-diplomats-attacked-5Hjdk5Z_2/"
-    },
-    {
-      "id": "gdelt-1328567008",
-      "date": "2026-10-18",
-      "title": "KARACHI made an appeal to ISLAM — Balochistan, Balochistan, Pakistan",
-      "description": "Avg tone -9.9, 6 mentions.",
-      "lat": 28.4785,
-      "lon": 65.6436,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://dunyanews.tv/en/Pakistan/978393-bilawal-calls-for-unity-against-terrorism-says-fazlur-rehman-can-help"
-    },
-    {
-      "id": "gdelt-1328567053",
-      "date": "2026-10-18",
-      "title": "RUSSIAN made a public statement about — Russia",
-      "description": "Avg tone -0.3, 6 mentions.",
-      "lat": 60,
-      "lon": 100,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://en.antaranews.com/news/436289/no-story-is-worth-a-life-antara-steps-up-journalist-safety"
-    },
-    {
-      "id": "gdelt-1328567181",
-      "date": "2026-10-18",
-      "title": "WASHINGTON assaulted ISRAELI — Israel",
-      "description": "Avg tone -7.6, 6 mentions.",
-      "lat": 31.5,
-      "lon": 34.75,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -9,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.lbc.co.uk/article/israel-west-bank-diplomats-attacked-5Hjdk5Z_2/"
-    },
-    {
-      "id": "gdelt-1328566290",
-      "date": "2026-10-18",
-      "title": "CANADA engaged in material cooperation — Washington, District of Columbia, United States",
-      "description": "Avg tone -1.2, 5 mentions.",
-      "lat": 38.8951,
-      "lon": -77.0364,
+      "id": "gdelt-1328740412",
+      "date": "2026-10-19",
+      "title": "CHINA engaged in material cooperation — New Delhi, Delhi, India",
+      "description": "Avg tone -1.3, 10 mentions.",
+      "lat": 28.6,
+      "lon": 77.2,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": 6.4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.mcall.com/2026/10/18/letters-to-the-editor-dont-prevent-seniors-from-importing-medicines-from-canada/"
+      "sourceUrl": "https://www.business-standard.com/opinion/editorial/dropping-barriers-126101901206_1.html"
     },
     {
-      "id": "gdelt-1328566291",
-      "date": "2026-10-18",
-      "title": "ALBERTA fought — Battle River, Saskatchewan, Canada",
-      "description": "Avg tone -2.2, 5 mentions.",
-      "lat": 52.7,
-      "lon": -108.25,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.thestar.com/news/canada/alberta/alberta-military-base-fire-and-deaths/article_ed32925a-60b5-4839-ae19-7a2027ce5ca0.html"
-    },
-    {
-      "id": "gdelt-1328566415",
-      "date": "2026-10-18",
-      "title": "INDUSTRY made an appeal to PHILIPPINE — Negros Oriental, Negros Oriental, Philippines",
-      "description": "Avg tone 6.7, 5 mentions.",
-      "lat": 9.75,
-      "lon": 123,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://canadianinquirer.net/2026/10/18/dti-and-dost-team-up-to-revive-negros-traditional-fiber-and-weaving-industry/"
-    },
-    {
-      "id": "gdelt-1328566582",
-      "date": "2026-10-18",
-      "title": "UNITED KINGDOM made an appeal — Warwickshire, Warwickshire, United Kingdom",
-      "description": "Avg tone -1.8, 5 mentions.",
-      "lat": 52.3333,
-      "lon": -1.58333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.coventrytelegraph.net/news/local-news/calls-councillors-undergo-dbs-drugs-34781204"
-    },
-    {
-      "id": "gdelt-1328566679",
-      "date": "2026-10-18",
-      "title": "PRESIDENT expressed intent to cooperate with PAKISTAN — Maldives",
-      "description": "Avg tone 3.6, 5 mentions.",
-      "lat": 3.2,
-      "lon": 73,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://dunyanews.tv/en/Pakistan/978396-maldives-president-to-undertake-threeday-state-visit-to-pakistan-from"
-    },
-    {
-      "id": "gdelt-1328566680",
-      "date": "2026-10-18",
-      "title": "PRESIDENT engaged in diplomatic cooperation with PAKISTAN — Islamabad, Islamabad, Pakistan",
-      "description": "Avg tone 3.6, 5 mentions.",
-      "lat": 33.7,
-      "lon": 73.1667,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://dunyanews.tv/en/Pakistan/978396-maldives-president-to-undertake-threeday-state-visit-to-pakistan-from"
-    },
-    {
-      "id": "gdelt-1328566713",
-      "date": "2026-10-18",
-      "title": "INDONESIA made an appeal to ASEAN — Antara, Aceh, Indonesia",
-      "description": "Avg tone 1.7, 5 mentions.",
-      "lat": 3.5292,
-      "lon": 99.0184,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://en.antaranews.com/news/436281/prabowo-gibran-administration-activates-10070-village-cooperatives"
-    },
-    {
-      "id": "gdelt-1328566738",
-      "date": "2026-10-18",
-      "title": "BHARAT yielded — Gargi, Jharkhand, India",
-      "description": "Avg tone 1.5, 5 mentions.",
-      "lat": 24.3,
-      "lon": 85.7667,
+      "id": "gdelt-1328740418",
+      "date": "2026-10-19",
+      "title": "CAMEROON yielded — Lagdo, Nord, Cameroon",
+      "description": "Avg tone -7.0, 10 mentions.",
+      "lat": 9.05,
+      "lon": 13.7333,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": 7,
       "sourceName": "GDELT",
-      "sourceUrl": "https://organiser.org/2026/10/18/386983/bharat/ascendance-of-sangha-the-eight-fold-action-matrix/"
+      "sourceUrl": "https://dailypost.ng/2026/10/19/flood-kills-two-sacks-18-communities-in-nasarawa/"
     },
     {
-      "id": "gdelt-1328566865",
-      "date": "2026-10-18",
-      "title": "JAPAN threatened COMPANIES — China",
-      "description": "Avg tone -7.3, 5 mentions.",
-      "lat": 35,
-      "lon": 105,
+      "id": "gdelt-1328740468",
+      "date": "2026-10-19",
+      "title": "CORK engaged in diplomatic cooperation — County Cork, Cork, Ireland",
+      "description": "Avg tone 4.8, 10 mentions.",
+      "lat": 51.9667,
+      "lon": -8.58333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.echolive.ie/corknews/arid-41925944.html"
+    },
+    {
+      "id": "gdelt-1328740688",
+      "date": "2026-10-19",
+      "title": "CANADIAN assaulted MARK CARNEY — Ottawa, Ontario, Canada",
+      "description": "Avg tone 1.0, 10 mentions.",
+      "lat": 45.4167,
+      "lon": -75.7,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -9.5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://vancouversun.com:443/news/politics/tears-prayers-quiet-reflection-in-the-house-of-commons-after-cfb-wainwright-tragedy/wcm/ae650d5e-cfa8-467a-b21f-97dadcc126a9"
+    },
+    {
+      "id": "gdelt-1328740774",
+      "date": "2026-10-19",
+      "title": "POLICE coerced UNITED KINGDOM — Manchester, Manchester, United Kingdom",
+      "description": "Avg tone -6.6, 10 mentions.",
+      "lat": 53.5,
+      "lon": -2.21667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.aol.co.uk/articles/police-issue-major-boy-14-163500000.html"
+    },
+    {
+      "id": "gdelt-1328740933",
+      "date": "2026-10-19",
+      "title": "NASSER fought — Gaza City, Israel (general), Israel",
+      "description": "Avg tone -7.5, 10 mentions.",
+      "lat": 31.4167,
+      "lon": 34.3333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "http://www.bignewsnetwork.com/news/279385580/3-palestinians-including-2-children-killed-by-israeli-fire-in-gaza-sources"
+    },
+    {
+      "id": "gdelt-1328740971",
+      "date": "2026-10-19",
+      "title": "FRANCE coerced EUROPE — Milan, Lombardia, Italy",
+      "description": "Avg tone -14.1, 10 mentions.",
+      "lat": 45.4667,
+      "lon": 9.2,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -9.2,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.hindustantimes.com/india-news/indian-embassy-in-italy-issues-advisory-urges-citizens-to-avoid-protest-sites-crowded-areas-101792418867048.html"
+    },
+    {
+      "id": "gdelt-1328741207",
+      "date": "2026-10-19",
+      "title": "IRAN yielded to RUSSIA — Kremlin, Moskva, Russia",
+      "description": "Avg tone -3.0, 10 mentions.",
+      "lat": 55.7522,
+      "lon": 37.6156,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.aol.com/articles/putin-proposing-summit-trump-xi-135408000.html"
+    },
+    {
+      "id": "gdelt-1328741208",
+      "date": "2026-10-19",
+      "title": "IRAN issued a demand to RUSSIA — Kremlin, Moskva, Russia",
+      "description": "Avg tone -3.0, 10 mentions.",
+      "lat": 55.7522,
+      "lon": 37.6156,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.aol.com/articles/putin-proposing-summit-trump-xi-135408000.html"
+    },
+    {
+      "id": "gdelt-1328741209",
+      "date": "2026-10-19",
+      "title": "IRAN reduced relations with RUSSIA — Kremlin, Moskva, Russia",
+      "description": "Avg tone -3.0, 10 mentions.",
+      "lat": 55.7522,
+      "lon": 37.6156,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -8,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.aol.com/articles/putin-proposing-summit-trump-xi-135408000.html"
+    },
+    {
+      "id": "gdelt-1328741300",
+      "date": "2026-10-19",
+      "title": "NAIROBI coerced — Chakama, Coast, Kenya",
+      "description": "Avg tone -13.2, 10 mentions.",
+      "lat": -3.11667,
+      "lon": 39.6833,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.union-bulletin.com/news/world/leader-of-kenyan-doomsday-cult-that-left-more-than-400-followers-dead-convicted-of-191/article_d0db87c1-3fbd-568f-a0c1-83430a4a8690.html"
+    },
+    {
+      "id": "gdelt-1328741516",
+      "date": "2026-10-19",
+      "title": "OCCUPIED TERRITORIES threatened — Iran",
+      "description": "Avg tone -6.2, 10 mentions.",
+      "lat": 32,
+      "lon": 53,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.islamicinvitationturkey.com/general-mohebi-world-will-see-what-happens/"
+    },
+    {
+      "id": "gdelt-1328741460",
+      "date": "2026-10-19",
+      "title": "NIGERIAN made an appeal to BRITAIN — United Kingdom",
+      "description": "Avg tone -3.8, 9 mentions.",
+      "lat": 54,
+      "lon": -4,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://dailypost.ng/2026/10/19/ipob-asks-british-govt-to-explain-failure-to-intervene-in-nnamdi-kanus-case/"
+    },
+    {
+      "id": "gdelt-1328740438",
+      "date": "2026-10-19",
+      "title": "ERITREA held consultations — Adi-Keih, Eritrea (general), Eritrea",
+      "description": "Avg tone 5.8, 8 mentions.",
+      "lat": 14.8444,
+      "lon": 39.3772,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://shabait.com/2026/10/19/meeting-to-strengthen-teachers-association/"
+    },
+    {
+      "id": "gdelt-1328740466",
+      "date": "2026-10-19",
+      "title": "JAMMU AND KASHMIR rejected — Northern Ireland, Craigavon, United Kingdom",
+      "description": "Avg tone -0.6, 8 mentions.",
+      "lat": 54.5,
+      "lon": -6.5,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.unfpa.org/where-we-work?field_office_type_target_id[139]=139"
+    },
+    {
+      "id": "gdelt-1328740517",
+      "date": "2026-10-19",
+      "title": "SAUDI ARABIA engaged in material cooperation — India",
+      "description": "Avg tone -3.6, 8 mentions.",
+      "lat": 20,
+      "lon": 77,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 6,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://idrw.org/after-the-flydubai-incident-can-india-better-protect-its-cockpits/"
+    },
+    {
+      "id": "gdelt-1328740561",
+      "date": "2026-10-19",
+      "title": "AFGHAN rejected SUPREME COURT — Virginia, United States",
+      "description": "Avg tone -4.2, 8 mentions.",
+      "lat": 37.768,
+      "lon": -78.2057,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4,
+      "sourceName": "GDELT",
+      "sourceUrl": "http://www.afghanistansun.com/news/279385442/marine-set-to-keep-custody-of-afghan-war-orphan-after-supreme-court-denies-review"
+    },
+    {
+      "id": "gdelt-1328740578",
+      "date": "2026-10-19",
+      "title": "DUBAI engaged in diplomatic cooperation — Texas, United States",
+      "description": "Avg tone -3.7, 8 mentions.",
+      "lat": 31.106,
+      "lon": -97.6475,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.dailymail.com/news/article-16211999/Ken-Paxton-scandals-texas-senate-midterms.html"
+    },
+    {
+      "id": "gdelt-1328740858",
+      "date": "2026-10-19",
+      "title": "COMMUNITY engaged in diplomatic cooperation with FINN — United States",
+      "description": "Avg tone -0.5, 8 mentions.",
+      "lat": 39.828175,
+      "lon": -98.5795,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://patch.com/new-york/sayville/her-birthday-li-teen-whose-ex-boyfriend-accused-her-death-celebrated-she-teaching"
+    },
+    {
+      "id": "gdelt-1328740938",
+      "date": "2026-10-19",
+      "title": "ERITREA held consultations — Adi-Keih, Eritrea (general), Eritrea",
+      "description": "Avg tone 5.8, 8 mentions.",
+      "lat": 14.8444,
+      "lon": 39.3772,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://shabait.com/2026/10/19/meeting-to-strengthen-teachers-association/"
+    },
+    {
+      "id": "gdelt-1328741011",
+      "date": "2026-10-19",
+      "title": "BRITISH rejected — Wrexham, Wrexham, United Kingdom",
+      "description": "Avg tone 1.1, 8 mentions.",
+      "lat": 53.05,
+      "lon": -3,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.leaderlive.co.uk/news/26650541.plans-six-wrexham-city-centre-flats-resubmitted-refusal/"
+    },
+    {
+      "id": "gdelt-1328741014",
+      "date": "2026-10-19",
+      "title": "BRITAIN engaged in material cooperation with COMPANIES — New York, United States",
+      "description": "Avg tone -0.9, 8 mentions.",
+      "lat": 42.1497,
+      "lon": -74.9384,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 6,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://hartfordbusiness.com/article/farmington-storage-property-with-office-garage-buildings-sells-for-5m/"
+    },
+    {
+      "id": "gdelt-1328741086",
+      "date": "2026-10-19",
+      "title": "PRESIDENT held consultations with SOFIA — Sofia, Sofiya-Grad, Bulgaria",
+      "description": "Avg tone 4.4, 8 mentions.",
+      "lat": 42.6833,
+      "lon": 23.3167,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://sofiaglobe.com/2026/10/19/visiting-sofia-chinas-foreign-minister-wang-holds-talks-with-pm-president/"
+    },
+    {
+      "id": "gdelt-1328741301",
+      "date": "2026-10-19",
+      "title": "KENYAN coerced — Galana, Kenya (general), Kenya",
+      "description": "Avg tone -5.8, 8 mentions.",
+      "lat": -3.16829,
+      "lon": 40.1443,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.aol.com/articles/judgement-day-kenya-pastor-accused-034407000.html"
+    },
+    {
+      "id": "gdelt-1328741395",
+      "date": "2026-10-19",
+      "title": "COMMANDER threatened ISRAEL — Washington, District of Columbia, United States",
+      "description": "Avg tone -9.7, 8 mentions.",
+      "lat": 38.8951,
+      "lon": -77.0364,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": -4.4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://timesofindia.indiatimes.com/technology/tech-news/in-2025-japan-warned-microsoft-of-a-message-scam-software-giant-traced-it-to-china-months-later-blocking-three-online-stores-that-hit-75000-companies-across-the-globe/articleshow/135029592.cms"
+      "sourceUrl": "https://www.islamicinvitationturkey.com/iran-warns-us-israel-were-counting-the-moments-until-your-foolish-decisions/"
     },
     {
-      "id": "gdelt-1328567012",
-      "date": "2026-10-18",
-      "title": "PAKISTAN expressed intent to cooperate with PRESIDENT — Islamabad, Islamabad, Pakistan",
-      "description": "Avg tone 3.6, 5 mentions.",
-      "lat": 33.7,
-      "lon": 73.1667,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://dunyanews.tv/en/Pakistan/978396-maldives-president-to-undertake-threeday-state-visit-to-pakistan-from"
-    },
-    {
-      "id": "gdelt-1328566346",
-      "date": "2026-10-18",
-      "title": "AFGHANISTAN fought INSURGENT — Balad, Sala? ad Din, Iraq",
-      "description": "Avg tone -3.2, 4 mentions.",
-      "lat": 34.0148,
-      "lon": 44.1457,
+      "id": "gdelt-1328741548",
+      "date": "2026-10-19",
+      "title": "RUSSIAN fought KHARKIV — Kharkiv, Kharkivs'ka Oblast', Ukraine",
+      "description": "Avg tone -5.3, 8 mentions.",
+      "lat": 49.9808,
+      "lon": 36.2527,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": -10,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.ems1.com/military/inside-the-73m-race-to-build-synthetic-blood-for-the-battlefield"
+      "sourceUrl": "https://economictimes.indiatimes.com/news/international/world-news/russia-drone-attack-ukraine-kharkiv-kills-six-including-children/articleshow/135052068.cms"
     },
     {
-      "id": "gdelt-1328566347",
-      "date": "2026-10-18",
-      "title": "AFGHANISTAN fought INSURGENT — South Africa",
-      "description": "Avg tone -3.2, 4 mentions.",
-      "lat": -30,
-      "lon": 26,
+      "id": "gdelt-1328741677",
+      "date": "2026-10-19",
+      "title": "CALIFORNIA yielded to SANTA CRUZ — Santa Cruz County, California, United States",
+      "description": "Avg tone -5.9, 8 mentions.",
+      "lat": 37.0666,
+      "lon": -122.051,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.eastbaytimes.com/2026/10/19/rabies-exposures-on-the-rise-in-santa-cruz-county-california/"
+    },
+    {
+      "id": "gdelt-1328740603",
+      "date": "2026-10-19",
+      "title": "SOFIA coerced EUROPEAN — Kalotina, Kurdzhali, Bulgaria",
+      "description": "Avg tone -5.3, 7 mentions.",
+      "lat": 41.4167,
+      "lon": 25.5,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://sofiaglobe.com/2026/10/19/sofia-court-issues-european-arrest-warrants-for-two-german-suspects-in-starlink-arson-case/"
+    },
+    {
+      "id": "gdelt-1328740607",
+      "date": "2026-10-19",
+      "title": "SOFIA held consultations with PRESIDENT — Beijing, Beijing, China",
+      "description": "Avg tone 4.4, 7 mentions.",
+      "lat": 39.9289,
+      "lon": 116.388,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://sofiaglobe.com/2026/10/19/visiting-sofia-chinas-foreign-minister-wang-holds-talks-with-pm-president/"
+    },
+    {
+      "id": "gdelt-1328740797",
+      "date": "2026-10-19",
+      "title": "CUBAN made an appeal — Buey Arriba, Granma, Cuba",
+      "description": "Avg tone -3.3, 7 mentions.",
+      "lat": 20.15,
+      "lon": -76.75,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.cubaheadlines.com/articles/343265"
+    },
+    {
+      "id": "gdelt-1328741441",
+      "date": "2026-10-19",
+      "title": "NIGERIAN made an appeal — London, London, City of, United Kingdom",
+      "description": "Avg tone 0.5, 7 mentions.",
+      "lat": 51.5,
+      "lon": -0.116667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://saharareporters.com/2026/10/19/businessman-okoyas-first-son-begs-father-forgiveness-after-30-year-rift-alleges-wife"
+    },
+    {
+      "id": "gdelt-1328741444",
+      "date": "2026-10-19",
+      "title": "NIGERIAN engaged in diplomatic cooperation — Nigeria",
+      "description": "Avg tone 0.5, 7 mentions.",
+      "lat": 10,
+      "lon": 8,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://saharareporters.com/2026/10/19/businessman-okoyas-first-son-begs-father-forgiveness-after-30-year-rift-alleges-wife"
+    },
+    {
+      "id": "gdelt-1328740445",
+      "date": "2026-10-19",
+      "title": "UNITED KINGDOM made an appeal — Lewisham, Lewisham, United Kingdom",
+      "description": "Avg tone -9.1, 6 mentions.",
+      "lat": 51.45,
+      "lon": -0.016667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.aol.co.uk/articles/eagle-eyed-met-police-officer-164613000.html"
+    },
+    {
+      "id": "gdelt-1328740453",
+      "date": "2026-10-19",
+      "title": "UNITED KINGDOM fought — Ballynahinch, Down, United Kingdom",
+      "description": "Avg tone -5.2, 6 mentions.",
+      "lat": 54.4,
+      "lon": -5.88333,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": -10,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.ems1.com/military/inside-the-73m-race-to-build-synthetic-blood-for-the-battlefield"
+      "sourceUrl": "https://www.belfastlive.co.uk/news/man-shotgun-shells-linked-loyalist-34787625"
     },
     {
-      "id": "gdelt-1328566364",
-      "date": "2026-10-18",
-      "title": "ALBANIA fought BELGIUM — Paris, France (general), France",
-      "description": "Avg tone -10.5, 4 mentions.",
-      "lat": 48.8667,
-      "lon": 2.33333,
+      "id": "gdelt-1328740584",
+      "date": "2026-10-19",
+      "title": "AUSTRIAN AIRLINES threatened SOFIA — Tel Aviv, Tel Aviv, Israel",
+      "description": "Avg tone -8.9, 6 mentions.",
+      "lat": 32.0667,
+      "lon": 34.7667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://saharareporters.com/2026/10/19/austrian-airlines-flight-israel-makes-emergency-landing-bulgaria-over-bomb-threat"
+    },
+    {
+      "id": "gdelt-1328740673",
+      "date": "2026-10-19",
+      "title": "NOVA SCOTIA made an appeal to PREMIER — Point Tupper, Nova Scotia, Canada",
+      "description": "Avg tone -1.8, 6 mentions.",
+      "lat": 45.6,
+      "lon": -61.3667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.winnipegfreepress.com/uncategorized/2026/10/19/opposition-urges-n-s-premier-tim-houston-to-debate-ai-data-centre-in-legislature"
+    },
+    {
+      "id": "gdelt-1328740687",
+      "date": "2026-10-19",
+      "title": "MARK CARNEY engaged in diplomatic cooperation with CANADIAN — Battle River, Saskatchewan, Canada",
+      "description": "Avg tone 1.0, 6 mentions.",
+      "lat": 52.7,
+      "lon": -108.25,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://vancouversun.com:443/news/politics/tears-prayers-quiet-reflection-in-the-house-of-commons-after-cfb-wainwright-tragedy/wcm/ae650d5e-cfa8-467a-b21f-97dadcc126a9"
+    },
+    {
+      "id": "gdelt-1328740689",
+      "date": "2026-10-19",
+      "title": "CHINA provided aid — Xiangjian, Hunan, China",
+      "description": "Avg tone 0.9, 6 mentions.",
+      "lat": 27.0906,
+      "lon": 109.721,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://econotimes.com/VnExpress-Reports-Five-Chinese-Billionaires-Led-Oct-19-Gains-List-1756638"
+    },
+    {
+      "id": "gdelt-1328740799",
+      "date": "2026-10-19",
+      "title": "CUBA engaged in diplomatic cooperation — Ciego, Provincia de Las Tunas, Cuba",
+      "description": "Avg tone 0.0, 6 mentions.",
+      "lat": 21.1333,
+      "lon": -77.0667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.cubaheadlines.com/articles/343252"
+    },
+    {
+      "id": "gdelt-1328740823",
+      "date": "2026-10-19",
+      "title": "CUBAN engaged in material cooperation — Cuba",
+      "description": "Avg tone -5.4, 6 mentions.",
+      "lat": 22,
+      "lon": -79.5,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 6,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.cubaheadlines.com/articles/343260"
+    },
+    {
+      "id": "gdelt-1328740865",
+      "date": "2026-10-19",
+      "title": "NEIGHBORHOOD provided aid to ISRAELI — Gaza City, Israel (general), Israel",
+      "description": "Avg tone -7.5, 6 mentions.",
+      "lat": 31.4167,
+      "lon": 34.3333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "http://www.bignewsnetwork.com/news/279385580/3-palestinians-including-2-children-killed-by-israeli-fire-in-gaza-sources"
+    },
+    {
+      "id": "gdelt-1328740976",
+      "date": "2026-10-19",
+      "title": "PARIS fought FIREFIGHTER — United States",
+      "description": "Avg tone -7.1, 6 mentions.",
+      "lat": 39.828175,
+      "lon": -98.5795,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": -10,
       "sourceName": "GDELT",
-      "sourceUrl": "https://organiser.org/2026/10/18/413052/world/riots-sweep-european-nations-france-albania-italy-portugal-and-belgium-face-escalating-street-violence-and-unrest/"
+      "sourceUrl": "https://www.eastbaytimes.com/2026/10/19/france-toughens-response-to-protests-as-officials-admit-failure-2/"
     },
     {
-      "id": "gdelt-1328566366",
-      "date": "2026-10-18",
-      "title": "ALBANIA fought FRANCE — Paris, France (general), France",
-      "description": "Avg tone -10.5, 4 mentions.",
-      "lat": 48.8667,
-      "lon": 2.33333,
+      "id": "gdelt-1328741017",
+      "date": "2026-10-19",
+      "title": "UNITED KINGDOM issued a demand to COMMUNITY — Basildon, Essex, United Kingdom",
+      "description": "Avg tone 6.7, 6 mentions.",
+      "lat": 51.5667,
+      "lon": 0.466667,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": -10,
+      "goldstein": -5,
       "sourceName": "GDELT",
-      "sourceUrl": "https://organiser.org/2026/10/18/413052/world/riots-sweep-european-nations-france-albania-italy-portugal-and-belgium-face-escalating-street-violence-and-unrest/"
+      "sourceUrl": "https://www.echo-news.co.uk/news/26648556.basildon-care-home-challenge-community-games-night/"
     },
     {
-      "id": "gdelt-1328566370",
-      "date": "2026-10-18",
-      "title": "ALBANIA fought ITALY — Paris, France (general), France",
-      "description": "Avg tone -10.5, 4 mentions.",
-      "lat": 48.8667,
-      "lon": 2.33333,
+      "id": "gdelt-1328741137",
+      "date": "2026-10-19",
+      "title": "AUTHORITIES coerced TURKISH — Syria",
+      "description": "Avg tone -7.1, 6 mentions.",
+      "lat": 35,
+      "lon": 38,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": -10,
+      "goldstein": -5,
       "sourceName": "GDELT",
-      "sourceUrl": "https://organiser.org/2026/10/18/413052/world/riots-sweep-european-nations-france-albania-italy-portugal-and-belgium-face-escalating-street-violence-and-unrest/"
+      "sourceUrl": "https://saharareporters.com/2026/10/19/12-migrants-including-infant-die-two-boat-accidents-greek-islands"
     },
     {
-      "id": "gdelt-1328566372",
-      "date": "2026-10-18",
-      "title": "ALBANIA fought PORTUGAL — Paris, France (general), France",
-      "description": "Avg tone -10.5, 4 mentions.",
-      "lat": 48.8667,
-      "lon": 2.33333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://organiser.org/2026/10/18/413052/world/riots-sweep-european-nations-france-albania-italy-portugal-and-belgium-face-escalating-street-violence-and-unrest/"
-    },
-    {
-      "id": "gdelt-1328566386",
-      "date": "2026-10-18",
-      "title": "BELGIUM fought ALBANIA — Paris, France (general), France",
-      "description": "Avg tone -10.5, 4 mentions.",
-      "lat": 48.8667,
-      "lon": 2.33333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://organiser.org/2026/10/18/413052/world/riots-sweep-european-nations-france-albania-italy-portugal-and-belgium-face-escalating-street-violence-and-unrest/"
-    },
-    {
-      "id": "gdelt-1328566450",
-      "date": "2026-10-18",
-      "title": "CHINA engaged in diplomatic cooperation with UNITED STATES — White House, District of Columbia, United States",
-      "description": "Avg tone -0.6, 4 mentions.",
+      "id": "gdelt-1328741158",
+      "date": "2026-10-19",
+      "title": "GREECE engaged in diplomatic cooperation with AMBASSADOR — White House, District of Columbia, United States",
+      "description": "Avg tone -1.3, 6 mentions.",
       "lat": 38.8951,
       "lon": -77.0364,
       "severity": 3,
@@ -1389,37 +1419,7 @@
       ],
       "goldstein": 3.4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.independent.co.uk/asia/china/katie-zacharia-china-toilets-trump-press-secretary-b3068740.html"
-    },
-    {
-      "id": "gdelt-1328566547",
-      "date": "2026-10-18",
-      "title": "FRANCE fought ALBANIA — Saint-Etienne, RhôAlpes, France",
-      "description": "Avg tone -10.5, 4 mentions.",
-      "lat": 44.7011,
-      "lon": 4.45858,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://organiser.org/2026/10/18/413052/world/riots-sweep-european-nations-france-albania-italy-portugal-and-belgium-face-escalating-street-violence-and-unrest/"
-    },
-    {
-      "id": "gdelt-1328566590",
-      "date": "2026-10-18",
-      "title": "UNITED KINGDOM engaged in diplomatic cooperation — Ireland",
-      "description": "Avg tone 3.4, 4 mentions.",
-      "lat": 53,
-      "lon": -8,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.eadt.co.uk/news/26647272.100-year-old-suffolk-veteran-meets-princess-anne-ceremony/"
+      "sourceUrl": "https://www.rawstory.com/guilfoyle-ivanka/"
     },
     {
       "id": "us6000u2y1",
