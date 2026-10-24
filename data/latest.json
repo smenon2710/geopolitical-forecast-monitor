@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-23",
-  "generatedAt": "2026-10-23T15:39:09.689Z",
-  "dataQuality": "live",
+  "date": "2026-10-24",
+  "generatedAt": "2026-10-24T14:16:29.932Z",
+  "dataQuality": "stale",
   "lenses": [
     {
       "lens": "costOfLiving",
       "severity": 3,
       "oneLiner": "Prices You Pay: high today. How fast prices are rising — 0.65%.",
-      "narrative": "Prices are rising 0.65%. Gas is $4.28 per gallon and dropped -1.1% this week. Housing costs are up 0.39%, food costs are up 0.05%, and energy costs are up 5.20%.",
+      "narrative": "Prices are rising at 0.65%. Gas costs are $4.28 per gallon and down 1.1%. Housing costs are up 0.12% while food costs are up 0.21% and energy costs are down 5.71%.",
       "metrics": [
         {
           "label": "How fast prices are rising",
@@ -21,41 +21,41 @@
         },
         {
           "label": "Housing costs",
-          "value": "0.39%",
+          "value": "0.12%",
           "sourceName": "BLS"
         },
         {
           "label": "Food costs",
-          "value": "0.05%",
+          "value": "0.21%",
           "sourceName": "BLS"
         },
         {
           "label": "Energy costs",
-          "value": "5.20%",
+          "value": "-5.71%",
           "sourceName": "BLS"
         }
       ],
-      "dataQuality": "live"
+      "dataQuality": "stale"
     },
     {
       "lens": "investments",
       "severity": 2,
-      "oneLiner": "Your Savings: elevated today. The stock market today — -1.18%.",
-      "narrative": "The stock market is down -1.18% today. One industry moved up 3.31%. Long‑term borrowing costs are 5.13% and rose 0.01% today.",
+      "oneLiner": "Your Savings: elevated today. The stock market today — -0.52%.",
+      "narrative": "The stock market is down 0.52%. The biggest industry swing is 2.60%. Cost of long term borrowing is 4.96%.",
       "metrics": [
         {
           "label": "The stock market today",
-          "value": "-1.18%",
+          "value": "-0.52%",
           "sourceName": "Alpha Vantage (S&P 500)"
         },
         {
           "label": "Biggest industry swing",
-          "value": "3.31%",
+          "value": "2.60%",
           "sourceName": "Alpha Vantage"
         },
         {
           "label": "Cost of long-term borrowing",
-          "value": "5.13% (+0.01pt today)",
+          "value": "4.96% (-0.17pt today)",
           "sourceName": "FRED (DGS10)"
         }
       ],
@@ -65,7 +65,7 @@
       "lens": "standardOfLiving",
       "severity": 2,
       "oneLiner": "Jobs & Paychecks: elevated today. Jobs picture — +0.10pt unemployment.",
-      "narrative": "Unemployment rose 0.10 points. Paychecks fell 0.52 points behind inflation. The economy grew 0.55%.",
+      "narrative": "Unemployment is up 0.10pt. Paychecks are down 0.52pt vs inflation. GDP is up 0.55%.",
       "metrics": [
         {
           "label": "Jobs picture",
@@ -89,7 +89,7 @@
       "lens": "security",
       "severity": 3,
       "oneLiner": "Safety & Tension: high today. Global tension level — -10.0.",
-      "narrative": "Global tension is at -10.0. The biggest recent earthquake was magnitude 7.7.",
+      "narrative": "Global tension level is -10.0. The biggest recent earthquake measured M7.7.",
       "metrics": [
         {
           "label": "Global tension level",
@@ -108,7 +108,7 @@
       "lens": "dailyRoutine",
       "severity": 0,
       "oneLiner": "Everyday Life: calm today. Cost of getting around — -1.1% this week.",
-      "narrative": "Getting around cost fell -1.1% this week.",
+      "narrative": "The cost of getting around is down 1.1%.",
       "metrics": [
         {
           "label": "Cost of getting around",
@@ -548,123 +548,123 @@
       "unit": "index",
       "points": [
         {
-          "date": "2026-09-24",
+          "date": "2026-09-25",
           "value": 0
         },
         {
-          "date": "2026-09-25",
+          "date": "2026-09-26",
           "value": 0.63
         },
         {
-          "date": "2026-09-26",
+          "date": "2026-09-27",
           "value": 1.25
         },
         {
-          "date": "2026-09-27",
+          "date": "2026-09-28",
           "value": 1.85
         },
         {
-          "date": "2026-09-28",
+          "date": "2026-09-29",
           "value": 2.41
         },
         {
-          "date": "2026-09-29",
+          "date": "2026-09-30",
           "value": 2.93
         },
         {
-          "date": "2026-09-30",
+          "date": "2026-10-01",
           "value": 3.4
         },
         {
-          "date": "2026-10-01",
+          "date": "2026-10-02",
           "value": 3.81
         },
         {
-          "date": "2026-10-02",
+          "date": "2026-10-03",
           "value": 4.17
         },
         {
-          "date": "2026-10-03",
+          "date": "2026-10-04",
           "value": 4.46
         },
         {
-          "date": "2026-10-04",
+          "date": "2026-10-05",
           "value": 4.7
         },
         {
-          "date": "2026-10-05",
+          "date": "2026-10-06",
           "value": 4.88
         },
         {
-          "date": "2026-10-06",
+          "date": "2026-10-07",
           "value": 5.01
         },
         {
-          "date": "2026-10-07",
+          "date": "2026-10-08",
           "value": 5.11
         },
         {
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "value": 5.17
         },
         {
-          "date": "2026-10-09",
+          "date": "2026-10-10",
           "value": 5.21
         },
         {
-          "date": "2026-10-10",
+          "date": "2026-10-11",
           "value": 5.25
         },
         {
-          "date": "2026-10-11",
+          "date": "2026-10-12",
           "value": 5.28
         },
         {
-          "date": "2026-10-12",
+          "date": "2026-10-13",
           "value": 5.34
         },
         {
-          "date": "2026-10-13",
+          "date": "2026-10-14",
           "value": 5.42
         },
         {
-          "date": "2026-10-14",
+          "date": "2026-10-15",
           "value": 5.53
         },
         {
-          "date": "2026-10-15",
+          "date": "2026-10-16",
           "value": 5.69
         },
         {
-          "date": "2026-10-16",
+          "date": "2026-10-17",
           "value": 5.91
         },
         {
-          "date": "2026-10-17",
+          "date": "2026-10-18",
           "value": 6.18
         },
         {
-          "date": "2026-10-18",
+          "date": "2026-10-19",
           "value": 6.51
         },
         {
-          "date": "2026-10-19",
+          "date": "2026-10-20",
           "value": 6.89
         },
         {
-          "date": "2026-10-20",
+          "date": "2026-10-21",
           "value": 7.34
         },
         {
-          "date": "2026-10-21",
+          "date": "2026-10-22",
           "value": 7.84
         },
         {
-          "date": "2026-10-22",
+          "date": "2026-10-23",
           "value": 8.39
         },
         {
-          "date": "2026-10-23",
+          "date": "2026-10-24",
           "value": 10
         }
       ]
@@ -672,730 +672,655 @@
   ],
   "events": [
     {
-      "id": "gdelt-1329516690",
-      "date": "2026-10-23",
-      "title": "CANADA fought POLICE — Quebec, Quebec, Canada",
-      "description": "Avg tone -2.1, 16 mentions.",
-      "lat": 47.5,
-      "lon": -72,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.winnipegfreepress.com/uncategorized/2026/10/23/police-investigating-double-murder-in-quebecs-bas-st-laurent-region"
-    },
-    {
-      "id": "gdelt-1329517631",
-      "date": "2026-10-23",
-      "title": "VIETNAMESE made an appeal to LAWMAKER — Ho Chi Minh City, H? Chíinh, Vietnam, Republic Of",
-      "description": "Avg tone -0.2, 16 mentions.",
-      "lat": 10.75,
-      "lon": 106.667,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://news.tuoitre.vn/vietnamese-lawmaker-proposes-retaining-30-cap-on-foreign-ownership-of-apartments-in-condominium-buildings-103261023205115254.htm"
-    },
-    {
-      "id": "gdelt-1329517105",
-      "date": "2026-10-23",
-      "title": "LUCKNOW rejected — Lucknow, Uttar Pradesh, India",
-      "description": "Avg tone -8.2, 15 mentions.",
-      "lat": 26.85,
-      "lon": 80.9167,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.rediff.com/news/report/lucknow-cafe-owner-murder-model-two-others-bail-rejected-1/20261023.htm"
-    },
-    {
-      "id": "gdelt-1329516689",
-      "date": "2026-10-23",
-      "title": "CANADA fought POLICE — Quebec, Quebec, Canada",
-      "description": "Avg tone -2.1, 12 mentions.",
-      "lat": 47.5,
-      "lon": -72,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.winnipegfreepress.com/uncategorized/2026/10/23/police-investigating-double-murder-in-quebecs-bas-st-laurent-region"
-    },
-    {
-      "id": "gdelt-1329516520",
-      "date": "2026-10-23",
-      "title": "HUNGARIAN fought — Budapest, Budapest, Hungary",
-      "description": "Avg tone -5.1, 10 mentions.",
-      "lat": 47.5,
-      "lon": 19.0833,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -9.5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://marxist.com/the-1956-hungarian-revolution-a-struggle-for-genuine-socialism.htm"
-    },
-    {
-      "id": "gdelt-1329516584",
-      "date": "2026-10-23",
-      "title": "VIETNAM expressed intent to cooperate — Da Nang, Ð N?ng, Vietnam, Republic Of",
-      "description": "Avg tone 4.7, 10 mentions.",
-      "lat": 16.0678,
-      "lon": 108.221,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 5.2,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://news.tuoitre.vn/world-leading-brewer-carlsberg-plans-additional-65mn-investment-in-central-vietnam-103261023210212326.htm"
-    },
-    {
-      "id": "gdelt-1329516585",
-      "date": "2026-10-23",
-      "title": "VIETNAM expressed intent to cooperate — Da Nang, Ð N?ng, Vietnam, Republic Of",
-      "description": "Avg tone 4.7, 10 mentions.",
-      "lat": 16.0678,
-      "lon": 108.221,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 5.2,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://news.tuoitre.vn/world-leading-brewer-carlsberg-plans-additional-65mn-investment-in-central-vietnam-103261023210212326.htm"
-    },
-    {
-      "id": "gdelt-1329516614",
-      "date": "2026-10-23",
-      "title": "ABU DHABI engaged in diplomatic cooperation with CLEVELAND — Abu Dhabi, Abu Z¸aby, United Arab Emirates",
-      "description": "Avg tone 2.7, 10 mentions.",
-      "lat": 24.4667,
-      "lon": 54.3667,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 8,
-      "sourceName": "GDELT",
-      "sourceUrl": "http://www.bignewsnetwork.com/news/279394860/department-of-health-abu-dhabi-cleveland-clinic-abu-dhabi-partner-with-paterna-biosciences-to-advance-male-fertility-research"
-    },
-    {
-      "id": "gdelt-1329516627",
-      "date": "2026-10-23",
-      "title": "YEREVAN engaged in diplomatic cooperation with WASHINGTON — Washington, District of Columbia, United States",
-      "description": "Avg tone 7.0, 10 mentions.",
-      "lat": 38.8951,
-      "lon": -77.0364,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://horizonweekly.ca/en/united-states-provides-1-4-million-in-equipment-to-strengthen-armenias-border-security/"
-    },
-    {
-      "id": "gdelt-1329516628",
-      "date": "2026-10-23",
-      "title": "YEREVAN provided aid to UNITED STATES — Washington, District of Columbia, United States",
-      "description": "Avg tone 7.0, 10 mentions.",
-      "lat": 38.8951,
-      "lon": -77.0364,
+      "id": "gdelt-1329660097",
+      "date": "2026-10-24",
+      "title": "ZIMBABWE yielded — Zimbabwe",
+      "description": "Avg tone -8.9, 10 mentions.",
+      "lat": -19,
+      "lon": 29,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": 7,
       "sourceName": "GDELT",
-      "sourceUrl": "https://horizonweekly.ca/en/united-states-provides-1-4-million-in-equipment-to-strengthen-armenias-border-security/"
+      "sourceUrl": "http://www.bignewsnetwork.com/news/279396433/au-re-demand-for-unconditional-lifting-of-unilateral-sanctions-against-zimbabwe"
     },
     {
-      "id": "gdelt-1329516772",
-      "date": "2026-10-23",
-      "title": "POLICE fought UNITED KINGDOM — Glasgow, Glasgow City, United Kingdom",
-      "description": "Avg tone -7.9, 10 mentions.",
+      "id": "gdelt-1329660139",
+      "date": "2026-10-24",
+      "title": "AZERBAIJAN engaged in material cooperation — Baku, Baki*, Azerbaijan",
+      "description": "Avg tone 3.1, 10 mentions.",
+      "lat": 40.3953,
+      "lon": 49.8822,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 6,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.trend.az/azerbaijan/politics/4238770.html"
+    },
+    {
+      "id": "gdelt-1329660212",
+      "date": "2026-10-24",
+      "title": "MANITOBA made an appeal to NORTH WEST — Vancouver, British Columbia, Canada",
+      "description": "Avg tone -4.0, 10 mentions.",
+      "lat": 49.25,
+      "lon": -123.133,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.cbc.ca/news/canada/manitoba/north-west-company-lawsuit-claims-struck-9.7393987"
+    },
+    {
+      "id": "gdelt-1329660213",
+      "date": "2026-10-24",
+      "title": "MANITOBA fought NORTH WEST — Vancouver, British Columbia, Canada",
+      "description": "Avg tone -4.0, 10 mentions.",
+      "lat": 49.25,
+      "lon": -123.133,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.cbc.ca/news/canada/manitoba/north-west-company-lawsuit-claims-struck-9.7393987"
+    },
+    {
+      "id": "gdelt-1329660216",
+      "date": "2026-10-24",
+      "title": "CHILE assaulted POLICE — Santiago, Regióetropolitana, Chile",
+      "description": "Avg tone -6.7, 10 mentions.",
+      "lat": -33.45,
+      "lon": -70.6667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -9,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.elciudadano.com/en/supreme-court-reduces-sentences-for-carabineros-officers-remain-active-despite-serious-misconduct/10/24/"
+    },
+    {
+      "id": "gdelt-1329660219",
+      "date": "2026-10-24",
+      "title": "SANTIAGO assaulted SUPREME COURT — Santiago, Regióetropolitana, Chile",
+      "description": "Avg tone -6.7, 10 mentions.",
+      "lat": -33.45,
+      "lon": -70.6667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -9,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.elciudadano.com/en/supreme-court-reduces-sentences-for-carabineros-officers-remain-active-despite-serious-misconduct/10/24/"
+    },
+    {
+      "id": "gdelt-1329660235",
+      "date": "2026-10-24",
+      "title": "CHINESE coerced WASHINGTON — Huxiu, Fujian, China",
+      "description": "Avg tone -2.4, 10 mentions.",
+      "lat": 25.2214,
+      "lon": 118.437,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/24/washingtons-deepseek-ban-may-deter-us-firms-from-adopting-chinese-ai-models-experts"
+    },
+    {
+      "id": "gdelt-1329660238",
+      "date": "2026-10-24",
+      "title": "XI JINPING engaged in diplomatic cooperation — Morupule, Central, Botswana",
+      "description": "Avg tone -0.0, 10 mentions.",
+      "lat": -22.4908,
+      "lon": 26.9812,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 8,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.riotimesonline.com/botswana-geopolitics-explained-2026/"
+    },
+    {
+      "id": "gdelt-1329660269",
+      "date": "2026-10-24",
+      "title": "ASSAILANT fought GREEK — Shihan, Al Karak, Jordan",
+      "description": "Avg tone -6.6, 10 mentions.",
+      "lat": 31.3833,
+      "lon": 35.7333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.aol.com/articles/us-embassy-says-security-ramped-061729000.html"
+    },
+    {
+      "id": "gdelt-1329660287",
+      "date": "2026-10-24",
+      "title": "CYPRUS made an appeal — Cyprus",
+      "description": "Avg tone 2.5, 10 mentions.",
+      "lat": 35,
+      "lon": 33,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://cyprus-mail.com/2026/10/24/un-chief-in-cyprus-calls-for-dialogue-to-build-lasting-peace"
+    },
+    {
+      "id": "gdelt-1329660294",
+      "date": "2026-10-24",
+      "title": "GERMANY fought FIREFIGHTER — Berchtesgaden, Bayern, Germany",
+      "description": "Avg tone -4.6, 10 mentions.",
+      "lat": 47.6333,
+      "lon": 13,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://cyprus-mail.com/2026/10/24/fire-devastates-former-nazi-guest-house-eagles-nest"
+    },
+    {
+      "id": "gdelt-1329660325",
+      "date": "2026-10-24",
+      "title": "BALEARIC ISLANDS engaged in diplomatic cooperation — Porto Cristo, Islas Baleares, Spain",
+      "description": "Avg tone 4.0, 10 mentions.",
+      "lat": 39.5447,
+      "lon": 3.33796,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.independent.co.uk/travel/news-and-advice/mallorca-temperature-nnvember-holidays-flights-b3072182.html"
+    },
+    {
+      "id": "gdelt-1329660326",
+      "date": "2026-10-24",
+      "title": "SPANISH engaged in diplomatic cooperation with TRAVELLER — Porto Cristo, Islas Baleares, Spain",
+      "description": "Avg tone 4.0, 10 mentions.",
+      "lat": 39.5447,
+      "lon": 3.33796,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.independent.co.uk/travel/news-and-advice/mallorca-temperature-nnvember-holidays-flights-b3072182.html"
+    },
+    {
+      "id": "gdelt-1329660345",
+      "date": "2026-10-24",
+      "title": "LONDON engaged in diplomatic cooperation with POLICE — Glasgow, Glasgow City, United Kingdom",
+      "description": "Avg tone -8.8, 10 mentions.",
       "lat": 55.8333,
       "lon": -4.25,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.thenational.scot/news/26664355.police-must-investigate-turning-point-uk-murder-for-hire-link/"
-    },
-    {
-      "id": "gdelt-1329516796",
-      "date": "2026-10-23",
-      "title": "POLICE coerced VIETNAM — Hung Yen, Hung YêVM, Vietnam, Republic Of",
-      "description": "Avg tone -3.7, 10 mentions.",
-      "lat": 20.65,
-      "lon": 106.067,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://news.tuoitre.vn/vietnam-shop-owner-charged-over-2000-fake-luxury-watches-103261023221659798.htm"
-    },
-    {
-      "id": "gdelt-1329516911",
-      "date": "2026-10-23",
-      "title": "EUROPE coerced CHENGDU — Chengdu, Sichuan, China",
-      "description": "Avg tone 5.8, 10 mentions.",
-      "lat": 30.6667,
-      "lon": 104.067,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "http://www.china.org.cn/2026-10/23/content_118746878.shtml"
-    },
-    {
-      "id": "gdelt-1329516949",
-      "date": "2026-10-23",
-      "title": "BRITAIN expressed intent to cooperate with SCOTTISH — Midlothian, Midlothian, United Kingdom",
-      "description": "Avg tone 0.8, 10 mentions.",
-      "lat": 55.8333,
-      "lon": -3.08333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.thenational.scot/news/26665445.far-right-restore-britains-scottish-poll-boast-exposed-error/"
-    },
-    {
-      "id": "gdelt-1329517017",
-      "date": "2026-10-23",
-      "title": "MINIST OF GOVERNMENT expressed intent to cooperate with JAFAR HASSAN — Karak, Jordan (general), Jordan",
-      "description": "Avg tone -12.7, 10 mentions.",
-      "lat": 31.1847,
-      "lon": 35.7047,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 4,
-      "sourceName": "GDELT",
-      "sourceUrl": "http://www.bignewsnetwork.com/news/279394843/1st-ld-writethru-7-killed-34-injured-in-funeral-shooting-inside-church-in-s-jordan"
-    },
-    {
-      "id": "gdelt-1329517054",
-      "date": "2026-10-23",
-      "title": "GREECE rejected TURKISH — Athens, AttikíR, Greece",
-      "description": "Avg tone -1.7, 10 mentions.",
-      "lat": 37.9833,
-      "lon": 23.7333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.dailysabah.com/politics/greece-defies-turkish-minority-in-disputed-mufti-appointments/news"
-    },
-    {
-      "id": "gdelt-1329517085",
-      "date": "2026-10-23",
-      "title": "SURGEON engaged in diplomatic cooperation with BRITAIN — United Kingdom",
-      "description": "Avg tone 6.9, 10 mentions.",
-      "lat": 54,
-      "lon": -4,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
       "goldstein": 3.4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.desiblitz.com/content/pioneering-heart-surgeon-honoured-at-pride-of-britain-awards"
+      "sourceUrl": "https://www.thenational.scot/news/26666904.two-men-charged-e-bikes-weapons-seized-glasgow/"
     },
     {
-      "id": "gdelt-1329517104",
-      "date": "2026-10-23",
-      "title": "MAHARASHTRA issued a demand — Shiv, Rajasthan, India",
-      "description": "Avg tone -5.1, 10 mentions.",
-      "lat": 26.1833,
-      "lon": 71.25,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.rediff.com/news/report/fadnavis-orders-forensic-probe-as-jarange-audio-clip-rocks-mahayuti/20261023.htm"
-    },
-    {
-      "id": "gdelt-1329517389",
-      "date": "2026-10-23",
-      "title": "SLOVAKIA made an appeal to THE UN — Slovak Republic",
-      "description": "Avg tone 4.7, 10 mentions.",
-      "lat": 48.666667,
-      "lon": 19.5,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.2,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://enrsi.stvr.sk/articles/news/465844/new-slovak-ambassador-to-strengthen-ties-with-south-africa"
-    },
-    {
-      "id": "gdelt-1329517390",
-      "date": "2026-10-23",
-      "title": "SLOVAKIA engaged in diplomatic cooperation with THE UN — Slovak Republic",
-      "description": "Avg tone 4.7, 10 mentions.",
-      "lat": 48.666667,
-      "lon": 19.5,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://enrsi.stvr.sk/articles/news/465844/new-slovak-ambassador-to-strengthen-ties-with-south-africa"
-    },
-    {
-      "id": "gdelt-1329517395",
-      "date": "2026-10-23",
-      "title": "ISTANBUL made an appeal to OTTAWA — Ottawa, Ontario, Canada",
-      "description": "Avg tone 2.4, 10 mentions.",
-      "lat": 45.4167,
-      "lon": -75.7,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.dailysabah.com/business/economy/canada-eyes-turkiyes-defense-agency-as-model-for-domestic-arms-sector"
-    },
-    {
-      "id": "gdelt-1329517481",
-      "date": "2026-10-23",
-      "title": "CLEVELAND engaged in diplomatic cooperation with ABU DHABI — Abu Dhabi, Abu Z¸aby, United Arab Emirates",
-      "description": "Avg tone 2.7, 10 mentions.",
-      "lat": 24.4667,
-      "lon": 54.3667,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 8,
-      "sourceName": "GDELT",
-      "sourceUrl": "http://www.bignewsnetwork.com/news/279394860/department-of-health-abu-dhabi-cleveland-clinic-abu-dhabi-partner-with-paterna-biosciences-to-advance-male-fertility-research"
-    },
-    {
-      "id": "gdelt-1329517482",
-      "date": "2026-10-23",
-      "title": "UNITED STATES provided aid to ARMENIA — Ayrum, Lorri, Armenia",
-      "description": "Avg tone 7.0, 10 mentions.",
-      "lat": 41.1883,
-      "lon": 44.904,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 8.3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://horizonweekly.ca/en/united-states-provides-1-4-million-in-equipment-to-strengthen-armenias-border-security/"
-    },
-    {
-      "id": "gdelt-1329517616",
-      "date": "2026-10-23",
-      "title": "QUANG NGAI issued a demand — Quang Ngai, Qu?ng NgãVM, Vietnam, Republic Of",
-      "description": "Avg tone -4.1, 10 mentions.",
-      "lat": 15.1167,
-      "lon": 108.8,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://news.tuoitre.vn/vietnam-suspends-maritime-pilot-after-marshall-islands-flagged-ship-hits-dung-quat-wharf-103261023221109363.htm"
-    },
-    {
-      "id": "gdelt-1329516711",
-      "date": "2026-10-23",
-      "title": "CHINESE coerced — Wang He, Shaanxi, China",
-      "description": "Avg tone -0.9, 8 mentions.",
-      "lat": 34.0089,
-      "lon": 109.859,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.thetruthaboutcars.com/cars/news-blog/chery-wants-a-u-s-partner-detroit-isn-t-interested-45136840"
-    },
-    {
-      "id": "gdelt-1329516899",
-      "date": "2026-10-23",
-      "title": "FIRST LADY held consultations with UKRAINE — Russia",
-      "description": "Avg tone -1.4, 8 mentions.",
-      "lat": 60,
-      "lon": 100,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.wdbo.com/news/politics/latest-trump-backs/PNQT7X4Y546WPC6EE2I3LCS47I/"
-    },
-    {
-      "id": "gdelt-1329516912",
-      "date": "2026-10-23",
-      "title": "FRANCE made an appeal to COMPANIES — Florange, Lorraine, France",
-      "description": "Avg tone -1.3, 8 mentions.",
-      "lat": 49.3237,
-      "lon": 6.1212,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.vgchartz.com/article/469457/arkane-studios-reportedly-faces-a-deadline-of-november-13-to-find-a-buyer/"
-    },
-    {
-      "id": "gdelt-1329517323",
-      "date": "2026-10-23",
-      "title": "FAISALABAD fought — Shahkot, Punjab, Pakistan",
-      "description": "Avg tone -8.1, 8 mentions.",
-      "lat": 29.9947,
-      "lon": 71.4834,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.pakistantimes.com/suspect-in-faisalabad-industrialist-mian-rehans-murder-arrested-near-shahkot-15790/"
-    },
-    {
-      "id": "gdelt-1329517599",
-      "date": "2026-10-23",
-      "title": "US AMBASSADOR made an appeal to VIETNAMESE — Vietnam, Republic Of",
-      "description": "Avg tone 2.3, 8 mentions.",
-      "lat": 16.166667,
-      "lon": 107.833333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://news.tuoitre.vn/former-us-ambassador-knapper-urges-vietnamese-students-to-learn-foreign-languages-explore-new-technologies-103261023201710793.htm"
-    },
-    {
-      "id": "gdelt-1329517624",
-      "date": "2026-10-23",
-      "title": "VIETNAM made an appeal to BUSINESS — Hung Yen, Hung YêVM, Vietnam, Republic Of",
-      "description": "Avg tone -3.7, 8 mentions.",
-      "lat": 20.65,
-      "lon": 106.067,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://news.tuoitre.vn/vietnam-shop-owner-charged-over-2000-fake-luxury-watches-103261023221659798.htm"
-    },
-    {
-      "id": "gdelt-1329517626",
-      "date": "2026-10-23",
-      "title": "VIETNAM expressed intent to cooperate with INTELLECTUAL — Hung Yen, Hung YêVM, Vietnam, Republic Of",
-      "description": "Avg tone -3.7, 8 mentions.",
-      "lat": 20.65,
-      "lon": 106.067,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://news.tuoitre.vn/vietnam-shop-owner-charged-over-2000-fake-luxury-watches-103261023221659798.htm"
-    },
-    {
-      "id": "gdelt-1329516836",
-      "date": "2026-10-23",
-      "title": "TRAVELLER expressed intent to cooperate with ITALIAN — Denmark",
-      "description": "Avg tone 1.1, 7 mentions.",
-      "lat": 56,
-      "lon": 10,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.thelocal.dk/20261023/eu-parliament-approves-more-safeguards-for-travellers-in-europe"
-    },
-    {
-      "id": "gdelt-1329516948",
-      "date": "2026-10-23",
-      "title": "BRITISH provided aid to PAKISTANI — Karachi, Sindh, Pakistan",
-      "description": "Avg tone 4.1, 7 mentions.",
-      "lat": 24.8667,
-      "lon": 67.05,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.pakistantimes.com/pia-unveils-hsy-designed-cabin-crew-uniforms-ahead-of-october-31-debut-15795/"
-    },
-    {
-      "id": "gdelt-1329516497",
-      "date": "2026-10-23",
-      "title": "UNITED KINGDOM expressed intent to cooperate — Inverness, Highland, United Kingdom",
-      "description": "Avg tone -0.8, 6 mentions.",
-      "lat": 57.4667,
-      "lon": -4.23333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.thenational.scot/news/26664678.8-key-motions-scottish-greens-conference-inverness/"
-    },
-    {
-      "id": "gdelt-1329516524",
-      "date": "2026-10-23",
-      "title": "NEW DELHI fought — Kishangarh, Rajasthan, India",
-      "description": "Avg tone -5.7, 6 mentions.",
-      "lat": 26.5667,
-      "lon": 74.8667,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.rediff.com/news/report/man-shot-dead-near-car-market-in-southwest-delhi/20261023.htm"
-    },
-    {
-      "id": "gdelt-1329516630",
-      "date": "2026-10-23",
-      "title": "ARMENIAN engaged in diplomatic cooperation — Yerevan, Yerevan*, Armenia",
-      "description": "Avg tone 2.6, 6 mentions.",
-      "lat": 40.1811,
-      "lon": 44.5136,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 8,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://horizonweekly.ca/en/armenian-parliament-to-debate-ratification-of-tripp-agreement-on-october-27/"
-    },
-    {
-      "id": "gdelt-1329516653",
-      "date": "2026-10-23",
-      "title": "BELGIAN engaged in diplomatic cooperation with LEGISLATURE — Belgium",
-      "description": "Avg tone 6.9, 6 mentions.",
-      "lat": 50.833333,
-      "lon": 4,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://news.tuoitre.vn/top-vietnamese-leader-meets-with-belgian-king-and-queen-103261023200841808.htm"
-    },
-    {
-      "id": "gdelt-1329516654",
-      "date": "2026-10-23",
-      "title": "BELGIAN engaged in diplomatic cooperation with VIETNAMESE — Vietnam, Republic Of",
-      "description": "Avg tone 6.9, 6 mentions.",
-      "lat": 16.166667,
-      "lon": 107.833333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 8,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://news.tuoitre.vn/top-vietnamese-leader-meets-with-belgian-king-and-queen-103261023200841808.htm"
-    },
-    {
-      "id": "gdelt-1329516708",
-      "date": "2026-10-23",
-      "title": "CHINESE exhibited military posturing toward — New Delhi, Delhi, India",
-      "description": "Avg tone 0.0, 6 mentions.",
-      "lat": 28.6,
-      "lon": 77.2,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -7.2,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.rediff.com/news/report/chinese-patrol-deviations-disturb-border-peace-india/20261023.htm"
-    },
-    {
-      "id": "gdelt-1329516762",
-      "date": "2026-10-23",
-      "title": "POLICE fought CANADA — Quebec, Quebec, Canada",
-      "description": "Avg tone -2.1, 6 mentions.",
-      "lat": 47.5,
-      "lon": -72,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.winnipegfreepress.com/uncategorized/2026/10/23/police-investigating-double-murder-in-quebecs-bas-st-laurent-region"
-    },
-    {
-      "id": "gdelt-1329516774",
-      "date": "2026-10-23",
-      "title": "POLICE fought MUMBAI — Bihar, Bihar, India",
-      "description": "Avg tone -9.2, 6 mentions.",
-      "lat": 25.1833,
-      "lon": 85.5167,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -10,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.rediff.com/news/report/thane-police-bust-online-betting-racket-10-arrested/20261023.htm"
-    },
-    {
-      "id": "gdelt-1329516923",
-      "date": "2026-10-23",
-      "title": "UNITED KINGDOM expressed intent to cooperate — Inverness, Highland, United Kingdom",
-      "description": "Avg tone -0.8, 6 mentions.",
-      "lat": 57.4667,
-      "lon": -4.23333,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.thenational.scot/news/26664678.8-key-motions-scottish-greens-conference-inverness/"
-    },
-    {
-      "id": "gdelt-1329517028",
-      "date": "2026-10-23",
-      "title": "PRESIDENT made an appeal to IZMIR — Izmir, Izmir, Turkey",
-      "description": "Avg tone 3.7, 6 mentions.",
-      "lat": 38.4104,
-      "lon": 27.142,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.dailysabah.com/politics/izmir-mayor-calls-erdogan-one-of-turkiyes-strongest-political-figures/news"
-    },
-    {
-      "id": "gdelt-1329517150",
-      "date": "2026-10-23",
-      "title": "ITALY rejected — Assisi, Umbria, Italy",
-      "description": "Avg tone 1.0, 6 mentions.",
-      "lat": 43.0667,
-      "lon": 12.6167,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": -5,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.dailysabah.com/world/europe/pope-leo-xiv-skips-assisi-peace-meeting-during-cancer-recovery"
-    },
-    {
-      "id": "gdelt-1329517216",
-      "date": "2026-10-23",
-      "title": "LEBANON provided aid to SYRIA — Syria",
-      "description": "Avg tone -4.3, 6 mentions.",
-      "lat": 35,
-      "lon": 38,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 7,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.dailysabah.com/politics/anatomy-of-israeli-expansionism-exposes-tel-avivs-hawkish-agenda/news"
-    },
-    {
-      "id": "gdelt-1329517398",
-      "date": "2026-10-23",
-      "title": "ISTANBUL engaged in diplomatic cooperation with CANADA — Istanbul, Istanbul, Turkey",
-      "description": "Avg tone -2.2, 6 mentions.",
-      "lat": 41.0186,
-      "lon": 28.9647,
-      "severity": 3,
-      "lenses": [
-        "security"
-      ],
-      "goldstein": 3.4,
-      "sourceName": "GDELT",
-      "sourceUrl": "https://www.chroniclejournal.com/news/national/carney-not-worried-about-turkish-ties-despite-nations-treatment-of-lgbtq-groups/article_7bf48880-bf86-546f-a455-5491d36a79e6.html"
-    },
-    {
-      "id": "gdelt-1329517557",
-      "date": "2026-10-23",
-      "title": "WASHINGTON rejected UKRAINIAN — Kyiv, Kyyiv, Misto, Ukraine",
-      "description": "Avg tone -8.9, 6 mentions.",
+      "id": "gdelt-1329660382",
+      "date": "2026-10-24",
+      "title": "MINIST OF FOREIGN AFFAIRS held consultations with ABU DHABI — Kyiv, Kyyiv, Misto, Ukraine",
+      "description": "Avg tone -2.3, 10 mentions.",
       "lat": 50.4333,
       "lon": 30.5167,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": -4,
+      "goldstein": 5,
       "sourceName": "GDELT",
-      "sourceUrl": "https://nypost.com/2026/10/23/us-news/ukrainian-embassy-in-dc-evacuated-key-bridge-closed-over-bomb-scare/"
+      "sourceUrl": "https://www.ibtimes.com.au/uae-brokered-russia-ukraine-prisoner-exchange-1877345"
     },
     {
-      "id": "gdelt-1329516773",
-      "date": "2026-10-23",
-      "title": "POLICE coerced UNITED KINGDOM — West Midlands, United Kingdom (general), United Kingdom",
-      "description": "Avg tone -5.5, 5 mentions.",
-      "lat": 52.5,
-      "lon": -1.96667,
+      "id": "gdelt-1329660399",
+      "date": "2026-10-24",
+      "title": "FIREFIGHTER fought GERMANY — Berghof, Nordrhein-Westfalen, Germany",
+      "description": "Avg tone -4.6, 10 mentions.",
+      "lat": 52.2,
+      "lon": 8.91667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://cyprus-mail.com/2026/10/24/fire-devastates-former-nazi-guest-house-eagles-nest"
+    },
+    {
+      "id": "gdelt-1329660457",
+      "date": "2026-10-24",
+      "title": "EUROPEAN PARLIAMENT made an appeal — Taipei, T'ai-pei, Taiwan",
+      "description": "Avg tone 1.1, 10 mentions.",
+      "lat": 25.0478,
+      "lon": 121.532,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://econotimes.com/Taiwan-Seeks-European-Ties-on-Trusted-AI-and-Drone-Supply-Chains-1762490"
+    },
+    {
+      "id": "gdelt-1329660458",
+      "date": "2026-10-24",
+      "title": "EUROPEAN PARLIAMENT engaged in diplomatic cooperation — Taipei, T'ai-pei, Taiwan",
+      "description": "Avg tone 1.1, 10 mentions.",
+      "lat": 25.0478,
+      "lon": 121.532,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 8,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://econotimes.com/Taiwan-Seeks-European-Ties-on-Trusted-AI-and-Drone-Supply-Chains-1762490"
+    },
+    {
+      "id": "gdelt-1329660571",
+      "date": "2026-10-24",
+      "title": "MEXICO engaged in material cooperation with GRUPO TELEVISA — Mexico",
+      "description": "Avg tone -2.7, 10 mentions.",
+      "lat": 23,
+      "lon": -102,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 6,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://247wallst.com/cards/t-xpost-01m5q01c6e1wtw55se711h71vm"
+    },
+    {
+      "id": "gdelt-1329660648",
+      "date": "2026-10-24",
+      "title": "REBELLION coerced BRITISH — Balmoral, Belfast, United Kingdom",
+      "description": "Avg tone 2.1, 10 mentions.",
+      "lat": 54.55,
+      "lon": -5.96667,
       "severity": 3,
       "lenses": [
         "security"
       ],
       "goldstein": -5,
       "sourceName": "GDELT",
-      "sourceUrl": "https://hotair.com/david-strom/2026/10/23/tell-me-this-isnt-totalitarian-n3820223"
+      "sourceUrl": "https://www.townandcountrymag.com/style/fashion-trends/g74064983/best-royal-family-plaid-outfits/"
     },
     {
-      "id": "gdelt-1329516936",
-      "date": "2026-10-23",
-      "title": "BRITISH issued a demand to CHINESE — United Kingdom",
-      "description": "Avg tone -0.9, 5 mentions.",
+      "id": "gdelt-1329660657",
+      "date": "2026-10-24",
+      "title": "RUSSIA threatened GERMANY — Germany",
+      "description": "Avg tone -3.8, 10 mentions.",
+      "lat": 51.5,
+      "lon": 10.5,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "http://en.ammonnews.net/article/96462"
+    },
+    {
+      "id": "gdelt-1329660687",
+      "date": "2026-10-24",
+      "title": "TAIWAN made an appeal to POLAND — Taipei, T'ai-pei, Taiwan",
+      "description": "Avg tone 1.1, 10 mentions.",
+      "lat": 25.0478,
+      "lon": 121.532,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://econotimes.com/Taiwan-Seeks-European-Ties-on-Trusted-AI-and-Drone-Supply-Chains-1762490"
+    },
+    {
+      "id": "gdelt-1329660870",
+      "date": "2026-10-24",
+      "title": "TEXAS coerced AFRICA — Muzandu, Northern, Zambia",
+      "description": "Avg tone 0.7, 10 mentions.",
+      "lat": -16.4667,
+      "lon": 27.3333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -9.2,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://christianchronicle.org/texas-christians-die-in-wreck-on-africa-mission-trip/"
+    },
+    {
+      "id": "gdelt-1329660008",
+      "date": "2026-10-24",
+      "title": "XI JINPING engaged in diplomatic cooperation — Washington, District of Columbia, United States",
+      "description": "Avg tone -0.0, 8 mentions.",
+      "lat": 38.8951,
+      "lon": -77.0364,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 8,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.riotimesonline.com/botswana-geopolitics-explained-2026/"
+    },
+    {
+      "id": "gdelt-1329660061",
+      "date": "2026-10-24",
+      "title": "TAIWAN held consultations — Taiwan",
+      "description": "Avg tone -0.6, 8 mentions.",
+      "lat": 24,
+      "lon": 121,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.riotimesonline.com/guatemala-politics-key-players-2026/"
+    },
+    {
+      "id": "gdelt-1329660242",
+      "date": "2026-10-24",
+      "title": "XI JINPING held consultations with PRESIDENT — Beijing, Beijing, China",
+      "description": "Avg tone -0.0, 8 mentions.",
+      "lat": 39.9289,
+      "lon": 116.388,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.riotimesonline.com/botswana-geopolitics-explained-2026/"
+    },
+    {
+      "id": "gdelt-1329660344",
+      "date": "2026-10-24",
+      "title": "UNITED KINGDOM provided aid — Florida, United States",
+      "description": "Avg tone -4.6, 8 mentions.",
+      "lat": 27.8333,
+      "lon": -81.717,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 8.5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.nbcphiladelphia.com/news/national-international/british-police-received-allegations-meghans-father-2019-didnt-tell-other-forces/4484681/"
+    },
+    {
+      "id": "gdelt-1329660393",
+      "date": "2026-10-24",
+      "title": "PRESIDENT held consultations with XI JINPING — Beijing, Beijing, China",
+      "description": "Avg tone -0.0, 8 mentions.",
+      "lat": 39.9289,
+      "lon": 116.388,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.riotimesonline.com/botswana-geopolitics-explained-2026/"
+    },
+    {
+      "id": "gdelt-1329660483",
+      "date": "2026-10-24",
+      "title": "ISRAEL coerced WEST BANK — Gaza, Israel (general), Israel",
+      "description": "Avg tone -6.1, 8 mentions.",
+      "lat": 31.4167,
+      "lon": 34.3333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -9.2,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thenational.scot/news/26667011.israel-seals-off-hebron-west-bank-palestinians-forced-homes/"
+    },
+    {
+      "id": "gdelt-1329660555",
+      "date": "2026-10-24",
+      "title": "ALBERT engaged in diplomatic cooperation with ALBERT — Balmoral, Belfast, United Kingdom",
+      "description": "Avg tone 2.1, 8 mentions.",
+      "lat": 54.55,
+      "lon": -5.96667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.townandcountrymag.com/style/fashion-trends/g74064983/best-royal-family-plaid-outfits/"
+    },
+    {
+      "id": "gdelt-1329660561",
+      "date": "2026-10-24",
+      "title": "NEWS AGENCY issued a demand to ISRAELI — Hebron, Israel (general), Israel",
+      "description": "Avg tone -3.3, 8 mentions.",
+      "lat": 31.5333,
+      "lon": 35.1,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/more-1500-palestinians-driven-homes-hebron-friday"
+    },
+    {
+      "id": "gdelt-1329660686",
+      "date": "2026-10-24",
+      "title": "TAIWAN held consultations — Taiwan",
+      "description": "Avg tone -0.6, 8 mentions.",
+      "lat": 24,
+      "lon": 121,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.riotimesonline.com/guatemala-politics-key-players-2026/"
+    },
+    {
+      "id": "gdelt-1329660693",
+      "date": "2026-10-24",
+      "title": "JESSICA ALUPO expressed intent to cooperate with RUSSIA — Makerere, Kampala, Uganda",
+      "description": "Avg tone 1.5, 8 mentions.",
+      "lat": 0.333333,
+      "lon": 32.5667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.newvision.co.ug/category/news/vice-president-alupo-to-lead-ugandan-delegati-NV_242926_102026"
+    },
+    {
+      "id": "gdelt-1329660896",
+      "date": "2026-10-24",
+      "title": "VIETNAMESE made an appeal to AFRICA — Dubai, Dubayy, United Arab Emirates",
+      "description": "Avg tone 3.0, 8 mentions.",
+      "lat": 25.2522,
+      "lon": 55.28,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://vietnamnews.vn/economy/1802790/vietnamese-exporters-urged-to-tap-uae-trade-pact-to-expand-into-middle-east-africa.html"
+    },
+    {
+      "id": "gdelt-1329660897",
+      "date": "2026-10-24",
+      "title": "VIETNAMESE engaged in material cooperation with UNITED ARAB EMIRATES — Dubai, Dubayy, United Arab Emirates",
+      "description": "Avg tone 3.0, 8 mentions.",
+      "lat": 25.2522,
+      "lon": 55.28,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 6.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://vietnamnews.vn/economy/1802790/vietnamese-exporters-urged-to-tap-uae-trade-pact-to-expand-into-middle-east-africa.html"
+    },
+    {
+      "id": "gdelt-1329660899",
+      "date": "2026-10-24",
+      "title": "VIETNAMESE engaged in diplomatic cooperation with BUSINESS — Vietnam, Republic Of",
+      "description": "Avg tone 3.0, 8 mentions.",
+      "lat": 16.166667,
+      "lon": 107.833333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://vietnamnews.vn/economy/1802790/vietnamese-exporters-urged-to-tap-uae-trade-pact-to-expand-into-middle-east-africa.html"
+    },
+    {
+      "id": "gdelt-1329660025",
+      "date": "2026-10-24",
+      "title": "UNITED KINGDOM expressed intent to cooperate — Enniskillen, Fermanagh, United Kingdom",
+      "description": "Avg tone 2.1, 6 mentions.",
+      "lat": 54.3667,
+      "lon": -7.63333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 5.2,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://fermanaghherald.com/2026/10/fermanagh-clocks-go-back-as-we-get-an-extra-hour-in-bed/"
+    },
+    {
+      "id": "gdelt-1329660330",
+      "date": "2026-10-24",
+      "title": "DIJON made an appeal — Tennessee, United States",
+      "description": "Avg tone 2.4, 6 mentions.",
+      "lat": 35.7449,
+      "lon": -86.7489,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.aol.com/articles/dolly-partons-favorite-way-cook-100000000.html"
+    },
+    {
+      "id": "gdelt-1329660337",
+      "date": "2026-10-24",
+      "title": "FRENCH exhibited military posturing toward POLICE — Paris, France (general), France",
+      "description": "Avg tone -13.4, 6 mentions.",
+      "lat": 48.8667,
+      "lon": 2.33333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -7.2,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.investmentwatchblog.com/french-government-deploys-70000-police-today-in-paris-as-authorities-shutter-metro-lines-and-brace-for-riot-escalations/"
+    },
+    {
+      "id": "gdelt-1329660339",
+      "date": "2026-10-24",
+      "title": "UNITED KINGDOM expressed intent to cooperate — Fermanagh, Fermanagh, United Kingdom",
+      "description": "Avg tone 2.1, 6 mentions.",
+      "lat": 54.3333,
+      "lon": -7.5,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 5.2,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://fermanaghherald.com/2026/10/fermanagh-clocks-go-back-as-we-get-an-extra-hour-in-bed/"
+    },
+    {
+      "id": "gdelt-1329660411",
+      "date": "2026-10-24",
+      "title": "MINISTRY held consultations with ITALY — Rome, Lazio, Italy",
+      "description": "Avg tone 0.7, 6 mentions.",
+      "lat": 41.9,
+      "lon": 12.4833,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://christianchronicle.org/texas-christians-die-in-wreck-on-africa-mission-trip/"
+    },
+    {
+      "id": "gdelt-1329660486",
+      "date": "2026-10-24",
+      "title": "ISRAELI coerced ACTIVIST — Tel Aviv, Tel Aviv, Israel",
+      "description": "Avg tone -4.8, 6 mentions.",
+      "lat": 32.0667,
+      "lon": 34.7667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.middle-east-online.com/en/five-italian-activists-repatriated-after-detention-occupied-west-bank"
+    },
+    {
+      "id": "gdelt-1329660494",
+      "date": "2026-10-24",
+      "title": "ITALY held consultations with MINISTRY — Rome, Lazio, Italy",
+      "description": "Avg tone 0.7, 6 mentions.",
+      "lat": 41.9,
+      "lon": 12.4833,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://christianchronicle.org/texas-christians-die-in-wreck-on-africa-mission-trip/"
+    },
+    {
+      "id": "gdelt-1329660509",
+      "date": "2026-10-24",
+      "title": "JAPAN coerced — United Kingdom",
+      "description": "Avg tone 7.7, 6 mentions.",
       "lat": 54,
       "lon": -4,
       "severity": 3,
@@ -1404,22 +1329,125 @@
       ],
       "goldstein": -5,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.thetruthaboutcars.com/cars/news-blog/chery-wants-a-u-s-partner-detroit-isn-t-interested-45136840"
+      "sourceUrl": "https://www.aol.com/articles/5-loyal-dog-breeds-stick-101200000.html"
     },
     {
-      "id": "gdelt-1329517321",
-      "date": "2026-10-23",
-      "title": "FAISALABAD fought — Shahkot, Punjab, Pakistan",
-      "description": "Avg tone -8.1, 5 mentions.",
-      "lat": 29.9947,
-      "lon": 71.4834,
+      "id": "gdelt-1329660576",
+      "date": "2026-10-24",
+      "title": "CARRIER expressed intent to cooperate with SYDNEY — Sydney, New South Wales, Australia",
+      "description": "Avg tone 0.0, 6 mentions.",
+      "lat": -33.8833,
+      "lon": 151.217,
       "severity": 3,
       "lenses": [
         "security"
       ],
-      "goldstein": -10,
+      "goldstein": 4,
       "sourceName": "GDELT",
-      "sourceUrl": "https://www.pakistantimes.com/suspect-in-faisalabad-industrialist-mian-rehans-murder-arrested-near-shahkot-15790/"
+      "sourceUrl": "https://www.smh.com.au/topic/western-sydney-international-airport-1mtx"
+    },
+    {
+      "id": "gdelt-1329660590",
+      "date": "2026-10-24",
+      "title": "MALAYSIA coerced POLICE — Malacca, Melaka, Malaysia",
+      "description": "Avg tone -4.5, 6 mentions.",
+      "lat": 2.196,
+      "lon": 102.241,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -9.2,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.freemalaysiatoday.com/category/nation/2026/10/24/indonesia-makes-two-major-drug-busts-worth-millions-of-dollars"
+    },
+    {
+      "id": "gdelt-1329660647",
+      "date": "2026-10-24",
+      "title": "PALESTINIAN made an appeal to ISRAEL — Hebron, Israel (general), Israel",
+      "description": "Avg tone -13.3, 6 mentions.",
+      "lat": 31.5333,
+      "lon": 35.1,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-authority-calls-international-pressure-over-israeli-attack"
+    },
+    {
+      "id": "gdelt-1329660062",
+      "date": "2026-10-24",
+      "title": "TANZANIA coerced — Dar Es Salaam, Dar es Salaam, Tanzania",
+      "description": "Avg tone -13.0, 5 mentions.",
+      "lat": -6.8,
+      "lon": 39.2833,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thehindu.com/news/international/tanzanias-jailed-opposition-leader-tundu-lissu-plans-hunger-strike-over-denied-legal-access/article71620295.ece"
+    },
+    {
+      "id": "gdelt-1329660120",
+      "date": "2026-10-24",
+      "title": "ALBANIA protested against GOVERNMENT — Tirana, Tirane, Albania",
+      "description": "Avg tone -7.9, 5 mentions.",
+      "lat": 41.3275,
+      "lon": 19.8189,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -6.5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.freemalaysiatoday.com/category/world/2026/10/24/rocked-by-protests-albania-to-hold-new-anti-govt-rally"
+    },
+    {
+      "id": "gdelt-1329660290",
+      "date": "2026-10-24",
+      "title": "CYPRUS engaged in diplomatic cooperation with UNITED NATIONS — Cyprus",
+      "description": "Avg tone 2.5, 5 mentions.",
+      "lat": 35,
+      "lon": 33,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://cyprus-mail.com/2026/10/24/un-chief-in-cyprus-calls-for-dialogue-to-build-lasting-peace"
+    },
+    {
+      "id": "us6000u4jb",
+      "date": "2026-10-24",
+      "title": "M6.3 earthquake — 170 km NW of Port-Olry, Vanuatu",
+      "description": "Magnitude 6.3 recorded 2026-10-24T02:35:57.362Z.",
+      "lat": -14.0424,
+      "lon": 165.8666,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us6000u4j2",
+      "date": "2026-10-24",
+      "title": "M6.9 earthquake — 197 km WNW of Port-Olry, Vanuatu",
+      "description": "Magnitude 6.9 recorded 2026-10-24T02:31:28.641Z.",
+      "lat": -14.0558,
+      "lon": 165.5455,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
     },
     {
       "id": "us6000u43g",
@@ -1649,36 +1677,36 @@
   "sectors": [
     {
       "sector": "Energy",
-      "pctChange": -0.8656
+      "pctChange": 2.6047
     },
     {
       "sector": "Technology",
-      "pctChange": -3.2884
+      "pctChange": 0.4881
     },
     {
       "sector": "Agriculture",
-      "pctChange": -0.7112
+      "pctChange": -0.1791
     },
     {
       "sector": "Defense",
-      "pctChange": -0.6366
+      "pctChange": -1.1004
     },
     {
       "sector": "Consumer Goods",
-      "pctChange": 3.3062
+      "pctChange": -1.9224
     }
   ],
   "metroReadings": [
     {
       "metroId": "nyc",
       "metroName": "New York",
-      "severity": 2,
-      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.43% since last month.",
-      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.43% since last month. Price at the pump: $4.28/gal (-1.1% wk/wk).",
+      "severity": 1,
+      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — -0.23% since last month.",
+      "narrative": "Prices You Pay is watch today. How fast prices are rising here: -0.23% since last month. Price at the pump: $4.28/gal (-1.1% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.43% since last month",
+          "value": "-0.23% since last month",
           "sourceName": "BLS (New York CPI)"
         },
         {
@@ -1687,18 +1715,18 @@
           "sourceName": "EIA"
         }
       ],
-      "dataQuality": "live"
+      "dataQuality": "stale"
     },
     {
       "metroId": "la",
       "metroName": "Los Angeles",
-      "severity": 2,
-      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.49% since last month.",
-      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.49% since last month. Price at the pump: $4.28/gal (-1.1% wk/wk).",
+      "severity": 1,
+      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — -0.28% since last month.",
+      "narrative": "Prices You Pay is watch today. How fast prices are rising here: -0.28% since last month. Price at the pump: $4.28/gal (-1.1% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.49% since last month",
+          "value": "-0.28% since last month",
           "sourceName": "BLS (Los Angeles CPI)"
         },
         {
@@ -1707,18 +1735,18 @@
           "sourceName": "EIA"
         }
       ],
-      "dataQuality": "live"
+      "dataQuality": "stale"
     },
     {
       "metroId": "chicago",
       "metroName": "Chicago",
       "severity": 3,
-      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 0.81% since last month.",
-      "narrative": "Prices You Pay is high today. How fast prices are rising here: 0.81% since last month. Price at the pump: $4.28/gal (-1.1% wk/wk).",
+      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — -0.94% since last month.",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: -0.94% since last month. Price at the pump: $4.28/gal (-1.1% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.81% since last month",
+          "value": "-0.94% since last month",
           "sourceName": "BLS (Chicago CPI)"
         },
         {
@@ -1727,18 +1755,18 @@
           "sourceName": "EIA"
         }
       ],
-      "dataQuality": "live"
+      "dataQuality": "stale"
     },
     {
       "metroId": "houston",
       "metroName": "Houston",
-      "severity": 1,
-      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — 0.37% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is watch today. How fast prices are rising here: 0.37% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
+      "severity": 3,
+      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — -1.64% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: -1.64% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.37% since last published reading (2 months ago)",
+          "value": "-1.64% since last published reading (2 months ago)",
           "sourceName": "BLS (Houston CPI)"
         },
         {
@@ -1747,18 +1775,18 @@
           "sourceName": "EIA"
         }
       ],
-      "dataQuality": "live"
+      "dataQuality": "stale"
     },
     {
       "metroId": "miami",
       "metroName": "Miami",
       "severity": 0,
-      "oneLiner": "Prices You Pay: calm today. How fast prices are rising here — 0.10% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is calm today. How fast prices are rising here: 0.10% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
+      "oneLiner": "Prices You Pay: calm today. How fast prices are rising here — 0.05% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is calm today. How fast prices are rising here: 0.05% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.10% since last published reading (2 months ago)",
+          "value": "0.05% since last published reading (2 months ago)",
           "sourceName": "BLS (Miami CPI)"
         },
         {
@@ -1767,18 +1795,18 @@
           "sourceName": "EIA"
         }
       ],
-      "dataQuality": "live"
+      "dataQuality": "stale"
     },
     {
       "metroId": "dallas",
       "metroName": "Dallas",
-      "severity": 2,
-      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.69% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.69% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
+      "severity": 1,
+      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — -0.26% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is watch today. How fast prices are rising here: -0.26% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.69% since last published reading (2 months ago)",
+          "value": "-0.26% since last published reading (2 months ago)",
           "sourceName": "BLS (Dallas CPI)"
         },
         {
@@ -1787,18 +1815,18 @@
           "sourceName": "EIA"
         }
       ],
-      "dataQuality": "live"
+      "dataQuality": "stale"
     },
     {
       "metroId": "sf",
       "metroName": "San Francisco Bay Area",
       "severity": 0,
-      "oneLiner": "Prices You Pay: calm today. How fast prices are rising here — 0.06% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is calm today. How fast prices are rising here: 0.06% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
+      "oneLiner": "Prices You Pay: calm today. How fast prices are rising here — 0.19% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is calm today. How fast prices are rising here: 0.19% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.06% since last published reading (2 months ago)",
+          "value": "0.19% since last published reading (2 months ago)",
           "sourceName": "BLS (San Francisco Bay Area CPI)"
         },
         {
@@ -1807,18 +1835,18 @@
           "sourceName": "EIA"
         }
       ],
-      "dataQuality": "live"
+      "dataQuality": "stale"
     },
     {
       "metroId": "seattle",
       "metroName": "Seattle",
-      "severity": 0,
-      "oneLiner": "Prices You Pay: calm today. How fast prices are rising here — 0.07% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is calm today. How fast prices are rising here: 0.07% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
+      "severity": 2,
+      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 1.00% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 1.00% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.07% since last published reading (2 months ago)",
+          "value": "1.00% since last published reading (2 months ago)",
           "sourceName": "BLS (Seattle CPI)"
         },
         {
@@ -1827,18 +1855,18 @@
           "sourceName": "EIA"
         }
       ],
-      "dataQuality": "live"
+      "dataQuality": "stale"
     },
     {
       "metroId": "boston",
       "metroName": "Boston",
-      "severity": 2,
-      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.80% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.80% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
+      "severity": 3,
+      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 2.38% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 2.38% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.80% since last published reading (2 months ago)",
+          "value": "2.38% since last published reading (2 months ago)",
           "sourceName": "BLS (Boston CPI)"
         },
         {
@@ -1847,18 +1875,18 @@
           "sourceName": "EIA"
         }
       ],
-      "dataQuality": "live"
+      "dataQuality": "stale"
     },
     {
       "metroId": "denver",
       "metroName": "Denver",
       "severity": 3,
-      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 1.21% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is high today. How fast prices are rising here: 1.21% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
+      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 1.80% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 1.80% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "1.21% since last published reading (2 months ago)",
+          "value": "1.80% since last published reading (2 months ago)",
           "sourceName": "BLS (Denver CPI)"
         },
         {
@@ -1867,18 +1895,18 @@
           "sourceName": "EIA"
         }
       ],
-      "dataQuality": "live"
+      "dataQuality": "stale"
     },
     {
       "metroId": "dc",
       "metroName": "Washington",
-      "severity": 2,
-      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.90% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.90% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
+      "severity": 3,
+      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 1.34% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 1.34% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.90% since last published reading (2 months ago)",
+          "value": "1.34% since last published reading (2 months ago)",
           "sourceName": "BLS (Washington CPI)"
         },
         {
@@ -1887,18 +1915,18 @@
           "sourceName": "EIA"
         }
       ],
-      "dataQuality": "live"
+      "dataQuality": "stale"
     },
     {
       "metroId": "atlanta",
       "metroName": "Atlanta",
-      "severity": 0,
-      "oneLiner": "Prices You Pay: calm today. How fast prices are rising here — 0.15% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is calm today. How fast prices are rising here: 0.15% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
+      "severity": 1,
+      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — 0.52% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is watch today. How fast prices are rising here: 0.52% since last published reading (2 months ago). Price at the pump: $4.28/gal (-1.1% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.15% since last published reading (2 months ago)",
+          "value": "0.52% since last published reading (2 months ago)",
           "sourceName": "BLS (Atlanta CPI)"
         },
         {
@@ -1907,7 +1935,7 @@
           "sourceName": "EIA"
         }
       ],
-      "dataQuality": "live"
+      "dataQuality": "stale"
     }
   ]
 }
