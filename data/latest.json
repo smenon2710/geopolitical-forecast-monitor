@@ -1,37 +1,37 @@
 {
-  "date": "2026-11-09",
-  "generatedAt": "2026-11-09T21:24:10.752Z",
+  "date": "2026-11-10",
+  "generatedAt": "2026-11-10T18:29:57.126Z",
   "dataQuality": "stale",
   "lenses": [
     {
       "lens": "costOfLiving",
-      "severity": 3,
-      "oneLiner": "Prices You Pay: high today. How fast prices are rising — 0.65%.",
-      "narrative": "Prices you pay are rising 0.65%. Gas is $4.15/gal, with a change of -2.7%. Energy costs are 5.20%.",
+      "severity": 2,
+      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising — 0.35%.",
+      "narrative": "Prices are rising at 0.35% this month. The price at the pump is $4.00 per gallon, down -3.8% this week. Housing costs are up 0.30%, food costs up 0.47%, and energy costs up 0.70%.",
       "metrics": [
         {
           "label": "How fast prices are rising",
-          "value": "0.65%",
+          "value": "0.35%",
           "sourceName": "FRED (CPIAUCSL)"
         },
         {
           "label": "Price at the pump",
-          "value": "$4.15/gal (-2.7% wk/wk)",
+          "value": "$4.00/gal (-3.8% wk/wk)",
           "sourceName": "EIA"
         },
         {
           "label": "Housing costs",
-          "value": "0.39%",
+          "value": "0.30%",
           "sourceName": "BLS"
         },
         {
           "label": "Food costs",
-          "value": "0.05%",
+          "value": "0.47%",
           "sourceName": "BLS"
         },
         {
           "label": "Energy costs",
-          "value": "5.20%",
+          "value": "0.70%",
           "sourceName": "BLS"
         }
       ],
@@ -40,12 +40,12 @@
     {
       "lens": "investments",
       "severity": 2,
-      "oneLiner": "Your Savings: elevated today. The stock market today — 2.36%.",
-      "narrative": "The stock market today is 2.36%. The biggest industry swing is 3.90%. The cost of long-term borrowing is 4.86% (+0.02pt today).",
+      "oneLiner": "Your Savings: elevated today. The stock market today — 2.37%.",
+      "narrative": "The stock market is up 2.37% today. The biggest industry swing is 3.90%. Long‑term borrowing costs 4.86%, up 0.02pt today.",
       "metrics": [
         {
           "label": "The stock market today",
-          "value": "2.36%",
+          "value": "2.37%",
           "sourceName": "Alpha Vantage (S&P 500)"
         },
         {
@@ -63,9 +63,9 @@
     },
     {
       "lens": "standardOfLiving",
-      "severity": 2,
-      "oneLiner": "Jobs & Paychecks: elevated today. Jobs picture — -0.10pt unemployment.",
-      "narrative": "Jobs picture is -0.10pt unemployment. The paychecks vs inflation measure is -0.38pt. The economy is growing +0.83% GDP.",
+      "severity": 1,
+      "oneLiner": "Jobs & Paychecks: watch today. Jobs picture — -0.10pt unemployment.",
+      "narrative": "Unemployment is at -0.10pt. Paychecks are up 0.02pt compared to inflation. The economy grew 0.83%.",
       "metrics": [
         {
           "label": "Jobs picture",
@@ -74,7 +74,7 @@
         },
         {
           "label": "Are paychecks keeping up with prices?",
-          "value": "-0.38pt vs inflation",
+          "value": "+0.02pt vs inflation",
           "sourceName": "FRED (wages vs CPI)"
         },
         {
@@ -89,7 +89,7 @@
       "lens": "security",
       "severity": 3,
       "oneLiner": "Safety & Tension: high today. Global tension level — -10.0.",
-      "narrative": "Global tension is -10.0. The biggest recent earthquake is M7.0.",
+      "narrative": "Global tension is at -10.0. The biggest recent earthquake was M7.0.",
       "metrics": [
         {
           "label": "Global tension level",
@@ -107,12 +107,12 @@
     {
       "lens": "dailyRoutine",
       "severity": 1,
-      "oneLiner": "Everyday Life: watch today. Cost of getting around — -2.7% this week.",
-      "narrative": "The cost of getting around is -2.7% this week. Daily travel costs are -2.7% this week.",
+      "oneLiner": "Everyday Life: watch today. Cost of getting around — -3.8% this week.",
+      "narrative": "Your travel costs are -3.8% this week. That means you’ll spend a bit less on getting around.",
       "metrics": [
         {
           "label": "Cost of getting around",
-          "value": "-2.7% this week",
+          "value": "-3.8% this week",
           "sourceName": "EIA"
         }
       ],
@@ -125,10 +125,6 @@
       "label": "Price Level",
       "unit": "index",
       "points": [
-        {
-          "date": "2019-04-01",
-          "value": 255.233
-        },
         {
           "date": "2019-05-01",
           "value": 255.296
@@ -480,6 +476,10 @@
         {
           "date": "2026-09-01",
           "value": 336.298
+        },
+        {
+          "date": "2026-10-01",
+          "value": 337.476
         }
       ]
     },
@@ -488,10 +488,6 @@
       "label": "Gas Price",
       "unit": "$/gal",
       "points": [
-        {
-          "date": "2026-08-10",
-          "value": 4.006
-        },
         {
           "date": "2026-08-17",
           "value": 4.049
@@ -539,6 +535,10 @@
         {
           "date": "2026-11-02",
           "value": 4.153
+        },
+        {
+          "date": "2026-11-09",
+          "value": 3.995
         }
       ]
     },
@@ -548,123 +548,123 @@
       "unit": "index",
       "points": [
         {
-          "date": "2026-10-11",
+          "date": "2026-10-12",
           "value": 0
         },
         {
-          "date": "2026-10-12",
+          "date": "2026-10-13",
           "value": 0.63
         },
         {
-          "date": "2026-10-13",
+          "date": "2026-10-14",
           "value": 1.25
         },
         {
-          "date": "2026-10-14",
+          "date": "2026-10-15",
           "value": 1.85
         },
         {
-          "date": "2026-10-15",
+          "date": "2026-10-16",
           "value": 2.41
         },
         {
-          "date": "2026-10-16",
+          "date": "2026-10-17",
           "value": 2.93
         },
         {
-          "date": "2026-10-17",
+          "date": "2026-10-18",
           "value": 3.4
         },
         {
-          "date": "2026-10-18",
+          "date": "2026-10-19",
           "value": 3.81
         },
         {
-          "date": "2026-10-19",
+          "date": "2026-10-20",
           "value": 4.17
         },
         {
-          "date": "2026-10-20",
+          "date": "2026-10-21",
           "value": 4.46
         },
         {
-          "date": "2026-10-21",
+          "date": "2026-10-22",
           "value": 4.7
         },
         {
-          "date": "2026-10-22",
+          "date": "2026-10-23",
           "value": 4.88
         },
         {
-          "date": "2026-10-23",
+          "date": "2026-10-24",
           "value": 5.01
         },
         {
-          "date": "2026-10-24",
+          "date": "2026-10-25",
           "value": 5.11
         },
         {
-          "date": "2026-10-25",
+          "date": "2026-10-26",
           "value": 5.17
         },
         {
-          "date": "2026-10-26",
+          "date": "2026-10-27",
           "value": 5.21
         },
         {
-          "date": "2026-10-27",
+          "date": "2026-10-28",
           "value": 5.25
         },
         {
-          "date": "2026-10-28",
+          "date": "2026-10-29",
           "value": 5.28
         },
         {
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "value": 5.34
         },
         {
-          "date": "2026-10-30",
+          "date": "2026-10-31",
           "value": 5.42
         },
         {
-          "date": "2026-10-31",
+          "date": "2026-11-01",
           "value": 5.53
         },
         {
-          "date": "2026-11-01",
+          "date": "2026-11-02",
           "value": 5.69
         },
         {
-          "date": "2026-11-02",
+          "date": "2026-11-03",
           "value": 5.91
         },
         {
-          "date": "2026-11-03",
+          "date": "2026-11-04",
           "value": 6.18
         },
         {
-          "date": "2026-11-04",
+          "date": "2026-11-05",
           "value": 6.51
         },
         {
-          "date": "2026-11-05",
+          "date": "2026-11-06",
           "value": 6.89
         },
         {
-          "date": "2026-11-06",
+          "date": "2026-11-07",
           "value": 7.34
         },
         {
-          "date": "2026-11-07",
+          "date": "2026-11-08",
           "value": 7.84
         },
         {
-          "date": "2026-11-08",
+          "date": "2026-11-09",
           "value": 8.39
         },
         {
-          "date": "2026-11-09",
+          "date": "2026-11-10",
           "value": 10
         }
       ]
@@ -1494,10 +1494,10 @@
     {
       "id": "us6000u3jl",
       "date": "2026-10-20",
-      "title": "M6.3 earthquake — 197 km NW of Port-Olry, Vanuatu",
-      "description": "Magnitude 6.3 recorded 2026-10-20T04:20:38.737Z.",
-      "lat": -13.9906,
-      "lon": 165.5892,
+      "title": "M6.3 earthquake — 202 km NW of Port-Olry, Vanuatu",
+      "description": "Magnitude 6.3 recorded 2026-10-20T04:20:38.782Z.",
+      "lat": -13.9347,
+      "lon": 165.5746,
       "severity": 3,
       "lenses": [
         "security",
@@ -1579,15 +1579,15 @@
   "sectors": [
     {
       "sector": "Energy",
-      "pctChange": 0.568
+      "pctChange": 0.5193
     },
     {
       "sector": "Technology",
-      "pctChange": 3.7028
+      "pctChange": 3.7271
     },
     {
       "sector": "Agriculture",
-      "pctChange": -0.0766
+      "pctChange": -0.0383
     },
     {
       "sector": "Defense",
@@ -1595,25 +1595,25 @@
     },
     {
       "sector": "Consumer Goods",
-      "pctChange": 0.9048
+      "pctChange": 0.8992
     }
   ],
   "metroReadings": [
     {
       "metroId": "nyc",
       "metroName": "New York",
-      "severity": 2,
-      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.43% since last month.",
-      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.43% since last month. Price at the pump: $4.15/gal (-2.7% wk/wk).",
+      "severity": 3,
+      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 0.60% since last month.",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 0.60% since last month. Price at the pump: $4.00/gal (-3.8% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.43% since last month",
+          "value": "0.60% since last month",
           "sourceName": "BLS (New York CPI)"
         },
         {
           "label": "Price at the pump",
-          "value": "$4.15/gal (-2.7% wk/wk)",
+          "value": "$4.00/gal (-3.8% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1622,18 +1622,18 @@
     {
       "metroId": "la",
       "metroName": "Los Angeles",
-      "severity": 2,
-      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.49% since last month.",
-      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.49% since last month. Price at the pump: $4.15/gal (-2.7% wk/wk).",
+      "severity": 3,
+      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 0.62% since last month.",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 0.62% since last month. Price at the pump: $4.00/gal (-3.8% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.49% since last month",
+          "value": "0.62% since last month",
           "sourceName": "BLS (Los Angeles CPI)"
         },
         {
           "label": "Price at the pump",
-          "value": "$4.15/gal (-2.7% wk/wk)",
+          "value": "$4.00/gal (-3.8% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1642,18 +1642,18 @@
     {
       "metroId": "chicago",
       "metroName": "Chicago",
-      "severity": 3,
-      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 0.81% since last month.",
-      "narrative": "Prices You Pay is high today. How fast prices are rising here: 0.81% since last month. Price at the pump: $4.15/gal (-2.7% wk/wk).",
+      "severity": 2,
+      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.31% since last month.",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.31% since last month. Price at the pump: $4.00/gal (-3.8% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.81% since last month",
+          "value": "0.31% since last month",
           "sourceName": "BLS (Chicago CPI)"
         },
         {
           "label": "Price at the pump",
-          "value": "$4.15/gal (-2.7% wk/wk)",
+          "value": "$4.00/gal (-3.8% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1662,18 +1662,18 @@
     {
       "metroId": "houston",
       "metroName": "Houston",
-      "severity": 1,
-      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — 0.37% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is watch today. How fast prices are rising here: 0.37% since last published reading (2 months ago). Price at the pump: $4.15/gal (-2.7% wk/wk).",
+      "severity": 3,
+      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 1.26% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 1.26% since last published reading (2 months ago). Price at the pump: $4.00/gal (-3.8% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.37% since last published reading (2 months ago)",
+          "value": "1.26% since last published reading (2 months ago)",
           "sourceName": "BLS (Houston CPI)"
         },
         {
           "label": "Price at the pump",
-          "value": "$4.15/gal (-2.7% wk/wk)",
+          "value": "$4.00/gal (-3.8% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1682,18 +1682,18 @@
     {
       "metroId": "miami",
       "metroName": "Miami",
-      "severity": 1,
-      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — 0.10% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is watch today. How fast prices are rising here: 0.10% since last published reading (2 months ago). Price at the pump: $4.15/gal (-2.7% wk/wk).",
+      "severity": 2,
+      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.63% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.63% since last published reading (2 months ago). Price at the pump: $4.00/gal (-3.8% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.10% since last published reading (2 months ago)",
+          "value": "0.63% since last published reading (2 months ago)",
           "sourceName": "BLS (Miami CPI)"
         },
         {
           "label": "Price at the pump",
-          "value": "$4.15/gal (-2.7% wk/wk)",
+          "value": "$4.00/gal (-3.8% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1704,7 +1704,7 @@
       "metroName": "Dallas",
       "severity": 2,
       "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.69% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.69% since last published reading (2 months ago). Price at the pump: $4.15/gal (-2.7% wk/wk).",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.69% since last published reading (2 months ago). Price at the pump: $4.00/gal (-3.8% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
@@ -1713,7 +1713,7 @@
         },
         {
           "label": "Price at the pump",
-          "value": "$4.15/gal (-2.7% wk/wk)",
+          "value": "$4.00/gal (-3.8% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1723,17 +1723,17 @@
       "metroId": "sf",
       "metroName": "San Francisco Bay Area",
       "severity": 1,
-      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — 0.06% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is watch today. How fast prices are rising here: 0.06% since last published reading (2 months ago). Price at the pump: $4.15/gal (-2.7% wk/wk).",
+      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — 0.46% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is watch today. How fast prices are rising here: 0.46% since last published reading (2 months ago). Price at the pump: $4.00/gal (-3.8% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.06% since last published reading (2 months ago)",
+          "value": "0.46% since last published reading (2 months ago)",
           "sourceName": "BLS (San Francisco Bay Area CPI)"
         },
         {
           "label": "Price at the pump",
-          "value": "$4.15/gal (-2.7% wk/wk)",
+          "value": "$4.00/gal (-3.8% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1743,17 +1743,17 @@
       "metroId": "seattle",
       "metroName": "Seattle",
       "severity": 1,
-      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — 0.07% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is watch today. How fast prices are rising here: 0.07% since last published reading (2 months ago). Price at the pump: $4.15/gal (-2.7% wk/wk).",
+      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — -0.19% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is watch today. How fast prices are rising here: -0.19% since last published reading (2 months ago). Price at the pump: $4.00/gal (-3.8% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.07% since last published reading (2 months ago)",
+          "value": "-0.19% since last published reading (2 months ago)",
           "sourceName": "BLS (Seattle CPI)"
         },
         {
           "label": "Price at the pump",
-          "value": "$4.15/gal (-2.7% wk/wk)",
+          "value": "$4.00/gal (-3.8% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1764,7 +1764,7 @@
       "metroName": "Boston",
       "severity": 2,
       "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.80% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.80% since last published reading (2 months ago). Price at the pump: $4.15/gal (-2.7% wk/wk).",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.80% since last published reading (2 months ago). Price at the pump: $4.00/gal (-3.8% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
@@ -1773,7 +1773,7 @@
         },
         {
           "label": "Price at the pump",
-          "value": "$4.15/gal (-2.7% wk/wk)",
+          "value": "$4.00/gal (-3.8% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1784,7 +1784,7 @@
       "metroName": "Denver",
       "severity": 3,
       "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 1.21% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is high today. How fast prices are rising here: 1.21% since last published reading (2 months ago). Price at the pump: $4.15/gal (-2.7% wk/wk).",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 1.21% since last published reading (2 months ago). Price at the pump: $4.00/gal (-3.8% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
@@ -1793,7 +1793,7 @@
         },
         {
           "label": "Price at the pump",
-          "value": "$4.15/gal (-2.7% wk/wk)",
+          "value": "$4.00/gal (-3.8% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1804,7 +1804,7 @@
       "metroName": "Washington",
       "severity": 2,
       "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.90% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.90% since last published reading (2 months ago). Price at the pump: $4.15/gal (-2.7% wk/wk).",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.90% since last published reading (2 months ago). Price at the pump: $4.00/gal (-3.8% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
@@ -1813,7 +1813,7 @@
         },
         {
           "label": "Price at the pump",
-          "value": "$4.15/gal (-2.7% wk/wk)",
+          "value": "$4.00/gal (-3.8% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1823,17 +1823,17 @@
       "metroId": "atlanta",
       "metroName": "Atlanta",
       "severity": 1,
-      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — 0.15% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is watch today. How fast prices are rising here: 0.15% since last published reading (2 months ago). Price at the pump: $4.15/gal (-2.7% wk/wk).",
+      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — 0.10% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is watch today. How fast prices are rising here: 0.10% since last published reading (2 months ago). Price at the pump: $4.00/gal (-3.8% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
-          "value": "0.15% since last published reading (2 months ago)",
+          "value": "0.10% since last published reading (2 months ago)",
           "sourceName": "BLS (Atlanta CPI)"
         },
         {
           "label": "Price at the pump",
-          "value": "$4.15/gal (-2.7% wk/wk)",
+          "value": "$4.00/gal (-3.8% wk/wk)",
           "sourceName": "EIA"
         }
       ],
