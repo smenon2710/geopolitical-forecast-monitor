@@ -1,0 +1,1843 @@
+{
+  "date": "2026-11-21",
+  "generatedAt": "2026-11-21T17:54:04.013Z",
+  "dataQuality": "live",
+  "lenses": [
+    {
+      "lens": "costOfLiving",
+      "severity": 2,
+      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising — 0.35%.",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising: 0.35%. Price at the pump: $3.81/gal (-4.8% wk/wk). Housing costs: 0.30%. Food costs: 0.47%. Energy costs: 0.70%.",
+      "metrics": [
+        {
+          "label": "How fast prices are rising",
+          "value": "0.35%",
+          "sourceName": "FRED (CPIAUCSL)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$3.81/gal (-4.8% wk/wk)",
+          "sourceName": "EIA"
+        },
+        {
+          "label": "Housing costs",
+          "value": "0.30%",
+          "sourceName": "BLS"
+        },
+        {
+          "label": "Food costs",
+          "value": "0.47%",
+          "sourceName": "BLS"
+        },
+        {
+          "label": "Energy costs",
+          "value": "0.70%",
+          "sourceName": "BLS"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "lens": "investments",
+      "severity": 3,
+      "oneLiner": "Your Savings: high today. The stock market today — -3.64%.",
+      "narrative": "Your Savings is high today. The stock market today: -3.64%. Biggest industry swing: 7.27%. Cost of long-term borrowing: 5.04% (-0.03pt today).",
+      "metrics": [
+        {
+          "label": "The stock market today",
+          "value": "-3.64%",
+          "sourceName": "Alpha Vantage (S&P 500)"
+        },
+        {
+          "label": "Biggest industry swing",
+          "value": "7.27%",
+          "sourceName": "Alpha Vantage"
+        },
+        {
+          "label": "Cost of long-term borrowing",
+          "value": "5.04% (-0.03pt today)",
+          "sourceName": "FRED (DGS10)"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "lens": "standardOfLiving",
+      "severity": 1,
+      "oneLiner": "Jobs & Paychecks: watch today. Jobs picture — -0.10pt unemployment.",
+      "narrative": "Jobs & Paychecks is watch today. Jobs picture: -0.10pt unemployment. Are paychecks keeping up with prices?: +0.02pt vs inflation. Is the economy growing?: +0.83% GDP.",
+      "metrics": [
+        {
+          "label": "Jobs picture",
+          "value": "-0.10pt unemployment",
+          "sourceName": "FRED (UNRATE)"
+        },
+        {
+          "label": "Are paychecks keeping up with prices?",
+          "value": "+0.02pt vs inflation",
+          "sourceName": "FRED (wages vs CPI)"
+        },
+        {
+          "label": "Is the economy growing?",
+          "value": "+0.83% GDP",
+          "sourceName": "FRED (GDPC1)"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "lens": "security",
+      "severity": 3,
+      "oneLiner": "Safety & Tension: high today. Global tension level — -10.0.",
+      "narrative": "Safety & Tension is high today. Global tension level: -10.0. Biggest recent earthquake: M6.8.",
+      "metrics": [
+        {
+          "label": "Global tension level",
+          "value": "-10.0",
+          "sourceName": "GDELT (Goldstein scale, -10 tense to +10 cooperative)"
+        },
+        {
+          "label": "Biggest recent earthquake",
+          "value": "M6.8",
+          "sourceName": "USGS"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "lens": "dailyRoutine",
+      "severity": 1,
+      "oneLiner": "Everyday Life: watch today. Cost of getting around — -4.8% this week.",
+      "narrative": "Everyday Life is watch today. Cost of getting around: -4.8% this week.",
+      "metrics": [
+        {
+          "label": "Cost of getting around",
+          "value": "-4.8% this week",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    }
+  ],
+  "trends": [
+    {
+      "id": "cpi",
+      "label": "Price Level",
+      "unit": "index",
+      "points": [
+        {
+          "date": "2019-05-01",
+          "value": 255.296
+        },
+        {
+          "date": "2019-06-01",
+          "value": 255.213
+        },
+        {
+          "date": "2019-07-01",
+          "value": 255.802
+        },
+        {
+          "date": "2019-08-01",
+          "value": 256.036
+        },
+        {
+          "date": "2019-09-01",
+          "value": 256.43
+        },
+        {
+          "date": "2019-10-01",
+          "value": 257.155
+        },
+        {
+          "date": "2019-11-01",
+          "value": 257.879
+        },
+        {
+          "date": "2019-12-01",
+          "value": 258.63
+        },
+        {
+          "date": "2020-01-01",
+          "value": 259.127
+        },
+        {
+          "date": "2020-02-01",
+          "value": 259.25
+        },
+        {
+          "date": "2020-03-01",
+          "value": 258.076
+        },
+        {
+          "date": "2020-04-01",
+          "value": 256.032
+        },
+        {
+          "date": "2020-05-01",
+          "value": 255.802
+        },
+        {
+          "date": "2020-06-01",
+          "value": 257.042
+        },
+        {
+          "date": "2020-07-01",
+          "value": 258.352
+        },
+        {
+          "date": "2020-08-01",
+          "value": 259.316
+        },
+        {
+          "date": "2020-09-01",
+          "value": 259.997
+        },
+        {
+          "date": "2020-10-01",
+          "value": 260.319
+        },
+        {
+          "date": "2020-11-01",
+          "value": 260.911
+        },
+        {
+          "date": "2020-12-01",
+          "value": 262.045
+        },
+        {
+          "date": "2021-01-01",
+          "value": 262.687
+        },
+        {
+          "date": "2021-02-01",
+          "value": 263.579
+        },
+        {
+          "date": "2021-03-01",
+          "value": 264.961
+        },
+        {
+          "date": "2021-04-01",
+          "value": 266.614
+        },
+        {
+          "date": "2021-05-01",
+          "value": 268.383
+        },
+        {
+          "date": "2021-06-01",
+          "value": 270.654
+        },
+        {
+          "date": "2021-07-01",
+          "value": 271.903
+        },
+        {
+          "date": "2021-08-01",
+          "value": 272.676
+        },
+        {
+          "date": "2021-09-01",
+          "value": 273.91
+        },
+        {
+          "date": "2021-10-01",
+          "value": 276.55
+        },
+        {
+          "date": "2021-11-01",
+          "value": 278.919
+        },
+        {
+          "date": "2021-12-01",
+          "value": 280.845
+        },
+        {
+          "date": "2022-01-01",
+          "value": 282.543
+        },
+        {
+          "date": "2022-02-01",
+          "value": 284.5
+        },
+        {
+          "date": "2022-03-01",
+          "value": 287.674
+        },
+        {
+          "date": "2022-04-01",
+          "value": 288.561
+        },
+        {
+          "date": "2022-05-01",
+          "value": 291.298
+        },
+        {
+          "date": "2022-06-01",
+          "value": 294.957
+        },
+        {
+          "date": "2022-07-01",
+          "value": 294.913
+        },
+        {
+          "date": "2022-08-01",
+          "value": 295.097
+        },
+        {
+          "date": "2022-09-01",
+          "value": 296.349
+        },
+        {
+          "date": "2022-10-01",
+          "value": 298.007
+        },
+        {
+          "date": "2022-11-01",
+          "value": 298.786
+        },
+        {
+          "date": "2022-12-01",
+          "value": 298.832
+        },
+        {
+          "date": "2023-01-01",
+          "value": 300.42
+        },
+        {
+          "date": "2023-02-01",
+          "value": 301.45
+        },
+        {
+          "date": "2023-03-01",
+          "value": 301.821
+        },
+        {
+          "date": "2023-04-01",
+          "value": 302.845
+        },
+        {
+          "date": "2023-05-01",
+          "value": 303.334
+        },
+        {
+          "date": "2023-06-01",
+          "value": 304.014
+        },
+        {
+          "date": "2023-07-01",
+          "value": 304.609
+        },
+        {
+          "date": "2023-08-01",
+          "value": 306.082
+        },
+        {
+          "date": "2023-09-01",
+          "value": 307.276
+        },
+        {
+          "date": "2023-10-01",
+          "value": 307.696
+        },
+        {
+          "date": "2023-11-01",
+          "value": 308.148
+        },
+        {
+          "date": "2023-12-01",
+          "value": 308.741
+        },
+        {
+          "date": "2024-01-01",
+          "value": 309.698
+        },
+        {
+          "date": "2024-02-01",
+          "value": 310.967
+        },
+        {
+          "date": "2024-03-01",
+          "value": 312.345
+        },
+        {
+          "date": "2024-04-01",
+          "value": 313.023
+        },
+        {
+          "date": "2024-05-01",
+          "value": 313.175
+        },
+        {
+          "date": "2024-06-01",
+          "value": 313.044
+        },
+        {
+          "date": "2024-07-01",
+          "value": 313.569
+        },
+        {
+          "date": "2024-08-01",
+          "value": 314.062
+        },
+        {
+          "date": "2024-09-01",
+          "value": 314.732
+        },
+        {
+          "date": "2024-10-01",
+          "value": 315.631
+        },
+        {
+          "date": "2024-11-01",
+          "value": 316.528
+        },
+        {
+          "date": "2024-12-01",
+          "value": 317.604
+        },
+        {
+          "date": "2025-01-01",
+          "value": 318.961
+        },
+        {
+          "date": "2025-02-01",
+          "value": 319.679
+        },
+        {
+          "date": "2025-03-01",
+          "value": 319.785
+        },
+        {
+          "date": "2025-04-01",
+          "value": 320.302
+        },
+        {
+          "date": "2025-05-01",
+          "value": 320.62
+        },
+        {
+          "date": "2025-06-01",
+          "value": 321.435
+        },
+        {
+          "date": "2025-07-01",
+          "value": 322.169
+        },
+        {
+          "date": "2025-08-01",
+          "value": 323.291
+        },
+        {
+          "date": "2025-09-01",
+          "value": 324.245
+        },
+        {
+          "date": "2025-11-01",
+          "value": 325.063
+        },
+        {
+          "date": "2025-12-01",
+          "value": 326.031
+        },
+        {
+          "date": "2026-01-01",
+          "value": 326.588
+        },
+        {
+          "date": "2026-02-01",
+          "value": 327.46
+        },
+        {
+          "date": "2026-03-01",
+          "value": 330.293
+        },
+        {
+          "date": "2026-04-01",
+          "value": 332.407
+        },
+        {
+          "date": "2026-05-01",
+          "value": 333.979
+        },
+        {
+          "date": "2026-06-01",
+          "value": 332.568
+        },
+        {
+          "date": "2026-07-01",
+          "value": 332.813
+        },
+        {
+          "date": "2026-08-01",
+          "value": 334.131
+        },
+        {
+          "date": "2026-09-01",
+          "value": 336.298
+        },
+        {
+          "date": "2026-10-01",
+          "value": 337.476
+        }
+      ]
+    },
+    {
+      "id": "gas",
+      "label": "Gas Price",
+      "unit": "$/gal",
+      "points": [
+        {
+          "date": "2026-08-24",
+          "value": 4.085
+        },
+        {
+          "date": "2026-08-31",
+          "value": 4.071
+        },
+        {
+          "date": "2026-09-07",
+          "value": 4.157
+        },
+        {
+          "date": "2026-09-14",
+          "value": 4.319
+        },
+        {
+          "date": "2026-09-21",
+          "value": 4.478
+        },
+        {
+          "date": "2026-09-28",
+          "value": 4.465
+        },
+        {
+          "date": "2026-10-05",
+          "value": 4.354
+        },
+        {
+          "date": "2026-10-12",
+          "value": 4.331
+        },
+        {
+          "date": "2026-10-19",
+          "value": 4.284
+        },
+        {
+          "date": "2026-10-26",
+          "value": 4.269
+        },
+        {
+          "date": "2026-11-02",
+          "value": 4.153
+        },
+        {
+          "date": "2026-11-09",
+          "value": 3.995
+        },
+        {
+          "date": "2026-11-16",
+          "value": 3.805
+        }
+      ]
+    },
+    {
+      "id": "conflict",
+      "label": "Global Tension",
+      "unit": "index",
+      "points": [
+        {
+          "date": "2026-10-23",
+          "value": 0
+        },
+        {
+          "date": "2026-10-24",
+          "value": 0.63
+        },
+        {
+          "date": "2026-10-25",
+          "value": 1.25
+        },
+        {
+          "date": "2026-10-26",
+          "value": 1.85
+        },
+        {
+          "date": "2026-10-27",
+          "value": 2.41
+        },
+        {
+          "date": "2026-10-28",
+          "value": 2.93
+        },
+        {
+          "date": "2026-10-29",
+          "value": 3.4
+        },
+        {
+          "date": "2026-10-30",
+          "value": 3.81
+        },
+        {
+          "date": "2026-10-31",
+          "value": 4.17
+        },
+        {
+          "date": "2026-11-01",
+          "value": 4.46
+        },
+        {
+          "date": "2026-11-02",
+          "value": 4.7
+        },
+        {
+          "date": "2026-11-03",
+          "value": 4.88
+        },
+        {
+          "date": "2026-11-04",
+          "value": 5.01
+        },
+        {
+          "date": "2026-11-05",
+          "value": 5.11
+        },
+        {
+          "date": "2026-11-06",
+          "value": 5.17
+        },
+        {
+          "date": "2026-11-07",
+          "value": 5.21
+        },
+        {
+          "date": "2026-11-08",
+          "value": 5.25
+        },
+        {
+          "date": "2026-11-09",
+          "value": 5.28
+        },
+        {
+          "date": "2026-11-10",
+          "value": 5.34
+        },
+        {
+          "date": "2026-11-11",
+          "value": 5.42
+        },
+        {
+          "date": "2026-11-12",
+          "value": 5.53
+        },
+        {
+          "date": "2026-11-13",
+          "value": 5.69
+        },
+        {
+          "date": "2026-11-14",
+          "value": 5.91
+        },
+        {
+          "date": "2026-11-15",
+          "value": 6.18
+        },
+        {
+          "date": "2026-11-16",
+          "value": 6.51
+        },
+        {
+          "date": "2026-11-17",
+          "value": 6.89
+        },
+        {
+          "date": "2026-11-18",
+          "value": 7.34
+        },
+        {
+          "date": "2026-11-19",
+          "value": 7.84
+        },
+        {
+          "date": "2026-11-20",
+          "value": 8.39
+        },
+        {
+          "date": "2026-11-21",
+          "value": 10
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "gdelt-1334385583",
+      "date": "2026-11-21",
+      "title": "RESIDENTS engaged in diplomatic cooperation with UNITED KINGDOM — Suffolk, Suffolk, United Kingdom",
+      "description": "Avg tone -1.5, 10 mentions.",
+      "lat": 52.1667,
+      "lon": 1,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.mirror.co.uk/news/uk-news/barnham-village-votes-leave-uk-37902426"
+    },
+    {
+      "id": "gdelt-1334385594",
+      "date": "2026-11-21",
+      "title": "UNIVERSITY expressed intent to cooperate with UNITED KINGDOM — Lincolnshire, Lincolnshire, United Kingdom",
+      "description": "Avg tone 0.8, 10 mentions.",
+      "lat": 53.1667,
+      "lon": -0.25,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "http://www.zimbabwestar.com/news/279445732/uk-eu-agree-trade-and-youth-deals-to-rebuild-ties"
+    },
+    {
+      "id": "gdelt-1334385612",
+      "date": "2026-11-21",
+      "title": "UNITED KINGDOM expressed intent to cooperate with UNIVERSITY — Lincolnshire, Lincolnshire, United Kingdom",
+      "description": "Avg tone 0.8, 10 mentions.",
+      "lat": 53.1667,
+      "lon": -0.25,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "http://www.zimbabwestar.com/news/279445732/uk-eu-agree-trade-and-youth-deals-to-rebuild-ties"
+    },
+    {
+      "id": "gdelt-1334385683",
+      "date": "2026-11-21",
+      "title": "IRAN fought OMAN — Shahed, Fars, Iran",
+      "description": "Avg tone -3.2, 10 mentions.",
+      "lat": 28.5934,
+      "lon": 52.2295,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "http://www.strategypage.com/qnd/russia/articles/20261121101720.aspx"
+    },
+    {
+      "id": "gdelt-1334385684",
+      "date": "2026-11-21",
+      "title": "IRAN rejected PERSIAN GULF — Tehran, Tehran, Iran",
+      "description": "Avg tone -5.9, 10 mentions.",
+      "lat": 35.75,
+      "lon": 51.5148,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.moneycontrol.com/world/iran-claims-it-struck-us-f-16-fighter-jet-over-gulf-centcom-denies-attack-article-14086329.html"
+    },
+    {
+      "id": "gdelt-1334385686",
+      "date": "2026-11-21",
+      "title": "IRAN threatened THE US — Tehran, Tehran, Iran",
+      "description": "Avg tone -5.9, 10 mentions.",
+      "lat": 35.75,
+      "lon": 51.5148,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.moneycontrol.com/world/iran-claims-it-struck-us-f-16-fighter-jet-over-gulf-centcom-denies-attack-article-14086329.html"
+    },
+    {
+      "id": "gdelt-1334385692",
+      "date": "2026-11-21",
+      "title": "IRAQI exhibited military posturing toward POLICE FORCE — Baghdad, Baghdad, Iraq",
+      "description": "Avg tone 2.1, 10 mentions.",
+      "lat": 33.3386,
+      "lon": 44.3939,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -7.2,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://english.globalarabnetwork.com/2026/11/21/iraq-establishes-new-security-posts-to-protect-jurf-al-nasr-oil-assets/"
+    },
+    {
+      "id": "gdelt-1334385694",
+      "date": "2026-11-21",
+      "title": "IRAQI exhibited military posturing toward MILITARY — Baghdad, Baghdad, Iraq",
+      "description": "Avg tone 2.1, 10 mentions.",
+      "lat": 33.3386,
+      "lon": 44.3939,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -7.2,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://english.globalarabnetwork.com/2026/11/21/iraq-establishes-new-security-posts-to-protect-jurf-al-nasr-oil-assets/"
+    },
+    {
+      "id": "gdelt-1334385774",
+      "date": "2026-11-21",
+      "title": "REFUGEE assaulted PALESTINIAN — Gaza, Israel (general), Israel",
+      "description": "Avg tone -6.0, 10 mentions.",
+      "lat": 31.4167,
+      "lon": 34.3333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -9.5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thenationalnews.com/news/mena/2026/11/21/strikes-kill-nine-in-gaza-as-board-of-peace-adviser-criticises-israel/"
+    },
+    {
+      "id": "gdelt-1334385775",
+      "date": "2026-11-21",
+      "title": "REFUGEE fought PALESTINIAN — Gaza, Israel (general), Israel",
+      "description": "Avg tone -6.0, 10 mentions.",
+      "lat": 31.4167,
+      "lon": 34.3333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thenationalnews.com/news/mena/2026/11/21/strikes-kill-nine-in-gaza-as-board-of-peace-adviser-criticises-israel/"
+    },
+    {
+      "id": "gdelt-1334385440",
+      "date": "2026-10-22",
+      "title": "SRINAGAR made an appeal to AMIT — Amritsar, Punjab, India",
+      "description": "Avg tone -3.3, 8 mentions.",
+      "lat": 31.6331,
+      "lon": 74.8656,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://kashmirlife.net/pdp-president-urges-hm-amit-shah-punjab-dgp-to-ensure-time-bound-probe-into-kashmiri-youths-death-462198/"
+    },
+    {
+      "id": "gdelt-1334385475",
+      "date": "2026-11-21",
+      "title": "ISRAELI issued a demand — Lebanon",
+      "description": "Avg tone -9.8, 8 mentions.",
+      "lat": 33.833333,
+      "lon": 35.833333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://english.globalarabnetwork.com/2026/11/21/lebanon-faces-critical-phase-amid-persistent-israeli-strikes/"
+    },
+    {
+      "id": "gdelt-1334385442",
+      "date": "2026-10-22",
+      "title": "ISRAEL held consultations with ALASKA — Israel",
+      "description": "Avg tone -1.5, 7 mentions.",
+      "lat": 31.5,
+      "lon": 34.75,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.theguardian.com/us-news/2026/nov/21/vance-trump-iran-nuclear-weapon"
+    },
+    {
+      "id": "gdelt-1334385448",
+      "date": "2026-10-22",
+      "title": "ALASKA held consultations with ISRAEL — The White House, District of Columbia, United States",
+      "description": "Avg tone -1.5, 7 mentions.",
+      "lat": 38.8951,
+      "lon": -77.0364,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.theguardian.com/us-news/2026/nov/21/vance-trump-iran-nuclear-weapon"
+    },
+    {
+      "id": "gdelt-1334385523",
+      "date": "2026-11-21",
+      "title": "GUANGDONG made an appeal — Guangdong, Jilin, China",
+      "description": "Avg tone 4.0, 6 mentions.",
+      "lat": 42.7683,
+      "lon": 129.336,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.openpr.com/news/4696314/lever-arch-mechanism-vs-ring-binder-mechanism-which-fastening"
+    },
+    {
+      "id": "gdelt-1334385673",
+      "date": "2026-11-21",
+      "title": "IRISH provided aid — Dublin, Dublin, Ireland",
+      "description": "Avg tone 6.3, 6 mentions.",
+      "lat": 53.3331,
+      "lon": -6.24889,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.artnews.com/art-news/news/is-ireland-experiment-in-paying-artists-basic-income-working-1234806168/"
+    },
+    {
+      "id": "gdelt-1334385746",
+      "date": "2026-11-21",
+      "title": "MEXICO rejected — Mexico",
+      "description": "Avg tone -5.9, 6 mentions.",
+      "lat": 23,
+      "lon": -102,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.aol.com/articles/trump-says-news-another-fbi-164702000.html"
+    },
+    {
+      "id": "gdelt-1334385864",
+      "date": "2026-11-21",
+      "title": "JOHANNESBURG issued a demand to RESIDENTS — Free State, Free State, South Africa",
+      "description": "Avg tone -10.3, 6 mentions.",
+      "lat": -29,
+      "lon": 26,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.citizen.co.za/news/severe-thunderstorms-hail-flooding-spark-urgent-warning-joburg-residents/"
+    },
+    {
+      "id": "gdelt-1334385691",
+      "date": "2026-11-21",
+      "title": "ASSUR engaged in diplomatic cooperation — Arunachal, Assam, India",
+      "description": "Avg tone -0.9, 5 mentions.",
+      "lat": 24.8667,
+      "lon": 92.7667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.tribuneindia.com/news/j-k/shah-assures-arunachal-locals-of-dialogue-on-siang-dam-project-hails-kashmirs-transformation/"
+    },
+    {
+      "id": "gdelt-1334385696",
+      "date": "2026-11-21",
+      "title": "ISRAELI fought PERSIAN GULF — Shahed, Fars, Iran",
+      "description": "Avg tone -3.2, 5 mentions.",
+      "lat": 28.5934,
+      "lon": 52.2295,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "http://www.strategypage.com/qnd/russia/articles/20261121101720.aspx"
+    },
+    {
+      "id": "gdelt-1334385707",
+      "date": "2026-11-21",
+      "title": "JAPAN fought — Australia",
+      "description": "Avg tone 2.6, 5 mentions.",
+      "lat": -25,
+      "lon": 135,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -9.5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.carsguide.com.au/car-news/lexus-slashes-wait-times-for-popular-4wds-including-2026-lexus-gx-lx-as-new-rivals-such-as"
+    },
+    {
+      "id": "gdelt-1334385505",
+      "date": "2026-11-21",
+      "title": "AFRICA issued a demand to RESIDENTS — Free State, Free State, South Africa",
+      "description": "Avg tone -10.3, 4 mentions.",
+      "lat": -29,
+      "lon": 26,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.citizen.co.za/news/severe-thunderstorms-hail-flooding-spark-urgent-warning-joburg-residents/"
+    },
+    {
+      "id": "gdelt-1334385508",
+      "date": "2026-11-21",
+      "title": "UNITED ARAB EMIRATES made an appeal to AFRICA — Abu Dhabi, Abu Z¸aby, United Arab Emirates",
+      "description": "Avg tone 1.1, 4 mentions.",
+      "lat": 24.4667,
+      "lon": 54.3667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thenationalnews.com/news/uae/2026/11/21/new-fossil-carnivore-unearthed-in-the-uae-and-named-after-abu-dhabi/"
+    },
+    {
+      "id": "gdelt-1334385522",
+      "date": "2026-11-21",
+      "title": "CHINA made an appeal — Foshan, Guangdong, China",
+      "description": "Avg tone 4.0, 4 mentions.",
+      "lat": 23.0268,
+      "lon": 113.131,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.openpr.com/news/4696314/lever-arch-mechanism-vs-ring-binder-mechanism-which-fastening"
+    },
+    {
+      "id": "gdelt-1334385658",
+      "date": "2026-11-21",
+      "title": "DOCTOR made an appeal to FRANCE — Luxembourg",
+      "description": "Avg tone -7.6, 4 mentions.",
+      "lat": 49.75,
+      "lon": 6.166667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.dailymail.com/news/article-16309147/keith-mcnally-injured-paris-riot.html"
+    },
+    {
+      "id": "gdelt-1334385682",
+      "date": "2026-11-21",
+      "title": "IRAN rejected FIGHTER JET — Israel",
+      "description": "Avg tone -5.9, 4 mentions.",
+      "lat": 31.5,
+      "lon": 34.75,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.moneycontrol.com/world/iran-claims-it-struck-us-f-16-fighter-jet-over-gulf-centcom-denies-attack-article-14086329.html"
+    },
+    {
+      "id": "gdelt-1334385705",
+      "date": "2026-11-21",
+      "title": "JAPAN threatened — Japan",
+      "description": "Avg tone -3.1, 4 mentions.",
+      "lat": 36,
+      "lon": 138,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://boxingnewsonline.net/news/bam-will-fight-davis-on-one-condition/"
+    },
+    {
+      "id": "gdelt-1334385706",
+      "date": "2026-11-21",
+      "title": "JAPAN threatened — Japan",
+      "description": "Avg tone -3.1, 4 mentions.",
+      "lat": 36,
+      "lon": 138,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://boxingnewsonline.net/news/bam-will-fight-davis-on-one-condition/"
+    },
+    {
+      "id": "gdelt-1334385725",
+      "date": "2026-11-21",
+      "title": "KUWAIT coerced MINIST OF INTERIOR — Kuwait",
+      "description": "Avg tone -8.8, 4 mentions.",
+      "lat": 29.5,
+      "lon": 47.75,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.arabtimesonline.com/news/kuwait-crushes-six-vehicles-after-arresting-10-for-damaging-umm-al-qadeer-reserve/"
+    },
+    {
+      "id": "gdelt-1334385848",
+      "date": "2026-11-21",
+      "title": "AMERICAN fought PERSIAN GULF — Shahed, Fars, Iran",
+      "description": "Avg tone -3.2, 4 mentions.",
+      "lat": 28.5934,
+      "lon": 52.2295,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "http://www.strategypage.com/qnd/russia/articles/20261121101720.aspx"
+    },
+    {
+      "id": "gdelt-1334385685",
+      "date": "2026-11-21",
+      "title": "IRAN fought PERSIAN GULF — Shahed, Fars, Iran",
+      "description": "Avg tone -3.2, 3 mentions.",
+      "lat": 28.5934,
+      "lon": 52.2295,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -10,
+      "sourceName": "GDELT",
+      "sourceUrl": "http://www.strategypage.com/qnd/russia/articles/20261121101720.aspx"
+    },
+    {
+      "id": "gdelt-1334385439",
+      "date": "2026-10-22",
+      "title": "SRINAGAR made an appeal to HOME MINIST — Amritsar, Punjab, India",
+      "description": "Avg tone -3.3, 2 mentions.",
+      "lat": 31.6331,
+      "lon": 74.8656,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://kashmirlife.net/pdp-president-urges-hm-amit-shah-punjab-dgp-to-ensure-time-bound-probe-into-kashmiri-youths-death-462198/"
+    },
+    {
+      "id": "gdelt-1334385500",
+      "date": "2026-11-21",
+      "title": "AFRICA provided aid — Rivonia, Gauteng, South Africa",
+      "description": "Avg tone -1.2, 2 mentions.",
+      "lat": -26.0532,
+      "lon": 28.0596,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.citizen.co.za/news/phumzile-mlambo-ngcukas-family-issues-warning-fundraising-scams/"
+    },
+    {
+      "id": "gdelt-1334385502",
+      "date": "2026-11-21",
+      "title": "AFRICA threatened — Middledrift, Eastern Cape, South Africa",
+      "description": "Avg tone -1.2, 2 mentions.",
+      "lat": -32.8185,
+      "lon": 26.9881,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.citizen.co.za/news/phumzile-mlambo-ngcukas-family-issues-warning-fundraising-scams/"
+    },
+    {
+      "id": "gdelt-1334385517",
+      "date": "2026-11-21",
+      "title": "COMPANIES engaged in diplomatic cooperation with UNITED ARAB EMIRATES — Abu Dhabi, Abu Z¸aby, United Arab Emirates",
+      "description": "Avg tone 1.7, 2 mentions.",
+      "lat": 24.4667,
+      "lon": 54.3667,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 3.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.thenationalnews.com/future/technology/2026/11/20/mgx-anthropic-ipo-adif/"
+    },
+    {
+      "id": "gdelt-1334385534",
+      "date": "2026-11-21",
+      "title": "POLICE coerced PEARL RIVER — Pearl River County, Mississippi, United States",
+      "description": "Avg tone -7.5, 2 mentions.",
+      "lat": 30.6427,
+      "lon": -89.6415,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.nola.com/news/northshore/lizeht-rodriguez-murder-suspect-identified-jacob-schurr-crossbow-st-tammany/article_778a3c4c-b2c2-435d-a6b4-36d489f6e846.html"
+    },
+    {
+      "id": "gdelt-1334385646",
+      "date": "2026-11-21",
+      "title": "PRESIDENT rejected MEXICO — Mexico",
+      "description": "Avg tone -5.9, 2 mentions.",
+      "lat": 23,
+      "lon": -102,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.aol.com/articles/trump-says-news-another-fbi-164702000.html"
+    },
+    {
+      "id": "gdelt-1334385664",
+      "date": "2026-11-21",
+      "title": "DELHI coerced BANK — Delhi, Delhi, India",
+      "description": "Avg tone -10.0, 2 mentions.",
+      "lat": 28.6667,
+      "lon": 77.2167,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://tv.rediff.com/news/how-delhi-police-uncovered-a-major-cyber-fraud-bank-account-syndicate/414601"
+    },
+    {
+      "id": "gdelt-1334385666",
+      "date": "2026-11-21",
+      "title": "DELHI coerced BANK — Delhi, Delhi, India",
+      "description": "Avg tone -10.0, 2 mentions.",
+      "lat": 28.6667,
+      "lon": 77.2167,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://tv.rediff.com/news/how-delhi-police-uncovered-a-major-cyber-fraud-bank-account-syndicate/414601"
+    },
+    {
+      "id": "gdelt-1334385700",
+      "date": "2026-11-21",
+      "title": "ISRAEL issued a demand to ISRAELI — Lebanon",
+      "description": "Avg tone -9.8, 2 mentions.",
+      "lat": 33.833333,
+      "lon": 35.833333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://english.globalarabnetwork.com/2026/11/21/lebanon-faces-critical-phase-amid-persistent-israeli-strikes/"
+    },
+    {
+      "id": "gdelt-1334385748",
+      "date": "2026-11-21",
+      "title": "MEXICO rejected — Mexico",
+      "description": "Avg tone -5.9, 2 mentions.",
+      "lat": 23,
+      "lon": -102,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -5,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.aol.com/articles/trump-says-news-another-fbi-164702000.html"
+    },
+    {
+      "id": "gdelt-1334385441",
+      "date": "2026-10-22",
+      "title": "ISRAEL held consultations with ALASKA — Alaska, United States",
+      "description": "Avg tone -1.5, 1 mentions.",
+      "lat": 61.385,
+      "lon": -152.268,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.theguardian.com/us-news/2026/nov/21/vance-trump-iran-nuclear-weapon"
+    },
+    {
+      "id": "gdelt-1334385449",
+      "date": "2026-10-22",
+      "title": "ALASKA held consultations with ISRAEL — The White House, District of Columbia, United States",
+      "description": "Avg tone -1.5, 1 mentions.",
+      "lat": 38.8951,
+      "lon": -77.0364,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.theguardian.com/us-news/2026/nov/21/vance-trump-iran-nuclear-weapon"
+    },
+    {
+      "id": "gdelt-1334385501",
+      "date": "2026-11-21",
+      "title": "AFRICA threatened — Mpumalanga, KwaZulu-Natal, South Africa",
+      "description": "Avg tone -6.8, 1 mentions.",
+      "lat": -27.8818,
+      "lon": 31.534,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.citizen.co.za/news/south-africa/weather/flooding-hail-severe-thunderstorms-expected-seven-provinces/"
+    },
+    {
+      "id": "gdelt-1334385503",
+      "date": "2026-11-21",
+      "title": "AFRICA threatened — Mpumalanga, KwaZulu-Natal, South Africa",
+      "description": "Avg tone -6.8, 1 mentions.",
+      "lat": -27.8818,
+      "lon": 31.534,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.citizen.co.za/news/south-africa/weather/flooding-hail-severe-thunderstorms-expected-seven-provinces/"
+    },
+    {
+      "id": "gdelt-1334385640",
+      "date": "2026-11-21",
+      "title": "HOME MINIST expressed intent to cooperate with ARUNACHAL PRADESH — Siang River, China (general), China",
+      "description": "Avg tone 0.1, 1 mentions.",
+      "lat": 29.4333,
+      "lon": 113.133,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.rediff.com/news/report/shah-backs-siang-dam-assures-dialogue-amidst-protests/20261121.htm"
+    },
+    {
+      "id": "gdelt-1334385674",
+      "date": "2026-11-21",
+      "title": "IRISH provided aid — Belfast, Belfast, United Kingdom",
+      "description": "Avg tone 6.3, 1 mentions.",
+      "lat": 54.5833,
+      "lon": -5.93333,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7.4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.artnews.com/art-news/news/is-ireland-experiment-in-paying-artists-basic-income-working-1234806168/"
+    },
+    {
+      "id": "gdelt-1334385681",
+      "date": "2026-11-21",
+      "title": "IRAN rejected FIGHTER JET — Israel",
+      "description": "Avg tone -5.9, 1 mentions.",
+      "lat": 31.5,
+      "lon": 34.75,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": -4,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.moneycontrol.com/world/iran-claims-it-struck-us-f-16-fighter-jet-over-gulf-centcom-denies-attack-article-14086329.html"
+    },
+    {
+      "id": "gdelt-1334385698",
+      "date": "2026-11-21",
+      "title": "ISRAEL held consultations with ALASKA — Alaska, United States",
+      "description": "Avg tone -1.5, 1 mentions.",
+      "lat": 61.385,
+      "lon": -152.268,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.theguardian.com/us-news/2026/nov/21/vance-trump-iran-nuclear-weapon"
+    },
+    {
+      "id": "gdelt-1334385699",
+      "date": "2026-11-21",
+      "title": "ISRAEL held consultations with ALASKA — Israel",
+      "description": "Avg tone -1.5, 1 mentions.",
+      "lat": 31.5,
+      "lon": 34.75,
+      "severity": 3,
+      "lenses": [
+        "security"
+      ],
+      "goldstein": 7,
+      "sourceName": "GDELT",
+      "sourceUrl": "https://www.theguardian.com/us-news/2026/nov/21/vance-trump-iran-nuclear-weapon"
+    },
+    {
+      "id": "us6000ucly",
+      "date": "2026-11-21",
+      "title": "M5.9 earthquake — 238 km SW of Yanglong, China",
+      "description": "Magnitude 5.9 recorded 2026-11-21T10:45:33.230Z.",
+      "lat": 37.1958,
+      "lon": 96.6398,
+      "severity": 2,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us6000ucij",
+      "date": "2026-11-21",
+      "title": "M6.8 earthquake — 105 km NE of Lospalos, Timor Leste",
+      "description": "Magnitude 6.8 recorded 2026-11-21T09:42:09.120Z.",
+      "lat": -7.7324,
+      "lon": 127.5407,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us6000ucfm",
+      "date": "2026-11-21",
+      "title": "M6.7 earthquake — 9 km NE of Carhuamayo, Peru",
+      "description": "Magnitude 6.7 recorded 2026-11-21T00:09:19.667Z.",
+      "lat": -10.8548,
+      "lon": -75.9779,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "ci41364111",
+      "date": "2026-11-20",
+      "title": "M3.9 earthquake — 1 km NW of Commerce, CA",
+      "description": "Magnitude 3.94 recorded 2026-11-20T11:25:35.140Z.",
+      "lat": 34.00633,
+      "lon": -118.1665,
+      "severity": 1,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "nc75468702",
+      "date": "2026-11-20",
+      "title": "M5.0 earthquake — 10 km NW of Pinnacles, CA",
+      "description": "Magnitude 4.98 recorded 2026-11-20T06:49:16.340Z.",
+      "lat": 36.6071666666667,
+      "lon": -121.208333333333,
+      "severity": 1,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us7000tyw8",
+      "date": "2026-11-18",
+      "title": "M5.3 earthquake — 17 km ESE of Comandău, Romania",
+      "description": "Magnitude 5.3 recorded 2026-11-18T00:48:56.305Z.",
+      "lat": 45.6816,
+      "lon": 26.4521,
+      "severity": 2,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us7000tymu",
+      "date": "2026-11-16",
+      "title": "M6.6 earthquake — 149 km WSW of Tual, Indonesia",
+      "description": "Magnitude 6.6 recorded 2026-11-16T21:11:20.488Z.",
+      "lat": -6.0208,
+      "lon": 131.4593,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us7000tx16",
+      "date": "2026-11-09",
+      "title": "M6.4 earthquake — 30 km WSW of Lata, Solomon Islands",
+      "description": "Magnitude 6.4 recorded 2026-11-09T03:34:59.466Z.",
+      "lat": -10.8669,
+      "lon": 165.5616,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us7000ttxz",
+      "date": "2026-10-29",
+      "title": "M6.4 earthquake — southeast of Easter Island",
+      "description": "Magnitude 6.4 recorded 2026-10-29T07:49:50.096Z.",
+      "lat": -36.4649,
+      "lon": -98.0105,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us6000u4r9",
+      "date": "2026-10-25",
+      "title": "M6.5 earthquake — Bonin Islands, Japan region",
+      "description": "Magnitude 6.5 recorded 2026-10-25T02:09:22.321Z.",
+      "lat": 27.8093,
+      "lon": 139.7102,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us6000u4j2",
+      "date": "2026-10-24",
+      "title": "M6.8 earthquake — 203 km NW of Port-Olry, Vanuatu",
+      "description": "Magnitude 6.8 recorded 2026-10-24T02:31:28.880Z.",
+      "lat": -13.9369,
+      "lon": 165.5629,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    }
+  ],
+  "sectors": [
+    {
+      "sector": "Energy",
+      "pctChange": -0.6241
+    },
+    {
+      "sector": "Technology",
+      "pctChange": -7.2687
+    },
+    {
+      "sector": "Agriculture",
+      "pctChange": -0.2289
+    },
+    {
+      "sector": "Defense",
+      "pctChange": -2.9765
+    },
+    {
+      "sector": "Consumer Goods",
+      "pctChange": 0.6677
+    }
+  ],
+  "metroReadings": [
+    {
+      "metroId": "nyc",
+      "metroName": "New York",
+      "severity": 3,
+      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 0.60% since last month.",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 0.60% since last month. Price at the pump: $3.81/gal (-4.8% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "0.60% since last month",
+          "sourceName": "BLS (New York CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$3.81/gal (-4.8% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "la",
+      "metroName": "Los Angeles",
+      "severity": 3,
+      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 0.62% since last month.",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 0.62% since last month. Price at the pump: $3.81/gal (-4.8% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "0.62% since last month",
+          "sourceName": "BLS (Los Angeles CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$3.81/gal (-4.8% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "chicago",
+      "metroName": "Chicago",
+      "severity": 2,
+      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.31% since last month.",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.31% since last month. Price at the pump: $3.81/gal (-4.8% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "0.31% since last month",
+          "sourceName": "BLS (Chicago CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$3.81/gal (-4.8% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "houston",
+      "metroName": "Houston",
+      "severity": 3,
+      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 1.26% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 1.26% since last published reading (2 months ago). Price at the pump: $3.81/gal (-4.8% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "1.26% since last published reading (2 months ago)",
+          "sourceName": "BLS (Houston CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$3.81/gal (-4.8% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "miami",
+      "metroName": "Miami",
+      "severity": 2,
+      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.63% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.63% since last published reading (2 months ago). Price at the pump: $3.81/gal (-4.8% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "0.63% since last published reading (2 months ago)",
+          "sourceName": "BLS (Miami CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$3.81/gal (-4.8% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "dallas",
+      "metroName": "Dallas",
+      "severity": 2,
+      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.69% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.69% since last published reading (2 months ago). Price at the pump: $3.81/gal (-4.8% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "0.69% since last published reading (2 months ago)",
+          "sourceName": "BLS (Dallas CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$3.81/gal (-4.8% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "sf",
+      "metroName": "San Francisco Bay Area",
+      "severity": 1,
+      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — 0.46% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is watch today. How fast prices are rising here: 0.46% since last published reading (2 months ago). Price at the pump: $3.81/gal (-4.8% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "0.46% since last published reading (2 months ago)",
+          "sourceName": "BLS (San Francisco Bay Area CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$3.81/gal (-4.8% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "seattle",
+      "metroName": "Seattle",
+      "severity": 1,
+      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — -0.19% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is watch today. How fast prices are rising here: -0.19% since last published reading (2 months ago). Price at the pump: $3.81/gal (-4.8% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "-0.19% since last published reading (2 months ago)",
+          "sourceName": "BLS (Seattle CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$3.81/gal (-4.8% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "boston",
+      "metroName": "Boston",
+      "severity": 2,
+      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.80% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.80% since last published reading (2 months ago). Price at the pump: $3.81/gal (-4.8% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "0.80% since last published reading (2 months ago)",
+          "sourceName": "BLS (Boston CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$3.81/gal (-4.8% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "denver",
+      "metroName": "Denver",
+      "severity": 3,
+      "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 1.21% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 1.21% since last published reading (2 months ago). Price at the pump: $3.81/gal (-4.8% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "1.21% since last published reading (2 months ago)",
+          "sourceName": "BLS (Denver CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$3.81/gal (-4.8% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "dc",
+      "metroName": "Washington",
+      "severity": 2,
+      "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.90% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.90% since last published reading (2 months ago). Price at the pump: $3.81/gal (-4.8% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "0.90% since last published reading (2 months ago)",
+          "sourceName": "BLS (Washington CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$3.81/gal (-4.8% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    },
+    {
+      "metroId": "atlanta",
+      "metroName": "Atlanta",
+      "severity": 1,
+      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — 0.10% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is watch today. How fast prices are rising here: 0.10% since last published reading (2 months ago). Price at the pump: $3.81/gal (-4.8% wk/wk).",
+      "metrics": [
+        {
+          "label": "How fast prices are rising here",
+          "value": "0.10% since last published reading (2 months ago)",
+          "sourceName": "BLS (Atlanta CPI)"
+        },
+        {
+          "label": "Price at the pump",
+          "value": "$3.81/gal (-4.8% wk/wk)",
+          "sourceName": "EIA"
+        }
+      ],
+      "dataQuality": "live"
+    }
+  ]
+}
