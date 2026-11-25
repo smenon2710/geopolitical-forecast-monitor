@@ -1,13 +1,13 @@
 {
-  "date": "2026-11-24",
-  "generatedAt": "2026-11-24T21:01:50.282Z",
+  "date": "2026-11-25",
+  "generatedAt": "2026-11-25T20:24:18.939Z",
   "dataQuality": "stale",
   "lenses": [
     {
       "lens": "costOfLiving",
       "severity": 2,
       "oneLiner": "Prices You Pay: elevated today. How fast prices are rising — 0.35%.",
-      "narrative": "Prices are up 0.35% overall. Gas costs $3.64 per gallon, housing costs rose 0.30%, food costs rose 0.47%, and energy costs rose 0.70%.",
+      "narrative": "Heads up on prices — they're rising, with the overall pace at 0.35%. Gas is $4.08 a gallon, down 0.4% from last week, so that's a small break at the pump. Food (0.47%), energy (0.70%), and housing (0.30%) are all going up too.",
       "metrics": [
         {
           "label": "How fast prices are rising",
@@ -16,7 +16,7 @@
         },
         {
           "label": "Price at the pump",
-          "value": "$3.64/gal (-4.3% wk/wk)",
+          "value": "$4.08/gal (-0.4% wk/wk)",
           "sourceName": "EIA"
         },
         {
@@ -35,37 +35,37 @@
           "sourceName": "BLS"
         }
       ],
-      "dataQuality": "live"
+      "dataQuality": "stale"
     },
     {
       "lens": "investments",
-      "severity": 3,
-      "oneLiner": "Your Savings: high today. The stock market today — 4.71%.",
-      "narrative": "The stock market is up 4.71% today. The biggest industry swing is 8.97%. Long‑term borrowing costs are 4.92% and -0.12pt.",
+      "severity": 2,
+      "oneLiner": "Your Savings: elevated today. The stock market today — -0.49%.",
+      "narrative": "If you've got money in the market, it dipped 0.49% today. One industry swung the most, moving 3.26%. The cost of borrowing money for the long haul is 4.92%, and it didn't budge today.",
       "metrics": [
         {
           "label": "The stock market today",
-          "value": "4.71%",
+          "value": "-0.49%",
           "sourceName": "Alpha Vantage (S&P 500)"
         },
         {
           "label": "Biggest industry swing",
-          "value": "8.97%",
+          "value": "3.26%",
           "sourceName": "Alpha Vantage"
         },
         {
           "label": "Cost of long-term borrowing",
-          "value": "4.92% (-0.12pt today)",
+          "value": "4.92% (+0.00pt today)",
           "sourceName": "FRED (DGS10)"
         }
       ],
-      "dataQuality": "stale"
+      "dataQuality": "live"
     },
     {
       "lens": "standardOfLiving",
-      "severity": 3,
-      "oneLiner": "Jobs & Paychecks: high today. Jobs picture — -0.10pt unemployment.",
-      "narrative": "Unemployment is -0.10pt. Paychecks are +0.02pt above inflation. The economy grew 0.83% and 85 out of 1000 stations saw extreme heat of 38°C.",
+      "severity": 1,
+      "oneLiner": "Jobs & Paychecks: watch today. Jobs picture — -0.10pt unemployment.",
+      "narrative": "On jobs, unemployment eased a touch, down 0.10 points. Paychecks are keeping up with prices, just slightly ahead by 0.02 points. And the economy is growing, up 1.05%.",
       "metrics": [
         {
           "label": "Jobs picture",
@@ -79,22 +79,17 @@
         },
         {
           "label": "Is the economy growing?",
-          "value": "+0.83% GDP",
+          "value": "+1.05% GDP",
           "sourceName": "FRED (GDPC1)"
-        },
-        {
-          "label": "Extreme weather",
-          "value": "Excessive heat (85/1000 sampled US stations ≥ 38°C) — United States (sampled stations)",
-          "sourceName": "NOAA"
         }
       ],
-      "dataQuality": "stale"
+      "dataQuality": "live"
     },
     {
       "lens": "security",
       "severity": 3,
       "oneLiner": "Safety & Tension: high today. Global tension level — -10.0.",
-      "narrative": "Global tension is -10.0. The biggest recent earthquake was M6.8.",
+      "narrative": "Global tension is at -10.0, the most tense end of the scale (it runs from -10, tense, to +10, cooperative). The biggest recent earthquake was a magnitude 6.8. So the safety-and-tension picture reads as high today.",
       "metrics": [
         {
           "label": "Global tension level",
@@ -111,19 +106,14 @@
     },
     {
       "lens": "dailyRoutine",
-      "severity": 2,
-      "oneLiner": "Everyday Life: elevated today. Cost of getting around — -4.3% this week.",
-      "narrative": "Getting around costs -4.3% this week. Excessive heat affected 85 out of 1000 stations with temperatures of 38°C.",
+      "severity": 0,
+      "oneLiner": "Everyday Life: calm today. Cost of getting around — -0.4% this week.",
+      "narrative": "Getting around costs a little less this week, down 0.4%. Everyday life reads as calm, so it's an easy day on the getting-around front.",
       "metrics": [
         {
           "label": "Cost of getting around",
-          "value": "-4.3% this week",
+          "value": "-0.4% this week",
           "sourceName": "EIA"
-        },
-        {
-          "label": "Weather disruption",
-          "value": "Excessive heat (85/1000 sampled US stations ≥ 38°C)",
-          "sourceName": "NOAA"
         }
       ],
       "dataQuality": "stale"
@@ -499,56 +489,56 @@
       "unit": "$/gal",
       "points": [
         {
-          "date": "2026-08-31",
-          "value": 4.071
+          "date": "2026-05-11",
+          "value": 4.5
         },
         {
-          "date": "2026-09-07",
-          "value": 4.157
+          "date": "2026-05-18",
+          "value": 4.49
         },
         {
-          "date": "2026-09-14",
-          "value": 4.319
+          "date": "2026-05-25",
+          "value": 4.475
         },
         {
-          "date": "2026-09-21",
-          "value": 4.478
+          "date": "2026-06-01",
+          "value": 4.305
         },
         {
-          "date": "2026-09-28",
-          "value": 4.465
+          "date": "2026-06-08",
+          "value": 4.146
         },
         {
-          "date": "2026-10-05",
-          "value": 4.354
+          "date": "2026-06-15",
+          "value": 4.052
         },
         {
-          "date": "2026-10-12",
-          "value": 4.331
+          "date": "2026-06-22",
+          "value": 3.914
         },
         {
-          "date": "2026-10-19",
-          "value": 4.284
+          "date": "2026-06-29",
+          "value": 3.831
         },
         {
-          "date": "2026-10-26",
-          "value": 4.269
+          "date": "2026-07-06",
+          "value": 3.777
         },
         {
-          "date": "2026-11-02",
-          "value": 4.153
+          "date": "2026-07-13",
+          "value": 3.855
         },
         {
-          "date": "2026-11-09",
-          "value": 3.995
+          "date": "2026-07-20",
+          "value": 4.001
         },
         {
-          "date": "2026-11-16",
-          "value": 3.805
+          "date": "2026-07-27",
+          "value": 4.096
         },
         {
-          "date": "2026-11-23",
-          "value": 3.642
+          "date": "2026-08-03",
+          "value": 4.079
         }
       ]
     },
@@ -558,123 +548,123 @@
       "unit": "index",
       "points": [
         {
-          "date": "2026-10-26",
+          "date": "2026-10-27",
           "value": 0
         },
         {
-          "date": "2026-10-27",
+          "date": "2026-10-28",
           "value": 0.63
         },
         {
-          "date": "2026-10-28",
+          "date": "2026-10-29",
           "value": 1.25
         },
         {
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "value": 1.85
         },
         {
-          "date": "2026-10-30",
+          "date": "2026-10-31",
           "value": 2.41
         },
         {
-          "date": "2026-10-31",
+          "date": "2026-11-01",
           "value": 2.93
         },
         {
-          "date": "2026-11-01",
+          "date": "2026-11-02",
           "value": 3.4
         },
         {
-          "date": "2026-11-02",
+          "date": "2026-11-03",
           "value": 3.81
         },
         {
-          "date": "2026-11-03",
+          "date": "2026-11-04",
           "value": 4.17
         },
         {
-          "date": "2026-11-04",
+          "date": "2026-11-05",
           "value": 4.46
         },
         {
-          "date": "2026-11-05",
+          "date": "2026-11-06",
           "value": 4.7
         },
         {
-          "date": "2026-11-06",
+          "date": "2026-11-07",
           "value": 4.88
         },
         {
-          "date": "2026-11-07",
+          "date": "2026-11-08",
           "value": 5.01
         },
         {
-          "date": "2026-11-08",
+          "date": "2026-11-09",
           "value": 5.11
         },
         {
-          "date": "2026-11-09",
+          "date": "2026-11-10",
           "value": 5.17
         },
         {
-          "date": "2026-11-10",
+          "date": "2026-11-11",
           "value": 5.21
         },
         {
-          "date": "2026-11-11",
+          "date": "2026-11-12",
           "value": 5.25
         },
         {
-          "date": "2026-11-12",
+          "date": "2026-11-13",
           "value": 5.28
         },
         {
-          "date": "2026-11-13",
+          "date": "2026-11-14",
           "value": 5.34
         },
         {
-          "date": "2026-11-14",
+          "date": "2026-11-15",
           "value": 5.42
         },
         {
-          "date": "2026-11-15",
+          "date": "2026-11-16",
           "value": 5.53
         },
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "value": 5.69
         },
         {
-          "date": "2026-11-17",
+          "date": "2026-11-18",
           "value": 5.91
         },
         {
-          "date": "2026-11-18",
+          "date": "2026-11-19",
           "value": 6.18
         },
         {
-          "date": "2026-11-19",
+          "date": "2026-11-20",
           "value": 6.51
         },
         {
-          "date": "2026-11-20",
+          "date": "2026-11-21",
           "value": 6.89
         },
         {
-          "date": "2026-11-21",
+          "date": "2026-11-22",
           "value": 7.34
         },
         {
-          "date": "2026-11-22",
+          "date": "2026-11-23",
           "value": 7.84
         },
         {
-          "date": "2026-11-23",
+          "date": "2026-11-24",
           "value": 8.39
         },
         {
-          "date": "2026-11-24",
+          "date": "2026-11-25",
           "value": 10
         }
       ]
@@ -1560,10 +1550,10 @@
     {
       "id": "us7000tymu",
       "date": "2026-11-16",
-      "title": "M6.6 earthquake — 149 km WSW of Tual, Indonesia",
-      "description": "Magnitude 6.6 recorded 2026-11-16T21:11:20.488Z.",
-      "lat": -6.0208,
-      "lon": 131.4593,
+      "title": "M6.6 earthquake — 147 km WSW of Tual, Indonesia",
+      "description": "Magnitude 6.6 recorded 2026-11-16T21:11:20.489Z.",
+      "lat": -6.0196,
+      "lon": 131.4829,
       "severity": 3,
       "lenses": [
         "security",
@@ -1603,23 +1593,23 @@
   "sectors": [
     {
       "sector": "Energy",
-      "pctChange": -1.1348
+      "pctChange": 0.9688
     },
     {
       "sector": "Technology",
-      "pctChange": 8.9726
+      "pctChange": -3.2578
     },
     {
       "sector": "Agriculture",
-      "pctChange": 0.3442
+      "pctChange": 0.1524
     },
     {
       "sector": "Defense",
-      "pctChange": 3.491
+      "pctChange": -0.5257
     },
     {
       "sector": "Consumer Goods",
-      "pctChange": -0.0884
+      "pctChange": 1.6597
     }
   ],
   "metroReadings": [
@@ -1628,7 +1618,7 @@
       "metroName": "New York",
       "severity": 3,
       "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 0.60% since last month.",
-      "narrative": "Prices You Pay is high today. How fast prices are rising here: 0.60% since last month. Price at the pump: $3.64/gal (-4.3% wk/wk).",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 0.60% since last month. Price at the pump: $4.08/gal (-0.4% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
@@ -1637,7 +1627,7 @@
         },
         {
           "label": "Price at the pump",
-          "value": "$3.64/gal (-4.3% wk/wk)",
+          "value": "$4.08/gal (-0.4% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1648,7 +1638,7 @@
       "metroName": "Los Angeles",
       "severity": 3,
       "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 0.62% since last month.",
-      "narrative": "Prices You Pay is high today. How fast prices are rising here: 0.62% since last month. Price at the pump: $3.64/gal (-4.3% wk/wk).",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 0.62% since last month. Price at the pump: $4.08/gal (-0.4% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
@@ -1657,7 +1647,7 @@
         },
         {
           "label": "Price at the pump",
-          "value": "$3.64/gal (-4.3% wk/wk)",
+          "value": "$4.08/gal (-0.4% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1668,7 +1658,7 @@
       "metroName": "Chicago",
       "severity": 2,
       "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.31% since last month.",
-      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.31% since last month. Price at the pump: $3.64/gal (-4.3% wk/wk).",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.31% since last month. Price at the pump: $4.08/gal (-0.4% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
@@ -1677,7 +1667,7 @@
         },
         {
           "label": "Price at the pump",
-          "value": "$3.64/gal (-4.3% wk/wk)",
+          "value": "$4.08/gal (-0.4% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1688,7 +1678,7 @@
       "metroName": "Houston",
       "severity": 3,
       "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 1.26% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is high today. How fast prices are rising here: 1.26% since last published reading (2 months ago). Price at the pump: $3.64/gal (-4.3% wk/wk).",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 1.26% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
@@ -1697,7 +1687,7 @@
         },
         {
           "label": "Price at the pump",
-          "value": "$3.64/gal (-4.3% wk/wk)",
+          "value": "$4.08/gal (-0.4% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1708,7 +1698,7 @@
       "metroName": "Miami",
       "severity": 2,
       "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.63% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.63% since last published reading (2 months ago). Price at the pump: $3.64/gal (-4.3% wk/wk).",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.63% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
@@ -1717,7 +1707,7 @@
         },
         {
           "label": "Price at the pump",
-          "value": "$3.64/gal (-4.3% wk/wk)",
+          "value": "$4.08/gal (-0.4% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1728,7 +1718,7 @@
       "metroName": "Dallas",
       "severity": 2,
       "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.69% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.69% since last published reading (2 months ago). Price at the pump: $3.64/gal (-4.3% wk/wk).",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.69% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
@@ -1737,7 +1727,7 @@
         },
         {
           "label": "Price at the pump",
-          "value": "$3.64/gal (-4.3% wk/wk)",
+          "value": "$4.08/gal (-0.4% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1748,7 +1738,7 @@
       "metroName": "San Francisco Bay Area",
       "severity": 1,
       "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — 0.46% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is watch today. How fast prices are rising here: 0.46% since last published reading (2 months ago). Price at the pump: $3.64/gal (-4.3% wk/wk).",
+      "narrative": "Prices You Pay is watch today. How fast prices are rising here: 0.46% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
@@ -1757,7 +1747,7 @@
         },
         {
           "label": "Price at the pump",
-          "value": "$3.64/gal (-4.3% wk/wk)",
+          "value": "$4.08/gal (-0.4% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1766,9 +1756,9 @@
     {
       "metroId": "seattle",
       "metroName": "Seattle",
-      "severity": 1,
-      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — -0.19% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is watch today. How fast prices are rising here: -0.19% since last published reading (2 months ago). Price at the pump: $3.64/gal (-4.3% wk/wk).",
+      "severity": 0,
+      "oneLiner": "Prices You Pay: calm today. How fast prices are rising here — -0.19% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is calm today. How fast prices are rising here: -0.19% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
@@ -1777,7 +1767,7 @@
         },
         {
           "label": "Price at the pump",
-          "value": "$3.64/gal (-4.3% wk/wk)",
+          "value": "$4.08/gal (-0.4% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1788,7 +1778,7 @@
       "metroName": "Boston",
       "severity": 2,
       "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.80% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.80% since last published reading (2 months ago). Price at the pump: $3.64/gal (-4.3% wk/wk).",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.80% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
@@ -1797,7 +1787,7 @@
         },
         {
           "label": "Price at the pump",
-          "value": "$3.64/gal (-4.3% wk/wk)",
+          "value": "$4.08/gal (-0.4% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1808,7 +1798,7 @@
       "metroName": "Denver",
       "severity": 3,
       "oneLiner": "Prices You Pay: high today. How fast prices are rising here — 1.21% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is high today. How fast prices are rising here: 1.21% since last published reading (2 months ago). Price at the pump: $3.64/gal (-4.3% wk/wk).",
+      "narrative": "Prices You Pay is high today. How fast prices are rising here: 1.21% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
@@ -1817,7 +1807,7 @@
         },
         {
           "label": "Price at the pump",
-          "value": "$3.64/gal (-4.3% wk/wk)",
+          "value": "$4.08/gal (-0.4% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1828,7 +1818,7 @@
       "metroName": "Washington",
       "severity": 2,
       "oneLiner": "Prices You Pay: elevated today. How fast prices are rising here — 0.90% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.90% since last published reading (2 months ago). Price at the pump: $3.64/gal (-4.3% wk/wk).",
+      "narrative": "Prices You Pay is elevated today. How fast prices are rising here: 0.90% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
@@ -1837,7 +1827,7 @@
         },
         {
           "label": "Price at the pump",
-          "value": "$3.64/gal (-4.3% wk/wk)",
+          "value": "$4.08/gal (-0.4% wk/wk)",
           "sourceName": "EIA"
         }
       ],
@@ -1846,9 +1836,9 @@
     {
       "metroId": "atlanta",
       "metroName": "Atlanta",
-      "severity": 1,
-      "oneLiner": "Prices You Pay: watch today. How fast prices are rising here — 0.10% since last published reading (2 months ago).",
-      "narrative": "Prices You Pay is watch today. How fast prices are rising here: 0.10% since last published reading (2 months ago). Price at the pump: $3.64/gal (-4.3% wk/wk).",
+      "severity": 0,
+      "oneLiner": "Prices You Pay: calm today. How fast prices are rising here — 0.10% since last published reading (2 months ago).",
+      "narrative": "Prices You Pay is calm today. How fast prices are rising here: 0.10% since last published reading (2 months ago). Price at the pump: $4.08/gal (-0.4% wk/wk).",
       "metrics": [
         {
           "label": "How fast prices are rising here",
@@ -1857,7 +1847,7 @@
         },
         {
           "label": "Price at the pump",
-          "value": "$3.64/gal (-4.3% wk/wk)",
+          "value": "$4.08/gal (-0.4% wk/wk)",
           "sourceName": "EIA"
         }
       ],
