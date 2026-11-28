@@ -1,13 +1,13 @@
 {
-  "date": "2026-11-27",
-  "generatedAt": "2026-11-27T19:49:28.561Z",
+  "date": "2026-11-28",
+  "generatedAt": "2026-11-28T18:42:25.425Z",
   "dataQuality": "stale",
   "lenses": [
     {
       "lens": "costOfLiving",
       "severity": 2,
       "oneLiner": "Prices You Pay: elevated today. How fast prices are rising — 0.35%.",
-      "narrative": "Prices are still going up, just slowly — 0.35% overall. Food is up 0.47%, energy up 0.70%, housing up 0.30%. Gas is $3.64 a gallon, down 4.3% from last week, so that's one less thing to wince at.",
+      "narrative": "Prices you pay are elevated: overall prices are rising 0.35%. Gas is $3.64 a gallon and is down 4.3% week over week, while housing costs are up 0.30%, food is up 0.47%, and energy is up 0.70%.",
       "metrics": [
         {
           "label": "How fast prices are rising",
@@ -39,23 +39,23 @@
     },
     {
       "lens": "investments",
-      "severity": 0,
-      "oneLiner": "Your Savings: calm today. The stock market today — -0.29%.",
-      "narrative": "Your savings are having a quiet day. Stocks are down 0.29%, and the biggest swing in any one industry was 0.95%. Borrowing money for the long haul costs 4.91%, down 0.01 today — nothing here that needs a decision from you.",
+      "severity": 2,
+      "oneLiner": "Your Savings: elevated today. The stock market today — 1.62%.",
+      "narrative": "Your savings tied to the stock market are up 1.62% today. The biggest industry swing was 2.80%. Long-term borrowing costs 4.85%, with a -0.06pt change today.",
       "metrics": [
         {
           "label": "The stock market today",
-          "value": "-0.29%",
+          "value": "1.62%",
           "sourceName": "Alpha Vantage (S&P 500)"
         },
         {
           "label": "Biggest industry swing",
-          "value": "0.95%",
+          "value": "2.80%",
           "sourceName": "Alpha Vantage"
         },
         {
           "label": "Cost of long-term borrowing",
-          "value": "4.91% (-0.01pt today)",
+          "value": "4.85% (-0.06pt today)",
           "sourceName": "FRED (DGS10)"
         }
       ],
@@ -65,7 +65,7 @@
       "lens": "standardOfLiving",
       "severity": 1,
       "oneLiner": "Jobs & Paychecks: watch today. Jobs picture — -0.10pt unemployment.",
-      "narrative": "Jobs are the one to keep half an eye on: the reading is -0.10. Paychecks are ahead of prices, but only just, by 0.02. The economy is growing at 1.05%.",
+      "narrative": "The jobs picture shows unemployment changed by -0.10pt. Paychecks are +0.02pt versus prices. The economy is growing +1.05%.",
       "metrics": [
         {
           "label": "Jobs picture",
@@ -89,7 +89,7 @@
       "lens": "security",
       "severity": 3,
       "oneLiner": "Safety & Tension: high today. Global tension level — -10.0.",
-      "narrative": "Tension around the world is at -10.0, which is the tense end of a scale that runs from -10 tense to +10 cooperative. The biggest recent earthquake was a M6.8. This is the section running high, so it's the one I'd glance at if you have people far away.",
+      "narrative": "Safety and tension are at a high reading. The global tension reading is -10.0, the tense end of the scale. The biggest recent earthquake was M6.8.",
       "metrics": [
         {
           "label": "Global tension level",
@@ -108,7 +108,7 @@
       "lens": "dailyRoutine",
       "severity": 1,
       "oneLiner": "Everyday Life: watch today. Cost of getting around — -4.3% this week.",
-      "narrative": "Getting around is 4.3% cheaper this week. If you're driving or paying for a ride, that's a small break in your favor. That's the whole story for your everyday costs today.",
+      "narrative": "The cost of getting around changed by -4.3% this week. That's a little relief for your everyday travel budget.",
       "metrics": [
         {
           "label": "Cost of getting around",
@@ -548,123 +548,123 @@
       "unit": "index",
       "points": [
         {
-          "date": "2026-10-29",
+          "date": "2026-10-30",
           "value": 0
         },
         {
-          "date": "2026-10-30",
+          "date": "2026-10-31",
           "value": 0.63
         },
         {
-          "date": "2026-10-31",
+          "date": "2026-11-01",
           "value": 1.25
         },
         {
-          "date": "2026-11-01",
+          "date": "2026-11-02",
           "value": 1.85
         },
         {
-          "date": "2026-11-02",
+          "date": "2026-11-03",
           "value": 2.41
         },
         {
-          "date": "2026-11-03",
+          "date": "2026-11-04",
           "value": 2.93
         },
         {
-          "date": "2026-11-04",
+          "date": "2026-11-05",
           "value": 3.4
         },
         {
-          "date": "2026-11-05",
+          "date": "2026-11-06",
           "value": 3.81
         },
         {
-          "date": "2026-11-06",
+          "date": "2026-11-07",
           "value": 4.17
         },
         {
-          "date": "2026-11-07",
+          "date": "2026-11-08",
           "value": 4.46
         },
         {
-          "date": "2026-11-08",
+          "date": "2026-11-09",
           "value": 4.7
         },
         {
-          "date": "2026-11-09",
+          "date": "2026-11-10",
           "value": 4.88
         },
         {
-          "date": "2026-11-10",
+          "date": "2026-11-11",
           "value": 5.01
         },
         {
-          "date": "2026-11-11",
+          "date": "2026-11-12",
           "value": 5.11
         },
         {
-          "date": "2026-11-12",
+          "date": "2026-11-13",
           "value": 5.17
         },
         {
-          "date": "2026-11-13",
+          "date": "2026-11-14",
           "value": 5.21
         },
         {
-          "date": "2026-11-14",
+          "date": "2026-11-15",
           "value": 5.25
         },
         {
-          "date": "2026-11-15",
+          "date": "2026-11-16",
           "value": 5.28
         },
         {
-          "date": "2026-11-16",
+          "date": "2026-11-17",
           "value": 5.34
         },
         {
-          "date": "2026-11-17",
+          "date": "2026-11-18",
           "value": 5.42
         },
         {
-          "date": "2026-11-18",
+          "date": "2026-11-19",
           "value": 5.53
         },
         {
-          "date": "2026-11-19",
+          "date": "2026-11-20",
           "value": 5.69
         },
         {
-          "date": "2026-11-20",
+          "date": "2026-11-21",
           "value": 5.91
         },
         {
-          "date": "2026-11-21",
+          "date": "2026-11-22",
           "value": 6.18
         },
         {
-          "date": "2026-11-22",
+          "date": "2026-11-23",
           "value": 6.51
         },
         {
-          "date": "2026-11-23",
+          "date": "2026-11-24",
           "value": 6.89
         },
         {
-          "date": "2026-11-24",
+          "date": "2026-11-25",
           "value": 7.34
         },
         {
-          "date": "2026-11-25",
+          "date": "2026-11-26",
           "value": 7.84
         },
         {
-          "date": "2026-11-26",
+          "date": "2026-11-27",
           "value": 8.39
         },
         {
-          "date": "2026-11-27",
+          "date": "2026-11-28",
           "value": 10
         }
       ]
@@ -1422,6 +1422,48 @@
       "sourceUrl": "https://news.am/en/news/1054539"
     },
     {
+      "id": "ci41581136",
+      "date": "2026-11-28",
+      "title": "M5.0 earthquake — 6 km WSW of Manhattan Beach, CA",
+      "description": "Magnitude 5.01 recorded 2026-11-28T17:30:29.840Z.",
+      "lat": 33.85867,
+      "lon": -118.4625,
+      "severity": 2,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "us6000ue3p",
+      "date": "2026-11-28",
+      "title": "M6.7 earthquake — 62 km NNW of Yelizovo, Russia",
+      "description": "Magnitude 6.7 recorded 2026-11-28T13:15:07.475Z.",
+      "lat": 53.7048,
+      "lon": 157.9928,
+      "severity": 3,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
+      "id": "aka2026xnvqjt",
+      "date": "2026-11-28",
+      "title": "M4.0 earthquake — 10 km WSW of Point MacKenzie, Alaska",
+      "description": "Magnitude 4 recorded 2026-11-28T06:11:42.401Z.",
+      "lat": 61.333,
+      "lon": -150.163,
+      "severity": 1,
+      "lenses": [
+        "security",
+        "dailyRoutine"
+      ],
+      "sourceName": "USGS"
+    },
+    {
       "id": "aka2026xhgksb",
       "date": "2026-11-24",
       "title": "M4.2 earthquake — 10 km WSW of Point MacKenzie, Alaska",
@@ -1574,42 +1616,28 @@
         "dailyRoutine"
       ],
       "sourceName": "USGS"
-    },
-    {
-      "id": "us7000ttxz",
-      "date": "2026-10-29",
-      "title": "M6.4 earthquake — southeast of Easter Island",
-      "description": "Magnitude 6.4 recorded 2026-10-29T07:49:50.096Z.",
-      "lat": -36.4649,
-      "lon": -98.0105,
-      "severity": 3,
-      "lenses": [
-        "security",
-        "dailyRoutine"
-      ],
-      "sourceName": "USGS"
     }
   ],
   "sectors": [
     {
       "sector": "Energy",
-      "pctChange": 0.7444
+      "pctChange": 1.2644
     },
     {
       "sector": "Technology",
-      "pctChange": -0.8276
+      "pctChange": 2.7986
     },
     {
       "sector": "Agriculture",
-      "pctChange": 0.2283
+      "pctChange": 1.5566
     },
     {
       "sector": "Defense",
-      "pctChange": 0.9542
+      "pctChange": 2.3121
     },
     {
       "sector": "Consumer Goods",
-      "pctChange": 0.4571
+      "pctChange": 0.4117
     }
   ],
   "metroReadings": [
